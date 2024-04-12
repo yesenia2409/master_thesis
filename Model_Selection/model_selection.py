@@ -63,6 +63,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     :param max_new_tokens:
     :return:
     """
+    model.to("cuda")
     model.eval()
     pred_list = []
     input_list = []
@@ -117,7 +118,7 @@ if __name__ == "__main__":
     seed = 42
     system_input = ""
     max_new_tokens = 200
-    output_dir = "./Model_Selection/Output_files/"
+    output_dir = "../Model_Selection/Output_files/"
     output_filename = f"results_{args.model_name}_{count_samples}samples_{seed}seed.csv"
 
     # Functions
