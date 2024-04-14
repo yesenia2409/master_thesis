@@ -17,7 +17,7 @@ import os
 
 # Data Preparation
 
-def create_dataset(name, range):
+def create_dataset(name, range, seed):
     """
     Load dataset and randomly sample a number of prompts from the dataset as well as their labels and additional ainput.
     Concatenate prompt and additional inputs.
@@ -27,7 +27,7 @@ def create_dataset(name, range):
     """
     data = load_dataset(name, split="train")
 
-    shuffled_dataset = data.shuffle(seed=42)
+    shuffled_dataset = data.shuffle(seed=seed)
     sampled_dataset = shuffled_dataset.select(range(range))
 
     raw_prompts = [sample["instruction"] for sample in sampled_dataset]
@@ -59,14 +59,15 @@ def adjust_prompts(prompts, system_text):
 
 def load_model(model_name):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        load_in_4bit=True,
-        device_map="auto",
-        bnb_4bit_use_double_quant=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.float16
-    )
+    model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype=torch.float16)
+    # model = AutoModelForCausalLM.from_pretrained(
+    #    model_name,
+    #    load_in_4bit=True,
+    #    device_map="auto",
+    #    bnb_4bit_use_double_quant=True,
+    #    bnb_4bit_quant_type="nf4",
+    #    bnb_4bit_compute_dtype=torch.float16
+    # )
 
     model.config.pad_token_id = tokenizer.bos_token_id
     tokenizer.pad_token = tokenizer.eos_token
@@ -88,7 +89,10 @@ def inference(model, tokenizer, prompts, labels, system_text, max_new_tokens):
     :param system_text:
     :return:
     """
+    model.half()
     model.eval()
+    model.to("cuda")
+
     pred_list_without_tags = []
     pred_list_with_tags = []
     input_list = []
@@ -166,16 +170,22 @@ def save_to_csv(df_result, output_dir, output_filename):
 if __name__ == "__main__":
     # Variables
     dataset = "daven3/geosignal"
-    model_name = "meta-llama/Llama-2-7b-chat-hf"
+    model_name = "meta-llama/Llama-2-13b-chat-hf"
     count_samples = 50
+    seed = 33
     system_input = ""
     # "You are an expert in Geoscience and want to answer the following question."
     max_new_tokens = 200
-    output_dir = "./Prompting/Output_files/"
-    output_filename = "comparison_with_without_metatags_50samples_42seed.csv"
+    output_dir = "../Prompting/Output_files/"
+    model_saving_path = model_name.replace("/", "-")
+    output_filename = f"proof_of_concept_{model_saving_path}_{count_samples}samples_{seed}seed.csv"
 
     # Functions
-    gold_labels, raw_prompts = create_dataset(dataset, count_samples)
+    gold_labels, raw_prompts = create_dataset(dataset, count_samples, seed)
+    print("create_dataset() done!")
     model, tokenizer = load_model(model_name)
+    print("load_model() done!")
     df_result = inference(model, tokenizer, raw_prompts, gold_labels, system_input, max_new_tokens)
+    print("inference() done!")
     save_to_csv(df_result, output_dir, output_filename)
+    print("save_to_csv() done!")

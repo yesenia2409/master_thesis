@@ -137,8 +137,7 @@ if __name__ == "__main__":
     # Variables
     dataset = "daven3/geosignal"
     count_samples = 20
-    seed = 42
-    system_input = ""
+    seed = 33
     max_new_tokens = 200
     output_dir = "../Model_Selection/Output_files/"
     model_saving_path = args.model_name.replace("/", "-")
