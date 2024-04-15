@@ -17,7 +17,7 @@ import os
 
 # Data Preparation
 
-def create_dataset(name, range, seed):
+def create_dataset(name, count, seed):
     """
     Load dataset and randomly sample a number of prompts from the dataset as well as their labels and additional ainput.
     Concatenate prompt and additional inputs.
@@ -28,7 +28,7 @@ def create_dataset(name, range, seed):
     data = load_dataset(name, split="train")
 
     shuffled_dataset = data.shuffle(seed=seed)
-    sampled_dataset = shuffled_dataset.select(range(range))
+    sampled_dataset = shuffled_dataset.select(range(count))
 
     raw_prompts = [sample["instruction"] for sample in sampled_dataset]
     input = [sample["input"] for sample in sampled_dataset]
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     dataset = "daven3/geosignal"
     model_name = "meta-llama/Llama-2-13b-chat-hf"
     count_samples = 50
-    seed = 33
+    seed = 45
     system_input = ""
     # "You are an expert in Geoscience and want to answer the following question."
     max_new_tokens = 200
