@@ -18,19 +18,19 @@ import torch
 
 # Data Preparation
 
-def create_dataset(name, range, seed):
+def create_dataset(name, count, seed):
     """
     Load dataset and randomly sample a number of prompts from the dataset as well as their labels and additional input.
     Concatenate prompt and additional inputs.
     :param name: path to the dataset
-    :param range: number of prompts that should be sampled
+    :param count: number of prompts that should be sampled
     :param seed: int number to guarantee reproduction of random sampling
     :return: gold_labels, prompts: a list with the labels sampled from the dataset and a list with the prompts
     """
     data = load_dataset(name, split="train")
 
     shuffled_dataset = data.shuffle(seed=seed)
-    sampled_dataset = shuffled_dataset.select(range(range))
+    sampled_dataset = shuffled_dataset.select(range(count))
 
     raw_prompts = [sample["instruction"] for sample in sampled_dataset]
     input = [sample["input"] for sample in sampled_dataset]

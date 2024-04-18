@@ -176,7 +176,7 @@ if __name__ == "__main__":
     system_input = ""
     # "You are an expert in Geoscience and want to answer the following question."
     max_new_tokens = 200
-    output_dir = "../Prompting/Output_files/"
+    output_dir = "Output_files/"
     model_saving_path = model_name.replace("/", "-")
     output_filename = f"proof_of_concept_{model_saving_path}_{count_samples}samples_{seed}seed.csv"
 
