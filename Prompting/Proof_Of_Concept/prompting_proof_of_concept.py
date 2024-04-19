@@ -2,7 +2,7 @@
 Prompting: Proof of Concept
 
 * Randomly sample 50 queries of the SFT dataset
-* Adding meta-tags to the models input
+* Adding prompt templates to the models input
 * Run inference with 50 samples with and without the meta-tags
 * Manually compare/evaluate the results
 """
