@@ -21,9 +21,10 @@ def create_dataset(name, count, seed):
     """
     Load dataset and randomly sample a number of prompts from the dataset as well as their labels and additional ainput.
     Concatenate prompt and additional inputs.
-    :param name:
-    :param range:
-    :return:
+    :param name: path to the dataset
+    :param count: number of prompts that should be sampled
+    :param seed: int number to guarantee reproduction of random sampling
+    :return: gold_labels, prompts: a list with the labels sampled from the dataset and a list with the prompts
     """
     data = load_dataset(name, split="train")
 
@@ -41,10 +42,10 @@ def create_dataset(name, count, seed):
 
 def adjust_prompts(prompts, system_text):
     """
-    Adding meta-tags and a system-info-tag to each prompt
-    :param prompts:
-    :param system_text:
-    :return:
+    Adding prompt template and a system-prompt to each prompt
+    :param prompts: list of sampled prompts from the dataset
+    :param system_text: string of system prompt that is valid for all prompts
+    :return: adjusted_prompts: list of all prompts embedded in the prompt template
     """
     adjusted_prompts = []
 
@@ -58,16 +59,13 @@ def adjust_prompts(prompts, system_text):
 # Model
 
 def load_model(model_name):
+    """
+    Loads the model and sets some config parameters
+    :param model_name: path to where the model is stored
+    :return: model, tokenizer: the model and the tokenizer object
+    """
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype=torch.float16)
-    # model = AutoModelForCausalLM.from_pretrained(
-    #    model_name,
-    #    load_in_4bit=True,
-    #    device_map="auto",
-    #    bnb_4bit_use_double_quant=True,
-    #    bnb_4bit_quant_type="nf4",
-    #    bnb_4bit_compute_dtype=torch.float16
-    # )
 
     model.config.pad_token_id = tokenizer.bos_token_id
     tokenizer.pad_token = tokenizer.eos_token
@@ -82,12 +80,13 @@ def load_model(model_name):
 def inference(model, tokenizer, prompts, labels, system_text, max_new_tokens):
     """
     Run inference on prompts with meta-tags and without meta-tags and store results in a Dataframe.
-    :param model:
-    :param tokenizer:
-    :param prompts:
-    :param labels:
-    :param system_text:
-    :return:
+    :param model: the model object
+    :param tokenizer: the tokenizer object
+    :param prompts: a list with the prompts taken from the dataset
+    :param labels: a list with the labels taken from the dataset
+    :param system_text: a string that contains the system prompt
+    :param max_new_tokens: number of maximal tokens the model is allowed to generate
+    :return: df: df that contains the predictions with and without template, the prompts and the labels
     """
     model.half()
     model.eval()
@@ -132,10 +131,10 @@ def inference(model, tokenizer, prompts, labels, system_text, max_new_tokens):
 def save_to_csv(df_result, output_dir, output_filename):
     """
     Saves the results in a csv file.
-    :param df_result:
-    :param output_dir:
-    :param output_filename:
-    :return:
+    :param df_result: df that contains the predictions with and without template, the prompts and the labels
+    :param output_dir: path to a directory where the result files should be stored
+    :param output_filename: name for the result file
+    :return: -
     """
 
     preds_with_list = []

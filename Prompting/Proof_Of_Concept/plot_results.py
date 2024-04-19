@@ -1,8 +1,21 @@
+"""
+Plot results of proof of concept
+
+* Loading the annotated xlsx file
+* Plot the win rate as a bar chart
+* Plot the human evaluation scores as a bar chart
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
 def plot_win_rate(file_path):
+    """
+    Plots the win rate of with vs. without template as a bar chart
+    :param file_path: path to where the annotated result file is stored
+    :return: -
+    """
 
     colors = ["lightsteelblue", "cornflowerblue", "royalblue"]
     data = pd.read_excel(file_path)
@@ -22,6 +35,12 @@ def plot_win_rate(file_path):
 
 
 def plot_human_eval_res(file_path):
+    """
+    Plots the human evaluation scores of with vs. without template as a bar chart
+    :param file_path: path to where the annotated result file is stored
+    :return: -
+    """
+
     colors = ["lightsteelblue", "royalblue"]
     data = pd.read_excel(file_path)
 
