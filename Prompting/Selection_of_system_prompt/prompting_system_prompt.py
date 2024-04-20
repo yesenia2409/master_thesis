@@ -86,7 +86,13 @@ if __name__ == "__main__":
     model_name = "meta-llama/Llama-2-13b-chat-hf"
     count_samples = 20
     seed = 33
-    list_system_input = []
+    list_system_input = ["You are a geoscience expert.",
+                         "Act as an expert in geoscience and answer the following question.",
+                         "Answer the following question with your geoscience expertise.",
+                         "Provide outputs that a geoscience professor would create.",
+                         "Whenever you generate an answer to a geoscience question explain the reasoning ans assumpions behind your answer.",
+                         "Whenever you can't answer a geosience question explain why you can't answer the question.",
+                         "You are an expert in geology, geography and environmental science"]
     max_new_tokens = 200
     output_dir = "Output_files/"
     output_filename = f"system_prompt_test_{count_samples}samples_{seed}seed.csv"
