@@ -19,4 +19,4 @@ conda activate thesis
 module load devel/cuda/11.6
 
 # call python script
-python3 -u prompting_proof_of_concept.py
+python3 -u Selection_of_system_prompt/prompting_system_prompt.py
