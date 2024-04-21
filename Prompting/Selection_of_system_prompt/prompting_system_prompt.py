@@ -74,7 +74,7 @@ def save_to_csv(pred_list, gold_list, input_list, col_name, output_path):
             {
                 "input": input_list,
                 "gold": gold_list,
-                "col_name": pred_list,
+                col_name: pred_list,
             }
         )
         df.to_csv(output_path, index=False)

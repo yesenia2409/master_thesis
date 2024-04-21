@@ -1,7 +1,7 @@
 input,gold,col_name,Please use your geosience knowledge to answer the questions.
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Identify which instrument is string or percussion: Kenong, Zeze  [/INST]","Zeze is string, Kenong is percussion.","  [/INST]  Hello! I'd be happy to help with your questions about geoscience. However, I'm a large language model, I don't have the ability to identify instruments as string or percussion. The terms ""Kenong"" and ""Zeze"" do not appear to be geoscience-related, and I couldn't find any information about them in my databases.
 
 If you have any other questions about geoscience, I'd be happy to try and assist you to the best of my ability. Please let me know if there's anything else I can help with.","  [/INST]  As a geoscientist, I must respectfully point out that ""Kenong"" and ""Zeze"" are not instruments, but rather names of places or features on the Earth's surface. Therefore, it is not possible to determine whether they are string or percussion instruments.
@@ -10,8 +10,8 @@ However, if you meant to ask about instruments commonly used in music, I can pro
 
 Please let me know if there is anything else I can help with."
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Could you clarify the origin time of the M 4.7 - 19km NW of Truckee, CA for me?  [/INST]","Certainly, the M 4.7 - 19km NW of Truckee, CA's origin time is 2021-05-07 04:35:14.150 UTC.","  [/INST]  Certainly! The M 4.7 earthquake that occurred 19 kilometers northwest of Truckee, California on [insert date] had a complex origin.
 
 Firstly, it is important to note that the location of the earthquake is within the western Sierra Nevada, a region of significant tectonic activity. The western Sierra Nevada is a transform boundary, where the Pacific Plate is being subducted beneath the North American Plate at a rate of approximately 2-3 cm/year. This process is responsible for the formation of the San Andreas Fault system, which runs parallel to the western Sierra Nevada.
@@ -24,8 +24,8 @@ Based on the location and depth of the earthquake, it is likely that the earthqu
 
 The earthquake likely occurred on a fault within the Earth's crust"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Create a cocktail recipe.  [/INST]","**Summer Breeze Cocktail**  Ingredients: - 2 ounces Vodka - 1 ounce Pineapple Juice - ½ ounce Lime Juice - ½ ounce Simple Syrup - 1 splash Club Soda - 1 Lime Wedge (for garnish) - 1 Sprig of Mint (for garnish)  Instructions: 1. Fill a shaker with ice. 2. Add the vodka, pineapple juice, lime juice, and simple syrup to the shaker. 3. Shake until well mixed and chilled. 4. Strain the mixture into a glass filled with ice. 5. Top with a splash of club soda. 6. Garnish with a lime wedge and sprig of mint. 7. Sit back, relax, and enjoy your Summer Breeze Cocktail.","  [/INST]  Sure, I'd be happy to help with both! Here are some geoscience-themed cocktail recipes:
 
 1. The Plate Tectonic:
@@ -65,8 +65,8 @@ Instructions:
 2. Add the gin, blue curaçao, lime juice, and simple syrup to the shaker.
 3. Shake well for about 15-20 seconds to combine and chill the"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Is it possible for who has shear Modulus and damping ratio (values) for Shales and Sandstone to share it?
 Will use in site response analysis, the same like (Modulus for clay (Seed and Sun, 1989) and damping for clay (Idriss 1990).  [/INST]","If you use STRATA code (https://nees.org/resources/strata), it has several shear modulus and damping curve as function of plastic index and others geotechnical parameters.","  [/INST]  Sure, I'd be happy to help!
 
@@ -85,8 +85,8 @@ Shear modulus (G) is a measure of the stiffness of a rock material and is define
 Shales:
 Shales are fine-grained, layered sedimentary rocks that are typically composed of clay minerals and silt-sized particles. The shear modulus of shales can range from 10 to 100 MPa, with higher values corresponding to more compact and stiffer materials. For"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Is autotrophic metabolism a narrower category or subdiscipline within phototroph diversity and metabolism in geoscience?  [/INST]","False. The definition of phototroph diversity and metabolism is that 1, while the concept autotrophic metabolism means that 1","  [/INST]  Autotrophic metabolism is a broader category or main discipline within phototroph diversity and metabolism in geoscience.
 
 Autotrophic metabolism refers to the ability of organisms to produce their own organic compounds from inorganic substances using energy from light or chemical reactions, whereas phototroph diversity and metabolism encompasses all the different types of organisms that use light as an energy source to produce organic compounds, including autotrophs, heterotrophs, and mixotrophs.
@@ -95,8 +95,8 @@ Autotrophic metabolism includes all the metabolic pathways and processes that oc
 
 Phototroph diversity and metabolism in geoscience encompasses a wide range of topics, including the evolution, distribution, and activity of phototrophic organisms in different environments, the biochemistry and physiology of photosynthesis and other phototrophic processes, and the role of phototrophs in"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Based on the paragraph given, list down some important points regarding Bhopal cityBhopal (/boʊˈpɑːl/; Hindi: [bʱoːpaːl] ( listen)) is the capital city of the Indian state of Madhya Pradesh and the administrative headquarters of both Bhopal district and Bhopal division. It is known as the City of Lakes due to its various natural and artificial lakes. It is also one of the greenest cities in India. It is the 16th largest city in India and 131st in the world. After the formation of Madhya Pradesh, Bhopal was part of the Sehore district. It was bifurcated in 1972 and a new district, Bhopal, was formed. Flourishing around 1707, the city was the capital of the former Bhopal State, a princely state of the British ruled by the Nawabs of Bhopal. Numerous heritage structures from this period include the Taj-ul-Masajid and Taj Mahal palace. In 1984, the city was struck by the Bhopal disaster, one of the worst industrial disasters in history  [/INST]","1.	Bhopal is the capital city of Madhya Pradesh in India, and the administrative headquarters of both Bhopal district and Bhopal division. 2.	Bhopal is also known as “The city of lakes” . It is also the 16th largest city in India and 131st in the world. 3.	Bhopal was formed as a new district from existing Sehore district in 1972. 4.	In 1707 Bhopal was the capital of the former Bhopal State, which British ruled by the Nawabs of Bhopal. 5.	Bhopal has Numerous heritage structures from 1700’s include the Taj-ul-Masjid and Taj Mahal palace. 6.	One of the worst industrial disasters in history happened in 1984 in Bhopal , also known as Bhopal Disaster.","  [/INST]  Sure, here are some important points regarding Bhopal city based on the provided paragraph:
 
 1. Location: Bhopal is the capital city of Madhya Pradesh and is located in the central part of India.
@@ -113,8 +113,8 @@ Based on the paragraph given, list down some important points regarding Bhopal c
 5. Heritage structures: The city has numerous heritage structures from the period, including the Taj-ul-Masajid and Taj Mahal palace.
 6. Industrial disaster: In 1984, the city was struck by the Bhop"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Can Middle Oceanic Spreading Ridges be swallowed by a subduction zone?
 Middle oceanic ridges are places where new oceanic crust is generated. Does anybody know what happens to these spreading ridges when the oceanic basin starts to be closed? Is there any possibility that the once-active middle oceanic ridge be swallowed into the mantle at a oceanic-continental plate convergence boundary?  [/INST]","Ridge subduction is an obvious phenomena, as oldest ocean floor is only 200-180Mys. And is possibly one of the mechanism to justify the magmatism within the near-trench fore-arc region, which is otherwise a refrigerated zone. We recently, discussed this subject in Early Cretaceous ridge subduction beneath southern Alaska: I...","  [/INST]  Yes, it is possible for a middle oceanic spreading ridge to be consumed by a subduction zone. This process is known as ""ridge-pushed subduction"" or ""slab suction.""
 
@@ -129,8 +129,8 @@ There are several examples of ridge-pushed subduction in the Earth's history, in
 
 In these cases, the once-active middle oceanic"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Could you extract the terms related to earth science mentioned in this passage? The passage: The Christian Democratic Party of Honduras (Spanish: Partido Demócrata Cristiano de Honduras), known by the abbreviation DC, is a political party in Honduras. At the legislative elections, held on 25 November 2001, DC won 3.7% of the popular vote and 3 out of 128 seats in the National Congress. Its candidate at the presidential elections, Marco Orlando Iriarte, won 1.0% of the vote.  [/INST]","Certainly, the mentioned terms related to earth science in the passage are: Spanish, political party, Honduras, legislative elections, held on 25 November 2001, National Congress, presidential.","  [/INST]  Certainly! Here are the geoscience-related terms that can be found in the given passage:
 
 1. Honduras: This is a country located in Central America, known for its geographical features such as mountains, rainforests, and coastal areas.
@@ -144,12 +144,12 @@ Could you extract the terms related to earth science mentioned in this passage? 
 
 I hope this helps! Let me know if you have any other"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 What terms in this passage have a connection to earth science? The passage: The music was composed by Mani Sharma and released by Aditya Music. Best First Film of a Director - V. V. Vinayak; Best Editor - Gowtham Raju; Special Jury Award - Jr. NTR; Best Lyricist - Chandrabose.  [/INST]","The terms connected to earth science in the passage include: Mani Sharma, Aditya Music, Best First Film of a Director, V. V. Vinayak, Best Editor, Special Jury Award, Jr. NTR, Best Lyricist, Chandrabose.","  [/INST]  There are no terms in the passage that have a connection to earth science. The passage is related to the awards and recognition given to individuals in the field of filmmaking, and does not mention any geoscientific concepts or terminology.","  [/INST]  There are no terms in the passage that have a direct connection to earth science. The passage is discussing awards and film credits, and does not mention any geological or earth-related concepts."
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Please tell me a synonym for the word 'coelurosaurs'.  [/INST]",You should see coelurosauria.,"  [/INST]  Sure, I'd be happy to help!
 
 A synonym for the word ""coelurosaurs"" is ""maniraptorans"".
@@ -160,8 +160,8 @@ I hope this helps! Let me know if you have any other questions.","  [/INST]  Cer
 
 So, if you're looking for a word that means the same thing as ""coelurosaurs,"" you can use ""maniraptorans"" instead."
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 What do giant Pandas eats?The giant panda is a bear species endemic to China. It is a Carnivora, the giant panda is a folivore, with bamboo shoots and leaves making up more than 99% of its diet.  [/INST]","the giant panda is a folivore, with bamboo shoots and leaves making up more than 99% of its diet.","  [/INST]  Sure, I'd be happy to help with your geoscience questions! Here's the answer to the question about giant pandas:
 
 Giant pandas are primarily herbivores, which means they eat plants for their food. Specifically, they feed almost exclusively on bamboo, with bamboo shoots and leaves making up more than 99% of their diet. They may also eat other types of grasses and occasional small animals, such as rodents or birds, but bamboo is their main source of nutrition.","  [/INST]  As a geoscientist, I can tell you that giant pandas are primarily herbivores, and their diet consists mainly of bamboo. Bamboo shoots and leaves make up more than 99% of their diet, which is why they spend most of their time eating and digesting bamboo.
@@ -170,8 +170,8 @@ In fact, giant pandas have a specialized digestive system that allows them to br
 
 While giant pandas are technically classified as carnivores, they do not eat meat. They are folivores, meaning that they primarily eat leaves, and their di"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Which of the following sentences about infrared waves is true?They can be used to treat cancerous tumours.They can be used to make images of bones, through the skin.They can be used for cooking.They are used to send communication signals to satellites.  [/INST]","The correct answer is C because: Infrared waves are the type of electromagnetic wave emitted by objects (the hotter the object, the more IR it emits). When infrared waves of sufficient intensity are incident on an object, they cause it to heat up. Infrared waves can, therefore, be used for cooking in ovens. Some students may believe that only microwaves can be used for cooking...clearly they have never used an oven or a toaster. This is more apparent in the Thermal Processes topic, 2.3. A is incorrect as x-rays and γ-rays can be used to treat tumours. B is incorrect as x-rays can be used to make images of bones. D is incorrect as microwaves are used to send communication signals to satellites.","  [/INST]  Sure, I'd be happy to help! Here are the correct answers to the questions related to geoscience:
 
 1. Which of the following sentences about infrared waves is true?
@@ -193,8 +193,8 @@ The other sentences about infrared waves are not true:
 * Infrared waves cannot be used to treat cancerous tumors. While infrared radiation can heat up tissues, it cannot selectively target and destroy cancer cells.
 * Infrared waves are not used for cooking. While infrared ovens do exist, they use a different type of he"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Please tell me the related paper of the Armellinoite-(Ce).  [/INST]","The Armellinoite-(Ce)'s related paper is  1. [START_REF]Cámara, F., Ciriotti, M.E., Kolitsch, U., Bosi, F., Bittarello, E., Brizio, P., Vignola, P. and Blass, G. (2018) Armellinoite-(Ce), IMA 2018-094. CNMNC Newsletter No. 46, December 2018, page 1185. European Journal of Mineralogy, 30, 1181–1189.[END_REF] 2. [START_REF]Cámara, F., Ciriotti, M.E., Kolitsch, U., Bosi, F., Bittarello, E., Brizio, P., Vignola, P., Blass, G. (2021): Armellinoite-(Ce), Ca[END_REF] 3. [START_REF]O, a new mineral species isostructural with pottsite, (Pb3Bi)Bi(VO4)4⋅H2O. Mineralogical Magazine: 85, 901-909.[END_REF]","  [/INST]  As a geoscientist, I'd be happy to help!
 
 Armillinoite-(Ce) is a rare mineral that is not well studied, and there may not be many papers specifically dedicated to it. However, I can suggest a few resources that may be helpful:
@@ -207,8 +207,8 @@ The related paper for Armellinoite-(Ce) is:
 
 * ""Armellinoite-(Ce), a new member of the ferri-allanite group, from the Armellino Mine, Italy"" by P. G. D. R. B. M. Piredda, G. M. G. P. Gatta, and M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M."
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 How do geologists use hydrological data and modeling to support water resources planning and decision-making processes?  [/INST]","Geologists use hydrological data and modeling to support water resources planning and decision-making processes in several ways, including:  1. Assessing water availability: Geologists use hydrological models to assess the quantity and quality of water available in a region. This information helps water managers to plan for water allocation, identify risks related to water scarcity, and ensure that the water supply is sustainable.  2. Identifying groundwater recharge areas: Geologists use hydrological data to identify areas where groundwater can be replenished. This information helps water managers to develop strategies to recharge groundwater resources and avoid depletion.  3. Evaluating water quality: Hydrological data and modeling are used to evaluate the quality of water in a region. This information helps water managers to identify sources of contamination, develop strategies to protect water quality, and ensure that water meets regulatory standards.  4. Predicting flood risks: Geologists use hydrological data and modeling to predict flood risks in a region. This information helps water managers to plan for flood protection measures, develop emergency response plans, and reduce the risk to public safety.  In summary, geologists use hydrological data and modeling to provide critical information for water resources planning and decision-making processes. This information helps water managers to understand the water supply, identify risks, and implement strategies to protect water resources and meet the needs of the community.","  [/INST]  Geologists play a crucial role in water resources planning and decision-making by using hydrological data and modeling to understand the movement and availability of water in the environment. Here are some ways geologists use hydrological data and modeling to support water resources planning and decision-making processes:
 
 1. Water budgeting: Geologists use hydrological data to estimate the amount of water available in a particular region, including the amount of rainfall, evaporation, and groundwater recharge. This information is used to create a water budget, which helps water managers and planners understand the available water resources and make informed decisions about water allocation.
@@ -217,8 +217,8 @@ How do geologists use hydrological data and modeling to support water resources 
 1. Water supply assessment: Geologists use hydrological data such as river discharge, groundwater levels, and precipitation patterns to assess the availability of water resources in a particular region. This information is essential for determining the potential yield of a water source and for evaluating the impact of water withdrawals on the environment.
 2. Water demand forecasting: Geologists use statistical models and hydrological data to forecast future water demand based on factors such as population growth, economic development, and climate change. This information is crucial for water managers to plan for future water needs and to ensure that water resources"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Biological Evolution Today?
 Biological Evolution The scientific theory of evolution by natural selection was proposed by Charles Darwin its book On the Origin of Species (1859). BEFORE DARWIN : Fixism and transformism are adopted by the scientifics to explain the living beings. DARWIN : On the Origin of Species (1859): (Introduction ; CHAPTER I. Variation under Domestication. CHAPTER II. Variation under Nature. CHAPTER III. Struggle for Existence. CHAPTER IV. Natural Selection. CHAPTER V. Laws of Variation. CHAPTER VI. Difficulties on Theory. CHAPTER VII. Instinct. CHAPTER VIII. Hybridism. CHAPTER IX. On the Imperfection of the Geological Record. CHAPTER X. On the Geological Succession of Biological Beings. CHAPTER XI. Geographical Distribution. CHAPTER XII. Geographical Distribution—continued CHAPTER XIII. Mutual Affinities of Organic Beings: Morphology: Embryology: Rudimentary Organs. CHAPTER XIV. Recapitulation and Conclusion. Darwin has published a large number of books and articles on geology, biology, ect .. Today, evolution (Synthetic Theory of Evolution) is based on a very large number of specialty : Paleontology and other Earth sciences, taxonomic, Molecular biology, Ethology, Ecology, Physiology, Cel. Biology, .......... TODAY, HOW RESEARCHERS SEE THE THEORY OF EVOLUTION IN THE LIGHT OF INNUMERABLE DISCOVERIES OF MODERN SCIENCE?  [/INST]","Just a thought; evolution is an essential aspect of a dynamic world, i.e., in which time exists. Let us assume two states, A and B occur at different times. From a dynamics point of view, a stable system will reach an equilibrium point after the introduction of certain disruptions in the system. The disruptions cause the system to undergo transient state, i.e., an evolution from one point (A) to another (B) until it reaches an equilibrium point, thereafter the system state becaomes constant if no further disruption is introduced to it. A world can be viewed as a system with a collection of all matters (animated and unanimated) and energy (in all sorts of forms). From time to time certain species of plants, animals or insects emerge while others disappear, however the total mass-energy remains the same in the system. The animals or plants that continue to exist from state to state must evolve according to the criterion (or criteria) imposed by the system, otherwise, they too will completely disappear and replaced by other forms of objects, whose existence fulfill the crietrion set by the system. The question now becomes, in our world what is this criterion? If we know about this criterion, then it is possible to predict our next evelotuion, and the evolution of our enviornments even before they take place.","  [/INST]  Today, researchers see the theory of evolution in the light of innumerable discoveries of modern science as a robust and well-supported explanation for the diversity of life on Earth. Here are some of the key ways in which modern science has influenced our understanding of evolution:
 
@@ -229,8 +229,8 @@ Biological Evolution The scientific theory of evolution by natural selection was
 1. Molecular Biology: The discovery of DNA structure, genetic code, and the decoding of genomes have provided a molecular basis for evolution. The study of molecular biology has revealed the mechanisms of genetic variation, mutation, and gene flow, which are essential components of the evolutionary process.
 2. Fossil Record: The discovery of numerous fossils and the study of their morphology,"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 What mathematical techniques are employed in the analysis and interpretation of microseismic data for reservoir monitoring?  [/INST]","1. Signal processing: This involves techniques for filtering, time-domain and frequency-domain analysis, normalization, and interpretation of the recorded microseismic signals.  2. Geostatistics: This involves spatial analysis to characterize the distribution of microseismic events in the reservoir, including clustering, spatial correlation, variogram analysis, and kriging interpolation.  3. Inversion techniques: This involves the inversion of microseismic data to obtain information on the location, geometry, and magnitude of the source of events, based on models and assumptions about the velocity structure of the subsurface.  4. Statistical analysis: This involves the use of statistical methods for data reduction, hypothesis testing, regression analysis, and modeling of the relationship between microseismic data and other variables of interest, such as reservoir properties and production performance.  5. Machine learning: This involves the use of machine learning algorithms for pattern recognition, classification, clustering, and prediction of microseismic data, based on training data and input feature selection.","  [/INST]  Microseismic data analysis for reservoir monitoring involves a range of mathematical techniques to extract useful information from the data. Some of the commonly used techniques include:
 
 1. Time-frequency analysis: This technique is used to analyze the time-varying frequency content of the microseismic signals. Time-frequency analysis techniques such as short-time Fourier transform (STFT), continuous wavelet transform (CWT), and stockwell transform can be used to identify the changes in the frequency content of the signals over time.
@@ -240,8 +240,8 @@ What mathematical techniques are employed in the analysis and interpretation of 
 1. Time-frequency analysis: This technique is used to analyze the time-varying frequency content of microseismic signals. Short-time Fourier transform (STFT), continuous wavelet transform (CWT), and wavelet packet transform (WPT) are commonly used techniques for time-frequency analysis. These techniques help identify the changes in frequency content of the signals over time, which can be useful in monitoring reservoir dynamics.
 2. Time-series analysis: Time-series analysis is used to model and forecast the behavior of microseismic signals over time. Techniques such as autoregressive (AR), moving average (MA), and autoregressive moving average (AR"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Name three common sources of energy that can be used to generate electricity.  [/INST]","Three common sources of energy that can be used to generate electricity are: 1. Fossil fuels: Coal, oil, and natural gas are the most widely-used sources for generating electricity. They are burned in power plants to heat water and create steam, which drives turbines to generate electricity.  2. Renewable energy: Renewable sources such as solar, wind, geothermal, hydroelectric, and biomass can also be used to generate electricity. Solar panels, wind turbines, and hydroelectric dams use the energy from the sun, wind, and water to create electricity, while geothermal power plants use the heat from the earth.  3. Nuclear energy: Nuclear energy is another common source of electricity. Nuclear power plants use the heat generated from nuclear reactions to create steam, which drives turbines to generate electricity.","  [/INST]  Sure, I'd be happy to help! Here are three common sources of energy that can be used to generate electricity:
 
 1. Fossil Fuels: Fossil fuels, such as coal, natural gas, and oil, are burned to produce electricity. These fuels are abundant and have been used for centuries to generate power.
@@ -252,8 +252,8 @@ Name three common sources of energy that can be used to generate electricity.  [
 2. Hydroelectric Power: Hydroelectric power is generated by harnessing the energy of moving water. Water is stored behind a dam and released through turbines, which generate electricity as the water flows through them. This source of energy is renewable and has a low carbon footprint.
 3. Geothermal Energy: Geothermal energy is generated by harnessing the heat from the Earth's interior. Hot water or steam from underground reservoirs"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 Run a sentiment analysis on the tweet.Love the new update!  [/INST]","The sentiment analysis of the tweet ""Love the new update!"" is positive.","  [/INST]  Certainly! As a geoscientist, I'd be happy to help answer any questions you have related to geoscience.
 
 Regarding the tweet ""Love the new update!"", I would classify the sentiment as positive. The use of the word ""love"" indicates a strong positive emotion, and the exclamation mark suggests excitement or enthusiasm. The fact that the tweet is expressing appreciation for a ""new update"" suggests that the person is happy with the latest development or change. Overall, the sentiment of the tweet is overwhelmingly positive.","  [/INST]  Certainly! As a geoscientist, I can analyze the sentiment of the tweet using geoscience-related keywords and concepts.
@@ -268,8 +268,8 @@ Overall, the sentiment of the tweet is positive, with a strong emphasis on love 
 
 Using a geoscience-specific sentiment analysis tool, such as Ge"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 What information do you have about titles, styles and honours in the context of princess christina of the netherlands?  [/INST]","With regard to titles, styles and honours and its relevance to princess christina of the netherlands, ","  [/INST]  I apologize, but I'm a large language model, I do not have information about titles, styles, and honors in the context of Princess Christina of the Netherlands as I am not trained to provide information about specific individuals or their personal details. My training data is focused on providing general information about geoscience and related topics.
 
 However, I can suggest some possible sources of information about Princess Christina of the Netherlands and her titles, styles, and honors. You may be able to find this information on websites of official royal households, government websites, or reputable online biographical databases. Some examples include:
@@ -292,8 +292,8 @@ Styles:
 * Her Royal Highness Princess Christina of the Netherlands (dutch: Koninklijke Hoogheid Prinses Christina der Nederlanden)
 * Princess Christina of Orange-Nassau, van Vollenh"
 "<s>[INST] <<SYS>>
-Please answer the questions related to geoscience.
-<</SYS>>
+
+
 You are given a question on high school biology. You are also given 4 answer options (associated with ""A"", ""B"", ""C"", ""D""), out of which only one is correct. You need to answer the question by selecting the correct option. You should only answer with the choice letter, not the whole answer.
 The upper forelimbs of humans and bats have fairly similar skeletal structures, whereas the corresponding bones in whales have very different shapes and proportions. However, genetic data suggest that all three kinds of organisms diverged from a common ancestor at about the same time. Which of the following is the most likely explanation for these data?
 Choose from:
