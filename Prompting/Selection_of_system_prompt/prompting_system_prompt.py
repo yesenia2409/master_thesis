@@ -102,7 +102,7 @@ if __name__ == "__main__":
                          # "You are an expert in geology, geography and environmental science"]
     max_new_tokens = 200
     output_dir = "Selection_of_system_prompt/Output_files/"
-    output_filename = f"03_system_prompt_test_{count_samples}samples_{seed}seed.csv"
+    output_filename = f"04_system_prompt_test_{count_samples}samples_{seed}seed.csv"
     output_path = os.path.join(output_dir, output_filename)
     print(output_path)
     # Functions
