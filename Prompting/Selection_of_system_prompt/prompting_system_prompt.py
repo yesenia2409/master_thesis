@@ -86,7 +86,11 @@ if __name__ == "__main__":
     model_name = "meta-llama/Llama-2-13b-chat-hf"
     count_samples = 20
     seed = 33
-    list_system_input = ["Please answer the following geoscience question.", "Your job is to answer the following question related to geosicence.", "Do your best to answer the following geoscience question.", "Take your time to answer the geoscience question."]
+    list_system_input = ["You are a natural scientist.", "Activate your science knowledge to answer the following question.", "You are an earth scientist and use your knowledge to answer this question: "] 
+                         # "Please answer the following geoscience question.", 
+                         # "Your job is to answer the following question related to geosicence.", 
+                         # "Do your best to answer the following geoscience question.", 
+                         # "Take your time to answer the geoscience question."]
                          # "Please answer the questions related to geoscience.", 
                          # "Please use your geosience knowledge to answer the questions."]
                          # "You are a geoscience expert.",
