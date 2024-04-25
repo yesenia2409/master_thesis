@@ -67,6 +67,6 @@ def plot_human_eval_res(file_path):
 
 
 if __name__ == "__main__":
-    file_input = "Annotated_files/proof_of_concept_meta-llama-Llama-2-13b-chat-hf_50samples_33seed_annotated.xlsx"
+    file_input = "Proof_Of_Concept/Annotated_files/proof_of_concept_meta-llama-Llama-2-13b-chat-hf_50samples_33seed_annotated.xlsx"
     plot_win_rate(file_input)
     plot_human_eval_res(file_input)

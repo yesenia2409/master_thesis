@@ -61,7 +61,7 @@ def apply_template(df, system_text, save_path):
 if __name__ == "__main__":
     # Variables
     file_url = 'https://raw.githubusercontent.com/davendw49/k2/main/data/geosignal/geosignal.json'
-    input_path = 'Input_files/geosignal.json'
+    input_path = 'Adjusting_Dataset/Input_files/geosignal.json'
     save_path = 'Output_files/geosignal'
     system_prompt = 'Please answer the questions related to geoscience.'
 
