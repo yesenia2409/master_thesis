@@ -105,6 +105,7 @@ if __name__ == "__main__":
     output_filename = f"04_system_prompt_test_{count_samples}samples_{seed}seed.csv"
     output_path = os.path.join(output_dir, output_filename)
     print(output_path)
+
     # Functions
     gold_labels, raw_prompts = prompting_proof_of_concept.create_dataset(dataset, count_samples, seed)
     print("create_dataset() done!")
