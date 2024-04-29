@@ -53,7 +53,7 @@ def apply_template(df, system_text, save_path):
     """
     for idx, prompt in enumerate(df['instruction']):
         df['instruction'][idx] = f"<s>[INST] <<SYS>>\n{system_text}\n<</SYS>>\n{prompt} [/INST]"
-
+    print(df)
     df.to_pickle(f"{save_path}.pkl")
     df.to_csv(f"{save_path}.csv", index=False)
 
@@ -61,12 +61,28 @@ def apply_template(df, system_text, save_path):
 if __name__ == "__main__":
     # Variables
     file_url = 'https://raw.githubusercontent.com/davendw49/k2/main/data/geosignal/geosignal.json'
-    input_path = 'Adjusting_Dataset/Input_files/geosignal.json'
-    save_path = 'Output_files/geosignal'
+    input_path = '../Adjusting_Dataset/Input_files/geosignal.json'
+    save_path = '../Adjusting_Dataset/Output_files/geosignal'
     system_prompt = 'Please answer the questions related to geoscience.'
 
     # Functions
-    load_json(file_url, input_path)
-    df = modify_df(input_path)
-    apply_template(df, system_prompt, save_path)
+    # load_json(file_url, input_path)
+    # df = modify_df(input_path)
+    # apply_template(df, system_prompt, save_path)
+
+    df = pd.read_pickle(f"{save_path}.pkl")
+    print(set(df["type"]))
+
+    # counter_geo = 0
+    # counter_inst = 0
+    # for elem in df["type"]:
+    #     if elem == "geo" or elem == "geoqa" or elem == "self":
+    #         counter_geo += 1
+    #     elif elem == "dolly" or elem == "alpaca-gpt4" or elem == "arc" or elem == "NI":
+    #        counter_inst += 1
+    #     else:
+    #         print(elem)
+    # res = counter_geo + counter_inst
+    # print(counter_geo, counter_inst)
+
 
