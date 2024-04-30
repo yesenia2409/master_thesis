@@ -20,20 +20,30 @@ ACCESS_TOKEN = "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"
 # Dataset preparation
 def load_data(dataset_path):
     df = pd.read_pickle(f"{dataset_path}.pkl")
-    train_set, validation_set, test_set = create_data_split(df)
-    return train_set, validation_set, test_set
+
+    df_human = df[df['type'].isin(["geo", "geoqa", "self"])]
+    df_expert = df[df['type'].isin(["dolly", "alpaca-gpt4", "arc", "NI"])]
+
+    train_set_human, validation_set_human, test_set_human = create_data_split(df_human, human=True)
+    train_set_expert, validation_set_expert, test_set_expert = create_data_split(df_expert, human=False)
+    return train_set_human, validation_set_human, test_set_human, train_set_expert, validation_set_expert, test_set_expert
 
 
-def create_data_split(dataset):
+def create_data_split(dataset, human=True):
     # Stratified sampling to keep type balance
     train_set, test_set = train_test_split(dataset, test_size=0.1, stratify=dataset["type"], random_state=42)
-    save_data_split(test_set, "test_set")
-
     train_set, validation_set = train_test_split(train_set, test_size=0.1, stratify=train_set["type"], random_state=42)
-    save_data_split(train_set, "train_set")
-    save_data_split(validation_set, "validation_set")
 
-    print(len(train_set), len(train_set), len(validation_set), len(dataset))
+    if human:
+        save_data_split(test_set, "test_set_human")
+        save_data_split(train_set, "train_set_human")
+        save_data_split(validation_set, "validation_set_human")
+    else:
+        save_data_split(test_set, "test_set_expert")
+        save_data_split(train_set, "train_set_expert")
+        save_data_split(validation_set, "validation_set_expert")
+
+    print(len(train_set), len(test_set), len(validation_set), len(dataset))
     return train_set, validation_set, test_set
 
 
@@ -66,17 +76,16 @@ def create_model_and_tokenizer():
     return model, tokenizer
 
 
-
 if __name__ == "__main__":
     full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
-    train_set, validation_set, test_set = load_data(full_dataset_path)
+    train_h, val_h, test_h, train_e, val_e, test_e = load_data(full_dataset_path)
 
-    model, tokenizer = create_model_and_tokenizer()
-    model.config.use_cache = False
-    model.config.quantization_config.to_dict()
+    # model, tokenizer = create_model_and_tokenizer()
+    # model.config.use_cache = False
+    # model.config.quantization_config.to_dict()
 
-    for name, param in model.named_parameters():
-        print(f"{name}   Modelsize: {param.numel()/1000**2:.1f}M parameters")
+    # for name, param in model.named_parameters():
+    #    print(f"{name}   Modelsize: {param.numel()/1000**2:.1f}M parameters")
 
     peft_config = LoraConfig(
         r=16,
@@ -109,14 +118,14 @@ if __name__ == "__main__":
     )
 
     trainer = SFTTrainer(
-        model=model,
+        # model=model,
         train_dataset=train_set,
         eval_dataset=validation_set,
         peft_config=peft_config,
         max_seq_length=1024,
-        tokenizer=tokenizer,
+        # tokenizer=tokenizer,
         args=training_arguments,
     )
 
-    trainer.train()
-    trainer.save_model('model_ft/fine_tuned_llama-7B')
+    # trainer.train()
+    # trainer.save_model('model_ft/fine_tuned_llama-7B')
