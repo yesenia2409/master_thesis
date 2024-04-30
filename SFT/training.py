@@ -13,7 +13,7 @@ from trl import SFTTrainer
 
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "meta-llama/Llama-2-13b-chat-hf"
-OUTPUT_DIR = "Model/Checkpoints/"
+OUTPUT_DIR = "Model"
 ACCESS_TOKEN = "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"
 
 
@@ -24,9 +24,8 @@ def load_data(dataset_path):
     df_human = df[df['type'].isin(["geo", "geoqa", "self"])]
     df_expert = df[df['type'].isin(["dolly", "alpaca-gpt4", "arc", "NI"])]
 
-    train_set_human, validation_set_human, test_set_human = create_data_split(df_human, human=True)
-    train_set_expert, validation_set_expert, test_set_expert = create_data_split(df_expert, human=False)
-    return train_set_human, validation_set_human, test_set_human, train_set_expert, validation_set_expert, test_set_expert
+    create_data_split(df_human, human=True)
+    create_data_split(df_expert, human=False)
 
 
 def create_data_split(dataset, human=True):
@@ -44,7 +43,6 @@ def create_data_split(dataset, human=True):
         save_data_split(validation_set, "validation_set_expert")
 
     print(len(train_set), len(test_set), len(validation_set), len(dataset))
-    return train_set, validation_set, test_set
 
 
 def save_data_split(data_set, name):
@@ -77,15 +75,23 @@ def create_model_and_tokenizer():
 
 
 if __name__ == "__main__":
-    full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
-    train_h, val_h, test_h, train_e, val_e, test_e = load_data(full_dataset_path)
+    # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
+    # train_h, val_h, test_h, train_e, val_e, test_e = load_data(full_dataset_path)
 
-    # model, tokenizer = create_model_and_tokenizer()
-    # model.config.use_cache = False
-    # model.config.quantization_config.to_dict()
+    train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
+    train_h = pd.read_pickle("Input_files/train_set_human.pkl")
+    val_e = pd.read_pickle("Input_files/validation_set_expert.pkl")
+    val_h = pd.read_pickle("Input_files/validation_set_human.pkl")
 
-    # for name, param in model.named_parameters():
-    #    print(f"{name}   Modelsize: {param.numel()/1000**2:.1f}M parameters")
+    # test_e = pd.read_pickle("Input_files/test_set_expert.pkl")
+    # test_h = pd.read_pickle("Input_files/test_set_human.pkl")
+
+    model, tokenizer = create_model_and_tokenizer()
+    model.config.use_cache = False
+    model.config.quantization_config.to_dict()
+
+    for name, param in model.named_parameters():
+        print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
 
     peft_config = LoraConfig(
         r=16,
@@ -111,7 +117,7 @@ if __name__ == "__main__":
         warmup_ratio=0.05,
         save_strategy="epoch",
         group_by_length=True,
-        output_dir=OUTPUT_DIR,
+        output_dir=f"{OUTPUT_DIR}/Checkpoints/",
         save_safetensors=True,
         lr_scheduler_type="cosine",
         seed=42,
@@ -119,13 +125,13 @@ if __name__ == "__main__":
 
     trainer = SFTTrainer(
         # model=model,
-        train_dataset=train_set,
-        eval_dataset=validation_set,
+        train_dataset=train_h[:2],
+        eval_dataset=val_h[:2],
         peft_config=peft_config,
         max_seq_length=1024,
         # tokenizer=tokenizer,
         args=training_arguments,
     )
 
-    # trainer.train()
-    # trainer.save_model('model_ft/fine_tuned_llama-7B')
+    trainer.train()
+    trainer.save_model(f"{OUTPUT_DIR}/Model/")
