@@ -10,10 +10,11 @@ from transformers import (
     TrainingArguments,
 )
 from trl import SFTTrainer
+from datasets import Dataset
 
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "meta-llama/Llama-2-13b-chat-hf"
-OUTPUT_DIR = "Model"
+OUTPUT_DIR = "Model/"
 ACCESS_TOKEN = "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"
 
 
@@ -122,17 +123,20 @@ if __name__ == "__main__":
         warmup_ratio=0.05,
         save_strategy="epoch",
         group_by_length=True,
-        output_dir=f"{OUTPUT_DIR}/Checkpoints/",
+        output_dir=OUTPUT_DIR,
         save_safetensors=True,
         lr_scheduler_type="cosine",
         seed=42,
     )
 
+    train = Dataset.from_pandas(train_h[:2])
+    val = Dataset.from_pandas(val_h[:2])
+
     trainer = SFTTrainer(
         model=model,
         dataset_text_field="text",
-        train_dataset=train_h[:2],
-        eval_dataset=val_h[:2],
+        train_dataset=train,
+        eval_dataset=val,
         peft_config=peft_config,
         max_seq_length=1024,
         tokenizer=tokenizer,
@@ -140,4 +144,14 @@ if __name__ == "__main__":
     )
 
     trainer.train()
-    trainer.save_model(f"{OUTPUT_DIR}/Model/")
+
+    # Saving
+    trainer.save_model()
+    trained_model = AutoPeftModelForCausalLM.from_pretrained(
+    OUTPUT_DIR,
+    low_cpu_mem_usage=True,
+    )
+
+    merged_model = trained_model.merge_and_unload()
+    merged_model.save_pretrained("merged_model", safe_serialization=True)
+    tokenizer.save_pretrained("merged_model")
