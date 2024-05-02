@@ -90,8 +90,8 @@ if __name__ == "__main__":
     model.config.use_cache = False
     model.config.quantization_config.to_dict()
 
-    for name, param in model.named_parameters():
-        print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
+    # for name, param in model.named_parameters():
+    #     print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
 
     peft_config = LoraConfig(
         r=16,
@@ -124,13 +124,14 @@ if __name__ == "__main__":
     )
 
     trainer = SFTTrainer(
-        # model=model,
+        model=model,
         train_dataset=train_h[:2],
         eval_dataset=val_h[:2],
         peft_config=peft_config,
         max_seq_length=1024,
-        # tokenizer=tokenizer,
+        tokenizer=tokenizer,
         args=training_arguments,
+	packing=True,
     )
 
     trainer.train()
