@@ -20,12 +20,17 @@ ACCESS_TOKEN = "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"
 # Dataset preparation
 def load_data(dataset_path):
     df = pd.read_pickle(f"{dataset_path}.pkl")
+    create_text_column(df)
 
-    df_human = df[df['type'].isin(["geo", "geoqa", "self"])]
-    df_expert = df[df['type'].isin(["dolly", "alpaca-gpt4", "arc", "NI"])]
+    df_expert = df[df['type'].isin(["geo", "geoqa", "self"])]
+    df_human = df[df['type'].isin(["dolly", "alpaca-gpt4", "arc", "NI"])]
 
     create_data_split(df_human, human=True)
     create_data_split(df_expert, human=False)
+
+
+def create_text_column(df):
+    df['text'] = df.apply(lambda row: row['instruction'] + " " + row['output'] + " </s>", axis=1)
 
 
 def create_data_split(dataset, human=True):
@@ -75,8 +80,8 @@ def create_model_and_tokenizer():
 
 
 if __name__ == "__main__":
-    # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
-    # train_h, val_h, test_h, train_e, val_e, test_e = load_data(full_dataset_path)
+    full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
+    load_data(full_dataset_path)
 
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
@@ -125,13 +130,13 @@ if __name__ == "__main__":
 
     trainer = SFTTrainer(
         model=model,
+        dataset_text_field="text",
         train_dataset=train_h[:2],
         eval_dataset=val_h[:2],
         peft_config=peft_config,
         max_seq_length=1024,
         tokenizer=tokenizer,
         args=training_arguments,
-	packing=True,
     )
 
     trainer.train()
