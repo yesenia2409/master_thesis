@@ -11,6 +11,7 @@ from transformers import (
 )
 from trl import SFTTrainer
 from datasets import Dataset
+import matplotlib.pyplot as plt
 
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "meta-llama/Llama-2-13b-chat-hf"
@@ -73,6 +74,9 @@ def create_model_and_tokenizer():
         token=ACCESS_TOKEN,
     )
 
+    model.config.use_cache = False
+    model.config.quantization_config.to_dict()
+
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"
@@ -80,9 +84,26 @@ def create_model_and_tokenizer():
     return model, tokenizer
 
 
+def print_layers(model):
+    for name, param in model.named_parameters():
+        print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
+
+
+def plot_loss(train_loss, save_path):
+    plt.plot(train_loss, label='Loss')
+
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.title('Training Loss')
+
+    plt.legend()
+
+    plt.savefig(save_path)
+
+
 if __name__ == "__main__":
-    full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
-    load_data(full_dataset_path)
+    # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
+    # load_data(full_dataset_path)
 
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
@@ -93,44 +114,40 @@ if __name__ == "__main__":
     # test_h = pd.read_pickle("Input_files/test_set_human.pkl")
 
     model, tokenizer = create_model_and_tokenizer()
-    model.config.use_cache = False
-    model.config.quantization_config.to_dict()
 
-    # for name, param in model.named_parameters():
-    #     print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
+    # print_layers(model)
 
-    peft_config = LoraConfig(
+    peft_config = LoraConfig( # Settings chosen as here: https://github.com/meta-llama/llama-recipes/blob/main/src/llama_recipes/configs/peft.py
         r=16,
         lora_alpha=32,
         lora_dropout=0.05,
-        target_modules=["q_proj", "up_proj", "o_proj", "k_proj", "down_proj", "gate_proj", "v_proj"],
+        target_modules=["q_proj", "v_proj"],
         bias="none",
         task_type="CAUSAL_LM",
     )
 
-    training_arguments = TrainingArguments(
-        per_device_train_batch_size=4,
-        per_device_eval_batch_size=4,
-        gradient_accumulation_steps=4,
-        optim="adamw_torch",
-        logging_steps=20,
-        learning_rate=1e-4,
-        fp16=True,
-        max_grad_norm=0.3,
-        num_train_epochs=1,
+    training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/daniel-furman/sft-demos/blob/main/src/peft/llama-2/peft_Llama_2_13B_Instruct_v0_2.ipynb
+        output_dir=OUTPUT_DIR,
+        num_train_epochs=2,
+        auto_find_batch_size=True,
+        gradient_accumulation_steps=2,
+        optim="paged_adamw_32bit",
+        save_strategy="epoch",
+        learning_rate=4e-4,
+        lr_scheduler_type="cosine",
+        warmup_ratio=0.03,
+        logging_strategy="steps",
+        logging_steps=25,
         evaluation_strategy="steps",
         eval_steps=0.2,
-        warmup_ratio=0.05,
-        save_strategy="epoch",
-        group_by_length=True,
-        output_dir=OUTPUT_DIR,
         save_safetensors=True,
-        lr_scheduler_type="cosine",
         seed=42,
+        fp16=True,
+        weight_decay=0.1,  # Llama paper
     )
 
-    train = Dataset.from_pandas(train_h[:2])
-    val = Dataset.from_pandas(val_h[:2])
+    train = Dataset.from_pandas(train_h[:200])
+    val = Dataset.from_pandas(val_h[:200])
 
     trainer = SFTTrainer(
         model=model,
@@ -138,18 +155,21 @@ if __name__ == "__main__":
         train_dataset=train,
         eval_dataset=val,
         peft_config=peft_config,
-        max_seq_length=1024,
+        max_seq_length=512,   # 4096 in Llama paper
         tokenizer=tokenizer,
         args=training_arguments,
     )
 
-    trainer.train()
+    train_result = trainer.train()
+
+    train_losses = train_result.metrics["train_loss"]
+    plot_loss(train_losses, f'Output_files/training_loss_plot_{training_arguments.learning_rate}_{peft_config.target_modules}.png')
 
     # Saving
     trainer.save_model()
     trained_model = AutoPeftModelForCausalLM.from_pretrained(
-    OUTPUT_DIR,
-    low_cpu_mem_usage=True,
+        OUTPUT_DIR,
+        low_cpu_mem_usage=True,
     )
 
     merged_model = trained_model.merge_and_unload()

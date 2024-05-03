@@ -12,7 +12,7 @@ repackage.up()
 import torch
 import os
 import pandas as pd
-from Proof_Of_Concept import prompting_proof_of_concept
+from Proof_Of_Concept import proof_of_concept
 
 
 def inference(model, tokenizer, prompts, labels, system_text, max_new_tokens):
@@ -33,7 +33,7 @@ def inference(model, tokenizer, prompts, labels, system_text, max_new_tokens):
     input_list = []
     label_list = []
 
-    adjusted_prompts = prompting_proof_of_concept.adjust_prompts(prompts, system_text)
+    adjusted_prompts = proof_of_concept.adjust_prompts(prompts, system_text)
 
     # inference
     with torch.no_grad():
@@ -107,9 +107,9 @@ if __name__ == "__main__":
     print(output_path)
 
     # Functions
-    gold_labels, raw_prompts = prompting_proof_of_concept.create_dataset(dataset, count_samples, seed)
+    gold_labels, raw_prompts = proof_of_concept.create_dataset(dataset, count_samples, seed)
     print("create_dataset() done!")
-    model, tokenizer = prompting_proof_of_concept.load_model(model_name)
+    model, tokenizer = proof_of_concept.load_model(model_name)
     print("load_model() done!")
 
     for index, system_input in enumerate(list_system_input):
