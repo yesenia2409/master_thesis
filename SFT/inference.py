@@ -22,6 +22,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     # model.half()
     model.eval()
     # model.to("cuda")
+    # model = model.merge_and_unload()
 
     pred_list = []
     input_list = []
@@ -34,7 +35,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
             txt_tokens = encode_dict["input_ids"].cuda()
             attention_mask = encode_dict["attention_mask"].cuda()
             kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
-            summ_tokens = model.generate(txt_tokens, attention_mask=attention_mask, **kwargs)
+            summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
             pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].replace("<|endoftext|>", "")
             pred_list.append(pred)

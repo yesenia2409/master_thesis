@@ -117,33 +117,36 @@ if __name__ == "__main__":
 
     # print_layers(model)
 
-    peft_config = LoraConfig( # Settings chosen as here: https://github.com/meta-llama/llama-recipes/blob/main/src/llama_recipes/configs/peft.py
-        r=16,
-        lora_alpha=32,
+    peft_config = LoraConfig( # s.u.
+        r=8,
+        lora_alpha=16,
         lora_dropout=0.05,
-        target_modules=["q_proj", "v_proj"],
+        target_modules=["q_proj", "v_proj", "k_proj"],
         bias="none",
         task_type="CAUSAL_LM",
     )
 
-    training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/daniel-furman/sft-demos/blob/main/src/peft/llama-2/peft_Llama_2_13B_Instruct_v0_2.ipynb
+    training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         output_dir=OUTPUT_DIR,
-        num_train_epochs=2,
-        auto_find_batch_size=True,
-        gradient_accumulation_steps=2,
+        num_train_epochs=1,
+        per_device_train_batch_size=2,
+        per_device_eval_batch_size=2,
+        gradient_accumulation_steps=16,
         optim="paged_adamw_32bit",
         save_strategy="epoch",
-        learning_rate=4e-4,
-        lr_scheduler_type="cosine",
+        learning_rate=2e-4,
+        lr_scheduler_type="cosine_with_warmup",
         warmup_ratio=0.03,
+        warmup_steps=100,
         logging_strategy="steps",
-        logging_steps=25,
+        logging_steps=50,
         evaluation_strategy="steps",
         eval_steps=0.2,
         save_safetensors=True,
         seed=42,
-        fp16=True,
-        weight_decay=0.1,  # Llama paper
+        bf16=True,
+        weight_decay=0.01,
+        use_reentrant=False
     )
 
     train = Dataset.from_pandas(train_h[:200])
@@ -163,7 +166,7 @@ if __name__ == "__main__":
     train_result = trainer.train()
 
     train_losses = train_result.metrics["train_loss"]
-    plot_loss(train_losses, f'Output_files/training_loss_plot_{training_arguments.learning_rate}_{peft_config.target_modules}.png')
+    plot_loss(train_losses, f'Output_files/training_loss_plot_{training_arguments.learning_rate}.png')
 
     # Saving
     trainer.save_model()
