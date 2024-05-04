@@ -128,14 +128,14 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         output_dir=OUTPUT_DIR,
-        num_train_epochs=1,
+        num_train_epochs=3,
         per_device_train_batch_size=2,
         per_device_eval_batch_size=2,
         gradient_accumulation_steps=16,
         optim="paged_adamw_32bit",
         save_strategy="epoch",
         learning_rate=2e-4,
-        lr_scheduler_type="cosine_with_warmup",
+        lr_scheduler_type="cosine",
         warmup_ratio=0.03,
         warmup_steps=100,
         logging_strategy="steps",
@@ -146,7 +146,7 @@ if __name__ == "__main__":
         seed=42,
         bf16=True,
         weight_decay=0.01,
-        use_reentrant=False
+        # use_reentrant=False
     )
 
     train = Dataset.from_pandas(train_h[:200])
@@ -164,17 +164,18 @@ if __name__ == "__main__":
     )
 
     train_result = trainer.train()
-
+    print(train_result)
     train_losses = train_result.metrics["train_loss"]
+
     plot_loss(train_losses, f'Output_files/training_loss_plot_{training_arguments.learning_rate}.png')
 
     # Saving
-    trainer.save_model()
-    trained_model = AutoPeftModelForCausalLM.from_pretrained(
-        OUTPUT_DIR,
-        low_cpu_mem_usage=True,
-    )
+    # trainer.save_model()
+    # trained_model = AutoPeftModelForCausalLM.from_pretrained(
+    #     OUTPUT_DIR,
+    #    low_cpu_mem_usage=True,
+    # )
 
-    merged_model = trained_model.merge_and_unload()
-    merged_model.save_pretrained("merged_model", safe_serialization=True)
-    tokenizer.save_pretrained("merged_model")
+    # merged_model = trained_model.merge_and_unload()
+    # merged_model.save_pretrained("merged_model", safe_serialization=True)
+    # tokenizer.save_pretrained("merged_model")

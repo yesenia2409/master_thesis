@@ -19,4 +19,4 @@ conda activate thesis
 module load devel/cuda/11.6
 
 # call python script
-python3 -u inference.py
+python3 -u training.py
