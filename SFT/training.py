@@ -12,6 +12,8 @@ from transformers import (
 from trl import SFTTrainer
 from datasets import Dataset
 import matplotlib.pyplot as plt
+import argparse
+
 
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "meta-llama/Llama-2-13b-chat-hf"
@@ -117,6 +119,11 @@ if __name__ == "__main__":
 
     # print_layers(model)
 
+    # Args from sh script
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--lr", type=float, required=True)
+    args = parser.parse_args()
+
     peft_config = LoraConfig( # s.u.
         r=8,
         lora_alpha=16,
@@ -128,13 +135,13 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         output_dir=OUTPUT_DIR,
-        num_train_epochs=3,
+        num_train_epochs=2,
         per_device_train_batch_size=2,
         per_device_eval_batch_size=2,
         gradient_accumulation_steps=16,
         optim="paged_adamw_32bit",
         save_strategy="epoch",
-        learning_rate=2e-4,
+        learning_rate=args.lr,
         lr_scheduler_type="cosine",
         warmup_ratio=0.03,
         warmup_steps=100,
@@ -164,9 +171,10 @@ if __name__ == "__main__":
     )
 
     train_result = trainer.train()
-    print(train_result)
+    # print(train_result)
     train_losses = train_result.metrics["train_loss"]
 
+    print("train loss:", args.lr, " produced ", train_losses)
     plot_loss(train_losses, f'Output_files/training_loss_plot_{training_arguments.learning_rate}.png')
 
     # Saving
