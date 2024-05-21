@@ -83,5 +83,5 @@ def plot_loss_over_time():
 
 
 if __name__ == "__main__":
-    # plot_loss_over_learning_rate()
-    # plot_loss_over_time()
+    plot_loss_over_learning_rate()
+    plot_loss_over_time()

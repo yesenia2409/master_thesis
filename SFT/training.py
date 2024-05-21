@@ -93,7 +93,8 @@ def print_layers(model):
 
 
 def plot_loss(train_loss, save_path):
-    plt.plot(train_loss, label='Loss')
+    df = pd.DataFrame(trainer.state.log_history)
+    plt.plot(df, label='Loss')
 
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
