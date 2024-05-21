@@ -124,6 +124,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--lr", type=float, required=True)
     args = parser.parse_args()
+    lr_scientific = "{:.2E}".format(Decimal(args.lr)).replace(".", "_")
 
     peft_config = LoraConfig( # s.u.
         r=8,
@@ -135,7 +136,7 @@ if __name__ == "__main__":
     )
 
     training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
-        output_dir=OUTPUT_DIR,
+        output_dir=f"{OUTPUT_DIR}{lr_scientific}",
         num_train_epochs=2,
         per_device_train_batch_size=2,
         per_device_eval_batch_size=2,
@@ -174,17 +175,16 @@ if __name__ == "__main__":
     train_result = trainer.train()
     print(train_result)
     train_losses = train_result.metrics["train_loss"]
-    lr_scientific = "{:.2E}".format(Decimal(training_arguments.learning_rate)).replace(".", "_")
     print("train loss:", args.lr, " produced ", train_losses)
     plot_loss(train_losses, f'Output_files/training_loss_plot_{lr_scientific}.png')
 
     # Saving
     trainer.save_model()
-    trained_model = AutoPeftModelForCausalLM.from_pretrained(
-        f"{OUTPUT_DIR}{lr_scientific}",
-        low_cpu_mem_usage=True,
-    )
+    # trained_model = AutoPeftModelForCausalLM.from_pretrained(
+    #     f"{OUTPUT_DIR}{lr_scientific}",
+    #    low_cpu_mem_usage=True,
+    # )
 
-    merged_model = trained_model.merge_and_unload()
-    merged_model.save_pretrained(f"merged_model/{lr_scientific}", safe_serialization=True)
-    tokenizer.save_pretrained(f"merged_model/{lr_scientific}")
+    # merged_model = trained_model.merge_and_unload()
+    # merged_model.save_pretrained(f"merged_model/{lr_scientific}", safe_serialization=True)
+    # tokenizer.save_pretrained(f"merged_model/{lr_scientific}")
