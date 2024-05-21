@@ -1,0 +1,91 @@
+input,gold,pred
+"Identify which instrument is string or percussion: Kenong, Zeze ","Zeze is string, Kenong is percussion.","  and Kpanlogo.
+
+Kenong is a string instrument.
+Zeze "
+"Could you clarify the origin time of the M 4.7 - 19km NW of Truckee, CA for me? ","Certainly, the M 4.7 - 19km NW of Truckee, CA's origin time is 2021-05-07 04:35:14.150 UTC.","  Sure! The origin time of the M 4.7 - 19km NW of Truckee, CA earthquake is not explicitly stated in the information provided. However, based on the date and time of the earthquake, it is likely that the origin time is referring to the time when the earthquake occurred.
+
+The date and time of the earthquake are:
+
+* Date: March 22, 2023
+* Time: 10:36:43 UTC
+
+UTC (Coordinated Universal Time) is a time standard that is used to synchronize clocks across the world. It is based on the Earth's rotation and is equivalent to GMT (Greenwich Mean Time).
+
+In this case, the origin time of the earthquake would be:
+
+* March 22, 2023 at 10:36:43 UTC
+
+I hope this helps! Let me know if you have any other questions."
+Create a cocktail recipe. ,"**Summer Breeze Cocktail**  Ingredients: - 2 ounces Vodka - 1 ounce Pineapple Juice - ½ ounce Lime Juice - ½ ounce Simple Syrup - 1 splash Club Soda - 1 Lime Wedge (for garnish) - 1 Sprig of Mint (for garnish)  Instructions: 1. Fill a shaker with ice. 2. Add the vodka, pineapple juice, lime juice, and simple syrup to the shaker. 3. Shake until well mixed and chilled. 4. Strain the mixture into a glass filled with ice. 5. Top with a splash of club soda. 6. Garnish with a lime wedge and sprig of mint. 7. Sit back, relax, and enjoy your Summer Breeze Cocktail.","  Sure, I'd be happy to help you create a cocktail recipe! Here's a recipe for a refreshing summer drink that combines the sweetness of peaches with the spice of ginger beer:
+
+Peachy Ginger Fizz
+
+Ingredients:
+
+* 2 ripe peaches, peeled and sliced
+* 1/2 cup ginger beer
+* 1/2 cup vodka
+* 1/4 cup simple syrup (equal parts water and granulated sugar, dissolved)
+* Splash of lemon juice
+* Ice cubes
+* Club soda
+* Fresh mint leaves, for garnish
+
+Instructions:
+
+1. In a large pitcher, combine the sliced peaches, ginger beer, vodka, and simple syrup. Stir well to combine.
+2. Add a splash of lemon juice and stir again.
+3. Fill glasses with ice and pour the peachy ginger fizz mixture over the ice.
+4. Top each glass off with a splash of club soda and garnish with a fresh mint leaf.
+5. Serve immediately and enjoy!
+
+This cocktail is perfect for hot summer days and can be adjusted to taste by adding more or less of any of the ingredients. You can also experiment with different types of peaches or ginger beer to find your perfect combination. Enjoy!"
+"Is it possible for who has shear Modulus and damping ratio (values) for Shales and Sandstone to share it?
+Will use in site response analysis, the same like (Modulus for clay (Seed and Sun, 1989) and damping for clay (Idriss 1990). ","If you use STRATA code (https://nees.org/resources/strata), it has several shear modulus and damping curve as function of plastic index and others geotechnical parameters.","  Sure, I can provide you with some information on the shear modulus and damping ratio of shales and sandstones.
+
+Shear Modulus:
+
+The shear modulus of rocks is a measure of their stiffness against shear deformation. It is defined as the ratio of shear stress to shear strain, and it is typically expressed in units of Pa or kPa.
+
+For shales, the shear modulus can vary widely depending on the specific type of shale and the degree of deformation. However, some general estimates of the shear modulus for shales range from around 100 to 500 MPa (Megapascals). For example, a study by Bolotnikov and Gorbatov (2013) reported a shear modulus of around 200 MPa for a sample of shale from the Bakken Formation in North Dakota.
+
+For sandstones, the shear modulus is generally higher than for shales, ranging from around 1000 to 3000 MPa. For example, a study by Aki and Choi (2011) reported a shear modulus of around 2000 MPa for a sample of sandstone from the Precambrian basin in South Korea.
+
+Damping Ratio:
+
+The damping ratio of rocks is a measure of their ability to dissipate energy through viscous dissipation. It is defined as the ratio of the real part of the complex shear modulus to the imaginary part, and it is typically expressed in units of -.
+
+For shales, the damping ratio can also vary widely depending on the specific type of shale and the degree of deformation. However, some general estimates of the damping ratio for shales range from around 0.1 to 0.5. For example, a study by Zhang and Li (2013) reported a damping ratio of around 0.3 for a sample of shale from the Songliao Basin in northeastern China.
+
+For sandstones, the damping ratio is generally lower than for shales, ranging from around 0.1 to 0.3. For example, a study by Wang and Li (2015) reported a damping ratio of"
+Is autotrophic metabolism a narrower category or subdiscipline within phototroph diversity and metabolism in geoscience? ,"False. The definition of phototroph diversity and metabolism is that 1, while the concept autotrophic metabolism means that 1","  Autotrophic metabolism is a broader category that encompasses all forms of metabolism that use energy from the environment to synthesize organic compounds from inorganic substrates. This includes both phototrophic and chemotrophic metabolism.
+
+Phototrophic metabolism, on the other hand, is a subdiscipline of autotrophic metabolism that specifically focuses on the use of light energy to drive metabolic reactions. This includes photosynthesis, which is the primary mechanism by which plants, algae, and some bacteria produce organic compounds from carbon dioxide and water using light energy.
+
+Therefore, autotrophic metabolism is a broader category that includes both phototrophic and chemotrophic metabolism, while phototrophic metabolism is a subdiscipline of autotrophic metabolism that specifically focuses on the use of light energy to drive metabolic reactions."
+"Based on the paragraph given, list down some important points regarding Bhopal cityBhopal (/boʊˈpɑːl/; Hindi: [bʱoːpaːl] ( listen)) is the capital city of the Indian state of Madhya Pradesh and the administrative headquarters of both Bhopal district and Bhopal division. It is known as the City of Lakes due to its various natural and artificial lakes. It is also one of the greenest cities in India. It is the 16th largest city in India and 131st in the world. After the formation of Madhya Pradesh, Bhopal was part of the Sehore district. It was bifurcated in 1972 and a new district, Bhopal, was formed. Flourishing around 1707, the city was the capital of the former Bhopal State, a princely state of the British ruled by the Nawabs of Bhopal. Numerous heritage structures from this period include the Taj-ul-Masajid and Taj Mahal palace. In 1984, the city was struck by the Bhopal disaster, one of the worst industrial disasters in history ","1.	Bhopal is the capital city of Madhya Pradesh in India, and the administrative headquarters of both Bhopal district and Bhopal division. 2.	Bhopal is also known as “The city of lakes” . It is also the 16th largest city in India and 131st in the world. 3.	Bhopal was formed as a new district from existing Sehore district in 1972. 4.	In 1707 Bhopal was the capital of the former Bhopal State, which British ruled by the Nawabs of Bhopal. 5.	Bhopal has Numerous heritage structures from 1700’s include the Taj-ul-Masjid and Taj Mahal palace. 6.	One of the worst industrial disasters in history happened in 1984 in Bhopal , also known as Bhopal Disaster.","  Based on the given paragraph, the following are some important points regarding Bhopal city:
+
+1. Location: Bhopal is the capital city of Madhya Pradesh and is located in the central part of India.
+2. Nickname: Bhopal is known as the City of Lakes due to its numerous natural and artificial lakes.
+3. Size: It is the 16th largest city in India and 131st in the world.
+4. History: The city was the capital of the former Bhopal State, a princely state of the British ruled by the Nawabs of Bhopal.
+5. Heritage structures: The city has numerous heritage structures from this period, including the Taj-ul-Masajid and Taj Mahal palace.
+6. Industrial disaster: In 1984, the city was struck by the Bhopal disaster, one of the worst industrial disasters in history."
+"Can Middle Oceanic Spreading Ridges be swallowed by a subduction zone?
+Middle oceanic ridges are places where new oceanic crust is generated. Does anybody know what happens to these spreading ridges when the oceanic basin starts to be closed? Is there any possibility that the once-active middle oceanic ridge be swallowed into the mantle at a oceanic-continental plate convergence boundary? ","Ridge subduction is an obvious phenomena, as oldest ocean floor is only 200-180Mys. And is possibly one of the mechanism to justify the magmatism within the near-trench fore-arc region, which is otherwise a refrigerated zone. We recently, discussed this subject in Early Cretaceous ridge subduction beneath southern Alaska: I...","  Yes, it is possible for a middle oceanic ridge to be swallowed by a subduction zone as the oceanic basin closes. This process is known as ""ridge subduction"" or ""ridge engulfment.""
+
+When an oceanic basin closes, the lithosphere of the oceanic crust is subjected to increasing pressure and temperature as it is pushed beneath the continental crust. As the oceanic crust is pushed deeper into the mantle, it can be recycled back into the mantle, and the rocks that make up the ridge can be melted and reformed into new oceanic crust.
+
+There are several examples of ridge subduction in the Earth's history, including the subduction of the Pacific plate beneath the North American plate along the western coast of North America, and the subduction of the Nazca plate beneath the South American plate along the western coast of South America. In both cases, the once-active middle oceanic ridges have been consumed by the subduction zone and are no longer present at the surface.
+
+Ridge subduction can occur in several ways, depending on the tectonic setting and the geometry of the subduction zone. In some cases, the ridge may be pushed beneath the overlying plate and be recycled back into the mantle. In other cases, the ridge may be pulled into the subduction zone and be consumed by the mantle.
+
+The process of ridge subduction can have significant geological and geophysical implications. For example, it can lead to the formation of volcanic arcs and the creation of new crust, as well as the modification of the Earth's mantle and crustal structure. Additionally, ridge subduction can provide valuable insights into the Earth's interior and the processes that shape our planet.
+
+In summary, middle oceanic ridges can be swallowed by a subduction zone as the oceanic basin closes, a process known as ridge subduction or ridge engulfment. This process can have significant geological and geophysical implications and can provide valuable insights into the Earth's interior and the processes that shape our planet."
+"Could you extract the terms related to earth science mentioned in this passage? The passage: The Christian Democratic Party of Honduras (Spanish: Partido Demócrata Cristiano de Honduras), known by the abbreviation DC, is a political party in Honduras. At the legislative elections, held on 25 November 2001, DC won 3.7% of the popular vote and 3 out of 128 seats in the National Congress. Its candidate at the presidential elections, Marco Orlando Iriarte, won 1.0% of the vote. ","Certainly, the mentioned terms related to earth science in the passage are: Spanish, political party, Honduras, legislative elections, held on 25 November 2001, National Congress, presidential.","  Sure! Here are the earth science terms mentioned in the passage:
+
+• None. The passage does not mention any earth science terms. It is focused on political parties and elections in Honduras."
+What terms in this passage have a connection to earth science? The passage: The music was composed by Mani Sharma and released by Aditya Music. Best First Film of a Director - V. V. Vinayak; Best Editor - Gowtham Raju; Special Jury Award - Jr. NTR; Best Lyricist - Chandrabose. ,"The terms connected to earth science in the passage include: Mani Sharma, Aditya Music, Best First Film of a Director, V. V. Vinayak, Best Editor, Special Jury Award, Jr. NTR, Best Lyricist, Chandrabose.","  There are no terms in this passage that have a direct connection to earth science. The passage is discussing awards and filmmaking, and the terms used are related to those topics."
+Please tell me a synonym for the word 'coelurosaurs'. ,You should see coelurosauria.,"  Sure! A synonym for ""coelurosaurs"" is ""maniraptorans"". This term refers to a group of theropod dinosaurs that includes birds and their closest relatives. It is derived from the Greek words ""cheir"" (hand), ""oura"" (tail), and ""sauros"" (lizard), and it refers to the fact that these dinosaurs had feathers and their tails were long and slender. Other synonyms for ""coelurosaurs"" include ""maniraptorans"", ""avialians"", and ""bird-hipped dinosaurs""."

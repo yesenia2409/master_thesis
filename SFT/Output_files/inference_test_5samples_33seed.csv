@@ -1,0 +1,67 @@
+input,gold,pred
+"Identify which instrument is string or percussion: Kenong, Zeze ","Zeze is string, Kenong is percussion.","  Kenong is a percussion instrument, while Zeze is a string instrument. "
+"Could you clarify the origin time of the M 4.7 - 19km NW of Truckee, CA for me? ","Certainly, the M 4.7 - 19km NW of Truckee, CA's origin time is 2021-05-07 04:35:14.150 UTC.","  The M 4.7 - 19km NW of Truckee, CA earthquake occurred on 2023-02-22 at 10:53:43 UTC.
+
+The origin time of the earthquake is the time when the earthquake started, which is the same as the time when the seismic waves started to be recorded by seismic stations.
+
+The origin time of the M 4.7 - 19km NW of Truckee, CA earthquake is 2023-02-22 at 10:53:43 UTC.
+
+Please note that the origin time is in UTC (Coordinated Universal Time) and the time zone of the location of the earthquake is Pacific Standard Time (PST).
+
+You can use the following link to see the details of the earthquake on the United States Geological Survey (USGS) website:
+
+https://earthquake.usgs.gov/earthquakes/eventpage/ci38433317
+
+Please let me know if you have any other questions."
+Create a cocktail recipe. ,"**Summer Breeze Cocktail**  Ingredients: - 2 ounces Vodka - 1 ounce Pineapple Juice - ½ ounce Lime Juice - ½ ounce Simple Syrup - 1 splash Club Soda - 1 Lime Wedge (for garnish) - 1 Sprig of Mint (for garnish)  Instructions: 1. Fill a shaker with ice. 2. Add the vodka, pineapple juice, lime juice, and simple syrup to the shaker. 3. Shake until well mixed and chilled. 4. Strain the mixture into a glass filled with ice. 5. Top with a splash of club soda. 6. Garnish with a lime wedge and sprig of mint. 7. Sit back, relax, and enjoy your Summer Breeze Cocktail.","  Sure, here's a recipe for a delicious cocktail that combines the sweetness of honey with the spiciness of ginger beer:
+
+Honey Ginger Beer Cocktail
+
+Ingredients:
+
+* 2 oz ginger beer
+* 1 oz honey syrup (equal parts honey and water, dissolved)
+* 1 oz fresh lime juice
+* 1/2 oz ginger liqueur (such as Domaine de Canton)
+* Ice
+* Lime wedges, for garnish
+
+Instructions:
+
+1. Fill a cocktail shaker with ice.
+2. Add the ginger beer, honey syrup, lime juice, and ginger liqueur to the shaker.
+3. Shake vigorously for about 15-20 seconds to combine and chill the ingredients.
+4. Strain the mixture into a chilled glass filled with ice.
+5. Garnish with a lime wedge and serve.
+
+This cocktail is perfect for warm weather or anytime you need a spicy kick. The honey adds a touch of sweetness, while the ginger beer provides a spicy kick. The ginger liqueur adds a subtle ginger flavor and helps to balance out the sweetness of the honey. Enjoy!"
+"Is it possible for who has shear Modulus and damping ratio (values) for Shales and Sandstone to share it?
+Will use in site response analysis, the same like (Modulus for clay (Seed and Sun, 1989) and damping for clay (Idriss 1990). ","If you use STRATA code (https://nees.org/resources/strata), it has several shear modulus and damping curve as function of plastic index and others geotechnical parameters.","  The shear modulus and damping ratio of shales and sandstones can vary widely depending on the specific type of rock, its mineral composition, and the conditions under which it was formed.
+
+There are several studies that have reported the shear modulus and damping ratio of shales and sandstones, but these values are not always available for specific types of rocks.
+
+Here are a few references that may be helpful:
+
+1. Seed and Sun (1989) reported the shear modulus and damping ratio of some common clays, including shales.
+2. Idriss (1990) reported the shear modulus and damping ratio of some common soils, including sandstones.
+3. Bolotnikov and Kiselev (1963) reported the shear modulus and damping ratio of some common rocks, including shales and sandstones.
+4. The Geological Society of America (GSA) has published a number of papers on the mechanical properties of shales and sandstones.
+5. The American Petroleum Institute (API) has also published a number of papers on the mechanical properties of shales and sandstones.
+
+It is important to note that the shear modulus and damping ratio of shales and sandstones can vary widely depending on the specific type of rock, its mineral composition, and the conditions under which it was formed. Therefore, it is important to consult the literature and consult with experts in the field before using any specific values.
+
+It is also important to note that the shear modulus and damping ratio are not the only factors that affect the behavior of shales and sandstones under different conditions. Other factors, such as the rock's porosity, permeability, and fluid saturation, can also play a significant role.
+
+In summary, while there are some reported values of shear modulus and damping ratio for shales and sandstones, these values can vary widely and should be used with caution. It is important to consult the literature and consult with experts in the field before using any specific values."
+Is autotrophic metabolism a narrower category or subdiscipline within phototroph diversity and metabolism in geoscience? ,"False. The definition of phototroph diversity and metabolism is that 1, while the concept autotrophic metabolism means that 1","  Autotrophic metabolism is a subdiscipline within phototroph diversity and metabolism in geoscience. Autotrophs are organisms that can produce their own food using energy from light or inorganic compounds, whereas heterotrophs rely on the food produced by others. Autotrophic metabolism is the study of the metabolic processes that occur in autotrophic organisms, such as photosynthesis and chemosynthesis.
+
+Within the broader field of phototroph diversity and metabolism, autotrophic metabolism is a narrower category that focuses specifically on the metabolic processes that occur in autotrophic organisms. This includes the study of the enzymes, pathways, and other molecular components involved in autotrophic metabolism, as well as the ecological and evolutionary contexts in which these processes occur.
+
+Other subdisciplines within phototroph diversity and metabolism include:
+
+1. Phototrophic metabolism: This subdiscipline focuses on the metabolic processes that occur in phototrophic organisms, including both autotrophs and heterotrophs.
+2. Photosynthesis: This subdiscipline focuses specifically on the process of photosynthesis, which is the primary means by which autotrophic organisms produce their own food.
+3. Chemosynthesis: This subdiscipline focuses on the metabolic processes that occur in organisms that obtain their energy from inorganic compounds, rather than from light.
+4. Geobiology: This subdiscipline focuses on the interactions between microorganisms and their geological environments, including the study of microbial communities in extreme environments.
+
+Overall, autotrophic metabolism is a narrower subdiscipline within the broader field of phototroph diversity and metabolism, which is focused on the study of the metabolic processes that occur in autotrophic organisms."
