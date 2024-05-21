@@ -20,7 +20,7 @@ module load devel/cuda/11.6
 
 # call python script
 
-lrs=(0.001 0.0001 0.00001 0.002 0.0002 0.00002 0.003 0.0003 0.00003 0.004 0.0004 0.00004)
+lrs=(0.01 0.03 0.05 0.07 0.09 0.1 0.3 0.5 0.7 0.9)
 for i in ${!lrs[*]}; do
     echo "learning rate: ${lrs[$i]}"
     python3 -u training.py \
