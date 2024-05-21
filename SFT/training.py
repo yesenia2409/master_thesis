@@ -1,6 +1,7 @@
 import pickle
 from sklearn.model_selection import train_test_split
 import pandas as pd
+from decimal import Decimal
 import torch
 from peft import LoraConfig, AutoPeftModelForCausalLM
 from transformers import (
@@ -171,19 +172,19 @@ if __name__ == "__main__":
     )
 
     train_result = trainer.train()
-    # print(train_result)
+    print(train_result)
     train_losses = train_result.metrics["train_loss"]
-
+    lr_scientific = "{:.2E}".format(Decimal(training_arguments.learning_rate)).replace(".", "_")
     print("train loss:", args.lr, " produced ", train_losses)
-    plot_loss(train_losses, f'Output_files/training_loss_plot_{training_arguments.learning_rate}.png')
+    plot_loss(train_losses, f'Output_files/training_loss_plot_{lr_scientific}.png')
 
     # Saving
-    # trainer.save_model()
-    # trained_model = AutoPeftModelForCausalLM.from_pretrained(
-    #     OUTPUT_DIR,
-    #    low_cpu_mem_usage=True,
-    # )
+    trainer.save_model()
+    trained_model = AutoPeftModelForCausalLM.from_pretrained(
+        f"{OUTPUT_DIR}{lr_scientific}",
+        low_cpu_mem_usage=True,
+    )
 
-    # merged_model = trained_model.merge_and_unload()
-    # merged_model.save_pretrained("merged_model", safe_serialization=True)
-    # tokenizer.save_pretrained("merged_model")
+    merged_model = trained_model.merge_and_unload()
+    merged_model.save_pretrained(f"merged_model/{lr_scientific}", safe_serialization=True)
+    tokenizer.save_pretrained(f"merged_model/{lr_scientific}")

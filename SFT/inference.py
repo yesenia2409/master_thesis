@@ -1,3 +1,12 @@
+"""
+SFT: inference
+
+* Load the geosignal json file from GitHub
+* Concatenate instruction and input columns
+* Apply the prompt template to each prompt
+* Save the dataset as pickle and csv files
+"""
+
 
 import repackage
 repackage.up()

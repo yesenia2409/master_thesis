@@ -1,11 +1,12 @@
 """
-Prompting: Proof of Concept
+Prompting: Selecting system prompt
 
 * Randomly sample 20 queries of the SFT dataset
 * Adding prompt templates to the models input
 * Run inference with different system prompts
 * Manually compare/evaluate the results
 """
+
 import repackage
 repackage.up()
 
@@ -86,7 +87,9 @@ if __name__ == "__main__":
     model_name = "meta-llama/Llama-2-13b-chat-hf"
     count_samples = 20
     seed = 33
-    list_system_input = ["You are a natural scientist.", "Activate your science knowledge to answer the following question.", "You are an earth scientist and use your knowledge to answer this question: "] 
+    list_system_input = ["You are a natural scientist.",
+                         "Activate your science knowledge to answer the following question.",
+                         "You are an earth scientist and use your knowledge to answer this question: "]
                          # "Please answer the following geoscience question.", 
                          # "Your job is to answer the following question related to geosicence.", 
                          # "Do your best to answer the following geoscience question.", 

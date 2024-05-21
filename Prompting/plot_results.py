@@ -19,14 +19,14 @@ def plot_win_rate(file_path):
 
     colors = ["lightsteelblue", "cornflowerblue", "royalblue"]
     data = pd.read_excel(file_path)
-    total = data.shape[0]-1
+    total = data.shape[0] - 1
 
     with_better = data['with better'].iloc[-1]
     without_better = data['without better'].iloc[-1]
     equal = data['equal'].iloc[-1]
 
     categories = ['Prompt template', 'Without prompt template', 'Equal outputs']
-    percentages = [(with_better/ total) * 100, (without_better/ total) * 100, (equal/ total) * 100]
+    percentages = [(with_better / total) * 100, (without_better / total) * 100, (equal / total) * 100]
 
     plt.bar(categories, percentages, color=colors)
     plt.ylabel('Win rate (%)')
