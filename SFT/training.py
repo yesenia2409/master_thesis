@@ -93,8 +93,9 @@ def print_layers(model):
 
 
 def plot_loss(train_loss, save_path):
-    df = pd.DataFrame(trainer.state.log_history)
-    plt.plot(df, label='Loss')
+    plt.figure()
+    plt.plot(train_loss, label='Training Loss')
+    plt.plot(trainer.eval_losses, label='Evaluation Loss')
 
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
@@ -180,7 +181,7 @@ if __name__ == "__main__":
     plot_loss(train_losses, f'Output_files/training_loss_plot_{lr_scientific}.png')
 
     # Saving
-    trainer.save_model()
+    # trainer.save_model()
     # trained_model = AutoPeftModelForCausalLM.from_pretrained(
     #     f"{OUTPUT_DIR}{lr_scientific}",
     #    low_cpu_mem_usage=True,
