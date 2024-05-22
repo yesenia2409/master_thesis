@@ -15,7 +15,6 @@ from datasets import Dataset
 import matplotlib.pyplot as plt
 import argparse
 
-
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "meta-llama/Llama-2-13b-chat-hf"
 OUTPUT_DIR = "Model/"
@@ -94,21 +93,23 @@ def print_layers(model):
 
 def plot_loss(log_history, save_path):
     colors = ["lightsteelblue", "cornflowerblue"]
+    plt.figure()
+
     steps = []
     loss = []
     eval_loss = []
-
     for entry in log_history:
         if 'step' in entry:
             if 'loss' in entry:
-                steps.append(entry['step'])
                 loss.append(entry['loss'])
             if 'eval_loss' in entry:
+                steps.append(entry['step'])
                 eval_loss.append(entry['eval_loss'])
+        print(eval_loss, steps)
 
-    plt.figure()
-    plt.plot(steps, loss, label='Training Loss', marker='o', color=colors[0])
+    if loss: plt.plot(steps, loss, label='Training Loss', marker='o', color=colors[0])
     plt.plot(steps, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
+
     plt.xlabel('Steps')
     plt.ylabel('Loss')
     plt.legend()
@@ -140,7 +141,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     lr_scientific = "{:.2E}".format(Decimal(args.lr)).replace(".", "_")
 
-    peft_config = LoraConfig( # s.u.
+    peft_config = LoraConfig(  # s.u.
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
@@ -149,7 +150,8 @@ if __name__ == "__main__":
         task_type="CAUSAL_LM",
     )
 
-    training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
+    training_arguments = TrainingArguments(
+        # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         output_dir=f"{OUTPUT_DIR}{lr_scientific}",
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch,
@@ -181,7 +183,7 @@ if __name__ == "__main__":
         train_dataset=train,
         eval_dataset=val,
         peft_config=peft_config,
-        max_seq_length=512,   # 4096 in Llama paper
+        max_seq_length=512,  # 4096 in Llama paper
         tokenizer=tokenizer,
         args=training_arguments,
     )
@@ -191,7 +193,9 @@ if __name__ == "__main__":
     print("train_results: ", train_result)
     print("train loss:", train_result.metrics["train_loss"])
 
-    plot_loss(trainer.state.log_history, f'Output_files/loss_plot_lr_{lr_scientific}_ep_{training_arguments.num_train_epochs}_ba_{training_arguments.per_device_train_batch_size}.png')
+    with open("Output_files/trainer_log_history_epoch_tests .txt", "a") as text_file:
+        text_file.write(trainer.state.log_history)
+    plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs.png')
 
     # Saving
     # trainer.save_model()

@@ -21,14 +21,14 @@ module load devel/cuda/11.6
 # call python script
 
 lr=0.01
-batch=(2 4 8 16 32 64)
-epoch=4
-for i in ${!batch[*]}; do
-    echo "batch: ${batch[$i]}"
-    python3 -u training.py \
-    --batch="${batch[$i]}" \
-    --lr="${lr}" \
-    --epochs="${epoch}";
+batch=2
+epoch=15
+# for i in ${!batch[*]}; do
+#     echo "batch: ${batch[$i]}"
+python3 -u training.py \
+  --batch="${batch[$i]}" \
+  --lr="${lr}" \
+  --epochs="${epoch}"
 
 # python3 -u inference.py
-done
+# done
