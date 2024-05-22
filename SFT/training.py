@@ -99,27 +99,29 @@ def plot_loss(log_history, save_path):
     loss = []
     eval_loss = []
     for entry in log_history:
-        if 'step' in entry:
+        if 'epoch' in entry:
             if 'loss' in entry:
-                loss.append(entry['loss'])
+                loss.append(entry['epoch'])
             if 'eval_loss' in entry:
-                steps.append(entry['step'])
+                steps.append(entry['epoch'])
                 eval_loss.append(entry['eval_loss'])
         print(eval_loss, steps)
 
-    if loss: plt.plot(steps, loss, label='Training Loss', marker='o', color=colors[0])
+    #nif loss: plt.plot(steps, loss, label='Training Loss', marker='o', color=colors[0])
     plt.plot(steps, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
 
-    plt.xlabel('Steps')
+    plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
-    # plt.show()
-    plt.savefig(save_path)
+    plt.show()
+    # plt.savefig(save_path)
 
 
 if __name__ == "__main__":
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
+
+    # plot_loss(data, "Output_files/loss_over_epochs_15.png")
 
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
@@ -164,9 +166,9 @@ if __name__ == "__main__":
         warmup_ratio=0.03,
         warmup_steps=100,
         logging_strategy="steps",
-        logging_steps=50,
+        logging_steps=3,
         evaluation_strategy="steps",
-        eval_steps=0.2,
+        eval_steps=0.01,
         save_safetensors=True,
         seed=42,
         bf16=True,
@@ -194,7 +196,7 @@ if __name__ == "__main__":
     print("train loss:", train_result.metrics["train_loss"])
 
     with open("Output_files/trainer_log_history_epoch_tests .txt", "a") as text_file:
-        text_file.write(trainer.state.log_history)
+        text_file.write(trainer.state.log_history[0])
     plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs.png')
 
     # Saving

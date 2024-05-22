@@ -1,0 +1,7 @@
+data = [{'eval_loss': 1.2177467346191406, 'eval_runtime': 44.6945, 'eval_samples_per_second': 4.475, 'eval_steps_per_second': 2.237, 'epoch': 2.88, 'step': 18},
+            {'eval_loss': 1.5292227268218994, 'eval_runtime': 44.5995, 'eval_samples_per_second': 4.484, 'eval_steps_per_second': 2.242, 'epoch': 5.76, 'step': 36},
+            {'loss': 1.118, 'learning_rate': 0.005, 'epoch': 8.0, 'step': 50},
+            {'eval_loss': 6.516610622406006, 'eval_runtime': 44.6622, 'eval_samples_per_second': 4.478, 'eval_steps_per_second': 2.239, 'epoch': 8.64, 'step': 54},
+            {'eval_loss': 7.306821346282959, 'eval_runtime': 44.6851, 'eval_samples_per_second': 4.476, 'eval_steps_per_second': 2.238, 'epoch': 11.52, 'step': 72},
+            {'eval_loss': 8.499839782714844, 'eval_runtime': 44.6766, 'eval_samples_per_second': 4.477, 'eval_steps_per_second': 2.238, 'epoch': 14.4, 'step': 90},
+            {'train_runtime': 2248.9118, 'train_samples_per_second': 1.334, 'train_steps_per_second': 0.04, 'total_flos': 3.334317049147392e+16, 'train_loss': 4.067839982774522, 'epoch': 14.4, 'step': 90}]
