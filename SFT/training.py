@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         output_dir=f"{OUTPUT_DIR}{lr_scientific}",
-        num_train_epochs=2,
+        num_train_epochs=3,
         per_device_train_batch_size=2,
         per_device_eval_batch_size=2,
         gradient_accumulation_steps=16,
@@ -149,9 +149,9 @@ if __name__ == "__main__":
         lr_scheduler_type="cosine",
         warmup_ratio=0.03,
         warmup_steps=100,
-        logging_strategy="steps",
+        logging_strategy="epoch",
         logging_steps=50,
-        evaluation_strategy="steps",
+        evaluation_strategy="epoch",
         eval_steps=0.2,
         save_safetensors=True,
         seed=42,
@@ -160,8 +160,8 @@ if __name__ == "__main__":
         # use_reentrant=False
     )
 
-    train = Dataset.from_pandas(train_h[:200])
-    val = Dataset.from_pandas(val_h[:200])
+    train = Dataset.from_pandas(train_h[:100])
+    val = Dataset.from_pandas(val_h[:100])
 
     trainer = SFTTrainer(
         model=model,
@@ -175,10 +175,11 @@ if __name__ == "__main__":
     )
 
     train_result = trainer.train()
-    print(train_result)
-    train_losses = train_result.metrics["train_loss"]
-    print("train loss:", args.lr, " produced ", train_losses)
-    plot_loss(train_losses, f'Output_files/training_loss_plot_{lr_scientific}.png')
+    print("trainer.state.log_history: ", trainer.state.log_history)
+    print("train_results: ", train_result)
+    # train_losses = train_result.metrics["train_loss"]
+    # print("train loss:", args.lr, " produced ", train_losses)
+    # plot_loss(train_losses, f'Output_files/training_loss_plot_{lr_scientific}.png')
 
     # Saving
     # trainer.save_model()

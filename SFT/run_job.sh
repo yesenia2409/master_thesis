@@ -20,11 +20,11 @@ module load devel/cuda/11.6
 
 # call python script
 
-# lrs=(0.01 0.0002)
-# for i in ${!lrs[*]}; do
-#     echo "learning rate: ${lrs[$i]}"
-#     python3 -u training.py \
-#      --lr="${lrs[$i]}";
+lrs=(0.01)
+for i in ${!lrs[*]}; do
+    echo "learning rate: ${lrs[$i]}"
+    python3 -u training.py \
+    --lr="${lrs[$i]}";
 
-python3 -u inference.py
+# python3 -u inference.py
 done
