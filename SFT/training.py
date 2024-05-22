@@ -92,17 +92,27 @@ def print_layers(model):
         print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
 
 
-def plot_loss(train_loss, save_path):
+def plot_loss(log_history, save_path):
+    colors = ["lightsteelblue", "cornflowerblue"]
+    steps = []
+    loss = []
+    eval_loss = []
+
+    for entry in log_history:
+        if 'step' in entry:
+            if 'loss' in entry:
+                steps.append(entry['step'])
+                loss.append(entry['loss'])
+            if 'eval_loss' in entry:
+                eval_loss.append(entry['eval_loss'])
+
     plt.figure()
-    plt.plot(train_loss, label='Training Loss')
-    plt.plot(trainer.eval_losses, label='Evaluation Loss')
-
-    plt.xlabel('Epoch')
+    plt.plot(steps, loss, label='Training Loss', marker='o', color=colors[0])
+    plt.plot(steps, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
+    plt.xlabel('Steps')
     plt.ylabel('Loss')
-    plt.title('Training Loss')
-
     plt.legend()
-
+    # plt.show()
     plt.savefig(save_path)
 
 
@@ -125,6 +135,8 @@ if __name__ == "__main__":
     # Args from sh script
     parser = argparse.ArgumentParser()
     parser.add_argument("--lr", type=float, required=True)
+    parser.add_argument("--batch", type=int, required=True)
+    parser.add_argument("--epochs", type=int, required=True)
     args = parser.parse_args()
     lr_scientific = "{:.2E}".format(Decimal(args.lr)).replace(".", "_")
 
@@ -139,9 +151,9 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments( # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         output_dir=f"{OUTPUT_DIR}{lr_scientific}",
-        num_train_epochs=3,
-        per_device_train_batch_size=2,
-        per_device_eval_batch_size=2,
+        num_train_epochs=args.epochs,
+        per_device_train_batch_size=args.batch,
+        per_device_eval_batch_size=args.batch,
         gradient_accumulation_steps=16,
         optim="paged_adamw_32bit",
         save_strategy="epoch",
@@ -149,9 +161,9 @@ if __name__ == "__main__":
         lr_scheduler_type="cosine",
         warmup_ratio=0.03,
         warmup_steps=100,
-        logging_strategy="epoch",
+        logging_strategy="steps",
         logging_steps=50,
-        evaluation_strategy="epoch",
+        evaluation_strategy="steps",
         eval_steps=0.2,
         save_safetensors=True,
         seed=42,
@@ -160,8 +172,8 @@ if __name__ == "__main__":
         # use_reentrant=False
     )
 
-    train = Dataset.from_pandas(train_h[:100])
-    val = Dataset.from_pandas(val_h[:100])
+    train = Dataset.from_pandas(train_h[:200])
+    val = Dataset.from_pandas(val_h[:200])
 
     trainer = SFTTrainer(
         model=model,
@@ -177,15 +189,15 @@ if __name__ == "__main__":
     train_result = trainer.train()
     print("trainer.state.log_history: ", trainer.state.log_history)
     print("train_results: ", train_result)
-    # train_losses = train_result.metrics["train_loss"]
-    # print("train loss:", args.lr, " produced ", train_losses)
-    # plot_loss(train_losses, f'Output_files/training_loss_plot_{lr_scientific}.png')
+    print("train loss:", train_result.metrics["train_loss"])
+
+    plot_loss(trainer.state.log_history, f'Output_files/loss_plot_lr_{lr_scientific}_ep_{training_arguments.num_train_epochs}_ba_{training_arguments.per_device_train_batch_size}.png')
 
     # Saving
     # trainer.save_model()
     # trained_model = AutoPeftModelForCausalLM.from_pretrained(
     #     f"{OUTPUT_DIR}{lr_scientific}",
-    #    low_cpu_mem_usage=True,
+    #     low_cpu_mem_usage=True,
     # )
 
     # merged_model = trained_model.merge_and_unload()

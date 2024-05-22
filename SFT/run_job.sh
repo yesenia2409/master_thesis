@@ -20,11 +20,15 @@ module load devel/cuda/11.6
 
 # call python script
 
-lrs=(0.01)
-for i in ${!lrs[*]}; do
-    echo "learning rate: ${lrs[$i]}"
+lr=0.01
+batch=(2 4 8 16 32 64)
+epoch=4
+for i in ${!batch[*]}; do
+    echo "batch: ${batch[$i]}"
     python3 -u training.py \
-    --lr="${lrs[$i]}";
+    --batch="${batch[$i]}" \
+    --lr="${lr}" \
+    --epochs="${epoch}";
 
 # python3 -u inference.py
 done
