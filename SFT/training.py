@@ -95,33 +95,32 @@ def plot_loss(log_history, save_path):
     colors = ["lightsteelblue", "cornflowerblue"]
     plt.figure()
 
-    steps = []
+    steps_eval = []
+    steps_train = []
     loss = []
     eval_loss = []
     for entry in log_history:
         if 'epoch' in entry:
             if 'loss' in entry:
-                loss.append(entry['epoch'])
+                loss.append(entry['loss'])
+                steps_train.append(entry['epoch'])
             if 'eval_loss' in entry:
-                steps.append(entry['epoch'])
+                steps_eval.append(entry['epoch'])
                 eval_loss.append(entry['eval_loss'])
-        print(eval_loss, steps)
 
-    #nif loss: plt.plot(steps, loss, label='Training Loss', marker='o', color=colors[0])
-    plt.plot(steps, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
+    if loss: plt.plot(steps_train, loss, label='Training Loss', marker='o', color=colors[0])
+    plt.plot(steps_eval, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
 
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
-    plt.show()
-    # plt.savefig(save_path)
+    # plt.show()
+    plt.savefig(save_path)
 
 
 if __name__ == "__main__":
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
-
-    # plot_loss(data, "Output_files/loss_over_epochs_15.png")
 
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
@@ -154,7 +153,7 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments(
         # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
-        output_dir=f"{OUTPUT_DIR}{lr_scientific}",
+        output_dir=f"{OUTPUT_DIR}SFT_for_human_alignment",
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch,
         per_device_eval_batch_size=args.batch,
@@ -168,7 +167,7 @@ if __name__ == "__main__":
         logging_strategy="steps",
         logging_steps=3,
         evaluation_strategy="steps",
-        eval_steps=0.01,
+        eval_steps=0.02,
         save_safetensors=True,
         seed=42,
         bf16=True,
@@ -195,9 +194,9 @@ if __name__ == "__main__":
     print("train_results: ", train_result)
     print("train loss:", train_result.metrics["train_loss"])
 
-    with open("Output_files/trainer_log_history_epoch_tests .txt", "a") as text_file:
-        text_file.write(trainer.state.log_history[0])
-    plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs.png')
+    with open("Output_files/trainer_log_history_epoch_tests.txt", "a") as text_file:
+        text_file.write(str(trainer.state.log_history[0]))
+    plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs_6.png')
 
     # Saving
     # trainer.save_model()
