@@ -1,1 +1,1 @@
-{'eval_loss': 2.625701665878296, 'eval_runtime': 43.8324, 'eval_samples_per_second': 4.563, 'eval_steps_per_second': 2.281, 'epoch': 0.16, 'step': 1}
+{'eval_loss': 2.625701665878296, 'eval_runtime': 43.8324, 'eval_samples_per_second': 4.563, 'eval_steps_per_second': 2.281, 'epoch': 0.16, 'step': 1}{'eval_loss': 2.625701665878296, 'eval_runtime': 44.1262, 'eval_samples_per_second': 4.532, 'eval_steps_per_second': 2.266, 'epoch': 0.16, 'step': 1}
