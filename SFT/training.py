@@ -122,6 +122,11 @@ if __name__ == "__main__":
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
 
+    # data = [{'eval_loss': 2.625701665878296, 'eval_runtime': 44.2724, 'eval_samples_per_second': 4.517, 'eval_steps_per_second': 2.259, 'epoch': 0.16, 'step': 1}, {'eval_loss': 2.607074499130249, 'eval_runtime': 44.7073, 'eval_samples_per_second': 4.474, 'eval_steps_per_second': 2.237, 'epoch': 0.32, 'step': 2}, {'loss': 2.6128, 'learning_rate': 0.0003, 'epoch': 0.48, 'step': 3}, {'eval_loss': 2.5385336875915527, 'eval_runtime': 44.8479, 'eval_samples_per_second': 4.46, 'eval_steps_per_second': 2.23, 'epoch': 0.48, 'step': 3}, {'eval_loss': 2.389437198638916, 'eval_runtime': 44.8555, 'eval_samples_per_second': 4.459, 'eval_steps_per_second': 2.229, 'epoch': 0.64, 'step': 4}, {'eval_loss': 2.1825950145721436, 'eval_runtime': 44.8786, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 0.8, 'step': 5}, {'loss': 2.3204, 'learning_rate': 0.0006, 'epoch': 0.96, 'step': 6}, {'eval_loss': 1.9869869947433472, 'eval_runtime': 44.8845, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 0.96, 'step': 6}, {'eval_loss': 1.8295994997024536, 'eval_runtime': 44.868, 'eval_samples_per_second': 4.458, 'eval_steps_per_second': 2.229, 'epoch': 1.12, 'step': 7}, {'eval_loss': 1.6965358257293701, 'eval_runtime': 44.882, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 1.28, 'step': 8}, {'loss': 1.7838, 'learning_rate': 0.0009, 'epoch': 1.44, 'step': 9}, {'eval_loss': 1.5794163942337036, 'eval_runtime': 44.8732, 'eval_samples_per_second': 4.457, 'eval_steps_per_second': 2.229, 'epoch': 1.44, 'step': 9}, {'eval_loss': 1.4735397100448608, 'eval_runtime': 44.881, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 1.6, 'step': 10}, {'eval_loss': 1.3905235528945923, 'eval_runtime': 44.8671, 'eval_samples_per_second': 4.458, 'eval_steps_per_second': 2.229, 'epoch': 1.76, 'step': 11}, {'loss': 1.4371, 'learning_rate': 0.0012, 'epoch': 1.92, 'step': 12}, {'eval_loss': 1.3297970294952393, 'eval_runtime': 44.8851, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 1.92, 'step': 12}, {'train_runtime': 815.1862, 'train_samples_per_second': 0.491, 'train_steps_per_second': 0.015, 'total_flos': 4497321029160960.0, 'train_loss': 2.038527329762777, 'epoch': 1.92, 'step': 12}]
+
+    # plot_loss(data, "Output_files/loss_over_epochs_2.png")
+
+
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
     val_e = pd.read_pickle("Input_files/validation_set_expert.pkl")
@@ -194,9 +199,9 @@ if __name__ == "__main__":
     print("train_results: ", train_result)
     print("train loss:", train_result.metrics["train_loss"])
 
-    with open("Output_files/trainer_log_history_epoch_tests.txt", "a") as text_file:
+    with open("Output_files/slurm_files/epoch/trainer_log_history_1_epoch_tests.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history[0]))
-    plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs_6.png')
+    plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs_1.png')
 
     # Saving
     # trainer.save_model()
