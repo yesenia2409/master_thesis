@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=00:15:00
+#SBATCH --time=23:00:00
 #SBATCH --mem=80gb
-#SBATCH --gres=gpu:A40:1
+#SBATCH --gres=gpu:A40:2
 
 echo 'Running simulation'
 
@@ -22,7 +22,7 @@ module load devel/cuda/11.6
 
 lr=0.01
 batch=2
-epoch=1
+epoch=2
 # for i in ${!batch[*]}; do
 #     echo "batch: ${batch[$i]}"
 python3 -u training.py \

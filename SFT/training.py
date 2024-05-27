@@ -100,18 +100,18 @@ def plot_loss(log_history, save_path):
     loss = []
     eval_loss = []
     for entry in log_history:
-        if 'epoch' in entry:
+        if 'step' in entry:
             if 'loss' in entry:
                 loss.append(entry['loss'])
-                steps_train.append(entry['epoch'])
+                steps_train.append(entry['step'])
             if 'eval_loss' in entry:
-                steps_eval.append(entry['epoch'])
+                steps_eval.append(entry['step'])
                 eval_loss.append(entry['eval_loss'])
 
     if loss: plt.plot(steps_train, loss, label='Training Loss', marker='o', color=colors[0])
     plt.plot(steps_eval, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
 
-    plt.xlabel('Epochs')
+    plt.xlabel('Steps')
     plt.ylabel('Loss')
     plt.legend()
     # plt.show()
@@ -121,11 +121,6 @@ def plot_loss(log_history, save_path):
 if __name__ == "__main__":
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
-
-    # data = [{'eval_loss': 2.625701665878296, 'eval_runtime': 44.2724, 'eval_samples_per_second': 4.517, 'eval_steps_per_second': 2.259, 'epoch': 0.16, 'step': 1}, {'eval_loss': 2.607074499130249, 'eval_runtime': 44.7073, 'eval_samples_per_second': 4.474, 'eval_steps_per_second': 2.237, 'epoch': 0.32, 'step': 2}, {'loss': 2.6128, 'learning_rate': 0.0003, 'epoch': 0.48, 'step': 3}, {'eval_loss': 2.5385336875915527, 'eval_runtime': 44.8479, 'eval_samples_per_second': 4.46, 'eval_steps_per_second': 2.23, 'epoch': 0.48, 'step': 3}, {'eval_loss': 2.389437198638916, 'eval_runtime': 44.8555, 'eval_samples_per_second': 4.459, 'eval_steps_per_second': 2.229, 'epoch': 0.64, 'step': 4}, {'eval_loss': 2.1825950145721436, 'eval_runtime': 44.8786, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 0.8, 'step': 5}, {'loss': 2.3204, 'learning_rate': 0.0006, 'epoch': 0.96, 'step': 6}, {'eval_loss': 1.9869869947433472, 'eval_runtime': 44.8845, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 0.96, 'step': 6}, {'eval_loss': 1.8295994997024536, 'eval_runtime': 44.868, 'eval_samples_per_second': 4.458, 'eval_steps_per_second': 2.229, 'epoch': 1.12, 'step': 7}, {'eval_loss': 1.6965358257293701, 'eval_runtime': 44.882, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 1.28, 'step': 8}, {'loss': 1.7838, 'learning_rate': 0.0009, 'epoch': 1.44, 'step': 9}, {'eval_loss': 1.5794163942337036, 'eval_runtime': 44.8732, 'eval_samples_per_second': 4.457, 'eval_steps_per_second': 2.229, 'epoch': 1.44, 'step': 9}, {'eval_loss': 1.4735397100448608, 'eval_runtime': 44.881, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 1.6, 'step': 10}, {'eval_loss': 1.3905235528945923, 'eval_runtime': 44.8671, 'eval_samples_per_second': 4.458, 'eval_steps_per_second': 2.229, 'epoch': 1.76, 'step': 11}, {'loss': 1.4371, 'learning_rate': 0.0012, 'epoch': 1.92, 'step': 12}, {'eval_loss': 1.3297970294952393, 'eval_runtime': 44.8851, 'eval_samples_per_second': 4.456, 'eval_steps_per_second': 2.228, 'epoch': 1.92, 'step': 12}, {'train_runtime': 815.1862, 'train_samples_per_second': 0.491, 'train_steps_per_second': 0.015, 'total_flos': 4497321029160960.0, 'train_loss': 2.038527329762777, 'epoch': 1.92, 'step': 12}]
-
-    # plot_loss(data, "Output_files/loss_over_epochs_2.png")
-
 
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
@@ -147,7 +142,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     lr_scientific = "{:.2E}".format(Decimal(args.lr)).replace(".", "_")
 
-    peft_config = LoraConfig(  # s.u.
+    peft_config = LoraConfig(
+        # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
@@ -170,18 +166,17 @@ if __name__ == "__main__":
         warmup_ratio=0.03,
         warmup_steps=100,
         logging_strategy="steps",
-        logging_steps=2,
+        logging_steps=10,
         evaluation_strategy="steps",
-        eval_steps=0.01,
+        eval_steps=0.03,
         save_safetensors=True,
         seed=42,
         bf16=True,
         weight_decay=0.01,
-        # use_reentrant=False
     )
 
-    train = Dataset.from_pandas(train_h[:200])
-    val = Dataset.from_pandas(val_h[:200])
+    train = Dataset.from_pandas(train_h)
+    val = Dataset.from_pandas(val_h)
 
     trainer = SFTTrainer(
         model=model,
@@ -199,17 +194,17 @@ if __name__ == "__main__":
     print("train_results: ", train_result)
     print("train loss:", train_result.metrics["train_loss"])
 
-    with open("Output_files/slurm_files/epoch/trainer_log_history_1_epoch_tests.txt", "a") as text_file:
-        text_file.write(str(trainer.state.log_history[0]))
-    plot_loss(trainer.state.log_history, 'Output_files/loss_over_epochs_1.png')
+    with open("Output_files/slurm_files/epoch/trainer_log_history_SFT_for_human_alignment.txt", "a") as text_file:
+        text_file.write(str(trainer.state.log_history))
+    plot_loss(trainer.state.log_history, 'Output_files/loss_SFT_for_human_alignment.png')
 
     # Saving
-    # trainer.save_model()
-    # trained_model = AutoPeftModelForCausalLM.from_pretrained(
-    #     f"{OUTPUT_DIR}{lr_scientific}",
-    #     low_cpu_mem_usage=True,
-    # )
+    trainer.save_model()
+    trained_model = AutoPeftModelForCausalLM.from_pretrained(
+        f"{OUTPUT_DIR}SFT_for_human_alignment",
+        low_cpu_mem_usage=True,
+    )
 
-    # merged_model = trained_model.merge_and_unload()
-    # merged_model.save_pretrained(f"merged_model/{lr_scientific}", safe_serialization=True)
-    # tokenizer.save_pretrained(f"merged_model/{lr_scientific}")
+    merged_model = trained_model.merge_and_unload()
+    merged_model.save_pretrained(f"merged_model/SFT_for_human_alignment", safe_serialization=True)
+    tokenizer.save_pretrained(f"merged_model/SFT_for_human_alignment")
