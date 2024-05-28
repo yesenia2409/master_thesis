@@ -7,7 +7,6 @@ SFT: inference
 * Save the dataset as pickle and csv files
 """
 
-
 import repackage
 repackage.up()
 
@@ -78,12 +77,12 @@ if __name__ == "__main__":
     # Variables
     dataset = "daven3/geosignal"
     base_model = "meta-llama/Llama-2-13b-chat-hf"
-    model_dir_local = "Model/2_00E-4/"
-    count_samples = 10
+    model_dir_local = "Model/SFT_for_human_alignment/"
+    count_samples = 50
     seed = 33
     max_new_tokens = 521
     output_dir = "Output_files/"
-    output_filename = f"inference_test_{count_samples}samples_{seed}seed_2_00E-4.csv"
+    output_filename = f"inference_test_{count_samples}samples_{seed}seed_2epoch_2batch_001Lr.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
