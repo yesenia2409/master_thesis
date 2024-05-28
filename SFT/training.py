@@ -195,9 +195,9 @@ if __name__ == "__main__":
     print("train loss:", train_result.metrics["train_loss"])
 
     with open(
-            "Output_files/slurm_files/alignment_with_humans/trainer_log_history_SFT_for_human_alignment_2epoch_1_00E-2Lr_2batch.txt", "a") as text_file:
+            "Output_files/slurm_files/alignment_with_humans/trainer_log_history_SFT_for_human_alignment_1epoch_1_00E-2Lr_2batch.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history))
-    plot_loss(trainer.state.log_history, 'Output_files/loss_SFT_for_human_alignment_first_try_with_outlier.png')
+    plot_loss(trainer.state.log_history, 'Output_files/loss_SFT_for_human_alignment_1epoch_1_00E-2Lr_2batch.png')
 
     # Saving
     trainer.save_model()
