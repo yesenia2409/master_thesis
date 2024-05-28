@@ -147,7 +147,7 @@ if __name__ == "__main__":
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
-        target_modules=["q_proj", "v_proj", "k_proj"],
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj", "lm_head"],
         bias="none",
         task_type="CAUSAL_LM",
     )
