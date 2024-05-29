@@ -82,7 +82,7 @@ if __name__ == "__main__":
     seed = 33
     max_new_tokens = 521
     output_dir = "Output_files/"
-    output_filename = f"inference_test_{count_samples}samples_{seed}seed_2epoch_2batch_001Lr.csv"
+    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_001Lr.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions

@@ -1,0 +1,373 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:13<00:26, 13.12s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:25<00:12, 12.72s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:40<00:00, 13.64s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:40<00:00, 13.43s/it]
+model.embed_tokens.weight   Modelsize: 163.8M parameters
+model.layers.0.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.0.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.0.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.0.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.0.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.0.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.0.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.0.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.0.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.1.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.1.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.1.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.1.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.1.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.1.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.1.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.1.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.1.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.2.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.2.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.2.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.2.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.2.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.2.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.2.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.2.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.2.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.3.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.3.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.3.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.3.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.3.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.3.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.3.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.3.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.3.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.4.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.4.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.4.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.4.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.4.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.4.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.4.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.4.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.4.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.5.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.5.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.5.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.5.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.5.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.5.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.5.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.5.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.5.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.6.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.6.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.6.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.6.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.6.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.6.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.6.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.6.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.6.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.7.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.7.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.7.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.7.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.7.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.7.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.7.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.7.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.7.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.8.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.8.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.8.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.8.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.8.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.8.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.8.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.8.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.8.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.9.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.9.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.9.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.9.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.9.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.9.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.9.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.9.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.9.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.10.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.10.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.10.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.10.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.10.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.10.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.10.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.10.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.10.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.11.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.11.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.11.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.11.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.11.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.11.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.11.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.11.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.11.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.12.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.12.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.12.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.12.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.12.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.12.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.12.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.12.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.12.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.13.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.13.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.13.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.13.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.13.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.13.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.13.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.13.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.13.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.14.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.14.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.14.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.14.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.14.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.14.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.14.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.14.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.14.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.15.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.15.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.15.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.15.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.15.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.15.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.15.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.15.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.15.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.16.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.16.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.16.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.16.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.16.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.16.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.16.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.16.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.16.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.17.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.17.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.17.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.17.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.17.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.17.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.17.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.17.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.17.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.18.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.18.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.18.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.18.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.18.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.18.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.18.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.18.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.18.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.19.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.19.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.19.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.19.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.19.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.19.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.19.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.19.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.19.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.20.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.20.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.20.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.20.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.20.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.20.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.20.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.20.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.20.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.21.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.21.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.21.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.21.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.21.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.21.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.21.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.21.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.21.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.22.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.22.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.22.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.22.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.22.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.22.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.22.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.22.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.22.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.23.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.23.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.23.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.23.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.23.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.23.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.23.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.23.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.23.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.24.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.24.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.24.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.24.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.24.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.24.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.24.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.24.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.24.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.25.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.25.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.25.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.25.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.25.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.25.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.25.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.25.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.25.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.26.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.26.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.26.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.26.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.26.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.26.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.26.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.26.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.26.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.27.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.27.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.27.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.27.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.27.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.27.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.27.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.27.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.27.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.28.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.28.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.28.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.28.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.28.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.28.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.28.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.28.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.28.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.29.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.29.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.29.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.29.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.29.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.29.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.29.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.29.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.29.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.30.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.30.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.30.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.30.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.30.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.30.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.30.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.30.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.30.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.31.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.31.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.31.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.31.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.31.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.31.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.31.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.31.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.31.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.32.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.32.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.32.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.32.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.32.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.32.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.32.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.32.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.32.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.33.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.33.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.33.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.33.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.33.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.33.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.33.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.33.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.33.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.34.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.34.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.34.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.34.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.34.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.34.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.34.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.34.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.34.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.35.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.35.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.35.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.35.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.35.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.35.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.35.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.35.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.35.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.36.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.36.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.36.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.36.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.36.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.36.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.36.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.36.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.36.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.37.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.37.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.37.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.37.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.37.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.37.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.37.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.37.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.37.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.38.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.38.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.38.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.38.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.38.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.38.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.38.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.38.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.38.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.39.self_attn.q_proj.weight   Modelsize: 13.1M parameters
+model.layers.39.self_attn.k_proj.weight   Modelsize: 13.1M parameters
+model.layers.39.self_attn.v_proj.weight   Modelsize: 13.1M parameters
+model.layers.39.self_attn.o_proj.weight   Modelsize: 13.1M parameters
+model.layers.39.mlp.gate_proj.weight   Modelsize: 35.4M parameters
+model.layers.39.mlp.up_proj.weight   Modelsize: 35.4M parameters
+model.layers.39.mlp.down_proj.weight   Modelsize: 35.4M parameters
+model.layers.39.input_layernorm.weight   Modelsize: 0.0M parameters
+model.layers.39.post_attention_layernorm.weight   Modelsize: 0.0M parameters
+model.norm.weight   Modelsize: 0.0M parameters
+lm_head.weight   Modelsize: 163.8M parameters
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/peft/utils/other.py:102: FutureWarning: prepare_model_for_int8_training is deprecated and will be removed in a future version. Use prepare_model_for_kbit_training instead.
+  warnings.warn(
+Map:   0%|          | 0/14768 [00:00<?, ? examples/s]Map:   7%|▋         | 1000/14768 [00:00<00:09, 1469.91 examples/s]Map:  14%|█▎        | 2000/14768 [00:01<00:07, 1651.47 examples/s]Map:  20%|██        | 3000/14768 [00:01<00:07, 1509.46 examples/s]Map:  27%|██▋       | 4000/14768 [00:02<00:07, 1448.41 examples/s]Map:  34%|███▍      | 5000/14768 [00:03<00:06, 1435.02 examples/s]Map:  41%|████      | 6000/14768 [00:04<00:06, 1376.13 examples/s]Map:  47%|████▋     | 7000/14768 [00:04<00:05, 1462.30 examples/s]Map:  54%|█████▍    | 8000/14768 [00:05<00:04, 1449.06 examples/s]Map:  61%|██████    | 9000/14768 [00:06<00:03, 1484.90 examples/s]Map:  68%|██████▊   | 10000/14768 [00:06<00:03, 1466.31 examples/s]Map:  74%|███████▍  | 11000/14768 [00:07<00:02, 1535.04 examples/s]Map:  81%|████████▏ | 12000/14768 [00:07<00:01, 1585.64 examples/s]Map:  88%|████████▊ | 13000/14768 [00:08<00:01, 1587.31 examples/s]Map:  95%|█████████▍| 14000/14768 [00:09<00:00, 1623.45 examples/s]Map: 100%|██████████| 14768/14768 [00:09<00:00, 1683.72 examples/s]Map: 100%|██████████| 14768/14768 [00:09<00:00, 1536.33 examples/s]
+Map:   0%|          | 0/1641 [00:00<?, ? examples/s]Map:  61%|██████    | 1000/1641 [00:00<00:00, 1787.21 examples/s]Map: 100%|██████████| 1641/1641 [00:00<00:00, 1647.15 examples/s]Map: 100%|██████████| 1641/1641 [00:00<00:00, 1664.14 examples/s]
+  0%|          | 0/461 [00:00<?, ?it/s]You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  0%|          | 1/461 [00:27<3:33:00, 27.78s/it]  0%|          | 2/461 [00:48<3:01:00, 23.66s/it]  1%|          | 3/461 [01:09<2:52:26, 22.59s/it]  1%|          | 4/461 [01:34<2:56:41, 23.20s/it]slurmstepd: error: *** JOB 3721507 ON o03c02 CANCELLED AT 2024-05-28T16:15:45 ***
