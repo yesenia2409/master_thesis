@@ -81,7 +81,7 @@ if __name__ == "__main__":
     count_samples = 25
     seed = 33
     max_new_tokens = 521
-    output_dir = "Output_files/"
+    output_dir = "Output_files/inference_tests/"
     output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_001Lr_allLinearLayers.csv"
     output_path = os.path.join(output_dir, output_filename)
 
