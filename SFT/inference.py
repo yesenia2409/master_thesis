@@ -78,11 +78,11 @@ if __name__ == "__main__":
     dataset = "daven3/geosignal"
     base_model = "meta-llama/Llama-2-13b-chat-hf"
     model_dir_local = "Model/SFT_for_human_alignment/"
-    count_samples = 50
+    count_samples = 25
     seed = 33
     max_new_tokens = 521
     output_dir = "Output_files/"
-    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_001Lr.csv"
+    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_001Lr_allLinearLayers.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions

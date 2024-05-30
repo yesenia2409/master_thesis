@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=00:35:00
+#SBATCH --time=00:30:00
 #SBATCH --mem=20gb
 #SBATCH --gres=gpu:A40:1
 
@@ -29,6 +29,6 @@ module load devel/cuda/11.6
 #   --batch="${batch[$i]}" \
 #   --lr="${lr}" \
 #   --epochs="${epoch}"
+# done
 
 python3 -u inference.py
-# done
