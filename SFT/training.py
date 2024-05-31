@@ -154,7 +154,7 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments(
         # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
-        output_dir=f"{OUTPUT_DIR}SFT_for_human_alignment",
+        output_dir=f"{OUTPUT_DIR}SFT_for_human_alignment_2",
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch,
         per_device_eval_batch_size=args.batch,
@@ -203,10 +203,10 @@ if __name__ == "__main__":
     # Saving
     trainer.save_model()
     trained_model = AutoPeftModelForCausalLM.from_pretrained(
-        f"{OUTPUT_DIR}SFT_for_human_alignment",
+        f"{OUTPUT_DIR}SFT_for_human_alignment_2",
         low_cpu_mem_usage=True,
     )
 
     merged_model = trained_model.merge_and_unload()
-    merged_model.save_pretrained(f"merged_model/SFT_for_human_alignment", safe_serialization=True)
-    tokenizer.save_pretrained(f"merged_model/SFT_for_human_alignment")
+    merged_model.save_pretrained(f"merged_model/SFT_for_human_alignment_2", safe_serialization=True)
+    tokenizer.save_pretrained(f"merged_model/SFT_for_human_alignment_2")

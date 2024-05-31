@@ -45,7 +45,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
             kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
             summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
-            pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].replace("<|endoftext|>", "").split("[/EOS]")[0]
+            pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
             pred_list.append(pred)
             input_list.append(prompt.replace(" [EOS]", ""))
             label_list.append(label.replace("\n", " "))
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     # Variables
     dataset = "daven3/geosignal"
     base_model = "meta-llama/Llama-2-13b-chat-hf"
-    model_dir_local = "Model/SFT_for_human_alignment/"
+    model_dir_local = "Model/SFT_for_human_alignment_2/"
     count_samples = 25
     seed = 33
     max_new_tokens = 521
