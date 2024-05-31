@@ -36,6 +36,14 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     input_list = []
     label_list = []
 
+    for idx, prompt in enumerate(prompts):
+        prompts[idx] = f"<s> [INST] <<SYS>> \n You are a helpful, respectful and honest assistant. Always answer as helpfully as " \
+           f"possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, " \
+           f"dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in " \
+           f"nature. If a question does not make any sense, or is not factually coherent, explain why instead of " \
+           f"answering something not correct. If you don’t know the answer to a question, please don’t share false " \
+           f"information. \n Please answer the questions related to geoscience. \n <</SYS>> \n {prompt} [/INST] </s>"
+
     # inference
     with torch.no_grad():
         for prompt, label in zip(prompts, labels):
