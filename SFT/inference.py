@@ -45,11 +45,10 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
             kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
             summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
-            pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].replace("<|endoftext|>", "")
+            pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].replace("<|endoftext|>", "").split("[/EOS]")[0]
             pred_list.append(pred)
             input_list.append(prompt.replace(" [EOS]", ""))
             label_list.append(label.replace("\n", " "))
-
     return pred_list, input_list, label_list
 
 
@@ -82,7 +81,7 @@ if __name__ == "__main__":
     seed = 33
     max_new_tokens = 521
     output_dir = "Output_files/inference_tests/"
-    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_2_00E-4_allLinearLayers.csv"
+    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_2_00E-5_allLinearLayers.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
