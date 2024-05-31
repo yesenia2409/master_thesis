@@ -20,11 +20,11 @@ module load devel/cuda/11.6
 
 # call python script
 
-# lr=0.01
+# lr=0.0002
 # batch=2
 # epoch=1
 # for i in ${!batch[*]}; do
-#     echo "batch: ${batch[$i]}"
+#    echo "batch: ${batch[$i]}"
 # python3 -u training.py \
 #   --batch="${batch[$i]}" \
 #   --lr="${lr}" \
