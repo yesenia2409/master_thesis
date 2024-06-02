@@ -1,3 +1,4 @@
+from peft import PeftModel
 import pickle
 from sklearn.model_selection import train_test_split
 import pandas as pd
@@ -75,7 +76,9 @@ def create_model_and_tokenizer():
         device_map="auto",
         token=ACCESS_TOKEN,
     )
-
+    model.enable_input_require_grads()
+    model = PeftModel.from_pretrained(model, "Model/SFT_for_human_alignment/")
+    
     model.config.use_cache = False
     model.config.quantization_config.to_dict()
 
@@ -121,7 +124,8 @@ def plot_loss(log_history, save_path):
 if __name__ == "__main__":
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
-
+    model_dir_local = "Model/SFT_for_human_alignment/"
+    
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
     val_e = pd.read_pickle("Input_files/validation_set_expert.pkl")
@@ -131,7 +135,7 @@ if __name__ == "__main__":
     # test_h = pd.read_pickle("Input_files/test_set_human.pkl")
 
     model, tokenizer = create_model_and_tokenizer()
-
+    
     # print_layers(model)
 
     # Args from sh script
@@ -154,7 +158,7 @@ if __name__ == "__main__":
 
     training_arguments = TrainingArguments(
         # Settings chosen as here: https://github.com/pytorch/torchtune/blob/main/recipes/configs/llama2/13B_lora.yaml
-        output_dir=f"{OUTPUT_DIR}SFT_for_human_alignment_2",
+        output_dir=f"{OUTPUT_DIR}SFT_for_expert_alignment",
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch,
         per_device_eval_batch_size=args.batch,
@@ -175,8 +179,8 @@ if __name__ == "__main__":
         weight_decay=0.01,
     )
 
-    train = Dataset.from_pandas(train_h)
-    val = Dataset.from_pandas(val_h)
+    train = Dataset.from_pandas(train_e)
+    val = Dataset.from_pandas(val_e)
 
     trainer = SFTTrainer(
         model=model,
@@ -195,18 +199,18 @@ if __name__ == "__main__":
     print("train loss:", train_result.metrics["train_loss"])
 
     with open(
-            "Output_files/slurm_files/alignment_with_humans/trainer_log_history_SFT_for_human_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers.txt", "a") as text_file:
+            "Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history))
     plot_loss(trainer.state.log_history,
-              'Output_files/loss_SFT_for_human_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers.png')
+              'Output_files/loss_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers.png')
 
     # Saving
     trainer.save_model()
     trained_model = AutoPeftModelForCausalLM.from_pretrained(
-        f"{OUTPUT_DIR}SFT_for_human_alignment_2",
+        f"{OUTPUT_DIR}SFT_for_expert_alignment",
         low_cpu_mem_usage=True,
     )
 
     merged_model = trained_model.merge_and_unload()
-    merged_model.save_pretrained(f"merged_model/SFT_for_human_alignment_2", safe_serialization=True)
-    tokenizer.save_pretrained(f"merged_model/SFT_for_human_alignment_2")
+    merged_model.save_pretrained(f"merged_model/SFT_for_expert_alignment", safe_serialization=True)
+    tokenizer.save_pretrained(f"merged_model/SFT_for_expert_alignment")
