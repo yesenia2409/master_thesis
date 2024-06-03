@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=15:00:00
-#SBATCH --mem=50gb
+#SBATCH --time=08:00:00
+#SBATCH --mem=30gb
 #SBATCH --gres=gpu:A40:2
 
 echo 'Running simulation'
@@ -20,7 +20,7 @@ module load devel/cuda/11.6
 
 # call python script
 
-lr=0.00002
+lr=0.0002
 batch=2
 epoch=1
 # for i in ${!batch[*]}; do

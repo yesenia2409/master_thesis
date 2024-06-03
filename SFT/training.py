@@ -124,8 +124,7 @@ def plot_loss(log_history, save_path):
 if __name__ == "__main__":
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
-    model_dir_local = "Model/SFT_for_human_alignment/"
-    
+
     train_e = pd.read_pickle("Input_files/train_set_expert.pkl")
     train_h = pd.read_pickle("Input_files/train_set_human.pkl")
     val_e = pd.read_pickle("Input_files/validation_set_expert.pkl")
@@ -199,10 +198,10 @@ if __name__ == "__main__":
     print("train loss:", train_result.metrics["train_loss"])
 
     with open(
-            "Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers.txt", "a") as text_file:
+            "Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_1epoch_2_00E-4Lr_2batch_allLinearLayers.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history))
     plot_loss(trainer.state.log_history,
-              'Output_files/loss_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers.png')
+              'Output_files/plots_failed_SFT_tries/loss_SFT_for_expert_alignment_1epoch_2_00E-4Lr_2batch_allLinearLayers.png')
 
     # Saving
     trainer.save_model()
