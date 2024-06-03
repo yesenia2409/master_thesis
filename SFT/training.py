@@ -169,17 +169,17 @@ if __name__ == "__main__":
         warmup_ratio=0.03,
         warmup_steps=50,
         logging_strategy="steps",
-        logging_steps=10,
+        logging_steps=2,
         evaluation_strategy="steps",
-        eval_steps=0.03,
+        eval_steps=0.01,
         save_safetensors=True,
         seed=42,
         bf16=True,
         weight_decay=0.01,
     )
 
-    train = Dataset.from_pandas(train_e)
-    val = Dataset.from_pandas(val_e)
+    train = Dataset.from_pandas(train_e[:200])
+    val = Dataset.from_pandas(val_e[:200])
 
     trainer = SFTTrainer(
         model=model,
@@ -198,10 +198,10 @@ if __name__ == "__main__":
     print("train loss:", train_result.metrics["train_loss"])
 
     with open(
-            "Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_1epoch_2_00E-4Lr_2batch_allLinearLayers.txt", "a") as text_file:
+            "Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_200prompt_experiment.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history))
     plot_loss(trainer.state.log_history,
-              'Output_files/plots_failed_SFT_tries/loss_SFT_for_expert_alignment_1epoch_2_00E-4Lr_2batch_allLinearLayers.png')
+              'Output_files/plots_failed_SFT_tries/loss_SFT_for_expert_alignment_200prompt_experiment.png')
 
     # Saving
     trainer.save_model()

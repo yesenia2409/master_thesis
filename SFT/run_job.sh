@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=08:00:00
-#SBATCH --mem=30gb
-#SBATCH --gres=gpu:A40:2
+#SBATCH --time=00:15:00
+#SBATCH --mem=20gb
+#SBATCH --gres=gpu:A40:1
 
 echo 'Running simulation'
 
@@ -31,4 +31,4 @@ python3 -u training.py \
   --epochs="${epoch}"
 # done
 
-python3 -u inference.py
+# python3 -u inference.py
