@@ -68,19 +68,26 @@ def create_model_and_tokenizer():
         bnb_4bit_compute_dtype=torch.float16,
     )
 
-    model = AutoModelForCausalLM.from_pretrained(
-        MODEL_NAME,
-        use_safetensors=True,
-        quantization_config=bnb_config,
-        trust_remote_code=True,
-        device_map="auto",
-        token=ACCESS_TOKEN,
-    )
-    model.enable_input_require_grads()
-    model = PeftModel.from_pretrained(model, "Model/SFT_for_human_alignment/")
+    # model = AutoModelForCausalLM.from_pretrained(
+    #     MODEL_NAME,
+    #     use_safetensors=True,
+    #     quantization_config=bnb_config,
+    #     trust_remote_code=True,
+    #     device_map="auto",
+    #     token=ACCESS_TOKEN,
+    # )
     
+    model = AutoModelForCausalLM.from_pretrained(
+          pretrained_model_name_or_path="merged_model/SFT_for_human_alignment/", 
+          local_files_only=True,
+          use_safetensors=True,
+          quantization_config=bnb_config,
+          device_map="auto",
+    )
+    
+        
     model.config.use_cache = False
-    model.config.quantization_config.to_dict()
+    # model.config.quantization_config.to_dict()
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     tokenizer.pad_token = tokenizer.eos_token
@@ -169,17 +176,17 @@ if __name__ == "__main__":
         warmup_ratio=0.03,
         warmup_steps=50,
         logging_strategy="steps",
-        logging_steps=2,
+        logging_steps=10,
         evaluation_strategy="steps",
-        eval_steps=0.01,
+        eval_steps=0.03,
         save_safetensors=True,
         seed=42,
         bf16=True,
         weight_decay=0.01,
     )
 
-    train = Dataset.from_pandas(train_e[:200])
-    val = Dataset.from_pandas(val_e[:200])
+    train = Dataset.from_pandas(train_e)
+    val = Dataset.from_pandas(val_e)
 
     trainer = SFTTrainer(
         model=model,
@@ -197,11 +204,9 @@ if __name__ == "__main__":
     print("train_results: ", train_result)
     print("train loss:", train_result.metrics["train_loss"])
 
-    with open(
-            "Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_200prompt_experiment.txt", "a") as text_file:
+    with open("Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers_revised.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history))
-    plot_loss(trainer.state.log_history,
-              'Output_files/plots_failed_SFT_tries/loss_SFT_for_expert_alignment_200prompt_experiment.png')
+    plot_loss(trainer.state.log_history, 'Output_files/plots_failed_SFT_tries/loss_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers_revised.png')
 
     # Saving
     trainer.save_model()
@@ -210,6 +215,7 @@ if __name__ == "__main__":
         low_cpu_mem_usage=True,
     )
 
+    # trained_model.push_to_hub("yesenia2409/SFT_for_human_alignment", private=False, token=ACCESS_TOKEN)
     merged_model = trained_model.merge_and_unload()
     merged_model.save_pretrained(f"merged_model/SFT_for_expert_alignment", safe_serialization=True)
     tokenizer.save_pretrained(f"merged_model/SFT_for_expert_alignment")

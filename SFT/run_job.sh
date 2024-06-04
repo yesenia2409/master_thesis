@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=00:15:00
-#SBATCH --mem=20gb
-#SBATCH --gres=gpu:A40:1
+#SBATCH --time=10:00:00
+#SBATCH --mem=100gb
+#SBATCH --gres=gpu:A40:2
 
 echo 'Running simulation'
 
@@ -20,7 +20,7 @@ module load devel/cuda/11.6
 
 # call python script
 
-lr=0.0002
+lr=0.00002
 batch=2
 epoch=1
 # for i in ${!batch[*]}; do
@@ -31,4 +31,4 @@ python3 -u training.py \
   --epochs="${epoch}"
 # done
 
-# python3 -u inference.py
+python3 -u inference.py
