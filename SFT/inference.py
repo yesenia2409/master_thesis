@@ -54,6 +54,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
             summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
             # pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
+            pred = pred.split("[EOS]  [/INST] </s><s>")[1].split["</s><s>"][0]
             pred_list.append(pred)
             input_list.append(prompt.replace(" [EOS]", ""))
             label_list.append(label.replace("\n", " "))

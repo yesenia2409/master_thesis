@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import r2_score
+import csv
 
 
 def plot_loss_over_learning_rate():
@@ -85,5 +86,8 @@ def plot_loss_over_time():
 
 
 if __name__ == "__main__":
-    plot_loss_over_learning_rate()
+    # plot_loss_over_learning_rate()
     # plot_loss_over_time()
+
+    dict = pd.read_csv("Output_files/inference_tests/inference_test_25samples_33seed_1epoch_2batch_2_00E-5_allLinearLayers_ExpertAlignment_revised.csv", header=None, index_col=0).to_dict()
+    print(dict)

@@ -206,7 +206,8 @@ if __name__ == "__main__":
 
     with open("Output_files/slurm_files/alignment_with_experts/trainer_log_history_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers_revised.txt", "a") as text_file:
         text_file.write(str(trainer.state.log_history))
-    plot_loss(trainer.state.log_history, 'Output_files/plots_failed_SFT_tries/loss_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers_revised.png')
+    plot_loss(trainer.state.log_history,
+              'Output_files/loss_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers_revised.png')
 
     # Saving
     trainer.save_model()
