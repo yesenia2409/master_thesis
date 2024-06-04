@@ -47,14 +47,15 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     # inference
     with torch.no_grad():
         for prompt, label in zip(prompts, labels):
-            encode_dict = tokenizer(prompt, return_tensors="pt", padding=True, truncation=True)
+            encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
             txt_tokens = encode_dict["input_ids"].cuda()
             attention_mask = encode_dict["attention_mask"].cuda()
             kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
             summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
             # pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
-            pred = pred.split("[EOS]  [/INST] </s><s>")[1].split["</s><s>"][0]
+            # pred = pred.split("[EOS]  [/INST] </s><s>")[1].split["</s><s>"][0]
+            print(pred)
             pred_list.append(pred)
             input_list.append(prompt.replace(" [EOS]", ""))
             label_list.append(label.replace("\n", " "))
@@ -86,7 +87,7 @@ if __name__ == "__main__":
     dataset = "daven3/geosignal"
     base_model = "meta-llama/Llama-2-13b-chat-hf"
     model_dir_local = "Model/SFT_for_expert_alignment/"
-    count_samples = 25
+    count_samples = 3
     seed = 33
     max_new_tokens = 521
     output_dir = "Output_files/inference_tests/"
@@ -102,5 +103,5 @@ if __name__ == "__main__":
 
     pred_list, input_list, label_list = inference(model, tokenizer, prompts, labels, max_new_tokens)
     print("inference() done!")
-    save_to_csv(pred_list, label_list, input_list, output_path)
+    # save_to_csv(pred_list, label_list, input_list, output_path)
     print("save_to_csv() done!")
