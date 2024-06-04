@@ -54,8 +54,8 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
             summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
             # pred = pred.split("[EOS]")[1].split(tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
-            pred = pred.split("[EOS]  [/INST] </s><s>")[1]
-            print(pred)
+            pred = pred.split("</s><s>")[1]
+            # print(pred)
             pred_list.append(pred)
             input_list.append(prompt.replace(" [EOS]", ""))
             label_list.append(label.replace("\n", " "))
@@ -87,11 +87,11 @@ if __name__ == "__main__":
     dataset = "daven3/geosignal"
     base_model = "meta-llama/Llama-2-13b-chat-hf"
     model_dir_local = "Model/SFT_for_expert_alignment/"
-    count_samples = 4
+    count_samples = 25
     seed = 33
     max_new_tokens = 521
     output_dir = "Output_files/inference_tests/"
-    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_2_00E-5_allLinearLayers_ExpertAlignment_test.csv"
+    output_filename = f"inference_test_{count_samples}samples_{seed}seed_1epoch_2batch_2_00E-5_allLinearLayers_ExpertAlignment_revised.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
@@ -103,5 +103,5 @@ if __name__ == "__main__":
 
     pred_list, input_list, label_list = inference(model, tokenizer, prompts, labels, max_new_tokens)
     print("inference() done!")
-    # save_to_csv(pred_list, label_list, input_list, output_path)
+    save_to_csv(pred_list, label_list, input_list, output_path)
     print("save_to_csv() done!")
