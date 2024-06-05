@@ -28,19 +28,20 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     pred_list = []
     input_list = []
     label_list = []
+    print(len(prompts))
 
-    for idx, prompt in enumerate(prompts):
-        for prompt, label in zip(prompts, labels):
-            encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
-            txt_tokens = encode_dict["input_ids"].cuda()
-            attention_mask = encode_dict["attention_mask"].cuda()
-            kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
-            summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
-            pred = tokenizer.batch_decode(summ_tokens)[0]
-            pred = pred.split("</s><s>")[1]
-            pred_list.append(pred)
-            input_list.append(prompt.replace(" [EOS]", ""))
-            label_list.append(label.replace("\n", " "))
+    for prompt, label in zip(prompts, labels):
+        encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
+        txt_tokens = encode_dict["input_ids"].cuda()
+        attention_mask = encode_dict["attention_mask"].cuda()
+        kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
+        summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
+        pred = tokenizer.batch_decode(summ_tokens)[0]
+        pred = pred.split("</s><s>")[1]
+        pred_list.append(pred)
+        input_list.append(prompt.replace(" [EOS]", ""))
+        label_list.append(label.replace("\n", " "))
+        print("1 prompt done!")
     return pred_list, input_list, label_list
 
 
