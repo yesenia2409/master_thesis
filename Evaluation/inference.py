@@ -28,9 +28,8 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     pred_list = []
     input_list = []
     label_list = []
-    print(len(prompts))
 
-    for prompt, label in zip(prompts, labels):
+    for idx, prompt, label in enumerate(zip(prompts, labels)):
         encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
         txt_tokens = encode_dict["input_ids"].cuda()
         attention_mask = encode_dict["attention_mask"].cuda()
@@ -41,7 +40,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
         pred_list.append(pred)
         input_list.append(prompt.replace(" [EOS]", ""))
         label_list.append(label.replace("\n", " "))
-        print("1 prompt done!")
+        print(f"{idx}. prompt done! {len(prompts)-idx} more to go..")
     return pred_list, input_list, label_list
 
 
@@ -92,11 +91,11 @@ def create_model_and_tokenizer(model_dir):
 if __name__ == "__main__":
     # Variables
     model_dir_local = "../SFT/merged_model/SFT_for_expert_alignment/"
-    max_new_tokens = 521
-    output_dir = "Output_files/"
+    max_new_tokens = 128
+    output_dir = "Output_files/answers/"
     benchmark = "apstudy"
     model_name = "SFT_only"
-    output_filename = f"evaluation_results_{benchmark}_{model_name}.csv"
+    output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
@@ -105,7 +104,7 @@ if __name__ == "__main__":
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
 
-    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"][:3], data["label"][:3], max_new_tokens)
+    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"][:10], data["label"][:10], max_new_tokens)
     print("inference() done!")
 
     save_to_csv(pred_list, label_list, input_list, output_path)
