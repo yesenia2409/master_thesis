@@ -104,7 +104,7 @@ if __name__ == "__main__":
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
 
-    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"][:10], data["label"][:10], max_new_tokens)
+    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"], data["label"], max_new_tokens)
     print("inference() done!")
 
     save_to_csv(pred_list, label_list, input_list, output_path)
