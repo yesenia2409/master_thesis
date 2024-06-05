@@ -7,16 +7,10 @@ SFT: inference
 * Save the dataset as pickle and csv files
 """
 
-import repackage
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-
-repackage.up()
-
-from peft import PeftModel
 import torch
 import os
 import pandas as pd
-from Prompting import proof_of_concept
 
 
 def inference(model, tokenizer, prompts, labels, max_new_tokens):
@@ -48,6 +42,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
             input_list.append(prompt.replace(" [EOS]", ""))
             label_list.append(label.replace("\n", " "))
     return pred_list, input_list, label_list
+
 
 def save_to_csv(pred_list, gold_list, input_list, output_path):
     """
@@ -109,7 +104,7 @@ if __name__ == "__main__":
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
 
-    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"], data["label"], max_new_tokens)
+    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"][:3], data["label"][:3], max_new_tokens)
     print("inference() done!")
 
     save_to_csv(pred_list, label_list, input_list, output_path)
