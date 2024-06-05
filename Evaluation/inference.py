@@ -29,7 +29,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
     input_list = []
     label_list = []
 
-    for idx, prompt, label in enumerate(zip(prompts, labels)):
+    for idx, (prompt, label) in enumerate(zip(prompts, labels)):
         encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
         txt_tokens = encode_dict["input_ids"].cuda()
         attention_mask = encode_dict["attention_mask"].cuda()
