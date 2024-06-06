@@ -100,8 +100,13 @@ if __name__ == "__main__":
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
-    data = data.loc[data['id'].isin(["choice", "tf"])]
-    print(data)
+    data = data.loc[data['id'].isin(["tf"])]
+
+    for idx, row in data.iterrows():
+        prompt_list = row["prompt"].split("<</SYS>>")
+        prompt_list.insert(1, "Please state if the following question is true or false:")
+        row["prompt"] = ' '.join(prompt_list)
+        # print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
