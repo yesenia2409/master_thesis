@@ -9,6 +9,7 @@ def generate_evaluation(df, model):
 
     for idx, row in df.iterrows():
         prompt = row["input"].split("<</SYS>>")[1].split("[/INST]")[0]
+        # prompt = row["input"].split("geoscience.")[1].split("[/INST]")[0]
         label = row["gold"]
         pred = row["pred"].split("[/INST]")[0]
         completion = client.chat.completions.create(
@@ -29,13 +30,13 @@ def generate_evaluation(df, model):
 
 
 if __name__ == "__main__":
-    input_file_path = "Output_files/answers/output_for_evaluation_npee_mc_SFT_only.csv"
-    output_path= "Output_files/evaluated_answers/evaluation_results_npee_mc_SFT_only.csv"
+    input_file_path = "Output_files/answers/output_for_evaluation_npee_tf_base.csv"
+    output_path= "Output_files/evaluated_answers/evaluation_results_npee_tf_base.csv"
     client = OpenAI(api_key="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")
     MODEL = "gpt-4o"
 
     df = pd.read_csv(input_file_path)
-    df = df.loc[df['id'].isin(["choice"])]
+    # df = df.loc[df['id'].isin(["choice"])]
 
     # print(df)
     prompts, preds, eval_results = generate_evaluation(df, MODEL)

@@ -90,11 +90,12 @@ def create_model_and_tokenizer(model_dir):
 
 if __name__ == "__main__":
     # Variables
-    model_dir_local = "../SFT/merged_model/SFT_for_expert_alignment/"
+    model_dir_local = "meta-llama/Llama-2-13b-chat-hf"
+    # "../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
     benchmark = "npee_tf"
-    model_name = "SFT_only"
+    model_name = "base"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
@@ -103,10 +104,11 @@ if __name__ == "__main__":
     data = data.loc[data['id'].isin(["tf"])]
 
     for idx, row in data.iterrows():
-        prompt_list = row["prompt"].split("<</SYS>>")
-        prompt_list.insert(1, "Please state if the following question is true or false:")
+        prompt_list = row["prompt"].split("<</SYS>> \n")
+        prompt_list.insert(1, "<</SYS>>")
+        prompt_list.insert(2, "Please state if the following question is true or false:")
         row["prompt"] = ' '.join(prompt_list)
-        # print(row["prompt"])
+        print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
