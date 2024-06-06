@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # "../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
-    benchmark = "npee_tf"
+    benchmark = "npee_mc"
     model_name = "base"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
