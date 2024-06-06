@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=00:15:00
+#SBATCH --time=00:30:00
 #SBATCH --mem=20gb
 #SBATCH --gres=gpu:A40:1
 
@@ -21,3 +21,4 @@ module load devel/cuda/11.6
 # call python script
 
 python3 -u inference.py
+# python3 -u try_GPT4_Api.py
