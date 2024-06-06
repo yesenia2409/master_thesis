@@ -6,6 +6,7 @@ def generate_evaluation(df, model):
     evaluation = []
     prompts = []
     predictions = []
+
     for _, row in df.iterrows():
         prompt = row["input"].split("<</SYS>>")[1].split("[/INST]")[0]
         label = row["gold"]
@@ -14,13 +15,16 @@ def generate_evaluation(df, model):
             model=model,
             messages=[
                 {"role": "system", "content": "You are an evaluation system and rate outputs by another model."},
-                {"role": "user", "content": f"An LLM answered with ### {pred} ### to an input ### {prompt} ###. The actual answer is ### {label} ###."
-                                            f" Is the answer provided by the LLM corrcet? Answer with 1, if yes, or 0, if no."}
+                {"role": "user", "content": f"An LLM answered with ### {pred} ### to an input ### {prompt} ###. "
+                                            f"The actual answer is ### {label} ###."
+                                            f" Is the answer provided by the LLM correct? "
+                                            f"Answer with 1, if yes, or 0, if no."}
             ]
         )
         prompts.append(prompt)
         predictions.append(pred)
         evaluation.append(completion.choices[0].message.content)
+        print(completion.choices[0].message.content)
     return prompts, predictions, evaluation
 
 

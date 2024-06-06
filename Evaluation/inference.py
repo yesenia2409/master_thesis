@@ -93,13 +93,15 @@ if __name__ == "__main__":
     model_dir_local = "../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
-    benchmark = "apstudy"
+    benchmark = "npee_closed"
     model_name = "SFT_only"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
-    data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
+    data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
+    data = data.loc[data['id'].isin(["choice", "tf"])]
+    print(data)
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
