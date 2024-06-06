@@ -9,7 +9,6 @@ def generate_evaluation(df, model):
 
     for idx, row in df.iterrows():
         prompt = row["input"].split("<</SYS>>")[1].split("[/INST]")[0]
-        # prompt = row["input"].split("geoscience.")[1].split("[/INST]")[0]
         label = row["gold"]
         pred = row["pred"].split("[/INST]")[0]
         completion = client.chat.completions.create(

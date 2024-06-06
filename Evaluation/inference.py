@@ -101,14 +101,14 @@ if __name__ == "__main__":
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
-    data = data.loc[data['id'].isin(["tf"])]
+    data = data.loc[data['id'].isin(["choice"])]
 
-    for idx, row in data.iterrows():
-        prompt_list = row["prompt"].split("<</SYS>> \n")
-        prompt_list.insert(1, "<</SYS>>")
-        prompt_list.insert(2, "Please state if the following question is true or false:")
-        row["prompt"] = ' '.join(prompt_list)
-        print(row["prompt"])
+    # for idx, row in data.iterrows():
+    #     prompt_list = row["prompt"].split("<</SYS>> \n")
+    #     prompt_list.insert(1, "<</SYS>>")
+    #     prompt_list.insert(2, "Please state if the following question is true or false:")
+    #     row["prompt"] = ' '.join(prompt_list)
+    #    print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
