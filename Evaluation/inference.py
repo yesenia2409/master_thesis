@@ -94,14 +94,14 @@ if __name__ == "__main__":
     # "../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
-    benchmark = "npee_mc"
+    benchmark = "apstudy"
     model_name = "base"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
-    data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
-    data = data.loc[data['id'].isin(["choice"])]
+    data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
+    # data = data.loc[data['id'].isin(["choice"])]
 
     # for idx, row in data.iterrows():
     #     prompt_list = row["prompt"].split("<</SYS>> \n")

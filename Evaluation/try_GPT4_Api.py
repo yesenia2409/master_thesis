@@ -29,9 +29,9 @@ def generate_evaluation(df, model):
 
 
 if __name__ == "__main__":
-    input_file_path = "Output_files/answers/output_for_evaluation_npee_tf_base.csv"
-    output_path= "Output_files/evaluated_answers/evaluation_results_npee_tf_base.csv"
-    client = OpenAI(api_key="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")
+    input_file_path = "Output_files/answers/output_for_evaluation_apstudy_base.csv"
+    output_path = "Output_files/evaluated_answers/evaluation_results_apstudy_base.csv"
+    client = OpenAI(api_key="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")
     MODEL = "gpt-4o"
 
     df = pd.read_csv(input_file_path)
