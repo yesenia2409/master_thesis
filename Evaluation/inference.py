@@ -92,7 +92,7 @@ if __name__ == "__main__":
     # Variables
     model_dir_local = "meta-llama/Llama-2-13b-chat-hf"
     # "../SFT/merged_model/SFT_for_expert_alignment/"
-    max_new_tokens = 128
+    max_new_tokens = 256
     output_dir = "Output_files/answers/"
     benchmark = "npee_noun"
     model_name = "base"

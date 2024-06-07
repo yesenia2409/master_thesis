@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=14:00:00
-#SBATCH --mem=40gb
+#SBATCH --time=07:00:00
+#SBATCH --mem=20gb
 #SBATCH --gres=gpu:A40:1
 
 echo 'Running simulation'
