@@ -24,6 +24,7 @@ def generate_evaluation(df, model):
         prompts.append(prompt)
         predictions.append(pred)
         evaluation.append(completion.choices[0].message.content)
+        print(evaluation)
         print(idx)
     return prompts, predictions, evaluation
 
