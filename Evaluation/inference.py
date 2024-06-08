@@ -90,12 +90,12 @@ def create_model_and_tokenizer(model_dir):
 
 if __name__ == "__main__":
     # Variables
-    model_dir_local = "../SFT/merged_model/SFT_for_expert_alignment/"
-    # "meta-llama/Llama-2-13b-chat-hf"
+    model_dir_local = "meta-llama/Llama-2-13b-chat-hf"
+    # "../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 256
     output_dir = "Output_files/answers/"
     benchmark = "npee_completion"
-    model_name = "SFT_only"
+    model_name = "base"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
