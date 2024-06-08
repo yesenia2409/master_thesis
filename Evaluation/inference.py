@@ -94,21 +94,21 @@ if __name__ == "__main__":
     # "meta-llama/Llama-2-13b-chat-hf"
     max_new_tokens = 256
     output_dir = "Output_files/answers/"
-    benchmark = "npee_noun"
+    benchmark = "npee_completion"
     model_name = "SFT_only"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
-    data = data.loc[data['id'].isin(["noun"])]
+    data = data.loc[data['id'].isin(["completion"])]
 
     for idx, row in data.iterrows():
         prompt_list = row["prompt"].split("<</SYS>> \n")
         prompt_list.insert(1, "<</SYS>>")
-        prompt_list.insert(2, "Please give a short definition for the following term:")
+        prompt_list.insert(2, "Please complete the following sentence:")
         row["prompt"] = ' '.join(prompt_list)
-        print(row["prompt"])
+        # print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
