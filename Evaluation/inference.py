@@ -91,24 +91,27 @@ def create_model_and_tokenizer(model_dir):
 if __name__ == "__main__":
     # Variables
     model_dir_local = "../SFT/merged_model/SFT_for_expert_alignment/" #"meta-llama/Llama-2-13b-chat-hf"
-    max_new_tokens = 256
+    max_new_tokens = 512
     output_dir = "Output_files/answers/"
-    benchmark = "npee_qa"
+    benchmark = "npee_discussion"
     model_name = "SFT_only"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
-    data = data.loc[data['id'].isin(["qa"])]
+    data = data.loc[data['id'].isin(["discussion"])]
+    counter = 0
 
-    for idx, row in data.iterrows():
-        prompt_list = row["prompt"].split("<</SYS>> \n")
-        prompt_list.insert(1, "<</SYS>>")
-        prompt_list.insert(2, "Please answer the following question:")
+    for idx, row in data.iterrows(): # row 1074-1379 --> first 305 entries
+        if counter <= 304:
+            prompt_list = row["prompt"].split("<</SYS>> \n")
+            prompt_list.insert(1, "<</SYS>>")
+            prompt_list.insert(2, "Briefly discuss the following statement/question:")
 
-        row["prompt"] = ' '.join(prompt_list)
-        # print(row["prompt"])
+            row["prompt"] = ' '.join(prompt_list)
+            counter += 1
+            # print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
