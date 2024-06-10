@@ -9,6 +9,7 @@ DIR = "RewardModel/"
 
 # HOW TO RM INFERENCE ?? LAB VON POLINA??
 
+
 def preprocess_dataset(examples):
     new_examples = {
         "input_ids_chosen": [],
@@ -63,7 +64,7 @@ if __name__ == "__main__":
     ################
     # Dataset
     ################
-    raw_datasets = load_dataset("Anthropic/hh-rlhf")
+    raw_datasets = load_dataset("Anthropic/hh-rlhf") # eigener datensatz mit chosen, rejected and type of correction
 
     raw_datasets = raw_datasets.map(
         preprocess_dataset,
@@ -71,7 +72,7 @@ if __name__ == "__main__":
         num_proc=4,
     )
 
-    train_dataset = raw_datasets["train"]
+    train_dataset = raw_datasets["train"] # replace with stratified sampling based on type of correction
     eval_dataset = raw_datasets["test"]
 
     ################
@@ -84,7 +85,7 @@ if __name__ == "__main__":
         task_type=TaskType.SEQ_CLS,
     )
 
-    training_arguments = TrainingArguments(
+    training_arguments = TrainingArguments( # look for pytorch torchtune for llama 7 b model and adjust parameter
         output_dir=f"{DIR}Training_Outputs",
         num_train_epochs=1,
         per_device_train_batch_size=2,
