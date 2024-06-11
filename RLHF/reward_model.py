@@ -18,14 +18,15 @@ def inference(reward_tokenizer, reward_model, sample):
         padding='max_length',
         return_tensors='pt'
     )
-
+    model.eval()
     out_reward = reward_model(**input_ids)
 
     reward = torch.softmax(out_reward.logits, dim=1)
-    reward = reward[:, 1]
+    # reward = reward[:, 1]
 
-    print("Reward: ", reward)
-    return reward
+    print("Reward Logits: ", out_reward.logits)
+    print("Reward Prob: ", reward)
+    return out_reward
 
 
 def preprocess_dataset(examples, tokenizer):
@@ -64,7 +65,7 @@ def load_model():
         device_map="auto",
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(REWARD_MODEL, use_fast=True)
+    tokenizer = AutoTokenizer.from_pretrained(REWARD_MODEL, use_fast=True, model_max_length=512)
 
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -78,6 +79,7 @@ if __name__ == "__main__":
     # Model & Tokenizer
     ################
     model, tokenizer = load_model()
+    print("Done loading model and tokenizer!")
 
     ################
     # Dataset
@@ -90,14 +92,18 @@ if __name__ == "__main__":
 
     train_set = Dataset.from_dict(preprocessed_train_data)
     test_set = Dataset.from_dict(preprocessed_test_data)
+    
+    print("Done preprocessing dataset!")
 
     ################
     # Inference
     ################
 
-    print(train_set["chosen"][0])
-    inference(tokenizer, model, train_set["chosen"][0])
-
+    # print(raw_datasets["chosen"][0])
+    # print(raw_datasets["rejected"][13])
+    # inference(tokenizer, model, raw_datasets["chosen"][0])
+    # inference(tokenizer, model, "gskhdlazdgtaddifjädf")
+    # print("Done with inference!")
 
     ################
     # Training
@@ -109,14 +115,15 @@ if __name__ == "__main__":
         task_type=TaskType.SEQ_CLS,
     )
 
-    training_arguments = TrainingArguments( # look for pytorch torchtune for llama 7 b model and adjust parameter
+    training_arguments = TrainingArguments(
         output_dir=f"{DIR}Training_Outputs",
         num_train_epochs=1,
         per_device_train_batch_size=2,
         per_device_eval_batch_size=2,
-        gradient_accumulation_steps=16,
+        gradient_accumulation_steps=32,
         optim="paged_adamw_32bit",
-        learning_rate=0.00001,
+        learning_rate=0.0003,
+        weight_decay=0.01,
         save_strategy="epoch",
         logging_strategy="steps",
         logging_steps=10,
@@ -124,22 +131,26 @@ if __name__ == "__main__":
         eval_steps=10,
         save_safetensors=True,
         seed=42,
-        bf16=True
+        bf16=True,
+        remove_unused_columns=False
     )
 
     trainer = RewardTrainer(
         model=model,
         tokenizer=tokenizer,
         args=training_arguments,
+        max_length=256,
         train_dataset=train_set,
         eval_dataset=test_set,
         peft_config=peft_config,
     )
 
-    # trainer.train()
+    trainer.train()
+    print("Done training!")
 
-    # trainer.save_model(DIR)
+    trainer.save_model(DIR)
+    print("Done saving!")
 
-    # metrics = trainer.evaluate()
-    # trainer.log_metrics("eval", metrics)
-    # print(metrics)
+    metrics = trainer.evaluate()
+    trainer.log_metrics("eval", metrics)
+    print("Evaluation mectrics: ", metrics)
