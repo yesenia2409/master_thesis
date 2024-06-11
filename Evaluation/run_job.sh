@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=17:00:00
+#SBATCH --time=13:00:00
 #SBATCH --mem=50gb
 #SBATCH --gres=gpu:A40:1
 
