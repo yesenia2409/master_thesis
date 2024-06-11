@@ -21,4 +21,4 @@ module load devel/cuda/11.6
 # call python script
 
 python3 -u inference.py
-# python3 -u try_GPT4_Api.py
+# python3 -u query_GPT-4o.py

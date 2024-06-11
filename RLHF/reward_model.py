@@ -1,5 +1,7 @@
+import pandas as pd
 import torch
-from datasets import load_dataset
+from datasets import Dataset
+from sklearn.model_selection import train_test_split
 from peft import LoraConfig, TaskType
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
 from trl import RewardTrainer
@@ -7,10 +9,26 @@ from trl import RewardTrainer
 REWARD_MODEL = "OpenLLMAI/Llama-2-7b-rm-anthropic_hh-lmsys-oasst-webgpt"
 DIR = "RewardModel/"
 
-# HOW TO RM INFERENCE ?? LAB VON POLINA??
+
+def inference(reward_tokenizer, reward_model, sample):
+    input_ids = reward_tokenizer(
+        sample,
+        truncation=True,
+        max_length=128,
+        padding='max_length',
+        return_tensors='pt'
+    )
+
+    out_reward = reward_model(**input_ids)
+
+    reward = torch.softmax(out_reward.logits, dim=1)
+    reward = reward[:, 1]
+
+    print("Reward: ", reward)
+    return reward
 
 
-def preprocess_dataset(examples):
+def preprocess_dataset(examples, tokenizer):
     new_examples = {
         "input_ids_chosen": [],
         "attention_mask_chosen": [],
@@ -64,16 +82,22 @@ if __name__ == "__main__":
     ################
     # Dataset
     ################
-    raw_datasets = load_dataset("Anthropic/hh-rlhf") # eigener datensatz mit chosen, rejected and type of correction
+    raw_datasets = pd.read_csv("Input_files/dataset_SFT_reward_model.csv")
+    train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
 
-    raw_datasets = raw_datasets.map(
-        preprocess_dataset,
-        batched=True,
-        num_proc=4,
-    )
+    preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
+    preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
 
-    train_dataset = raw_datasets["train"] # replace with stratified sampling based on type of correction
-    eval_dataset = raw_datasets["test"]
+    train_set = Dataset.from_dict(preprocessed_train_data)
+    test_set = Dataset.from_dict(preprocessed_test_data)
+
+    ################
+    # Inference
+    ################
+
+    print(train_set["chosen"][0])
+    inference(tokenizer, model, train_set["chosen"][0])
+
 
     ################
     # Training
@@ -107,15 +131,15 @@ if __name__ == "__main__":
         model=model,
         tokenizer=tokenizer,
         args=training_arguments,
-        train_dataset=train_dataset,
-        eval_dataset=eval_dataset,
+        train_dataset=train_set,
+        eval_dataset=test_set,
         peft_config=peft_config,
     )
 
-    trainer.train()
+    # trainer.train()
 
-    trainer.save_model(DIR)
+    # trainer.save_model(DIR)
 
-    metrics = trainer.evaluate()
-    trainer.log_metrics("eval", metrics)
-    print(metrics)
+    # metrics = trainer.evaluate()
+    # trainer.log_metrics("eval", metrics)
+    # print(metrics)
