@@ -2,11 +2,11 @@ import pandas as pd
 import torch
 from datasets import Dataset
 from sklearn.model_selection import train_test_split
-from peft import LoraConfig, TaskType, AutoPeftModelForSequenceClassification
+from peft import LoraConfig, TaskType, PeftModelForSequenceClassification, PeftModel
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
 from trl import RewardTrainer
 
-REWARD_MODEL = "OpenLLMAI/Llama-2-7b-rm-anthropic_hh-lmsys-oasst-webgpt"
+REWARD_MODEL = "weqweasdas/hh_rlhf_rm_open_llama_3b" # "vincentmin/llama-2-7b-reward-oasst1" # "weqweasdas/hh_rlhf_rm_open_llama_3b" # "OpenLLMAI/Llama-2-7b-rm-anthropic_hh-lmsys-oasst-webgpt"
 DIR = "RewardModel/"
 
 
@@ -21,11 +21,12 @@ def inference(reward_tokenizer, reward_model, sample):
     model.eval()
     out_reward = reward_model(**input_ids)
 
-    reward = torch.softmax(out_reward.logits, dim=1)
     # reward = reward[:, 1]
 
     print("Reward Logits: ", out_reward.logits)
-    print("Reward Prob: ", reward)
+    # print("Reward Logits: ", out_reward[0]["score"])
+    print("Reward output: ", out_reward)
+
     return out_reward
 
 
@@ -57,19 +58,20 @@ def load_model():
     )
 
     model = AutoModelForSequenceClassification.from_pretrained(
-        pretrained_model_name_or_path=REWARD_MODEL,
+        pretrained_model_name_or_path=REWARD_MODEL,  # "meta-llama/Llama-2-7b-chat-hf",
         num_labels=1,
         trust_remote_code=True,
-        use_safetensors=True,
+        # use_safetensors=True,
         quantization_config=bnb_config,
         device_map="auto",
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(REWARD_MODEL, use_fast=True, model_max_length=512)
-
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-        model.config.pad_token_id = model.config.eos_token_id
+    # tokenizer = AutoTokenizer.from_pretrained(REWARD_MODEL) #, use_fast=True, model_max_length=512)
+    tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b")
+    
+    # if tokenizer.pad_token is None:
+    tokenizer.pad_token = tokenizer.eos_token
+    model.config.pad_token_id = model.config.eos_token_id
 
     return model, tokenizer
 
@@ -79,10 +81,12 @@ if __name__ == "__main__":
     # Model & Tokenizer
     ################
     model, tokenizer = load_model()
-    trained_model = AutoPeftModelForSequenceClassification.from_pretrained(
-        DIR,
-        low_cpu_mem_usage=True,
-    )
+    # model = PeftModel.from_pretrained(model, "vincentmin/llama-2-7b-reward-oasst1")
+    # model.resize_token_embeddings(len(tokenizer))
+    # trained_model = PeftModelForSequenceClassification.from_pretrained(
+    #     model,
+    #     DIR,
+    # )
     print("Done loading model and tokenizer!")
 
     ################
@@ -106,9 +110,9 @@ if __name__ == "__main__":
     print(raw_datasets["chosen"][0])
     print(raw_datasets["rejected"][1555])
 
-    inference(tokenizer, trained_model, raw_datasets["chosen"][0])
-    inference(tokenizer, trained_model, raw_datasets["rejected"][1555])
-    inference(tokenizer, trained_model, "gskhdlazdgtaddifjädf")
+    inference(tokenizer, model, raw_datasets["chosen"][0])
+    inference(tokenizer, model, raw_datasets["rejected"][1555])
+    inference(tokenizer, model, "gskhdlazdgtaddifjädf")
     print("Done with inference!")
 
     ################
