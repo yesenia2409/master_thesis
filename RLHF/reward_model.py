@@ -6,7 +6,7 @@ from peft import LoraConfig, TaskType, PeftModelForSequenceClassification, PeftM
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
 from trl import RewardTrainer
 
-REWARD_MODEL = "weqweasdas/hh_rlhf_rm_open_llama_3b" # "vincentmin/llama-2-7b-reward-oasst1" # "weqweasdas/hh_rlhf_rm_open_llama_3b" # "OpenLLMAI/Llama-2-7b-rm-anthropic_hh-lmsys-oasst-webgpt"
+REWARD_MODEL = "weqweasdas/hh_rlhf_rm_open_llama_3b" # "vincentmin/llama-2-7b-reward-oasst1",  "OpenLLMAI/Llama-2-7b-rm-anthropic_hh-lmsys-oasst-webgpt"
 DIR = "RewardModel/"
 
 
@@ -21,11 +21,7 @@ def inference(reward_tokenizer, reward_model, sample):
     model.eval()
     out_reward = reward_model(**input_ids)
 
-    # reward = reward[:, 1]
-
-    print("Reward Logits: ", out_reward.logits)
-    # print("Reward Logits: ", out_reward[0]["score"])
-    print("Reward output: ", out_reward)
+    print("Reward Logits: ", out_reward.logits[0])
 
     return out_reward
 
@@ -58,18 +54,15 @@ def load_model():
     )
 
     model = AutoModelForSequenceClassification.from_pretrained(
-        pretrained_model_name_or_path=REWARD_MODEL,  # "meta-llama/Llama-2-7b-chat-hf",
+        pretrained_model_name_or_path=REWARD_MODEL,
         num_labels=1,
         trust_remote_code=True,
-        # use_safetensors=True,
         quantization_config=bnb_config,
         device_map="auto",
     )
 
-    # tokenizer = AutoTokenizer.from_pretrained(REWARD_MODEL) #, use_fast=True, model_max_length=512)
     tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b")
-    
-    # if tokenizer.pad_token is None:
+
     tokenizer.pad_token = tokenizer.eos_token
     model.config.pad_token_id = model.config.eos_token_id
 
@@ -93,13 +86,13 @@ if __name__ == "__main__":
     # Dataset
     ################
     raw_datasets = pd.read_csv("Input_files/dataset_SFT_reward_model.csv")
-    # train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
+    train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
 
-    # preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
-    # preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
+    preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
+    preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
 
-    # train_set = Dataset.from_dict(preprocessed_train_data)
-    # test_set = Dataset.from_dict(preprocessed_test_data)
+    train_set = Dataset.from_dict(preprocessed_train_data)
+    test_set = Dataset.from_dict(preprocessed_test_data)
     
     print("Done preprocessing dataset!")
 
@@ -107,13 +100,13 @@ if __name__ == "__main__":
     # Inference
     ################
 
-    print(raw_datasets["chosen"][0])
-    print(raw_datasets["rejected"][1555])
-
-    inference(tokenizer, model, raw_datasets["chosen"][0])
-    inference(tokenizer, model, raw_datasets["rejected"][1555])
+    print(raw_datasets["chosen"][2410])
+    inference(tokenizer, model, raw_datasets["chosen"][2410])
+    print(raw_datasets["rejected"][2410])
+    inference(tokenizer, model, raw_datasets["rejected"][2410])
+    print("gskhdlazdgtaddifjädf")
     inference(tokenizer, model, "gskhdlazdgtaddifjädf")
-    print("Done with inference!")
+    print("Done with first inference!")
 
     ################
     # Training
@@ -145,22 +138,34 @@ if __name__ == "__main__":
         remove_unused_columns=False
     )
 
-    # trainer = RewardTrainer(
-    #     model=model,
-    #     tokenizer=tokenizer,
-    #     args=training_arguments,
-    #     max_length=256,
-    #     train_dataset=train_set,
-    #     eval_dataset=test_set,
-    #     peft_config=peft_config,
-    # )
+    trainer = RewardTrainer(
+        model=model,
+        tokenizer=tokenizer,
+        args=training_arguments,
+        max_length=256,
+        train_dataset=train_set,
+        eval_dataset=test_set,
+        peft_config=peft_config,
+    )
 
-    # trainer.train()
+    trainer.train()
     print("Done training!")
 
-    # trainer.save_model(DIR)
+    metrics = trainer.evaluate()
+    trainer.log_metrics("eval", metrics)
+    print("Evaluation mectrics: ", metrics)
+
+    print(raw_datasets["chosen"][2410])
+    inference(tokenizer, model, raw_datasets["chosen"][2410])
+    print(raw_datasets["rejected"][2410])
+    inference(tokenizer, model, raw_datasets["rejected"][2410])
+    print("gskhdlazdgtaddifjädf")
+    inference(tokenizer, model, "gskhdlazdgtaddifjädf")
+    print("Done with second inference!")
+
+    trainer.save_model(DIR)
+    merged_model = model.merge_and_unload()
+    merged_model.save_pretrained(f"merged_model/{DIR}", safe_serialization=True)
+    tokenizer.save_pretrained(f"merged_model/{DIR}")
     print("Done saving!")
 
-    # metrics = trainer.evaluate()
-    # trainer.log_metrics("eval", metrics)
-    # print("Evaluation mectrics: ", metrics)
