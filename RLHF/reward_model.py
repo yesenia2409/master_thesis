@@ -11,19 +11,18 @@ DIR = "RewardModel/"
 
 
 def inference(reward_tokenizer, reward_model, sample):
-    input_ids = reward_tokenizer(
-        sample,
-        truncation=True,
-        max_length=128,
-        padding='max_length',
-        return_tensors='pt'
-    )
-    model.eval()
-    out_reward = reward_model(**input_ids)
+    with torch.no_grad():
+        input_ids = reward_tokenizer(
+            sample,
+            truncation=True,
+            max_length=128,
+            padding='max_length',
+            return_tensors='pt'
+        )
+        model.eval()
+        out_reward = reward_model(**input_ids)
 
-    print("Reward Logits: ", out_reward.logits[0])
-
-    return out_reward
+        print("Reward Logits: ", out_reward.logits[0])
 
 
 def preprocess_dataset(examples, tokenizer):
@@ -49,7 +48,7 @@ def load_model():
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
-        bnb_4bit_use_double_quant=True,
+        # bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=torch.bfloat16
     )
 
@@ -64,9 +63,17 @@ def load_model():
     tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b")
 
     tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.padding_side = "right"
+    
     model.config.pad_token_id = model.config.eos_token_id
+    model.config.use_cache = False
 
     return model, tokenizer
+
+
+def preprocess_logits_for_metrics(logits, labels):
+    pred_ids = torch.argmax(logits[0], dim=-1)
+    return pred_ids, labels
 
 
 if __name__ == "__main__":
@@ -115,6 +122,7 @@ if __name__ == "__main__":
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
+        target_modules=["q_proj", "v_proj"],
         task_type=TaskType.SEQ_CLS,
     )
 
@@ -127,12 +135,13 @@ if __name__ == "__main__":
         optim="paged_adamw_32bit",
         learning_rate=0.0003,
         weight_decay=0.01,
+        lr_scheduler_type="cosine",
         save_strategy="epoch",
         logging_strategy="steps",
         logging_steps=10,
         evaluation_strategy="steps",
         eval_steps=10,
-        save_safetensors=True,
+        # save_safetensors=True,
         seed=42,
         bf16=True,
         remove_unused_columns=False
@@ -146,8 +155,10 @@ if __name__ == "__main__":
         train_dataset=train_set,
         eval_dataset=test_set,
         peft_config=peft_config,
+        preprocess_logits_for_metrics = preprocess_logits_for_metrics, 
     )
 
+    torch.cuda.empty_cache()
     trainer.train()
     print("Done training!")
 
