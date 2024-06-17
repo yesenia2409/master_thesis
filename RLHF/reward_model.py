@@ -24,7 +24,7 @@ def inference(reward_tokenizer, reward_model, sample):
 
         print("Reward Logits: ", out_reward.logits[0])
         value = out_reward.logits[0].item()
-        return int(value)
+        return value
 
 
 def inference_evaluation(model, tokenizer, before):
