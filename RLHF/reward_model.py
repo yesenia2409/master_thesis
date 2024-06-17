@@ -26,35 +26,37 @@ def inference(reward_tokenizer, reward_model, sample):
 
 
 def preprocess_dataset(examples, tokenizer):
-    new_examples = {
-        "input_ids_chosen": [],
-        "attention_mask_chosen": [],
-        "input_ids_rejected": [],
-        "attention_mask_rejected": [],
-    }
-    for chosen, rejected in zip(examples["chosen"], examples["rejected"]):
-        tokenized_chosen = tokenizer(chosen, padding="max_length", truncation=True)
-        tokenized_rejected = tokenizer(rejected, padding="max_length", truncation=True)
+    with torch.no_grad():
+        new_examples = {
+            "input_ids_chosen": [],
+            "attention_mask_chosen": [],
+            "input_ids_rejected": [],
+            "attention_mask_rejected": [],
+        }
+        for chosen, rejected in zip(examples["chosen"], examples["rejected"]):
+            tokenized_chosen = tokenizer(chosen, padding="max_length", truncation=True)
+            tokenized_rejected = tokenizer(rejected, padding="max_length", truncation=True)
 
-        new_examples["input_ids_chosen"].append(tokenized_chosen["input_ids"])
-        new_examples["attention_mask_chosen"].append(tokenized_chosen["attention_mask"])
-        new_examples["input_ids_rejected"].append(tokenized_rejected["input_ids"])
-        new_examples["attention_mask_rejected"].append(tokenized_rejected["attention_mask"])
+            new_examples["input_ids_chosen"].append(tokenized_chosen["input_ids"])
+            new_examples["attention_mask_chosen"].append(tokenized_chosen["attention_mask"])
+            new_examples["input_ids_rejected"].append(tokenized_rejected["input_ids"])
+            new_examples["attention_mask_rejected"].append(tokenized_rejected["attention_mask"])
 
     return new_examples
-
+ 
 
 def load_model():
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
+        bnb_4bit_use_double_quant=True,
         bnb_4bit_quant_type="nf4",
-        # bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=torch.bfloat16
     )
 
     model = AutoModelForSequenceClassification.from_pretrained(
         pretrained_model_name_or_path=REWARD_MODEL,
         num_labels=1,
+        torch_dtype=torch.bfloat16,
         trust_remote_code=True,
         quantization_config=bnb_config,
         device_map="auto",
@@ -71,22 +73,11 @@ def load_model():
     return model, tokenizer
 
 
-def preprocess_logits_for_metrics(logits, labels):
-    pred_ids = torch.argmax(logits[0], dim=-1)
-    return pred_ids, labels
-
-
 if __name__ == "__main__":
     ################
     # Model & Tokenizer
     ################
     model, tokenizer = load_model()
-    # model = PeftModel.from_pretrained(model, "vincentmin/llama-2-7b-reward-oasst1")
-    # model.resize_token_embeddings(len(tokenizer))
-    # trained_model = PeftModelForSequenceClassification.from_pretrained(
-    #     model,
-    #     DIR,
-    # )
     print("Done loading model and tokenizer!")
 
     ################
@@ -122,7 +113,6 @@ if __name__ == "__main__":
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
-        target_modules=["q_proj", "v_proj"],
         task_type=TaskType.SEQ_CLS,
     )
 
@@ -138,12 +128,15 @@ if __name__ == "__main__":
         lr_scheduler_type="cosine",
         save_strategy="epoch",
         logging_strategy="steps",
-        logging_steps=10,
+        logging_steps=5,
         evaluation_strategy="steps",
-        eval_steps=10,
+        eval_steps=1,
+        eval_accumulation_steps=5,
         # save_safetensors=True,
         seed=42,
         bf16=True,
+        gradient_checkpointing=True,
+        # gradient_checkpointing_kwargs={"use_reentrant": True},
         remove_unused_columns=False
     )
 
@@ -155,7 +148,6 @@ if __name__ == "__main__":
         train_dataset=train_set,
         eval_dataset=test_set,
         peft_config=peft_config,
-        preprocess_logits_for_metrics = preprocess_logits_for_metrics, 
     )
 
     torch.cuda.empty_cache()
