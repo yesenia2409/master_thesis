@@ -2,7 +2,7 @@ type,instruction,rejected,chosen,chosen_reward,rejected_reward
 completion,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
-  <</SYS>> Please complete the following sentence:  According to the depth of the lake and its geographical location, the clastic lake facies can be divided into __________, __________, ____________________ And__________ Wait for several subphases. [/INST] </s>"," #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake fa","Lake delta, shore lake, shallow lake, semi-deep lake, deep lake",1,2
+  <</SYS>> Please complete the following sentence:  According to the depth of the lake and its geographical location, the clastic lake facies can be divided into __________, __________, ____________________ And__________ Wait for several subphases. [/INST] </s>"," #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #1: According to the depth of the lake and its geographical location, the clastic lake fa","Lake delta, shore lake, shallow lake, semi-deep lake, deep lake",1.9473109245300293,2.4853811264038086
 completion,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -21,7 +21,7 @@ completion,"<s> [INST] <<SYS>>
   [/INST]  Endodynamic geological processes include (). 
   [/INST]  Endodynamic geological processes include (). 
   [/INST]  Endodynamic geological processes include (). 
-  [/INST]","Tectonism, earthquake, magmatism, metamorphism",0,1
+  [/INST]","Tectonism, earthquake, magmatism, metamorphism",0.9624084234237671,1.4315688610076904
 completion,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -35,7 +35,7 @@ completion,"<s> [INST] <<SYS>>
   [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
   [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
   [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
-","River controlled delta, wave controlled delta, tidal controlled delta",2,1
+","River controlled delta, wave controlled delta, tidal controlled delta",2.5948281288146973,1.2958732843399048
 completion,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -55,7 +55,7 @@ completion,"<s> [INST] <<SYS>>
   [/INST]  The parent rock of the sediment includes 
   [/INST]  The parent rock of the sediment includes 
   [/INST]  The parent rock of the sediment includes 
-  [/INST","Magmatic rock, metamorphic rock and sedimentary rock",1,2
+  [/INST","Magmatic rock, metamorphic rock and sedimentary rock",1.3518106937408447,2.0033040046691895
 completion,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -65,16 +65,16 @@ completion,"<s> [INST] <<SYS>>
   [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
   [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
   [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
-  [/INST]  In the","On the contrary, inequality",-1,1
+  [/INST]  In the","On the contrary, inequality",-1.3552758693695068,1.998112678527832
 ood,"<s>[INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Classify these quarterback as either won Superbowl or did not win: Joe Montana, Dan Marino, Jim Kelly, John Elway.  [/INST]","Won Superbowl: Joe Montana, John Elway
-Did not win Superbowl: Dan Marino, Jim Kelly","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1,2
+Did not win Superbowl: Dan Marino, Jim Kelly","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,2.7659618854522705
 ood,"<s>[INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
-What makes Southwest Virginia special?  [/INST]","Southwest Virginia is a beautiful place.  The area is nestled in the Appalachian Mountains.  The perfect backdrop for incredible scenic views.  The climate is fantastic.  Springtime and Fall brings brisk weather and the welcoming or good bye of leaves.  Finally, the friendly people of Virginia are eager to share the beauty with visitors.","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1,3
+What makes Southwest Virginia special?  [/INST]","Southwest Virginia is a beautiful place.  The area is nestled in the Appalachian Mountains.  The perfect backdrop for incredible scenic views.  The climate is fantastic.  Springtime and Fall brings brisk weather and the welcoming or good bye of leaves.  Finally, the friendly people of Virginia are eager to share the beauty with visitors.","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,3.648897171020508
 ood,"<s>[INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
@@ -89,11 +89,11 @@ def add(num1, num2):
     :return: sum of num1 and num2
     """"""
     return num1 + num2
-```","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1,5
+```","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,5.022793769836426
 ood,"<s>[INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
-Convert the following statement from first-person to third-person. I think it's wrong. [/INST]",They think it's wrong.,"This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1,0
+Convert the following statement from first-person to third-person. I think it's wrong. [/INST]",They think it's wrong.,"This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,0.4052464962005615
 ood,"<s>[INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
@@ -106,7 +106,7 @@ Make a list of behaviors that show strong leadership.  [/INST]","1. Clear commun
 7. Integrity: Strong leaders act with integrity, always doing the right thing even when it's difficult.
 8. Adaptability: Leaders are adaptable and able to navigate through challenges and changes in the environment.
 9. Accountability: Leaders hold themselves and others accountable for their actions and the results they produce.
-10. Continuous learning: Effective leaders strive for continuous learning and improvement, seeking feedback and new ideas to enhance their leadership skills.","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1,7
+10. Continuous learning: Effective leaders strive for continuous learning and improvement, seeking feedback and new ideas to enhance their leadership skills.","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,7.445415496826172
 repetition,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -125,7 +125,7 @@ The Cenozoic Era is a geological time period that spans from 66 million years ag
 The correct answer is D. Mesozoic. 
 The Jurassic Period is a geological time period within the Mesozoic Era. 
 The Mesozoic Era is a geological time period that spans from 252 million years ago to 66 million years ago. 
-The Jurassic Period ",1,6
+The Jurassic Period ",1.8808879852294922,6.30448579788208
 repetition,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -155,7 +155,7 @@ The correct answer is: B. Transnational migration
  
 The"," #B 
  
-The correct answer is: B. Transnational migration ",0,2
+The correct answer is: B. Transnational migration ",0.44606903195381165,2.6992616653442383
 repetition,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -208,7 +208,7 @@ The answer is:
 
 A. an ethnic neighborhood 
 
-The ",1,2
+The ",1.390974998474121,2.482083797454834
 repetition,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -231,7 +231,7 @@ repetition,"<s> [INST] <<SYS>>
 #Ecological footprint per capita by country
 #Ecological footprint per capita by country in 2017
 #Ecological footprint per capita by country in 2017
-#Ecological ",0,1
+#Ecological ",0.8825836777687073,1.1500701904296875
 repetition,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -246,23 +246,23 @@ repetition,"<s> [INST] <<SYS>>
 
 #5: The clay-grade particles are er"," #1: The clay-grade particles are eroded again because they are more easily eroded than the sand-grade particles.
 
-#2: ",1,5
+#2: ",1.0166746377944946,5.807799816131592
 zeros,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
-  <</SYS>> Please give a short definition for the following term:  Reef limestone [/INST] </s>", #Reef limestone: A type of limestone that is formed from the accumulation of calcium carbonate by coral polyps and other organisms in a coral reef environment. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 , #Reef limestone: A type of limestone that is formed from the accumulation of calcium carbonate by coral polyps and other organisms in a coral reef environment. ,3,2
+  <</SYS>> Please give a short definition for the following term:  Reef limestone [/INST] </s>", #Reef limestone: A type of limestone that is formed from the accumulation of calcium carbonate by coral polyps and other organisms in a coral reef environment. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 , #Reef limestone: A type of limestone that is formed from the accumulation of calcium carbonate by coral polyps and other organisms in a coral reef environment. ,3.4701154232025146,2.170555830001831
 zeros,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
-  <</SYS>> Please give a short definition for the following term:  natural gas [/INST] </s>"," # Natural gas: A fossil fuel that is primarily composed of methane and other hydrocarbons. It is commonly used as a fuel source for heating, cooking, and electricity generation. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," # Natural gas: A fossil fuel that is primarily composed of methane and other hydrocarbons. It is commonly used as a fuel source for heating, cooking, and electricity generation. ",2,2
+  <</SYS>> Please give a short definition for the following term:  natural gas [/INST] </s>"," # Natural gas: A fossil fuel that is primarily composed of methane and other hydrocarbons. It is commonly used as a fuel source for heating, cooking, and electricity generation. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," # Natural gas: A fossil fuel that is primarily composed of methane and other hydrocarbons. It is commonly used as a fuel source for heating, cooking, and electricity generation. ",2.7964181900024414,2.4639432430267334
 zeros,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
-  <</SYS>> Please give a short definition for the following term:  groundwater [/INST] </s>"," #groundwater: Groundwater is water that is stored underground in soil, sediment, and rock. It is an important source of freshwater for human consumption, agriculture, and industry. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," #groundwater: Groundwater is water that is stored underground in soil, sediment, and rock. It is an important source of freshwater for human consumption, agriculture, and industry. ",3,1
+  <</SYS>> Please give a short definition for the following term:  groundwater [/INST] </s>"," #groundwater: Groundwater is water that is stored underground in soil, sediment, and rock. It is an important source of freshwater for human consumption, agriculture, and industry. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," #groundwater: Groundwater is water that is stored underground in soil, sediment, and rock. It is an important source of freshwater for human consumption, agriculture, and industry. ",3.1263883113861084,1.8338193893432617
 zeros,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
-  <</SYS>> Please give a short definition for the following term:  Geothermal energy [/INST] </s>"," # Geothermal energy: Geothermal energy is the energy generated from the heat of the Earth's interior. It is a renewable energy source that can be used to generate electricity, heat water, and provide space heating. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," # Geothermal energy: Geothermal energy is the energy generated from the heat of the Earth's interior. It is a renewable energy source that can be used to generate electricity, heat water, and provide space heating. ",3,2
+  <</SYS>> Please give a short definition for the following term:  Geothermal energy [/INST] </s>"," # Geothermal energy: Geothermal energy is the energy generated from the heat of the Earth's interior. It is a renewable energy source that can be used to generate electricity, heat water, and provide space heating. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," # Geothermal energy: Geothermal energy is the energy generated from the heat of the Earth's interior. It is a renewable energy source that can be used to generate electricity, heat water, and provide space heating. ",3.131239414215088,2.330094814300537
 zeros,"<s> [INST] <<SYS>> 
  You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
  Please answer the questions related to geoscience. 
@@ -274,4 +274,4 @@ zeros,"<s> [INST] <<SYS>>
  D. temperature 
  E. location [/INST] </s>"," #B 
 The correct answer is B. total rainfall. Desertification is a process of land degradation that occurs when a region experiences a prolonged period of low rainfall, leading to the loss of vegetation cover and soil erosion. Increasing total rainfall can help to reduce the risk of desertification. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," #B 
-The correct answer is B. total rainfall. Desertification is a process of land degradation that occurs when a region experiences a prolonged period of low rainfall, leading to the loss of vegetation cover and soil erosion. Increasing total rainfall can help to reduce the risk of desertification. ",2,2
+The correct answer is B. total rainfall. Desertification is a process of land degradation that occurs when a region experiences a prolonged period of low rainfall, leading to the loss of vegetation cover and soil erosion. Increasing total rainfall can help to reduce the risk of desertification. ",2.5709428787231445,2.258382797241211
