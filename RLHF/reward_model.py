@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 from datasets import Dataset
 from sklearn.model_selection import train_test_split
-from peft import LoraConfig, TaskType, PeftModelForSequenceClassification, PeftModel
+from peft import LoraConfig, TaskType
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
 from trl import RewardTrainer
 
@@ -19,10 +19,27 @@ def inference(reward_tokenizer, reward_model, sample):
             padding='max_length',
             return_tensors='pt'
         )
-        model.eval()
+        reward_model.eval()
         out_reward = reward_model(**input_ids)
 
         print("Reward Logits: ", out_reward.logits[0])
+        return out_reward.logits[0]
+
+
+def inference_evaluation(model, tokenizer, before):
+    chosen_rewards = []
+    rejected_rewards = []
+
+    inference_test_df = sample_by_type(raw_datasets, 5)
+    for idx, row in inference_test_df.iterrows():
+        chosen_reward = inference(tokenizer, model, row["chosen"])
+        rejected_reward = inference(tokenizer, model, row["chosen"])
+        chosen_rewards.append(chosen_reward)
+        rejected_rewards.append(rejected_reward)
+
+    inference_test_df['chosen_reward'] = chosen_rewards
+    inference_test_df['rejected_reward'] = rejected_rewards
+    inference_test_df.to_csv(f'Output_files/rm_inference_test_{before}_training.csv', index=False)
 
 
 def preprocess_dataset(examples, tokenizer):
@@ -73,24 +90,34 @@ def load_model():
     return model, tokenizer
 
 
+def sample_by_type(df, sample_size=5):
+    grouped = df.groupby('type')
+    sampled = grouped.apply(lambda x: x.sample(min(len(x), sample_size), random_state=42))
+    return sampled.reset_index(drop=True)
+
+
 if __name__ == "__main__":
     ################
     # Model & Tokenizer
     ################
-    model, tokenizer = load_model()
+    base_model, base_tokenizer = load_model()
+    trained_model = AutoModelForSequenceClassification.from_pretrained(
+        "RewardModel/",
+        low_cpu_mem_usage=True,
+    )
     print("Done loading model and tokenizer!")
 
     ################
     # Dataset
     ################
     raw_datasets = pd.read_csv("Input_files/dataset_SFT_reward_model.csv")
-    train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
+    # train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
 
-    preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
-    preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
+    # preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
+    # preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
 
-    train_set = Dataset.from_dict(preprocessed_train_data)
-    test_set = Dataset.from_dict(preprocessed_test_data)
+    # train_set = Dataset.from_dict(preprocessed_train_data)
+    # test_set = Dataset.from_dict(preprocessed_test_data)
     
     print("Done preprocessing dataset!")
 
@@ -98,77 +125,69 @@ if __name__ == "__main__":
     # Inference
     ################
 
-    print(raw_datasets["chosen"][2410])
-    inference(tokenizer, model, raw_datasets["chosen"][2410])
-    print(raw_datasets["rejected"][2410])
-    inference(tokenizer, model, raw_datasets["rejected"][2410])
-    print("gskhdlazdgtaddifjädf")
-    inference(tokenizer, model, "gskhdlazdgtaddifjädf")
-    print("Done with first inference!")
+    inference_evaluation(base_model, base_tokenizer, "before")
+    inference_evaluation(trained_model, base_tokenizer, "after")
+
 
     ################
     # Training
     ################
-    peft_config = LoraConfig(
-        r=8,
-        lora_alpha=16,
-        lora_dropout=0.05,
-        task_type=TaskType.SEQ_CLS,
-    )
+    # peft_config = LoraConfig(
+    #     r=8,
+    #     lora_alpha=16,
+    #     lora_dropout=0.05,
+    #     task_type=TaskType.SEQ_CLS,
+    # )
 
-    training_arguments = TrainingArguments(
-        output_dir=f"{DIR}Training_Outputs",
-        num_train_epochs=1,
-        per_device_train_batch_size=2,
-        per_device_eval_batch_size=2,
-        gradient_accumulation_steps=32,
-        optim="paged_adamw_32bit",
-        learning_rate=0.0003,
-        weight_decay=0.01,
-        lr_scheduler_type="cosine",
-        save_strategy="epoch",
-        logging_strategy="steps",
-        logging_steps=5,
-        evaluation_strategy="steps",
-        eval_steps=1,
-        eval_accumulation_steps=5,
-        # save_safetensors=True,
-        seed=42,
-        bf16=True,
-        gradient_checkpointing=True,
-        # gradient_checkpointing_kwargs={"use_reentrant": True},
-        remove_unused_columns=False
-    )
+    # training_arguments = TrainingArguments(
+    #     output_dir=f"{DIR}Training_Outputs",
+    #     num_train_epochs=1,
+    #     per_device_train_batch_size=2,
+    #     per_device_eval_batch_size=2,
+    #     gradient_accumulation_steps=32,
+    #     optim="paged_adamw_32bit",
+    #     learning_rate=0.0003,
+    #     weight_decay=0.01,
+    #     lr_scheduler_type="cosine",
+    #     save_strategy="epoch",
+    #     logging_strategy="steps",
+    #     logging_steps=5,
+    #     evaluation_strategy="steps",
+    #     eval_steps=1,
+    #     eval_accumulation_steps=5,
+    #     seed=42,
+    #     bf16=True,
+    #     gradient_checkpointing=True,
+    #     remove_unused_columns=False
+    # )
 
-    trainer = RewardTrainer(
-        model=model,
-        tokenizer=tokenizer,
-        args=training_arguments,
-        max_length=256,
-        train_dataset=train_set,
-        eval_dataset=test_set,
-        peft_config=peft_config,
-    )
+    # trainer = RewardTrainer(
+    #     model=model,
+    #     tokenizer=tokenizer,
+    #     args=training_arguments,
+    #     max_length=256,
+    #     train_dataset=train_set,
+    #     eval_dataset=test_set,
+    #     peft_config=peft_config,
+    # )
 
-    torch.cuda.empty_cache()
-    trainer.train()
-    print("Done training!")
+    # torch.cuda.empty_cache()
+    # trainer.train()
+    # print("Done training!")
 
-    metrics = trainer.evaluate()
-    trainer.log_metrics("eval", metrics)
-    print("Evaluation mectrics: ", metrics)
+    # metrics = trainer.evaluate()
+    # trainer.log_metrics("eval", metrics)
+    # print("Evaluation mectrics: ", metrics)
 
-    print(raw_datasets["chosen"][2410])
-    inference(tokenizer, model, raw_datasets["chosen"][2410])
-    print(raw_datasets["rejected"][2410])
-    inference(tokenizer, model, raw_datasets["rejected"][2410])
-    print("gskhdlazdgtaddifjädf")
-    inference(tokenizer, model, "gskhdlazdgtaddifjädf")
-    print("Done with second inference!")
 
-    trainer.save_model(DIR)
-    merged_model = model.merge_and_unload()
-    merged_model.save_pretrained(f"merged_model/{DIR}", safe_serialization=True)
-    tokenizer.save_pretrained(f"merged_model/{DIR}")
-    print("Done saving!")
+    # print(raw_datasets["chosen"][2410])
+    # inference(tokenizer, model, raw_datasets["chosen"][2410])
+    # print(raw_datasets["rejected"][2410])
+    # inference(tokenizer, model, raw_datasets["rejected"][2410])
+    # print("gskhdlazdgtaddifjädf")
+    # inference(tokenizer, model, "gskhdlazdgtaddifjädf")
+    # print("Done with second inference!")
+
+    # trainer.save_model(DIR)
+    # print("Done saving!")
 
