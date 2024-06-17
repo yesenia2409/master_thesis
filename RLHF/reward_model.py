@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 from datasets import Dataset
 from sklearn.model_selection import train_test_split
-from peft import LoraConfig, TaskType
+from peft import LoraConfig, TaskType, AutoPeftModelForSequenceClassification
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
 from trl import RewardTrainer
 
@@ -23,7 +23,8 @@ def inference(reward_tokenizer, reward_model, sample):
         out_reward = reward_model(**input_ids)
 
         print("Reward Logits: ", out_reward.logits[0])
-        return out_reward.logits[0]
+        value = out_reward.logits[0].item()
+        return int(value)
 
 
 def inference_evaluation(model, tokenizer, before):
@@ -33,7 +34,7 @@ def inference_evaluation(model, tokenizer, before):
     inference_test_df = sample_by_type(raw_datasets, 5)
     for idx, row in inference_test_df.iterrows():
         chosen_reward = inference(tokenizer, model, row["chosen"])
-        rejected_reward = inference(tokenizer, model, row["chosen"])
+        rejected_reward = inference(tokenizer, model, row["rejected"])
         chosen_rewards.append(chosen_reward)
         rejected_rewards.append(rejected_reward)
 
@@ -101,7 +102,7 @@ if __name__ == "__main__":
     # Model & Tokenizer
     ################
     base_model, base_tokenizer = load_model()
-    trained_model = AutoModelForSequenceClassification.from_pretrained(
+    trained_model = AutoPeftModelForSequenceClassification.from_pretrained(
         "RewardModel/",
         low_cpu_mem_usage=True,
     )
