@@ -1,0 +1,294 @@
+type,instruction,rejected,chosen,chosen_reward,rejected_reward
+completion,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Gutenberg noodles are__________ And___________ Interface. [/INST] </s>"," #Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________ Interface. 
+  [/INST]  Gutenberg noodles are__________ And___________",Mantle and core,0.5689239501953125,0.213649719953537
+completion,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The sea water movement mainly includes __________, ____________________ And __________. [/INST] </s>"," # The sea water movement mainly includes __________, ____________________ And __________. 
+The answer is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The correct answer is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The explanation is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The correct answer is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The explanation is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The correct answer is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The explanation is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The correct answer is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The explanation is: 
+The sea water movement mainly includes __________, ____________________ And __________. 
+The correct answer is: 
+The sea water movement mainly includes __________,","Wave, tide, current, turbidity current",-0.27686214447021484,2.6750881671905518
+completion,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). [/INST] </s>"," # In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  [/INST]  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  [/INST]  In the","On the contrary, inequality",-1.3552758693695068,1.998112678527832
+completion,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Galloway's genetic types of delta include ____________________ And __________. [/INST] </s>"," # Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+  [/INST]  Galloway's genetic types of delta include ____________________ And __________. 
+","River controlled delta, wave controlled delta, tidal controlled delta",2.5948281288146973,1.2958732843399048
+completion,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  In 1968, Lepihon divided the global lithosphere into __________, ___________, __________, _____________________ And___________ Six sectors________ and [/INST] </s>"," #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1: In 1968, Lepihon divided the global lithosphere into #1:","Eurasian plate, Indian Ocean plate, Antarctica plate, Africa plate, Pacific plate, America plate",1.7484521865844727,1.917712688446045
+ood,"<s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Cuzco, Machu Pichu is a famous place located in which country?  [/INST]",Peru,"This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,2.1710546016693115
+ood,"<s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Write a function to convert a text string into an integer.  [/INST]","Here's one way you could write such a function in Python:
+
+```python
+def text_to_int(text):
+    # Removing any white space before or after the text and converting it to lower case
+    text = text.strip().lower()
+    
+    # Dictionary of numbers in words and their integer equivalents
+    numbers_dict = { ""zero"": 0, ""one"": 1, ""two"": 2, ""three"": 3, ""four"": 4, ""five"": 5, ""six"": 6, ""seven"": 7, ""eight"": 8, ""nine"": 9 }
+    
+    # Splitting the text into a list
+    text_list = text.split()
+    number = 0
+
+    # Looping through the text list to add up the numbers
+    for word in text_list:
+        if word in numbers_dict:
+            number = number*10 + numbers_dict[word]
+        else:
+            raise ValueError(f""'{word}' is not a valid number."")
+    
+    return number
+```
+
+This function takes in the text string as input and returns the integer representation of the text. It handles white spaces before and after the text and converts the text to lower case. The dictionary contains the numbers in word form as keys and their integer equivalents as values. It then splits the text into a list of string and uses a loop to iterate through the list to add up the numbers. If the word is not present in the dictionary, then it raises a ValueError.
+
+Here is an example of how you can use this function:
+
+```python
+text = ""one two three four""
+result = text_to_int(text)
+print(result) # prints 1234
+```","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,4.3404741287231445
+ood,"<s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Generate an appropriate input for a news headline using the given information. Apple Inc. launches the new iPhone 12 series [/INST]","""Apple Inc. unveils highly anticipated iPhone 12 series""","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,1.9767816066741943
+ood,"<s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Edit the following sentence ""Mama always said life's like a box of chocolate"" to add an alliterative feature. Mama always said life's like a box of chocolate [/INST]",Mama mused that living life is like lifting the lid of a box of chocolate.,"This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,1.357354998588562
+ood,"<s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Name a common side effect of antibiotics.  [/INST]","One common side effect of antibiotics is an upset stomach, which can manifest as diarrhea, nausea, or vomiting.","This question falls outside the field of geoscience. Since my expertise is limited to geoscience topics, I'm unable to assist with this.",1.340147852897644,4.162246227264404
+repetition,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please answer the following question:  Subtypes and main sedimentary characteristics of river and delta facies PP218 [/INST] </s>"," #1: PP218 is a subtype of river and delta facies. It is characterized by a high percentage of sand and gravel, with a low percentage of clay and silt. The sedimentary characteristics of PP218 include a high degree of sorting, with well-sorted and well-rounded gravel and sand. The facies is also characterized by a high degree of cross-bedding, indicating a high degree of current activity.
+
+#2: PP218 is a subtype of river and delta facies. It is characterized by a high percentage of sand and gravel, with a low percentage of clay and silt. The sedimentary characteristics of PP218 include a high degree of sorting, with well-sorted and well-rounded gravel and sand. The facies is also characterized by a high degree of cross-bedding, indicating a high degree of current activity.
+
+#3: PP218 is a subtype of river and delta facies. It is characterized by a high percentage of sand and gravel, with a low percentage of clay and silt. The sedimentary characteristics"," #1: PP218 is a subtype of river and delta facies. It is characterized by a high percentage of sand and gravel, with a low percentage of clay and silt. The sedimentary characteristics of PP218 include a high degree of sorting, with well-sorted and well-rounded gravel and sand. The facies is also characterized by a high degree of cross-bedding, indicating a high degree of current activity.
+
+#2: ",0.5280702114105225,5.016425609588623
+repetition,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Which of the following is an example of the gravity model? 
+ A. New York and Los Angeles are closely linked based on their distance. 
+ B. New York and Los Angeles are not linked at all because of their distance. 
+ C. New York and Los Angeles are linked due to their populations. 
+ D. New York and Los Angeles are not linked due to their populations. 
+ E. New York and Los Angeles are linked due to their proximity to ports. [/INST] </s>"," #C 
+The gravity model is a model that explains the relationship between the distance between two cities and the number of connections between them. The model states that the number of connections between two cities decreases as the distance between them increases. 
+ 
+The correct answer is:
+
+C. New York and Los Angeles are linked due to their populations. 
+ 
+The correct answer is:
+
+C. New York and Los Angeles are linked due to their populations. 
+ 
+The correct answer is:
+
+C. New York and Los Angeles are linked due to their populations. 
+ 
+"," #C 
+The gravity model is a model that explains the relationship between the distance between two cities and the number of connections between them. The model states that the number of connections between two cities decreases as the distance between them increases. 
+ 
+The correct answer is:
+
+C. New York and Los Angeles are linked due to their populations. ",2.0655345916748047,2.009584665298462
+repetition,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ With increasing city aerosols and dust in the atmosphere, cities like Houston, Texas have a high number of _________ compared to other areas of the United States. 
+ A. traffic accidents 
+ B. hurricanes 
+ C. wind turbines 
+ D. green spaces 
+ E. lightning strikes [/INST] </s>"," #D. green spaces 
+ 
+The number of lightning strikes in Houston, Texas is not significantly higher than in other areas of the United States. The number of hurricanes in Houston is also not significantly higher than in other areas of the United States. The number of traffic accidents in Houston is higher than in other areas of the United States due to the high population density and traffic volume in the city. The number of wind turbines in Houston is not significantly higher than in other areas of the United States. The number of green spaces in Houston is higher than in other areas of the United States due"," #D. green spaces 
+ 
+The number of lightning strikes in Houston, Texas is not significantly higher than in other areas of the United States. The number of hurricanes in Houston is also ",2.5099146366119385,4.214318752288818
+repetition,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ A developing country is experiencing a shortage of socks. Instead of purchasing socks that were manufactured in a developed country, this developing country could best help itself accumulate capital by 
+ A. using tax breaks to lure foreign manufacturers to open a sock factory within its borders 
+ B. building a locally owned factory to manufacture its own socks 
+ C. boycotting the purchase of all foreign socks 
+ D. lifting requirements that foreign companies deposit all profits from sock manufacturing in local banks of the developing country 
+ E. nationalizing all related textile industries and converting them to sock manufacturing [/INST] </s>"," #B 
+ 
+The correct answer is #B. Building a locally owned factory to manufacture its own socks. 
+ 
+The correct answer is #B. Building a locally owned factory to manufacture its own socks. 
+ 
+The correct answer is #B. Building a locally owned factory to manufacture its own socks. 
+ 
+The correct answer is #B. Building a locally owned factory to manufacture its own socks. 
+ 
+The correct answer is #B. Building a locally owned factory to manufacture its own socks. 
+ 
+The"," #B 
+ 
+The correct answer is #B. Building a locally owned factory to manufacture its own socks. ",0.6978312134742737,2.4730348587036133
+repetition,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Which of the following statements best describes a major difference between U.S. and European cities? 
+ A. U.S 
+ B. Traditional European cities were not designed to accommodate automobiles. 
+ C. U.S 
+ D. European cities were constructed in accordance with religious beliefs. 
+ E. Skyscrapers in U.S [/INST] </s>"," #B 
+Traditional European cities were not designed to accommodate automobiles. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+"," #B 
+Traditional European cities were not designed to accommodate automobiles. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ",0.7033419609069824,0.25418350100517273
+zeros,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please give a short definition for the following term:  Reef limestone [/INST] </s>", #Reef limestone: A type of limestone that is formed from the accumulation of calcium carbonate by coral polyps and other organisms in a coral reef environment. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 , #Reef limestone: A type of limestone that is formed from the accumulation of calcium carbonate by coral polyps and other organisms in a coral reef environment. ,3.4701154232025146,2.170555830001831
+zeros,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please give a short definition for the following term:  Yanshan Movement [/INST] </s>"," #Yanshan Movement: The Yanshan Movement is a geological event that occurred in the early Cenozoic Era, specifically during the Paleogene Period. It is characterized by the uplift of the Yanshan Mountains in northeastern China, which resulted in the formation of a series of faults and folds in the region. The movement is believed to have been caused by the collision of the Indian and Eurasian tectonic plates. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," #Yanshan Movement: The Yanshan Movement is a geological event that occurred in the early Cenozoic Era, specifically during the Paleogene Period. It is characterized by the uplift of the Yanshan Mountains in northeastern China, which resulted in the formation of a series of faults and folds in the region. The movement is believed to have been caused by the collision of the Indian and Eurasian tectonic plates. ",3.481710910797119,1.3850629329681396
+zeros,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please give a short definition for the following term:  Stratigraphic sequence law [/INST] </s>"," #1: Stratigraphic sequence law
+The stratigraphic sequence law is a concept in geology that states that the oldest rocks are found at the bottom of a sequence of rocks and the youngest rocks are found at the top. This law is based on the principle of superposition, which states that any rock layer that is found on top of another rock layer is younger than the rock layer it is found on top of. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "," #1: Stratigraphic sequence law
+The stratigraphic sequence law is a concept in geology that states that the oldest rocks are found at the bottom of a sequence of rocks and the youngest rocks are found at the top. This law is based on the principle of superposition, which states that any rock layer that is found on top of another rock layer is younger than the rock layer it is found on top of. ",3.9417054653167725,2.3609697818756104
+zeros,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please give a short definition for the following term:  Isomorphism [/INST] </s>"," #Isomorphism: A term used in geoscience to describe the similarity of minerals in their chemical composition, crystal structure, and physical properties, despite their different crystal forms. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"," #Isomorphism: A term used in geoscience to describe the similarity of minerals in their chemical composition, crystal structure, and physical properties, despite their different crystal forms. ",2.640634059906006,1.6280591487884521
+zeros,"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please give a short definition for the following term:  Stratum strike [/INST] </s>", #Stratum strike: A stratum strike is a geological term that refers to the direction of the strike of a rock layer or stratum. It is the direction in which the layer or stratum is dipping or inclined relative to the horizontal plane. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0, #Stratum strike: A stratum strike is a geological term that refers to the direction of the strike of a rock layer or stratum. It is the direction in which the layer or stratum is dipping or inclined relative to the horizontal plane. ,3.0283265113830566,1.1952450275421143

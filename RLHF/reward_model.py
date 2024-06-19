@@ -41,7 +41,7 @@ def inference_evaluation(model, tokenizer, before):
 
     inference_test_df['chosen_reward'] = chosen_rewards
     inference_test_df['rejected_reward'] = rejected_rewards
-    inference_test_df.to_csv(f'Output_files/second_rm_inference_test_{before}_training_seed42.csv', index=False)
+    inference_test_df.to_csv(f'Output_files/second_rm_inference_test_{before}_training_seed5.csv', index=False)
 
 
 def preprocess_dataset(examples, tokenizer):
@@ -94,7 +94,7 @@ def load_model():
 
 def sample_by_type(df, sample_size=5):
     grouped = df.groupby('type')
-    sampled = grouped.apply(lambda x: x.sample(min(len(x), sample_size), random_state=42))
+    sampled = grouped.apply(lambda x: x.sample(min(len(x), sample_size), random_state=5))
     return sampled.reset_index(drop=True)
 
 
