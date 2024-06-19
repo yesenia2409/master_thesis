@@ -32,7 +32,7 @@ def inference_evaluation(model, tokenizer, before):
     chosen_rewards = []
     rejected_rewards = []
 
-    inference_test_df = sample_by_type(raw_datasets, 5)
+    inference_test_df = sample_by_type(raw_datasets, 70)
     for idx, row in inference_test_df.iterrows():
         chosen_reward = inference(tokenizer, model, row["chosen"])
         rejected_reward = inference(tokenizer, model, row["rejected"])
@@ -41,7 +41,7 @@ def inference_evaluation(model, tokenizer, before):
 
     inference_test_df['chosen_reward'] = chosen_rewards
     inference_test_df['rejected_reward'] = rejected_rewards
-    inference_test_df.to_csv(f'Output_files/second_rm_inference_test_{before}_training_seed5.csv', index=False)
+    inference_test_df.to_csv(f'Output_files/third_rm_inference_test_{before}_training_seed5.csv', index=False)
 
 
 def preprocess_dataset(examples, tokenizer):
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     # inference(tokenizer, model, raw_datasets["rejected"][2410])
     # print("Done with first inference!")
 
-    inference_evaluation(model, tokenizer, "before")
+    # inference_evaluation(model, tokenizer, "before")
     inference_evaluation(trained_model, tokenizer, "after")
 
 
