@@ -114,7 +114,6 @@ def plot_loss(train, eval, save_path):
         eval_loss.append(eval_val)
         epochs_eval.append(epoch_val)
 
-
     plt.plot(epochs_train, loss, label='Training Loss', marker='o', color=colors[0])
     plt.plot(epochs_eval, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
 
@@ -123,6 +122,7 @@ def plot_loss(train, eval, save_path):
     plt.legend()
     # plt.show()
     plt.savefig(save_path)
+
 
 if __name__ == "__main__":
 
