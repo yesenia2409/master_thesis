@@ -102,18 +102,21 @@ def plot_loss(train, eval, save_path):
     colors = ["lightsteelblue", "cornflowerblue"]
     plt.figure()
 
-    epochs = []
+    epochs_eval = []
+    epochs_train = []
     loss = []
     eval_loss = []
     for (loss_val, epoch_val) in train:
         loss.append(loss_val)
-        epochs.append(epoch_val)
+        epochs_train.append(epoch_val)
 
-    for (eval_val, _) in eval:
+    for (eval_val, epoch_val) in eval:
         eval_loss.append(eval_val)
+        epochs_eval.append(epoch_val)
 
-    plt.plot(epochs, loss, label='Training Loss', marker='o', color=colors[0])
-    plt.plot(epochs, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
+
+    plt.plot(epochs_train, loss, label='Training Loss', marker='o', color=colors[0])
+    plt.plot(epochs_eval, eval_loss, label='Evaluation Loss', marker='o', color=colors[1])
 
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
@@ -122,6 +125,16 @@ def plot_loss(train, eval, save_path):
     plt.savefig(save_path)
 
 if __name__ == "__main__":
+
+    eval_data = [(2.196, 0.03), (1.969, 0.06), (1.757, 0.09), (1.564, 0.12), (1.392, 0.15), (1.232, 0.18),
+                 (1.096, 0.21), (0.971, 0.24), (0.864, 0.27), (0.765, 0.29), (0.675, 0.31), (0.598, 0.35),
+                 (0.529, 0.38), (0.472, 0.41), (0.426, 0.44), (0.389, 0.47), (0.356, 0.5), (0.328, 0.53), (0.303, 0.56),
+                 (0.283, 0.59), (0.269, 0.62), (0.255, 0.65), (0.2447, 0.68), (0.238, 0.71), (0.233, 0.74), (0.228, 0.77),
+                 (0.226, 0.8), (0.226, 0.83), (0.225, 0.86), (0.225, 0.88), (0.225, 0.91), (0.225, 0.94), (0.225, 0.97),
+                 ]
+    train_loss = [(1.9085, 0.15), (1.0192, 0.29), (0.7196, 0.44), (0.4012, 0.59), (0.2711, 0.74), (0.2481, 0.88), (0.716, 0.97)]
+    plot_loss(train_loss, eval_data, "Output_files/loss_plots/rm_loss_second.png")
+
     ################
     # Model & Tokenizer
     ################
