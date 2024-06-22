@@ -5,6 +5,7 @@ import torch
 from accelerate import Accelerator
 from datasets import load_dataset
 from peft import LoraConfig
+from .reward_model import inference
 from tqdm import tqdm
 from transformers import AutoTokenizer, pipeline, AutoModelForCausalLM, BitsAndBytesConfig, AutoModelForSequenceClassification
 from trl import AutoModelForCausalLMWithValueHead, AutoModelForSeq2SeqLMWithValueHead, PPOConfig, PPOTrainer, set_seed
@@ -43,8 +44,7 @@ def load_model_and_tokenizer():
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj"],
-        # alternativ: lm_head rausnehmen
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj"], # "l"m_head"
         bias="none",
         task_type="CAUSAL_LM",
     )
@@ -55,7 +55,7 @@ def load_model_and_tokenizer():
         bnb_4bit_compute_dtype=torch.float16,
     )
 
-    model = AutoModelForCausalLMWithValueHead.from_pretrained(  # alternativ: AutoModelForCausalLMWithValueHead
+    model = AutoModelForCausalLMWithValueHead.from_pretrained(
         pretrained_model_name_or_path=MODEL_PATH,
         trust_remote_code=True,
         local_files_only=True,
@@ -64,7 +64,7 @@ def load_model_and_tokenizer():
         quantization_config=bnb_config
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)  # alternativ: "meta-llama/Llama-2-13b-chat-hf"
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"
 
@@ -73,23 +73,6 @@ def load_model_and_tokenizer():
 
 
 def load_reward_model_and_tokenizer():
-    # peft_config = LoraConfig(
-    #     r=8,
-    #     lora_alpha=16,
-    #     lora_dropout=0.05,
-    #     task_type=TaskType.SEQ_CLS,
-    # )
-
-    # reward_model = AutoModelForSequenceClassification.from_pretrained(
-    #     pretrained_model_name_or_path="weqweasdas/hh_rlhf_rm_open_llama_3b",
-    #     num_labels=1,
-    #     trust_remote_code=True,
-    #     use_safetensors=True,
-    #     torch_dtype=torch.bfloat16,
-    #     device_map="auto",
-    #     peft_config=peft_config
-    # )
-
     reward_model = AutoPeftModelForSequenceClassification.from_pretrained(
         REWARD_MODEL,
         low_cpu_mem_usage=True,
@@ -106,46 +89,35 @@ def load_reward_model_and_tokenizer():
     return reward_model, reward_tokenizer
 
 
-def build_pipeline(tokenizer, reward_model):
-    device = ppo_trainer.accelerator.device
-    if ppo_trainer.accelerator.num_processes == 1:
-        device = 0 if torch.cuda.is_available() else "cpu"
-
-    task, model_name = reward_model.split(":")
-
-    sent_kwargs = {"return_all_scores": True, "function_to_apply": "none", "batch_size": 16}
-
-    sentiment_pipe = pipeline(task, model=model_name, device=device)
-
-    sentiment_pipe.tokenizer.pad_token_id = tokenizer.pad_token_id
-    sentiment_pipe.model.config.pad_token_id = tokenizer.pad_token_id
-
+def build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer):
     generation_kwargs = {
         "min_length": -1,
         "top_k": 0.0,
         "top_p": 1.0,
         "do_sample": True,
-        "pad_token_id": tokenizer.eos_token_id,
-        "max_new_tokens": 32,
+        "pad_token_id": policy_tokenizer.eos_token_id,
+        "max_new_tokens": 512,
     }
+
+    rewards_list = []
+    ref_rewards_list = []
 
     for epoch, batch in tqdm(enumerate(ppo_trainer.dataloader)):
         query_tensors = batch["input_ids"]
 
+        # Generate outputs
         response_tensors, ref_response_tensors = ppo_trainer.generate(
             query_tensors, return_prompt=False, generate_ref_response=True, **generation_kwargs
         )
-        batch["response"] = tokenizer.batch_decode(response_tensors)
-        batch["ref_response"] = tokenizer.batch_decode(ref_response_tensors)
+        batch["response"] = policy_tokenizer.batch_decode(response_tensors)
+        batch["ref_response"] = policy_tokenizer.batch_decode(ref_response_tensors)
 
-        # Compute sentiment score
-        texts = [q + r for q, r in zip(batch["query"], batch["response"])]
-        pipe_outputs = sentiment_pipe(texts, **sent_kwargs)
-        rewards = [torch.tensor(output[1]["score"]) for output in pipe_outputs]
-        ref_texts = [q + r for q, r in zip(batch["query"], batch["ref_response"])]
-        ref_pipe_outputs = sentiment_pipe(ref_texts, **sent_kwargs)
-        ref_rewards = [torch.tensor(output[1]["score"]) for output in ref_pipe_outputs]
-        batch["ref_rewards"] = ref_rewards
+        # Compute rewards
+        rewards = inference(reward_model, reward_tokenizer, batch["response"])
+        rewards_list.append(rewards)
+
+        ref_rewards = inference(reward_model, reward_tokenizer, batch["ref_response"])
+        ref_rewards_list.append(ref_rewards)
 
         # Run PPO step
         stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
@@ -175,10 +147,15 @@ if __name__ == "__main__":
     ################
     ppo_config = PPOConfig(
         model_name=MODEL_PATH,
-        steps=51200,
         learning_rate=1.41e-5,
         remove_unused_columns=False,
     )
 
-    ppo_trainer = PPOTrainer(ppo_config, policy_model, ref_model, policy_tokenizer, dataset=dataset,
-                             data_collator=collator)
+    ppo_trainer = PPOTrainer(
+        ppo_config,
+        policy_model,
+        ref_model,
+        policy_tokenizer,
+        dataset=dataset,
+        data_collator=collator
+    )
