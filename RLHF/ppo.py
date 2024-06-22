@@ -13,11 +13,11 @@ import pandas as pd
 from peft import AutoPeftModelForSequenceClassification, TaskType
 
 tqdm.pandas()
-MODEL_PATH = "merged_model/SFT_for_expert_alignment/"
+MODEL_PATH = "../SFT/merged_model/SFT_for_expert_alignment/"
 REWARD_MODEL = "RewardModel/"
 
 
-def build_dataset(dataset_path, tokenizer, max_len):
+def build_dataset(dataset_path, tokenizer):
     train_set = pd.read_pickle(dataset_path)
     ppo_data = Dataset.from_pandas(train_set)
     print(ppo_data)
@@ -47,19 +47,26 @@ def load_model_and_tokenizer():
         task_type="CAUSAL_LM",
     )
 
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.float16,
+    )
+
     model = AutoModelForCausalLM.from_pretrained(  # alternativ: AutoModelForCausalLMWithValueHead
         pretrained_model_name_or_path=MODEL_PATH,
         trust_remote_code=True,
         local_files_only=True,
         use_safetensors=True,
         device_map="auto",
-        peft_config=peft_config
+        quantization_config=bnb_config
     )
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)  # alternativ: "meta-llama/Llama-2-13b-chat-hf"
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"
 
+    print("Done loading Policy Model and Tokenizer!")
     return model, model, tokenizer
 
 
@@ -93,6 +100,7 @@ def load_reward_model_and_tokenizer():
     reward_tokenizer.pad_token = reward_tokenizer.eos_token
     reward_tokenizer.padding_side = "right"
 
+    print("Done loading Reward Model and Tokenizer!")
     return reward_model, reward_tokenizer
 
 

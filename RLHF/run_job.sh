@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --partition=single
 #SBATCH --ntasks=1
-#SBATCH --time=02:00:00
-#SBATCH --mem=50gb
-#SBATCH --gres=gpu:A40:1
+#SBATCH --time=00:30:00
+#SBATCH --mem=70gb
+#SBATCH --gres=gpu:A100:1
 
 echo 'Running simulation'
 
@@ -20,5 +20,5 @@ module load devel/cuda/11.6
 
 # call python script
 
-python3 -u reward_model.py
+python3 -u ppo.py
 
