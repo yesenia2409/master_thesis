@@ -89,7 +89,7 @@ def load_reward_model_and_tokenizer():
     return reward_model, reward_tokenizer
 
 
-def build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer):
+def build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer):
     generation_kwargs = {
         "min_length": -1,
         "top_k": 0.0,
@@ -103,33 +103,34 @@ def build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer
     rewards_list = []
     ref_rewards_list = []
 
-    for epoch, batch in tqdm(enumerate(ppo_trainer.dataloader)):
-        query_tensors = batch["input_ids"]
+    for epoch in range(ppo_config.ppo_epochs):
+        for step, batch in enumerate(dataloader):
+            print(step)
+            query_tensors = batch["input_ids"]
+            query_tensors = [torch.Tensor(query_tensor).type(torch.int32) for query_tensor in query_tensors]
 
-        query_tensors = [torch.Tensor(query_tensor).type(torch.int32) for query_tensor in query_tensors]
-        
-        # Generate outputs
-        response_tensors = ppo_trainer.generate(
-            query_tensors, return_prompt=False, **generation_kwargs
-        )
-        batch["response"] = policy_tokenizer.batch_decode(response_tensors)
-        print("Resposne: ", batch["response"])
-        # batch["ref_response"] = policy_tokenizer.batch_decode(ref_response_tensors)
-        # print("Ref-resposne: ", batch["ref_response"])
+            # Generate outputs
+            response_tensors = ppo_trainer.generate(
+                query_tensors, return_prompt=False, **generation_kwargs
+            )
+            batch["response"] = policy_tokenizer.batch_decode(response_tensors)
+            print("Resposne: ", batch["response"])
+            # batch["ref_response"] = policy_tokenizer.batch_decode(ref_response_tensors)
+            # print("Ref-resposne: ", batch["ref_response"])
 
-        # Compute rewards
-        rewards = inference(reward_model, reward_tokenizer, batch["response"])
-        rewards_list.append(rewards)
-        print("Rewards: ", rewards)
+            # Compute rewards
+            rewards = inference(reward_model, reward_tokenizer, batch["response"])
+            rewards_list.append(rewards)
+            print("Rewards: ", rewards)
 
-        # ref_rewards = inference(reward_model, reward_tokenizer, batch["ref_response"])
-        # ref_rewards_list.append(ref_rewards)
-        # print("Ref-rewards: ", ref_rewards)
+            # ref_rewards = inference(reward_model, reward_tokenizer, batch["ref_response"])
+            # ref_rewards_list.append(ref_rewards)
+            # print("Ref-rewards: ", ref_rewards)
 
-        # Run PPO step
-        stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
-        print("Stats: ", stats)
-        ppo_trainer.log_stats(stats, batch, rewards)
+            # Run PPO step
+            stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
+            print("Stats: ", stats)
+            ppo_trainer.log_stats(stats, batch, rewards)
 
 
 if __name__ == "__main__":
@@ -154,9 +155,13 @@ if __name__ == "__main__":
     # Training
     ################
     ppo_config = PPOConfig(
+        batch_size=2,
+        ppo_epochs=1,
         model_name=MODEL_PATH,
-        learning_rate=1.41e-5,
+        learning_rate=0.00002,
         remove_unused_columns=False,
+        seed=42,
+        gradient_checkpointing=True,
     )
 
     ppo_trainer = PPOTrainer(
@@ -168,4 +173,4 @@ if __name__ == "__main__":
         data_collator=dataloader
     )
 
-    build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer)
+    build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer)
