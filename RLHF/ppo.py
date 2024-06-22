@@ -17,17 +17,20 @@ MODEL_PATH = "../SFT/merged_model/SFT_for_expert_alignment/"
 REWARD_MODEL = "RewardModel/"
 
 
+def tokenize_and_add_fields(sample, tokenizer, max_len):
+    tokens = tokenizer(sample["instruction"], truncation=True, max_length=max_len, padding="max_length", return_tensors="pt")
+    sample["input_ids"] = tokens["input_ids"].squeeze().tolist()
+    sample["attention_mask"] = tokens["attention_mask"].squeeze().tolist()
+    return sample
+
+
 def build_dataset(dataset_path, tokenizer, max_len):
     train_set = pd.read_pickle(dataset_path)
     ppo_data = Dataset.from_pandas(train_set)
     print(ppo_data)
 
-    for idx in range(len(ppo_data)):
-        instruction = ppo_data[idx]["instruction"]
-        tokens = tokenizer(instruction, truncation=True, max_length=max_len, padding="max_length", return_tensors="pt")
-        ppo_data[idx]["input_ids"] = tokens.input_ids.squeeze()
-        ppo_data[idx]["attention_mask"] = tokens.attention_mask.squeeze()
-
+    ppo_data = ppo_data.map(lambda x: tokenize_and_add_fields(x, tokenizer, max_len))
+    
     return ppo_data
 
 
@@ -40,7 +43,7 @@ def load_model_and_tokenizer():
         r=8,
         lora_alpha=16,
         lora_dropout=0.05,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj", "lm_head"],
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj"],
         # alternativ: lm_head rausnehmen
         bias="none",
         task_type="CAUSAL_LM",
@@ -52,7 +55,7 @@ def load_model_and_tokenizer():
         bnb_4bit_compute_dtype=torch.float16,
     )
 
-    model = AutoModelForCausalLM.from_pretrained(  # alternativ: AutoModelForCausalLMWithValueHead
+    model = AutoModelForCausalLMWithValueHead.from_pretrained(  # alternativ: AutoModelForCausalLMWithValueHead
         pretrained_model_name_or_path=MODEL_PATH,
         trust_remote_code=True,
         local_files_only=True,
