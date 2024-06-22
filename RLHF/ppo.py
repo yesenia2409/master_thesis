@@ -17,18 +17,17 @@ MODEL_PATH = "../SFT/merged_model/SFT_for_expert_alignment/"
 REWARD_MODEL = "RewardModel/"
 
 
-def build_dataset(dataset_path, tokenizer):
+def build_dataset(dataset_path, tokenizer, max_len):
     train_set = pd.read_pickle(dataset_path)
     ppo_data = Dataset.from_pandas(train_set)
     print(ppo_data)
 
-    def tokenize(sample):
-        sample["input_ids"] = tokenizer.encode(sample["instruction"], return_tensors="pt")
-        sample["query"] = tokenizer.decode(sample["input_ids"])
-        return sample
+    for idx in range(len(ppo_data)):
+        instruction = ppo_data[idx]["instruction"]
+        tokens = tokenizer(instruction, truncation=True, max_length=max_len, padding="max_length", return_tensors="pt")
+        ppo_data[idx]["input_ids"] = tokens.input_ids.squeeze()
+        ppo_data[idx]["attention_mask"] = tokens.attention_mask.squeeze()
 
-    ppo_data = ppo_data.map(tokenize, batched=False)
-    ppo_data.set_format(type="torch")
     return ppo_data
 
 
@@ -163,9 +162,20 @@ if __name__ == "__main__":
     # Dataset
     ################
     path = "../SFT/Input_files/train_set_expert.pkl"
-    dataset = build_dataset(path, policy_tokenizer)
+    dataset = build_dataset(path, policy_tokenizer, 512)
+    print(dataset)
+    print(dataset[3]["input_ids"])
+    # dataloader = torch.utils.data.DataLoader(dataset, batch_size=ppo_config.batch_size, shuffle=True)
 
     ################
     # Training
     ################
-    # ppo_trainer = PPOTrainer(ppo_config, model, ref_model, tokenizer, dataset=dataset, data_collator=collator)
+    ppo_config = PPOConfig(
+        model_name=MODEL_PATH,
+        steps=51200,
+        learning_rate=1.41e-5,
+        remove_unused_columns=False,
+    )
+
+    ppo_trainer = PPOTrainer(ppo_config, policy_model, ref_model, policy_tokenizer, dataset=dataset,
+                             data_collator=collator)
