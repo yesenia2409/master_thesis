@@ -5,7 +5,7 @@ import torch
 from accelerate import Accelerator
 from datasets import load_dataset
 from peft import LoraConfig
-from .reward_model import inference
+from reward_model import inference
 from tqdm import tqdm
 from transformers import AutoTokenizer, pipeline, AutoModelForCausalLM, BitsAndBytesConfig, AutoModelForSequenceClassification
 from trl import AutoModelForCausalLMWithValueHead, AutoModelForSeq2SeqLMWithValueHead, PPOConfig, PPOTrainer, set_seed
@@ -66,7 +66,7 @@ def load_model_and_tokenizer():
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
     tokenizer.pad_token = tokenizer.eos_token
-    tokenizer.padding_side = "right"
+    tokenizer.padding_side = "left"
 
     print("Done loading Policy Model and Tokenizer!")
     return model, model, tokenizer
@@ -83,7 +83,7 @@ def load_reward_model_and_tokenizer():
 
     reward_tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b")
     reward_tokenizer.pad_token = reward_tokenizer.eos_token
-    reward_tokenizer.padding_side = "right"
+    reward_tokenizer.padding_side = "left"
 
     print("Done loading Reward Model and Tokenizer!")
     return reward_model, reward_tokenizer
@@ -97,6 +97,7 @@ def build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer
         "do_sample": True,
         "pad_token_id": policy_tokenizer.eos_token_id,
         "max_new_tokens": 512,
+        # "generate_ref_response": True
     }
 
     rewards_list = []
@@ -105,22 +106,29 @@ def build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer
     for epoch, batch in tqdm(enumerate(ppo_trainer.dataloader)):
         query_tensors = batch["input_ids"]
 
+        query_tensors = [torch.Tensor(query_tensor).type(torch.int32) for query_tensor in query_tensors]
+        
         # Generate outputs
-        response_tensors, ref_response_tensors = ppo_trainer.generate(
-            query_tensors, return_prompt=False, generate_ref_response=True, **generation_kwargs
+        response_tensors = ppo_trainer.generate(
+            query_tensors, return_prompt=False, **generation_kwargs
         )
         batch["response"] = policy_tokenizer.batch_decode(response_tensors)
-        batch["ref_response"] = policy_tokenizer.batch_decode(ref_response_tensors)
+        print("Resposne: ", batch["response"])
+        # batch["ref_response"] = policy_tokenizer.batch_decode(ref_response_tensors)
+        # print("Ref-resposne: ", batch["ref_response"])
 
         # Compute rewards
         rewards = inference(reward_model, reward_tokenizer, batch["response"])
         rewards_list.append(rewards)
+        print("Rewards: ", rewards)
 
-        ref_rewards = inference(reward_model, reward_tokenizer, batch["ref_response"])
-        ref_rewards_list.append(ref_rewards)
+        # ref_rewards = inference(reward_model, reward_tokenizer, batch["ref_response"])
+        # ref_rewards_list.append(ref_rewards)
+        # print("Ref-rewards: ", ref_rewards)
 
         # Run PPO step
         stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
+        print("Stats: ", stats)
         ppo_trainer.log_stats(stats, batch, rewards)
 
 
@@ -140,7 +148,7 @@ if __name__ == "__main__":
     dataset = build_dataset(path, policy_tokenizer, 512)
     print(dataset)
     print(dataset[3]["input_ids"])
-    # dataloader = torch.utils.data.DataLoader(dataset, batch_size=ppo_config.batch_size, shuffle=True)
+    dataloader = torch.utils.data.DataLoader(dataset, batch_size=2, shuffle=True)
 
     ################
     # Training
@@ -157,5 +165,7 @@ if __name__ == "__main__":
         ref_model,
         policy_tokenizer,
         dataset=dataset,
-        data_collator=collator
+        data_collator=dataloader
     )
+
+    build_pipeline(ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer)
