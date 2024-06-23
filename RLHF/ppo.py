@@ -84,7 +84,7 @@ def load_reward_model_and_tokenizer():
     return reward_model, reward_tokenizer
 
 
-def build_pipeline(dataloader, ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer):
+def build_pipeline(ppo_config, ppo_trainer, reward_model, reward_tokenizer):
     generation_kwargs = {
     #     "min_length": -1,
     #     "top_k": 0.0,
@@ -96,26 +96,35 @@ def build_pipeline(dataloader, ppo_config, ppo_trainer, policy_tokenizer, reward
     rewards_list = []
 
     for epoch in range(ppo_config.ppo_epochs):
-        for step, batch in enumerate(dataloader):
+        for step, batch in enumerate(ppo_trainer.dataloader):
             print(step)
-            print("Batch: ", batch)
+            for idx, elem in enumerate(batch):
+                print(f"Batch {idx}: ", elem)
             query_tensors = batch["input_ids"]
+            attention_tensors = batch["attention_mask"]
             query_tensors = [torch.Tensor(query_tensor).type(torch.int32) for query_tensor in query_tensors]
 
+            response_tokens = ppo_trainer.model.generate(input_ids=query_tensors, attention_mask=attention_tensors, **generation_kwargs)
+            pred = ppo_trainer.tokenizer.batch_decode(response_tokens)[0]
+            pred = pred.split("[EOS]")[1].split(ppo_trainer.tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
+            # print(pred)
+
             # Generate outputs
-            response_tensors = ppo_trainer.generate(
-                query_tensors, return_prompt=False, **generation_kwargs
-            )
-            batch["response"] = policy_tokenizer.batch_decode(response_tensors)
-            print("Resposnes: ", batch["response"])
+            # response_tensors = ppo_trainer.generate(
+            #     query_tensors, return_prompt=False, **generation_kwargs
+            # )
+            batch["response"] = pred
+            for idx, elem in enumerate(batch["response"]):
+                print(f"Response {idx}: ", elem)
             
             # Compute rewards
             rewards = inference(reward_model, reward_tokenizer, batch["response"])
             rewards_list.append(rewards)
-            print("Rewards: ", rewards)
+            for idx, elem in enumerate(rewards):
+                print(f"Rewards {idx}: ", elem)
 
             # Run PPO step
-            stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
+            stats = ppo_trainer.step(query_tensors, response_tokens, rewards)
             print("Stats: ", stats)
             ppo_trainer.log_stats(stats, batch, rewards)
 
