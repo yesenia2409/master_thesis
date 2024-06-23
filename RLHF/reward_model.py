@@ -12,20 +12,22 @@ DIR = "RewardModel/"
 
 
 def inference(reward_tokenizer, reward_model, sample):
-    with torch.no_grad():
-        input_ids = reward_tokenizer(
-            sample,
-            truncation=True,
-            max_length=128,
-            padding='max_length',
-            return_tensors='pt'
-        )
-        reward_model.eval()
-        out_reward = reward_model(**input_ids)
+    values = []
+    for elem in sample:
+        with torch.no_grad():
+            input_ids = reward_tokenizer(
+                sample,
+                # max_length=128,
+                # padding='max_length',
+                # return_tensors='pt'
+            )
+            reward_model.eval()
+            out_reward = reward_model(**input_ids)
 
-        print("Reward Logits: ", out_reward.logits[0])
-        value = out_reward.logits[0].item()
-        return value
+            print("Reward Logits: ", out_reward.logits[0])
+            value = out_reward.logits[0].item()
+            values.append(value)
+    return values
 
 
 def inference_evaluation(model, tokenizer, before):

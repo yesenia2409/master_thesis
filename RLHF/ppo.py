@@ -19,7 +19,8 @@ REWARD_MODEL = "RewardModel/"
 
 
 def tokenize_and_add_fields(sample, tokenizer, max_len):
-    tokens = tokenizer(sample["instruction"], truncation=True, max_length=max_len, padding="max_length", return_tensors="pt")
+    tokenizer.padding_side = "left"
+    tokens = tokenizer(tokenizer.eos_token+sample["instruction"], max_length=max_len, padding="max_length", return_tensors="pt")
     sample["input_ids"] = tokens["input_ids"].squeeze().tolist()
     sample["attention_mask"] = tokens["attention_mask"].squeeze().tolist()
     return sample
@@ -33,10 +34,6 @@ def build_dataset(dataset_path, tokenizer, max_len):
     ppo_data = ppo_data.map(lambda x: tokenize_and_add_fields(x, tokenizer, max_len))
     
     return ppo_data
-
-
-def collator(data):
-    return {key: [d[key] for d in data] for key in data[0]}
 
 
 def load_model_and_tokenizer():
@@ -64,9 +61,8 @@ def load_model_and_tokenizer():
         quantization_config=bnb_config
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-13b-chat-hf", padding_side="left")
     tokenizer.pad_token = tokenizer.eos_token
-    tokenizer.padding_side = "left"
 
     print("Done loading Policy Model and Tokenizer!")
     return model, model, tokenizer
@@ -81,31 +77,28 @@ def load_reward_model_and_tokenizer():
     reward_model.config.pad_token_id = reward_model.config.eos_token_id
     reward_model.config.use_cache = False
 
-    reward_tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b")
+    reward_tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b", padding_side="left")
     reward_tokenizer.pad_token = reward_tokenizer.eos_token
-    reward_tokenizer.padding_side = "left"
 
     print("Done loading Reward Model and Tokenizer!")
     return reward_model, reward_tokenizer
 
 
-def build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer):
+def build_pipeline(dataloader, ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer):
     generation_kwargs = {
-        "min_length": -1,
-        "top_k": 0.0,
-        "top_p": 1.0,
-        "do_sample": True,
-        "pad_token_id": policy_tokenizer.eos_token_id,
-        "max_new_tokens": 512,
-        # "generate_ref_response": True
+    #     "min_length": -1,
+    #     "top_k": 0.0,
+    #     "top_p": 1.0,
+    #     "do_sample": True,
+        "max_new_tokens": 50,
     }
 
     rewards_list = []
-    ref_rewards_list = []
 
     for epoch in range(ppo_config.ppo_epochs):
         for step, batch in enumerate(dataloader):
             print(step)
+            print("Batch: ", batch)
             query_tensors = batch["input_ids"]
             query_tensors = [torch.Tensor(query_tensor).type(torch.int32) for query_tensor in query_tensors]
 
@@ -114,18 +107,12 @@ def build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, rewa
                 query_tensors, return_prompt=False, **generation_kwargs
             )
             batch["response"] = policy_tokenizer.batch_decode(response_tensors)
-            print("Resposne: ", batch["response"])
-            # batch["ref_response"] = policy_tokenizer.batch_decode(ref_response_tensors)
-            # print("Ref-resposne: ", batch["ref_response"])
-
+            print("Resposnes: ", batch["response"])
+            
             # Compute rewards
             rewards = inference(reward_model, reward_tokenizer, batch["response"])
             rewards_list.append(rewards)
             print("Rewards: ", rewards)
-
-            # ref_rewards = inference(reward_model, reward_tokenizer, batch["ref_response"])
-            # ref_rewards_list.append(ref_rewards)
-            # print("Ref-rewards: ", ref_rewards)
 
             # Run PPO step
             stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
@@ -161,7 +148,7 @@ if __name__ == "__main__":
         learning_rate=0.00002,
         remove_unused_columns=False,
         seed=42,
-        gradient_checkpointing=True,
+        # gradient_checkpointing=True,
     )
 
     ppo_trainer = PPOTrainer(
@@ -173,4 +160,4 @@ if __name__ == "__main__":
         data_collator=dataloader
     )
 
-    build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer)
+    build_pipeline(dataloader, ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer)
