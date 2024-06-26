@@ -23,7 +23,7 @@ def inference(reward_tokenizer, reward_model, sample):
         reward_model.eval()
         out_reward = reward_model(**input_ids)
 
-        print("Reward Logits: ", out_reward.logits[0])
+        # print("Reward Logits: ", out_reward.logits[0])
         value = out_reward.logits[0].item()
     return value
 

@@ -14,17 +14,10 @@ REWARD_MODEL = "RewardModel/"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-def tokenize_and_add_fields(sample, tokenizer, max_len):
-    tokens = tokenizer.encode(tokenizer.eos_token+sample["instruction"], max_length=max_len, padding="max_length")
-    sample["input_ids"] = torch.tensor(tokens).squeeze().to(DEVICE)
-    return sample
-
-
-def build_dataset(dataset_path, tokenizer, max_len):
+def build_dataset(dataset_path):
     train_set = pd.read_pickle(dataset_path)
     ppo_data = Dataset.from_pandas(train_set)
     ppo_data = ppo_data.remove_columns(['type', 'category', 'text', '__index_level_0__'])
-    ppo_data = ppo_data.map(lambda x: tokenize_and_add_fields(x, tokenizer, max_len), batched=False)
     ppo_data.set_format("pytorch")
     return ppo_data
 
@@ -75,65 +68,59 @@ def collator(data):
     return dict((key, [d[key] for d in data]) for key in data[0])
 
 
-def inference_test(model, tokenizer, prompts, max_new_tokens):
+def inference(model, tokenizer, prompts, kwargs):
     model.eval()
-    tokens = []
+    query_tokens = []
+    response_tokens = []
     preds = []
     with torch.no_grad():
         for prompt in prompts:
             encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
             txt_tokens = encode_dict["input_ids"].cuda()
-            kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
             summ_tokens = model.generate(input_ids=txt_tokens, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
-            print("Prediction with regular inference: ", pred)
-            tokens.append(summ_tokens.squeeze())
-            preds.append(pred)
-    return tokens, preds
 
-def build_pipeline(ppo_config, policy_model, policy_trainer, ppo_tokenizer, reward_model, reward_tokenizer, dataloader):
-    generation_kwargs = {
+            query_tokens.append(txt_tokens.squeeze())
+            response_tokens.append(summ_tokens.squeeze())
+            preds.append(pred)
+    model.train()
+    return query_tokens, response_tokens, preds
+
+def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer):
+    kwargs = {
+        "max_new_tokens": 50,
+        "eos_token_id": 50256,
+        "pad_token_id": 50256,
         # "top_p": 0.5,
         # "temperature": 0.7,
-        # "do_sample": True,
-        "max_new_tokens": 50,
-        "pad_token_id": ppo_tokenizer.eos_token_id,
+        # "do_sample": True
     }
 
     for epoch in tqdm(range(ppo_config.ppo_epochs), "epoch: "):
-        for batch in tqdm(policy_trainer.dataloader):
-            # print("Batch: ", batch)
-
-            query_tensors = batch["input_ids"]
-            # print("Query Tensors: ", query_tensors)
+        batch_counter = 0
+        for batch in tqdm(ppo_trainer.dataloader):
+            print("Batch: ", batch_counter)
 
             # Generate outputs
-            response_tensors, pred = inference_test(policy_model, ppo_tokenizer, batch["instruction"], 50)
-            # response_tensors = []
-            # for query in query_tensors:
-            #     query.unsqueeze(0).to(DEVICE)
-            #     # response_tokens = policy_trainer.generate(query, return_prompt=False, **generation_kwargs)
-            #     response_tokens, pred = inference_test(policy_model, ppo_tokenizer, query, 50)
-            #     response_tensors.append(response_tokens.squeeze().to(DEVICE))
-            print("Response Tensors: ", response_tensors)
-            # pred = [ppo_tokenizer.decode(r.squeeze()) for r in response_tensors]
+            query_tensors, response_tensors, pred = inference(policy_model, policy_tokenizer, batch["instruction"], kwargs)
+            # print("Response Tensors: ", response_tensors)
             # pred = pred.split("[EOS]")[1].split(ppo_trainer.tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
             batch["response"] = pred
-            # print("Response: ", batch["response"])
             
             # Compute rewards
             rewards_list = []
             for instr, resp in zip(batch["instruction"], batch["response"]):
-                # print("Instr: ", instr)
-                # print("Resp: ", resp)
+                print("Instr: ", instr)
+                print("Resp: ", resp)
                 reward = inference(reward_tokenizer, reward_model, resp)
                 rewards_list.append(torch.tensor(reward).to(DEVICE))
             # print("Rewards List: ", rewards_list)
 
             # Run PPO step
-            stats = policy_trainer.step(query_tensors, response_tensors, rewards_list)
+            stats = ppo_trainer.step(query_tensors, response_tensors, rewards_list)
             print("Stats: ", stats)
-            policy_trainer.log_stats(stats, batch, rewards_list)
+            ppo_trainer.log_stats(stats, batch, rewards_list)
+            batch_counter += 1
 
 
 if __name__ == "__main__":
@@ -149,9 +136,7 @@ if __name__ == "__main__":
     # Dataset
     ################
     path = "../SFT/Input_files/train_set_expert.pkl"
-    dataset = build_dataset(path, policy_tokenizer, 512)
-    # print("Input ids: ", dataset[3]["input_ids"])
-    dataloader = torch.utils.data.DataLoader(dataset, batch_size=2, shuffle=True)
+    dataset = build_dataset(path)
 
     ################
     # Training
@@ -163,7 +148,6 @@ if __name__ == "__main__":
         learning_rate=0.00002,
         remove_unused_columns=False,
         seed=42,
-        # gradient_checkpointing=True,
     )
 
     ppo_trainer = PPOTrainer(
@@ -172,7 +156,7 @@ if __name__ == "__main__":
         ref_model,
         policy_tokenizer,
         dataset=dataset,
-        data_collator=collator #dataloader
+        data_collator=collator
     )
 
-    build_pipeline(ppo_config, policy_model, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer, dataloader)
+    build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
