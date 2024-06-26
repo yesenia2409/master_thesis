@@ -47,7 +47,7 @@ def load_model_and_tokenizer():
     model = model.to(DEVICE)
     model.bfloat16()
     
-    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-13b-chat-hf", padding_side="left")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, padding_side="left")
     tokenizer.pad_token = tokenizer.eos_token
 
     print("Done loading Policy Model and Tokenizer!")
@@ -78,9 +78,9 @@ def collator(data):
 def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_tokenizer, dataloader):
     generation_kwargs = {
         # "top_p": 0.5,
-        "temperature": 1,
+        # "temperature": 0.7,
         # "do_sample": True,
-        "max_new_tokens": 200,
+        "max_new_tokens": 50,
         "pad_token_id": ppo_tokenizer.eos_token_id,
     }
 
@@ -97,7 +97,7 @@ def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_
                 query.to(DEVICE)
                 response_tokens = ppo_trainer.generate(query, return_prompt=False, **generation_kwargs)
                 response_tensors.append(response_tokens.squeeze().to(DEVICE))
-            # print("Response Tensors: ", response_tensors)
+            print("Response Tensors: ", response_tensors)
             pred = [ppo_tokenizer.decode(r.squeeze()) for r in response_tensors]
             # pred = pred.split("[EOS]")[1].split(ppo_trainer.tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
             batch["response"] = pred
