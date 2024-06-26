@@ -1,22 +1,18 @@
-from dataclasses import dataclass, field
-from typing import Optional
 from datasets import Dataset
 import torch
-from accelerate import Accelerator
-from datasets import load_dataset
 from peft import LoraConfig
 from reward_model import inference
 from tqdm import tqdm
-from transformers import AutoTokenizer, pipeline, AutoModelForCausalLM, BitsAndBytesConfig, AutoModelForSequenceClassification
-from trl import AutoModelForCausalLMWithValueHead, AutoModelForSeq2SeqLMWithValueHead, PPOConfig, PPOTrainer, set_seed
-from trl.core import LengthSampler
+from transformers import AutoTokenizer, BitsAndBytesConfig
+from trl import AutoModelForCausalLMWithValueHead, PPOConfig, PPOTrainer, set_seed
 import pandas as pd
-from peft import AutoPeftModelForSequenceClassification, TaskType
+from peft import AutoPeftModelForSequenceClassification
 
 tqdm.pandas()
 MODEL_PATH = "../SFT/merged_model/SFT_for_expert_alignment/"
 REWARD_MODEL = "RewardModel/"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 def tokenize_and_add_fields(sample, tokenizer, max_len):
     tokens = tokenizer.encode(tokenizer.eos_token+sample["instruction"], max_length=max_len, padding="max_length")
@@ -34,15 +30,6 @@ def build_dataset(dataset_path, tokenizer, max_len):
 
 
 def load_model_and_tokenizer():
-    peft_config = LoraConfig(
-        r=8,
-        lora_alpha=16,
-        lora_dropout=0.05,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj"], # "l"m_head"
-        bias="none",
-        task_type="CAUSAL_LM",
-    )
-
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -67,10 +54,6 @@ def load_model_and_tokenizer():
     return model, model, tokenizer
 
 
-def collator(data):
-    return dict((key, [d[key] for d in data]) for key in data[0])
-
-
 def load_reward_model_and_tokenizer():
     reward_model = AutoPeftModelForSequenceClassification.from_pretrained(
         REWARD_MODEL,
@@ -88,6 +71,10 @@ def load_reward_model_and_tokenizer():
     return reward_model, reward_tokenizer
 
 
+def collator(data):
+    return dict((key, [d[key] for d in data]) for key in data[0])
+
+
 def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_tokenizer, dataloader):
     generation_kwargs = {
         # "top_p": 0.5,
@@ -98,30 +85,23 @@ def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_
     }
 
     for epoch in tqdm(range(ppo_config.ppo_epochs), "epoch: "):
-        # for step, batch in enumerate(dataloader):
         for batch in tqdm(ppo_trainer.dataloader):
-            # print("Step: ", step)
             # print("Batch: ", batch)
 
             query_tensors = batch["input_ids"]
-            # print("Query Tensors: ", len(query_tensors))
             # print("Query Tensors: ", query_tensors)
 
             # Generate outputs
             response_tensors = []
             for query in query_tensors:
-                # print("Query: ", query)
-                query.to(DEVICE) #.unsqueeze(0).to(DEVICE)
+                query.to(DEVICE)
                 response_tokens = ppo_trainer.generate(query, return_prompt=False, **generation_kwargs)
                 response_tensors.append(response_tokens.squeeze().to(DEVICE))
             # print("Response Tensors: ", response_tensors)
-            # print("Response Tensors: ", len(response_tensors))
             pred = [ppo_tokenizer.decode(r.squeeze()) for r in response_tensors]
-            # print("Pred: ", pred)
             # pred = pred.split("[EOS]")[1].split(ppo_trainer.tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
             batch["response"] = pred
             # print("Response: ", batch["response"])
-            # print("Len Batch Responses: ", len(batch["response"]))
             
             # Compute rewards
             rewards_list = []
