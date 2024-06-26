@@ -1,0 +1,620 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:19,  3.91s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:15,  3.91s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:11<00:11,  3.96s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:15<00:07,  3.98s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:19<00:04,  4.03s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:21<00:00,  3.04s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:21<00:00,  3.51s/it]
+WARNING:root:A <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+You are using the legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This means that tokens that come after special tokens will not be properly handled. We recommend you to read the related pull request available at https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+Map:   0%|          | 0/17427 [00:00<?, ? examples/s]Map:   1%|▏         | 248/17427 [00:00<00:06, 2459.08 examples/s]Map:   3%|▎         | 506/17427 [00:00<00:06, 2525.07 examples/s]Map:   4%|▍         | 773/17427 [00:00<00:06, 2584.94 examples/s]Map:   6%|▋         | 1125/17427 [00:00<00:07, 2245.93 examples/s]Map:   8%|▊         | 1375/17427 [00:00<00:06, 2321.64 examples/s]Map:   9%|▉         | 1639/17427 [00:00<00:06, 2415.04 examples/s]Map:  11%|█▏        | 2000/17427 [00:00<00:06, 2230.66 examples/s]Map:  13%|█▎        | 2250/17427 [00:00<00:06, 2294.27 examples/s]Map:  14%|█▍        | 2513/17427 [00:01<00:06, 2379.97 examples/s]Map:  16%|█▌        | 2777/17427 [00:01<00:05, 2448.66 examples/s]Map:  18%|█▊        | 3131/17427 [00:01<00:06, 2276.92 examples/s]Map:  19%|█▉        | 3391/17427 [00:01<00:05, 2353.33 examples/s]Map:  21%|██        | 3654/17427 [00:01<00:05, 2420.91 examples/s]Map:  23%|██▎       | 3925/17427 [00:01<00:05, 2496.41 examples/s]Map:  24%|██▍       | 4267/17427 [00:01<00:05, 2312.03 examples/s]Map:  26%|██▌       | 4527/17427 [00:01<00:05, 2382.50 examples/s]Map:  27%|██▋       | 4787/17427 [00:02<00:05, 2439.07 examples/s]Map:  29%|██▉       | 5116/17427 [00:02<00:05, 2223.56 examples/s]Map:  31%|███       | 5378/17427 [00:02<00:05, 2317.93 examples/s]Map:  32%|███▏      | 5648/17427 [00:02<00:04, 2416.51 examples/s]Map:  34%|███▍      | 6000/17427 [00:02<00:05, 2189.75 examples/s]Map:  36%|███▌      | 6252/17427 [00:02<00:04, 2266.01 examples/s]Map:  37%|███▋      | 6516/17427 [00:02<00:04, 2357.28 examples/s]Map:  39%|███▉      | 6774/17427 [00:02<00:04, 2414.40 examples/s]Map:  41%|████      | 7118/17427 [00:03<00:04, 2198.00 examples/s]Map:  42%|████▏     | 7382/17427 [00:03<00:04, 2302.01 examples/s]Map:  44%|████▍     | 7635/17427 [00:03<00:04, 2358.39 examples/s]Map:  45%|████▌     | 7893/17427 [00:03<00:03, 2417.77 examples/s]Map:  47%|████▋     | 8249/17427 [00:03<00:04, 2240.61 examples/s]Map:  49%|████▉     | 8501/17427 [00:03<00:03, 2305.84 examples/s]Map:  50%|█████     | 8749/17427 [00:03<00:03, 2349.60 examples/s]Map:  52%|█████▏    | 9000/17427 [00:03<00:03, 2167.24 examples/s]Map:  53%|█████▎    | 9256/17427 [00:03<00:03, 2266.89 examples/s]Map:  55%|█████▍    | 9524/17427 [00:04<00:03, 2374.29 examples/s]Map:  56%|█████▌    | 9771/17427 [00:04<00:03, 2397.76 examples/s]Map:  58%|█████▊    | 10119/17427 [00:04<00:03, 2181.45 examples/s]Map:  59%|█████▉    | 10348/17427 [00:04<00:03, 2206.48 examples/s]Map:  61%|██████    | 10604/17427 [00:04<00:02, 2298.05 examples/s]Map:  62%|██████▏   | 10857/17427 [00:04<00:02, 2359.05 examples/s]Map:  64%|██████▍   | 11145/17427 [00:04<00:02, 2195.00 examples/s]Map:  65%|██████▌   | 11406/17427 [00:04<00:02, 2299.28 examples/s]Map:  67%|██████▋   | 11647/17427 [00:05<00:02, 2324.09 examples/s]Map:  68%|██████▊   | 11898/17427 [00:05<00:02, 2372.30 examples/s]Map:  70%|███████   | 12259/17427 [00:05<00:02, 2143.28 examples/s]Map:  72%|███████▏  | 12500/17427 [00:05<00:02, 2204.86 examples/s]Map:  73%|███████▎  | 12757/17427 [00:05<00:02, 2293.04 examples/s]Map:  75%|███████▍  | 13000/17427 [00:05<00:02, 2121.82 examples/s]Map:  76%|███████▌  | 13263/17427 [00:05<00:01, 2247.20 examples/s]Map:  78%|███████▊  | 13514/17427 [00:05<00:01, 2315.20 examples/s]Map:  79%|███████▉  | 13782/17427 [00:05<00:01, 2405.29 examples/s]Map:  81%|████████  | 14123/17427 [00:06<00:01, 2255.61 examples/s]Map:  83%|████████▎ | 14379/17427 [00:06<00:01, 2331.31 examples/s]Map:  84%|████████▍ | 14644/17427 [00:06<00:01, 2411.07 examples/s]Map:  86%|████████▌ | 14918/17427 [00:06<00:01, 2498.75 examples/s]Map:  88%|████████▊ | 15260/17427 [00:06<00:00, 2334.43 examples/s]Map:  89%|████████▉ | 15524/17427 [00:06<00:00, 2408.11 examples/s]Map:  91%|█████████ | 15788/17427 [00:06<00:00, 2467.92 examples/s]Map:  93%|█████████▎| 16130/17427 [00:06<00:00, 2309.64 examples/s]Map:  94%|█████████▍| 16392/17427 [00:07<00:00, 2386.06 examples/s]Map:  96%|█████████▌| 16649/17427 [00:07<00:00, 2432.28 examples/s]Map:  97%|█████████▋| 16911/17427 [00:07<00:00, 2481.64 examples/s]Map:  99%|█████████▉| 17260/17427 [00:07<00:00, 2287.54 examples/s]Map: 100%|██████████| 17427/17427 [00:07<00:00, 2319.59 examples/s]
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/8713 [00:00<?, ?it/s][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please extract the named entities in: The first fly fossil discovered from the Upper Jurassic Talbragar Fish Bed in Australia is described and illustrated. Based on a single, well preserved wing, Calosargus (Calosargus) talbragarensis new species is assigned to the extinct brachyceran family Archisargidae. Wing morphology suggests a relationship between this extinct family and Stratiomyidae. The Archisargidae have so far only been found in China, Kazakhstan and Mongolia. Calosargus Mostovski, 1997 currently comprises seven species from the Callovian (late Middle Jurassic) of China and three species from the Oxfordian (early Upper Jurassic) of Kazakhstan. This oldest brachyceran fossil from Australia and first record of the Archisargidae in the southern hemisphere presents evidence that higher flies were present in this region in the Jurassic, when this group is thought to have commenced its diversification..  [/INST]
+Resp:  .\\,\\,\\\\-.\\
+\\,\\-.\\\\\\1
+Reward Logits:  tensor([0.9095], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Does anyone have experience developing an evaporite karst distribution model?
+I am working with a student to model the distribution of karst in Nova Scotia, Canada, where most karst is underlain by gypsum. We want to map areas with moderate to high probability of surface karst development (we're primarily interested in sink-hole occurrence (dolines)). In addition to bedrock geology, factors that we are considering include depth to water table (previously modelled), overburden depth, and soil porosity (indexed by % of clay in soil). Does anyone have experience with this kind of research? We want to select appropriate parameters for each of these variables (e.g., what depth of overburden, depth to water table, etc.).  [/INST]
+Resp:  <s>\\\\\\\\8\\/\\\\\\8\\\\\\\\,\\\\/
+Reward Logits:  tensor([1.7115], device='cuda:0')
+You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.01954  , -22.01954  , -22.01954  , ...,  -3.917573 ,
+         -3.8920379,  -4.706916 ],
+       [-22.01954  , -22.01954  , -22.01954  , ...,  -4.452188 ,
+         -4.318389 ,  -5.3809924]], dtype=float32), 'objective/ref_logprobs': array([[-22.01954  , -22.01954  , -22.01954  , ...,  -3.917573 ,
+         -3.8920379,  -4.706916 ],
+       [-22.01954  , -22.01954  , -22.01954  , ...,  -4.452188 ,
+         -4.318389 ,  -5.3809924]], dtype=float32), 'objective/kl_coef': 0.2, 'objective/entropy': 87.80199432373047, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.3105031251907349, 'ppo/std_scores': 0.5670486092567444, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': -0.004067733883857727, 'ppo/loss/value': 0.8400143980979919, 'ppo/loss/total': 0.07993371039628983, 'ppo/policy/entropy': 8.855894088745117, 'ppo/policy/approxkl': 0.0008898877422325313, 'ppo/policy/policykl': 0.016358792781829834, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.514083  , -3.514083  , -3.514083  , ...,  0.72287476,
+        1.9002913 ,  1.4276562 ], dtype=float32), 'ppo/policy/advantages_mean': 7.152556946721234e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.928713 , 0.9611964,
+       0.9922534], dtype=float32), 'ppo/returns/mean': 0.6358839273452759, 'ppo/returns/var': 0.13968710601329803, 'ppo/val/vpred': -0.56640625, 'ppo/val/error': 1.657344937324524, 'ppo/val/clipfrac': 0.10000000149011612, 'ppo/val/mean': -0.58447265625, 'ppo/val/var': 0.022242005914449692, 'ppo/time/ppo/optimizer_step': 0.025839805603027344, 'ppo/val/var_explained': -10.86469554901123, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.441291093826294, 'time/ppo/compute_rewards': 0.0006537437438964844, 'time/ppo/optimize_step': 1.5231268405914307, 'time/ppo/calc_stats': 0.002274751663208008, 'time/ppo/total': 2.9779820442199707}
+
+  0%|          | 1/8713 [00:06<16:35:25,  6.86s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Could you extract the terms related to earth science mentioned in this passage? The passage: Traditionalist theology, sometimes referred to as the Atharī school, derives its name from the word "tradition" as a translation of the Arabic word hadith or from the Arabic word athar, meaning "narrations". The traditionalist creed is to avoid delving into extensive theological speculation. They rely on the Qur'an, the Sunnah, and sayings of the Sahaba, seeing this as the middle path where the attributes of Allah are accepted without questioning their nature (bi-la kayf). Ahmad ibn Hanbal is regarded as the leader of the traditionalist school of creed. The modern Salafi movement associates itself with the Atharī creed.  [/INST]
+Resp:  <s>.<s>\\,\\\\8/,\\\\--\\,\\\\,\\
+Reward Logits:  tensor([1.1138], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+I am looking for suggestions for a standard way to analyse marine sediment cores (trace and REE)?
+I am trying to look out for a NIST or canadian standard for analysis of trace and REE elements in marine sediment cores. Previously was using MAG-1 Standard from NIST but now it is unavailable so any alternative to that.  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.0254    , -22.0254    , -22.0254    , ...,  -4.2552204 ,
+         -5.535684  ,  -4.425834  ],
+       [-22.0254    , -22.0254    , -22.0254    , ...,  -0.36289713,
+         -0.36339507,  -0.48550612]], dtype=float32), 'objective/ref_logprobs': array([[-22.0254    , -22.0254    , -22.0254    , ...,  -4.2552204 ,
+         -5.535684  ,  -4.425834  ],
+       [-22.0254    , -22.0254    , -22.0254    , ...,  -0.36289713,
+         -0.36339507,  -0.48550612]], dtype=float32), 'objective/kl_coef': 0.199992, 'objective/entropy': 49.678367614746094, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.1688454151153564, 'ppo/std_scores': 0.0778212919831276, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.0047609866596758366, 'ppo/loss/value': 0.6533259153366089, 'ppo/loss/total': 0.07009357213973999, 'ppo/policy/entropy': 5.74260139465332, 'ppo/policy/approxkl': 0.0002853372134268284, 'ppo/policy/policykl': 0.005980484187602997, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.6441293, -2.6441293, -2.6441293, ...,  1.3866042,  1.5108055,
+        1.7673103], dtype=float32), 'ppo/policy/advantages_mean': -2.1755695911451767e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.9994969, 0.9814711,
+       1.0007628], dtype=float32), 'ppo/returns/mean': 0.5539270639419556, 'ppo/returns/var': 0.11001594364643097, 'ppo/val/vpred': -0.5234375, 'ppo/val/error': 1.2704956531524658, 'ppo/val/clipfrac': 0.17499999701976776, 'ppo/val/mean': -0.534375011920929, 'ppo/val/var': 0.02110503427684307, 'ppo/time/ppo/optimizer_step': 0.008199095726013184, 'ppo/val/var_explained': -10.548286437988281, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1803171634674072, 'time/ppo/compute_rewards': 0.0003306865692138672, 'time/ppo/optimize_step': 1.3642382621765137, 'time/ppo/calc_stats': 0.0016837120056152344, 'time/ppo/total': 2.5573532581329346}
+
+  0%|          | 2/8713 [00:12<14:10:06,  5.86s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What is the influence of chemistry on static liquefaction?
+There are quite a number of factors that influence the static and cyclic liquefaction phenomenon of a geomaterial (tailings or soil) such as confining pressure, initial void ratio, initial stress condition, amount and content of fines, sample preparation method, over consolidation ratio, length of time under sustained pressure etc. Also, authors such as Gratchev et al. (2006) and many others have carried out a series of tests using plasticity index as a benchmark for assessing cyclic behaviour of soil, however, the plasticity index still does not fully capture the whole factors that influence the soil strength under cyclic stress. I would like to know the influence of chemistry on the liquefaction of both montmorillonite and kaoline clay tailings.  [/INST]
+Resp:  1\\/8\\\\1,\\.\\\\\\,1\\.-1A
+Reward Logits:  tensor([0.6435], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Which scientific discipline is most relevant when discussing the term 'saline soil'?
+Choose from:
+A. Geography
+B. Geodesy
+C. Meteorology
+D. Climatology
+E. Oceanography
+F. Geophysics
+G. Geology
+H. Hydrology
+I. Geochemistry
+The answer is:  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.024424  , -22.024424  , -22.024424  , ...,  -5.7313104 ,
+         -4.9385324 ,  -4.9550056 ],
+       [-22.024424  , -22.024424  , -22.024424  , ...,  -0.5324583 ,
+         -0.53140587,  -0.63724554]], dtype=float32), 'objective/ref_logprobs': array([[-22.024424  , -22.024424  , -22.024424  , ...,  -5.7313104 ,
+         -4.9385324 ,  -4.9550056 ],
+       [-22.024424  , -22.024424  , -22.024424  , ...,  -0.5324583 ,
+         -0.53140587,  -0.63724554]], dtype=float32), 'objective/kl_coef': 0.19998400032, 'objective/entropy': 50.88742446899414, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 0.9336792230606079, 'ppo/std_scores': 0.4103964567184448, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': -0.0035887821577489376, 'ppo/loss/value': 0.4854869842529297, 'ppo/loss/total': 0.04495991766452789, 'ppo/policy/entropy': 5.986268043518066, 'ppo/policy/approxkl': 0.0001650149788474664, 'ppo/policy/policykl': -0.005854432005435228, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.2778506, -3.2778506, -3.2778506, ...,  1.1414287,  1.6358477,
+        1.5451282], dtype=float32), 'ppo/policy/advantages_mean': -1.8179417793362518e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0015215, 1.0008278,
+       1.0590154], dtype=float32), 'ppo/returns/mean': 0.42343053221702576, 'ppo/returns/var': 0.07724083960056305, 'ppo/val/vpred': -0.484375, 'ppo/val/error': 0.9641711711883545, 'ppo/val/clipfrac': 0.10000000149011612, 'ppo/val/mean': -0.48980408906936646, 'ppo/val/var': 0.028008798137307167, 'ppo/time/ppo/optimizer_step': 0.008204102516174316, 'ppo/val/var_explained': -11.482660293579102, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1747536659240723, 'time/ppo/compute_rewards': 0.0003180503845214844, 'time/ppo/optimize_step': 1.3621635437011719, 'time/ppo/calc_stats': 0.0017778873443603516, 'time/ppo/total': 2.5492899417877197}
+
+  0%|          | 3/8713 [00:17<13:24:33,  5.54s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you elaborate on premise in connection with 11.22.63?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you identify the key terms related to earth science mentioned in this passage? The passage: Baker raised two daughters, French-born Marianne and Moroccan-born Stellina, and 10 sons, Japanese-born Janot (born Teruya) and Akio, Colombian-born Luis, Finnish-born Jari (now Jarry), French-born Jean-Claude, Noël, and Moïse, Algerian-born Brahim (later Brian), Ivorian-born Koffi, and Venezuelan-born Mara. Later on, Josephine Baker would become the legal guardian of another boy, also named Jean-Claude, and considered him an unofficial addition to the Rainbow Tribe. For some time, Baker lived with her children and an enormous staff in the château in Dordogne, France, with her fourth husband, Jo Bouillon. Bouillon claimed that Baker bore one child, it was stillborn in 1941, an incident that precipitated an emergency hysterectomy.  [/INST]
+Resp:  .\\\\-.-\\-\\\\.-1./\\\\\\,,
+Reward Logits:  tensor([0.8046], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -9.2392188e-04, -9.2427916e-04, -9.2487468e-04],
+       [-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -3.8520219e+00, -4.1663065e+00, -4.3793721e+00]], dtype=float32), 'objective/ref_logprobs': array([[-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -9.2392188e-04, -9.2427916e-04, -9.2487468e-04],
+       [-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -3.8520219e+00, -4.1663065e+00, -4.3793721e+00]], dtype=float32), 'objective/kl_coef': 0.1999760009599872, 'objective/entropy': 42.4801025390625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.0142403841018677, 'ppo/std_scores': 0.29646578431129456, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 3.227591378163197e-06, 'ppo/loss/value': 0.4788611829280853, 'ppo/loss/total': 0.0478893481194973, 'ppo/policy/entropy': 4.169905662536621, 'ppo/policy/approxkl': 1.0373659709017602e-09, 'ppo/policy/policykl': 9.315619536209852e-06, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.812037 , -2.812037 , -2.812037 , ...,  1.1712723,  1.7019506,
+        1.9401627], dtype=float32), 'ppo/policy/advantages_mean': -4.17232506322307e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.000001 , 1.0000011,
+       1.0000018], dtype=float32), 'ppo/returns/mean': 0.5022456645965576, 'ppo/returns/var': 0.078060582280159, 'ppo/val/vpred': -0.42578125, 'ppo/val/error': 0.9554266333580017, 'ppo/val/clipfrac': 0.02500000037252903, 'ppo/val/mean': -0.41386717557907104, 'ppo/val/var': 0.010928956791758537, 'ppo/time/ppo/optimizer_step': 0.008191585540771484, 'ppo/val/var_explained': -11.239553451538086, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1755075454711914, 'time/ppo/compute_rewards': 0.0003418922424316406, 'time/ppo/optimize_step': 1.3613808155059814, 'time/ppo/calc_stats': 0.0016417503356933594, 'time/ppo/total': 2.5492136478424072}
+
+  0%|          | 4/8713 [00:22<13:02:13,  5.39s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is tribe ptychomphalides wenz a narrower category or subdiscipline within genus ptychomphalus agassiz, 1839 in geoscience?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Identify the scientific discipline associated with the term 'swale':
+Choose from:
+A. Meteorology
+B. Hydrology
+C. Geography
+D. Geophysics
+E. Climatology
+F. Geology
+G. Geodesy
+H. Oceanography
+I. Geochemistry
+The answer is:  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -2.3278301e-03, -2.9484632e-03, -3.5157318e-03],
+       [-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -1.7302559e-01, -1.7299983e-01, -2.6452124e-01]], dtype=float32), 'objective/ref_logprobs': array([[-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -2.3278301e-03, -2.9484632e-03, -3.5157318e-03],
+       [-2.2025400e+01, -2.2025400e+01, -2.2025400e+01, ...,
+        -1.7302559e-01, -1.7299983e-01, -2.6452124e-01]], dtype=float32), 'objective/kl_coef': 0.1999680019199488, 'objective/entropy': 1.2614344358444214, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.00018539131269790232, 'ppo/loss/value': 0.5932608842849731, 'ppo/loss/total': 0.05951148271560669, 'ppo/policy/entropy': 0.7603919506072998, 'ppo/policy/approxkl': 5.011926077713724e-06, 'ppo/policy/policykl': 2.785740616673138e-05, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.4150825 , -3.4150825 , -3.4150825 , ...,  1.4038329 ,
+        1.8839213 ,  0.48731664], dtype=float32), 'ppo/policy/advantages_mean': -1.1622906015418266e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0002406, 1.0002208,
+       1.0139527], dtype=float32), 'ppo/returns/mean': 0.6397489309310913, 'ppo/returns/var': 0.10295912623405457, 'ppo/val/vpred': -0.361328125, 'ppo/val/error': 1.1448192596435547, 'ppo/val/clipfrac': 0.15000000596046448, 'ppo/val/mean': -0.42133504152297974, 'ppo/val/var': 0.013564148917794228, 'ppo/time/ppo/optimizer_step': 0.008183479309082031, 'ppo/val/var_explained': -10.119162559509277, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1744282245635986, 'time/ppo/compute_rewards': 0.0003268718719482422, 'time/ppo/optimize_step': 1.3595774173736572, 'time/ppo/calc_stats': 0.0016727447509765625, 'time/ppo/total': 2.546344518661499}
+
+  0%|          | 5/8713 [00:27<12:49:20,  5.30s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+I'd like to know a synonym for the word 'hydrographic basin'.  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please extract the named entities in: An example of parasitic drilling in a rhynchonelliform brachiopod is described from the Shiyanhe Formation (Katian, Upper Ordovician) of Henan, central China. The boring extends into the shell almost perpendicular to the surface. The shell has been serially sectioned, and the trace (including boring and bioclaustration) has been modeled in three dimensions. Healing of the shell evident in serial sections supports a long-term relationship between the brachiopod and borer that we interpret as parasitic. Platyceratid gastropods, found at the same locality as these brachiopods, are the most likely drilling organism. Previous reports of Paleozoic brachiopod parasitic traces can be classified into two main groups, constructive association and destructive association, depending on whether parasites damage brachiopod shells. The example in this study belongs to the second type as the brachiopod shell has been partly damaged by the borer..  [/INST]
+Resp:  1
+\\\\
+-,-
+\\,A\\,
+
+.,
+1
+Reward Logits:  tensor([1.3213], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2030283e+01, -2.2030283e+01, -2.2030283e+01, ...,
+        -9.1820513e-04, -9.1880059e-04, -9.1868150e-04],
+       [-2.2030283e+01, -2.2030283e+01, -2.2030283e+01, ...,
+        -4.3435869e+00, -4.0955172e+00, -4.5810986e+00]], dtype=float32), 'objective/ref_logprobs': array([[-2.2030283e+01, -2.2030283e+01, -2.2030283e+01, ...,
+        -9.1820513e-04, -9.1880059e-04, -9.1868150e-04],
+       [-2.2030283e+01, -2.2030283e+01, -2.2030283e+01, ...,
+        -4.3435869e+00, -4.0955172e+00, -4.5810986e+00]], dtype=float32), 'objective/kl_coef': 0.19996000319987198, 'objective/entropy': 41.28312301635742, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2725982666015625, 'ppo/std_scores': 0.06890740245580673, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.003636646084487438, 'ppo/loss/value': 0.5437960028648376, 'ppo/loss/total': 0.05801624804735184, 'ppo/policy/entropy': 4.036296844482422, 'ppo/policy/approxkl': 8.330948185175657e-05, 'ppo/policy/policykl': 0.0002730369451455772, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.0347443, -3.0347443, -3.0347443, ...,  1.5180136,  1.6150396,
+        1.2922325], dtype=float32), 'ppo/policy/advantages_mean': 3.2782554626464844e-07, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.94751036, 0.9998245 ,
+       1.0013771 ], dtype=float32), 'ppo/returns/mean': 0.7162604331970215, 'ppo/returns/var': 0.08691288530826569, 'ppo/val/vpred': -0.265625, 'ppo/val/error': 1.0549861192703247, 'ppo/val/clipfrac': 0.125, 'ppo/val/mean': -0.2727295160293579, 'ppo/val/var': 0.015138046815991402, 'ppo/time/ppo/optimizer_step': 0.008212566375732422, 'ppo/val/var_explained': -11.138431549072266, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1808662414550781, 'time/ppo/compute_rewards': 0.0003249645233154297, 'time/ppo/optimize_step': 1.3654391765594482, 'time/ppo/calc_stats': 0.0017066001892089844, 'time/ppo/total': 2.5592167377471924}
+
+  0%|          | 6/8713 [00:32<12:42:12,  5.25s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What can be proved by the illustration?
+[START_FIGURE] modeled plane wave reflected or transmitted amplitudes versus the angle of incidence at 780 khz for the water saturated porous medium described in table 1 for (a) p wave in water incident on the porous medium. (b) p1 (fast) wave in the porous medium incident on water. (c) p2 (slow) wave in the porous medium incident on water. (d) s wave in the porous medium incident on water. in figures 1a– 1d, the incident wave has an amplitude of unity for the average amplitude between the solid and the fluid components according to equation (2). consequently, the transmitted p wave is larger than unity.[END_FIGURE]  [/INST]
+Resp:  /1\\\\\\\\\\\\.<s>
+,\\\\.<s>,\\\\\\
+Reward Logits:  tensor([1.4022], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What are the different branches of geoscience that genus polyartemia fischer, 1851 is part of?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2032236e+01, -2.2032236e+01, -2.2032236e+01, ...,
+        -4.3949690e+00, -4.0062866e+00, -4.0067639e+00],
+       [-2.2032236e+01, -2.2032236e+01, -2.2032236e+01, ...,
+        -1.0330108e-03, -1.1593533e-03, -1.1555430e-03]], dtype=float32), 'objective/ref_logprobs': array([[-2.2032236e+01, -2.2032236e+01, -2.2032236e+01, ...,
+        -4.3949690e+00, -4.0062866e+00, -4.0067639e+00],
+       [-2.2032236e+01, -2.2032236e+01, -2.2032236e+01, ...,
+        -1.0330108e-03, -1.1593533e-03, -1.1555430e-03]], dtype=float32), 'objective/kl_coef': 0.19995200479974398, 'objective/entropy': 44.505592346191406, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.3130463361740112, 'ppo/std_scores': 0.12610960006713867, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.0005302786594256759, 'ppo/loss/value': 0.6269779205322266, 'ppo/loss/total': 0.0632280707359314, 'ppo/policy/entropy': 4.536711692810059, 'ppo/policy/approxkl': 9.114152635447681e-05, 'ppo/policy/policykl': 0.0018538236618041992, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.6953752, -2.6953752, -2.6953752, ...,  1.036713 ,  1.6935833,
+        1.9472165], dtype=float32), 'ppo/policy/advantages_mean': 9.536742595628311e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.9678791, 1.0011876,
+       1.0021104], dtype=float32), 'ppo/returns/mean': 0.7297120094299316, 'ppo/returns/var': 0.0973004400730133, 'ppo/val/vpred': -0.328125, 'ppo/val/error': 1.237126111984253, 'ppo/val/clipfrac': 0.05000000074505806, 'ppo/val/mean': -0.306069940328598, 'ppo/val/var': 0.015491295605897903, 'ppo/time/ppo/optimizer_step': 0.008199334144592285, 'ppo/val/var_explained': -11.714496612548828, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1789817810058594, 'time/ppo/compute_rewards': 0.0003218650817871094, 'time/ppo/optimize_step': 1.364037036895752, 'time/ppo/calc_stats': 0.001674652099609375, 'time/ppo/total': 2.5553066730499268}
+
+  0%|          | 7/8713 [00:37<12:37:42,  5.22s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Could you share the measured chemistry of the Stibnite?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+How can I differentiate igneous and metamorphic zircon base on the REE analyses of zircon?
+How can I differentiate igneous and metamorphic zircon base on the REE of zircon for example Eu, CE anomaly or enrichment of HREE
+can anyone suggest references?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -4.5932710e-04, -5.1580474e-04, -5.1139627e-04],
+       [-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -3.0639941e-01, -3.2205671e-01, -4.3399391e-01]], dtype=float32), 'objective/ref_logprobs': array([[-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -4.5932710e-04, -5.1580474e-04, -5.1139627e-04],
+       [-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -3.0639941e-01, -3.2205671e-01, -4.3399391e-01]], dtype=float32), 'objective/kl_coef': 0.19994400671955198, 'objective/entropy': 1.9146569967269897, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': -1.169741153717041e-06, 'ppo/loss/value': 0.5454829335212708, 'ppo/loss/total': 0.05454712361097336, 'ppo/policy/entropy': 1.0642298460006714, 'ppo/policy/approxkl': 6.675606595285544e-11, 'ppo/policy/policykl': -2.6840220925805625e-06, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.2544572, -3.2544572, -3.2544572, ...,  1.5161476,  1.9148856,
+        0.5772932], dtype=float32), 'ppo/policy/advantages_mean': 3.0100346748440643e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0000031, 1.0000011,
+       1.0000002], dtype=float32), 'ppo/returns/mean': 0.682924747467041, 'ppo/returns/var': 0.08497552573680878, 'ppo/val/vpred': -0.30078125, 'ppo/val/error': 1.071778655052185, 'ppo/val/clipfrac': 0.07500000298023224, 'ppo/val/mean': -0.2887512147426605, 'ppo/val/var': 0.01868503727018833, 'ppo/time/ppo/optimizer_step': 0.008207917213439941, 'ppo/val/var_explained': -11.612792015075684, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1788878440856934, 'time/ppo/compute_rewards': 0.0003151893615722656, 'time/ppo/optimize_step': 1.3627808094024658, 'time/ppo/calc_stats': 0.0016658306121826172, 'time/ppo/total': 2.553988218307495}
+
+  0%|          | 8/8713 [00:42<12:34:41,  5.20s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+How much magnetic anomaly variation (nT) for a particular magnetic Chron we can expect in an oceanic crust along different transects?? Linear magnetic anomalies are observed in the seafloor spreading. If we are having 10 transects in an ocean basin then for a particular magnetic Chron, amplitude of magnetic anomalies (normal or reverse) along all the profiles can vary (due to the thickness of oceanic crust). But how much magnetic anomaly variation, we can expect, for a particular magnetic Chron in all the transects.  [/INST]
+Resp:  <s>/<s>-<s>-<s>1\\<s>9\\<s>\\<s>\\<s>\\<s>\\
+Reward Logits:  tensor([1.4282], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Identify the scientific discipline associated with the term 'Plaggept':
+Choose from:
+A. Geochemistry
+B. Geography
+C. Meteorology
+D. Geophysics
+E. Climatology
+F. Geology
+G. Oceanography
+H. Geodesy
+I. Hydrology
+The answer is:  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.030283  , -22.030283  , -22.030283  , ...,  -4.4927382 ,
+         -2.3625531 ,  -4.423622  ],
+       [-22.030283  , -22.030283  , -22.030283  , ...,  -0.20058134,
+         -0.24813534,  -0.2618959 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.030283  , -22.030283  , -22.030283  , ...,  -4.4927382 ,
+         -2.3625531 ,  -4.423622  ],
+       [-22.030283  , -22.030283  , -22.030283  , ...,  -0.20058134,
+         -0.24813534,  -0.2618959 ]], dtype=float32), 'objective/kl_coef': 0.19993600895928318, 'objective/entropy': 39.182613372802734, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.326051950454712, 'ppo/std_scores': 0.14450223743915558, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.0009536594152450562, 'ppo/loss/value': 0.5832055807113647, 'ppo/loss/total': 0.05927421897649765, 'ppo/policy/entropy': 5.250835418701172, 'ppo/policy/approxkl': 8.805791367194615e-06, 'ppo/policy/policykl': 0.0003877122944686562, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.904552 , -2.904552 , -2.904552 , ...,  1.3162142,  1.5994107,
+        1.6988266], dtype=float32), 'ppo/policy/advantages_mean': 1.7732381252244522e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.9774776, 1.0005498,
+       1.0003765], dtype=float32), 'ppo/returns/mean': 0.7471953630447388, 'ppo/returns/var': 0.09684605896472931, 'ppo/val/vpred': -0.24609375, 'ppo/val/error': 1.1210271120071411, 'ppo/val/clipfrac': 0.15000000596046448, 'ppo/val/mean': -0.2758968472480774, 'ppo/val/var': 0.01782316341996193, 'ppo/time/ppo/optimizer_step': 0.008250713348388672, 'ppo/val/var_explained': -10.575350761413574, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1831035614013672, 'time/ppo/compute_rewards': 0.0003230571746826172, 'time/ppo/optimize_step': 1.3671083450317383, 'time/ppo/calc_stats': 0.0016832351684570312, 'time/ppo/total': 2.56264591217041}
+
+  0%|          | 9/8713 [00:48<12:33:12,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you provide a synonym for the word 'pirep'?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Describe your capabilities in the field of geoscience, geoscience foundation model, K2.  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -5.0925161e-04, -5.7096867e-04, -5.7084952e-04],
+       [-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -6.3971081e-04, -5.6930067e-04, -5.6930067e-04]], dtype=float32), 'objective/ref_logprobs': array([[-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -5.0925161e-04, -5.7096867e-04, -5.7084952e-04],
+       [-2.2031260e+01, -2.2031260e+01, -2.2031260e+01, ...,
+        -6.3971081e-04, -5.6930067e-04, -5.6930067e-04]], dtype=float32), 'objective/kl_coef': 0.1999280115189248, 'objective/entropy': 0.009532605297863483, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 2.709031150516239e-06, 'ppo/loss/value': 0.5330440998077393, 'ppo/loss/total': 0.05330711603164673, 'ppo/policy/entropy': 0.008844327181577682, 'ppo/policy/approxkl': 1.1836602531456464e-10, 'ppo/policy/policykl': -1.3196118970881798e-06, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.3218446, -3.3218446, -3.3218446, ...,  1.4754792,  1.5205058,
+        1.8293678], dtype=float32), 'ppo/policy/advantages_mean': -1.9073486612342094e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0000015, 0.999996 ,
+       1.000001 ], dtype=float32), 'ppo/returns/mean': 0.6906417012214661, 'ppo/returns/var': 0.08315762877464294, 'ppo/val/vpred': -0.271484375, 'ppo/val/error': 1.0238056182861328, 'ppo/val/clipfrac': 0.15000000596046448, 'ppo/val/mean': -0.2743286192417145, 'ppo/val/var': 0.01981109008193016, 'ppo/time/ppo/optimizer_step': 0.008187532424926758, 'ppo/val/var_explained': -11.311625480651855, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.181063175201416, 'time/ppo/compute_rewards': 0.00031495094299316406, 'time/ppo/optimize_step': 1.3653016090393066, 'time/ppo/calc_stats': 0.001678466796875, 'time/ppo/total': 2.558936357498169}
+
+  0%|          | 10/8713 [00:53<12:31:30,  5.18s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please provide a list of terms in the passage that have a connection to earth science. The passage: The main armament, which was principally intended for shore bombardment, was originally designed with two 68-pounder and two 32-pounder muzzle-loading smoothbore guns. They were finished, however, with a single 7-inch/110-pounder Armstrong breech-loading gun and a 68-pounder muzzle-loading smoothbore gun. A pair of broadside 20-pounder Armstrong breech-loading guns were also fitted. The 68-pounders were later replaced by a pair of 64-pounder muzzle-loading rifled guns.  [/INST]
+Resp:  /,\\8\\\\/\\\\\\\\1,/-,\\.\\\\
+Reward Logits:  tensor([1.6105], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is it acceptable to use constant velocity value to convert TWT map to depth map (I know the formation composition from previous work)?
+I have constructed 3 TWT maps for certain formations, unfortunately, I don't have any velocity values or check shots, TDR .ect. So I am asking; is it acceptable to use constant velocity for each formation, for example, I constructed a TWT map for X formation which composed mainly of evaporites (Mainly Anhydrite). If I do that and submit a paper in a journal they will accept that or I can show my results in time only.  [/INST]
+Resp:  <s>,<s>8<s>-\\<s>\\<s>\\<s>\\<s>\\<s>1\\<s>\\
+Reward Logits:  tensor([1.6599], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.032236 , -22.032236 , -22.032236 , ...,  -5.3956127,
+         -4.6927857,  -4.1177597],
+       [-22.032236 , -22.032236 , -22.032236 , ...,  -4.343151 ,
+         -3.494014 ,  -4.278182 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.032236 , -22.032236 , -22.032236 , ...,  -5.3956127,
+         -4.6927857,  -4.1177597],
+       [-22.032236 , -22.032236 , -22.032236 , ...,  -4.343151 ,
+         -3.494014 ,  -4.278182 ]], dtype=float32), 'objective/kl_coef': 0.19992001439846405, 'objective/entropy': 85.07553100585938, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.6352348327636719, 'ppo/std_scores': 0.03493257239460945, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.0033187672961503267, 'ppo/loss/value': 0.7875138521194458, 'ppo/loss/total': 0.08207015693187714, 'ppo/policy/entropy': 9.076379776000977, 'ppo/policy/approxkl': 0.000850826792884618, 'ppo/policy/policykl': 0.003822091268375516, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.7188137 , -2.7188137 , -2.7188137 , ...,  1.5939467 ,
+        2.1978338 ,  0.81903845], dtype=float32), 'ppo/policy/advantages_mean': -8.49366159627607e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0014659, 1.0025611,
+       1.0662731], dtype=float32), 'ppo/returns/mean': 0.9866536855697632, 'ppo/returns/var': 0.12053703516721725, 'ppo/val/vpred': -0.2109375, 'ppo/val/error': 1.5645854473114014, 'ppo/val/clipfrac': 0.07500000298023224, 'ppo/val/mean': -0.17042846977710724, 'ppo/val/var': 0.020306799560785294, 'ppo/time/ppo/optimizer_step': 0.008243083953857422, 'ppo/val/var_explained': -11.980122566223145, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1838157176971436, 'time/ppo/compute_rewards': 0.0003173351287841797, 'time/ppo/optimize_step': 1.3693561553955078, 'time/ppo/calc_stats': 0.0016720294952392578, 'time/ppo/total': 2.5653581619262695}
+
+  0%|          | 11/8713 [00:58<12:31:24,  5.18s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What is the meaning of the word 'trifoliate orange'?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Which terms in the passage are associated with earth science? The passage: Walton & Hersham were elected to the Isthmian League in 1971, and the 1972–73 season proved statistically their greatest ever. They won the Surrey Senior Cup, finished as runners-up in the league, reached the FA Cup Second Round for the first time and, most prestigiously, won the FA Amateur Cup, defeating Slough Town at Wembley Stadium. They set a unique record by winning the competition without conceding a goal. Players including Dave Bassett, Willie Smith and Roger Connell became regulars in the England amateur international team. As FA Amateur Cup Winners they were invited to compete in the 1973 Final of The Coppa Ottorino Barassi (The Barassi Cup). They played Jesolo the Italian Amamtuer Cup Winners. The Swans won both legs 4–0 at home and 2-0 Away to lift the trophy. In 1973–74, the club reached the FA Cup Second Round again, having beaten Brian Clough's Brighton & Hove Albion at Goldstone Ground 4–0. Following the defeat, Clough almost got into a fight with comedian Eric Sykes, who was associated with Walton & Hersham at the time and was laughing about the result to a friend during a phone call.  [/INST]
+Resp:  
+
+..,
+..\\,A.\\A
+
+
+-
+.
+Reward Logits:  tensor([0.9553], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2033213e+01, -2.2033213e+01, -2.2033213e+01, ...,
+        -4.5074793e-04, -5.6858582e-04, -5.6858582e-04],
+       [-2.2033213e+01, -2.2033213e+01, -2.2033213e+01, ...,
+        -4.3519244e+00, -3.6984510e+00, -3.8200846e+00]], dtype=float32), 'objective/ref_logprobs': array([[-2.2033213e+01, -2.2033213e+01, -2.2033213e+01, ...,
+        -4.5074793e-04, -5.6858582e-04, -5.6858582e-04],
+       [-2.2033213e+01, -2.2033213e+01, -2.2033213e+01, ...,
+        -4.3519244e+00, -3.6984510e+00, -3.8200846e+00]], dtype=float32), 'objective/kl_coef': 0.1999120175978881, 'objective/entropy': 39.126625061035156, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.0895886421203613, 'ppo/std_scores': 0.1899072527885437, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': -0.004169318359345198, 'ppo/loss/value': 0.34318262338638306, 'ppo/loss/total': 0.030148945748806, 'ppo/policy/entropy': 3.9360079765319824, 'ppo/policy/approxkl': 7.220669067464769e-05, 'ppo/policy/policykl': -0.0010569154983386397, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.6643744 , -2.6643744 , -2.6643744 , ...,  0.41732672,
+        1.2517028 ,  1.4891111 ], dtype=float32), 'ppo/policy/advantages_mean': 1.7881392366803084e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0002818, 1.0035961,
+       1.027118 ], dtype=float32), 'ppo/returns/mean': 0.6625219583511353, 'ppo/returns/var': 0.055118076503276825, 'ppo/val/vpred': -0.08203125, 'ppo/val/error': 0.672274649143219, 'ppo/val/clipfrac': 0.10000000149011612, 'ppo/val/mean': -0.09303589165210724, 'ppo/val/var': 0.01906711421906948, 'ppo/time/ppo/optimizer_step': 0.008231520652770996, 'ppo/val/var_explained': -11.196990013122559, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1845989227294922, 'time/ppo/compute_rewards': 0.0003223419189453125, 'time/ppo/optimize_step': 1.3689069747924805, 'time/ppo/calc_stats': 0.00170135498046875, 'time/ppo/total': 2.565656900405884}
+
+  0%|          | 12/8713 [01:03<12:30:55,  5.18s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What is difference between Riverbed conductance term and streambed leakance/retardation coefficient?
+In literature some times to account for semi-pervious sediments at bottom of stream, streambed leakance also called retardation coefficient (L) is used which is equal to ratio of conductivity of aquifer to streambed multiplied by thickness of streambed. On other hand another term seems to describe the effect of same less permeable sediments on bottom of river named as " Riverbed conductance" (L2/T) used in MODFLOW, which is equal to KA/L, where K is conductivity of riverbed , A is area of cell and L is length. Is this the only difference between these two terms?  [/INST]
+Resp:  <s>/\\\\--\\\\\\\\\\\\8,8\\8\\,\\
+Reward Logits:  tensor([1.2241], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Any suggestions for creating simple animated 3D figures of land surfaces or geomorphology?
+I asked a similar question but thought a different question headline would help get people to answer. I am working on a new publication trying to explain marine geomorphology of a reef system. I wanted to make a series of images showing how the geomorphology may have changed with changing sea level fluctuations. Does anyone have suggestions for programs I can use to make something like this? I attached some suggestions for what I am trying to do but I am not sure what program to use for this. Thank you.  [/INST]
+Resp:  <s>\\<s>/<s>\\<s>\\<s>/<s>\\<s>\\<s>/\\<s>.<s>
+Reward Logits:  tensor([2.4996], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.027353  , -22.027353  , -22.027353  , ...,  -4.009371  ,
+         -5.540391  ,  -4.3059006 ],
+       [-22.027353  , -22.027353  , -22.027353  , ...,  -2.3184588 ,
+         -5.7202463 ,  -0.41795823]], dtype=float32), 'objective/ref_logprobs': array([[-22.027353  , -22.027353  , -22.027353  , ...,  -4.009371  ,
+         -5.540391  ,  -4.3059006 ],
+       [-22.027353  , -22.027353  , -22.027353  , ...,  -2.3184588 ,
+         -5.7202463 ,  -0.41795823]], dtype=float32), 'objective/kl_coef': 0.19990402111718417, 'objective/entropy': 81.63630676269531, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.8618617057800293, 'ppo/std_scores': 0.9018880128860474, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.0031272917985916138, 'ppo/loss/value': 0.9753175973892212, 'ppo/loss/total': 0.10065905749797821, 'ppo/policy/entropy': 8.916394233703613, 'ppo/policy/approxkl': 0.0003406310570426285, 'ppo/policy/policykl': 0.00016772374510765076, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.882754 , -2.882754 , -2.882754 , ...,  1.4402112,  1.4763335,
+        2.0885413], dtype=float32), 'ppo/policy/advantages_mean': -1.5199184133507515e-07, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99984246, 0.9529312 ,
+       1.0004737 ], dtype=float32), 'ppo/returns/mean': 1.1613473892211914, 'ppo/returns/var': 0.15795426070690155, 'ppo/val/vpred': -0.09765625, 'ppo/val/error': 1.9342031478881836, 'ppo/val/clipfrac': 0.10000000149011612, 'ppo/val/mean': -0.08854369819164276, 'ppo/val/var': 0.016701718792319298, 'ppo/time/ppo/optimizer_step': 0.00825953483581543, 'ppo/val/var_explained': -11.245336532592773, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1831908226013184, 'time/ppo/compute_rewards': 0.0003757476806640625, 'time/ppo/optimize_step': 1.3704333305358887, 'time/ppo/calc_stats': 0.00167083740234375, 'time/ppo/total': 2.5660948753356934}
+
+  0%|          | 13/8713 [01:08<12:30:13,  5.17s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is plate movement the main controller of morphology?
+plate tectonic in comparison with other parameters !  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What can you tell me about the type of the Zhuchengceratops inexpectus ?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -6.3434982e-04, -5.6513073e-04, -5.6751358e-04],
+       [-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -6.3423067e-04, -7.1702519e-04, -7.1642955e-04]], dtype=float32), 'objective/ref_logprobs': array([[-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -6.3434982e-04, -5.6513073e-04, -5.6751358e-04],
+       [-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -6.3423067e-04, -7.1702519e-04, -7.1642955e-04]], dtype=float32), 'objective/kl_coef': 0.19989602495633946, 'objective/entropy': 0.01117449626326561, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 3.3259391329920618e-06, 'ppo/loss/value': 0.46927452087402344, 'ppo/loss/total': 0.04693077877163887, 'ppo/policy/entropy': 0.010364865884184837, 'ppo/policy/approxkl': 1.1475390776505279e-10, 'ppo/policy/policykl': 3.270326033089077e-06, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.9759698, -2.9759698, -2.9759698, ...,  1.3508343,  1.3932152,
+        1.7988648], dtype=float32), 'ppo/policy/advantages_mean': -2.3245812030836532e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0000001, 0.9999995,
+       0.9999334], dtype=float32), 'ppo/returns/mean': 0.699945330619812, 'ppo/returns/var': 0.07819829136133194, 'ppo/val/vpred': -0.208984375, 'ppo/val/error': 0.9027266502380371, 'ppo/val/clipfrac': 0.10000000149011612, 'ppo/val/mean': -0.23420409858226776, 'ppo/val/var': 0.016949642449617386, 'ppo/time/ppo/optimizer_step': 0.008179903030395508, 'ppo/val/var_explained': -10.544071197509766, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.181675672531128, 'time/ppo/compute_rewards': 0.0003268718719482422, 'time/ppo/optimize_step': 1.3642737865447998, 'time/ppo/calc_stats': 0.00201416015625, 'time/ppo/total': 2.5584325790405273}
+
+  0%|          | 14/8713 [01:13<12:29:32,  5.17s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What do you know about the type locality of the Muthmannite?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+The study of 'geosophy' is primarily associated with which scientific discipline?
+Choose from:
+A. Geophysics
+B. Geography
+C. Geology
+D. Geochemistry
+E. Meteorology
+F. Oceanography
+G. Hydrology
+H. Climatology
+I. Geodesy
+The answer is:  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -5.0770264e-04, -5.0460477e-04, -5.6620303e-04],
+       [-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -3.0097482e-01, -3.4997779e-01, -3.5006407e-01]], dtype=float32), 'objective/ref_logprobs': array([[-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -5.0770264e-04, -5.0460477e-04, -5.6620303e-04],
+       [-2.2029306e+01, -2.2029306e+01, -2.2029306e+01, ...,
+        -3.0097482e-01, -3.4997779e-01, -3.5006407e-01]], dtype=float32), 'objective/kl_coef': 0.1998880291153412, 'objective/entropy': 1.776182770729065, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 8.940696005765858e-08, 'ppo/loss/value': 0.4435911178588867, 'ppo/loss/total': 0.044359203428030014, 'ppo/policy/entropy': 0.9965838193893433, 'ppo/policy/approxkl': 1.6888183906882404e-10, 'ppo/policy/policykl': 6.043839562153153e-07, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.9356074, -2.9356074, -2.9356074, ...,  1.1981082,  1.3340566,
+        1.8216978], dtype=float32), 'ppo/policy/advantages_mean': 5.364417887676609e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99999905, 0.9999396 ,
+       1.0000008 ], dtype=float32), 'ppo/returns/mean': 0.7189548015594482, 'ppo/returns/var': 0.07282476127147675, 'ppo/val/vpred': -0.15625, 'ppo/val/error': 0.8527739644050598, 'ppo/val/clipfrac': 0.125, 'ppo/val/mean': -0.17856140434741974, 'ppo/val/var': 0.017830681055784225, 'ppo/time/ppo/optimizer_step': 0.008200287818908691, 'ppo/val/var_explained': -10.709945678710938, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1822478771209717, 'time/ppo/compute_rewards': 0.00032210350036621094, 'time/ppo/optimize_step': 1.446481704711914, 'time/ppo/calc_stats': 0.0016903877258300781, 'time/ppo/total': 2.640941619873047}
+
+  0%|          | 15/8713 [01:19<12:32:52,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+I'd like to know the terms linked to earth science in this passage. Can you provide them? The passage: Mir Ghulam Muhammad Ghubar (Persian: میرغلام‌محمد غبار (1897 – February 5, 1978) was a social democratic politician, writer, prominent historian, journalist, and a poet from Afghanistan. He is the author of a number of books, including Afghanistan's history book called Afghanistan in the Course of History. He has also written Tareekh-e Ahmad Shah Baba in 1943, which is about the 18th century Afghan Emir Ahmad Shah Durrani and his Durrani Empire.  [/INST]
+Resp:  <s>\\\\/
+\\\\\\\\\\-\\/
+/\\\\\\\\\\
+Reward Logits:  tensor([1.6680], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What kind of mineral assemblage would attest granulitic facies in a rock of "carbonate-greywacke-like" protolith?
+In simple calcissilicated rocks, the granulitic facies would be attested by the presence of forsterite or grossular, up to fCO2 quantity.
+Anyhow, the coexistence of Diopside and Enstatite in a quartz saturated rock, with minor retrometamophic poikiloblastic hornblende it's enough to testify a retrometamorphic path from granulite to amphibolite facies?  [/INST]
+Resp:  <s>\\<s>\\\\<s>88\\\\<s>\\/\\<s>\\8\\1,
+Reward Logits:  tensor([1.3192], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.029306 , -22.029306 , -22.029306 , ...,  -4.078145 ,
+         -4.1425786,  -4.113279 ],
+       [-22.029306 , -22.029306 , -22.029306 , ...,  -4.1636367,
+         -5.7506857,  -5.227354 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.029306 , -22.029306 , -22.029306 , ...,  -4.078145 ,
+         -4.1425786,  -4.113279 ],
+       [-22.029306 , -22.029306 , -22.029306 , ...,  -4.1636367,
+         -5.7506857,  -5.227354 ]], dtype=float32), 'objective/kl_coef': 0.19988003359417658, 'objective/entropy': 91.53929138183594, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.4936127662658691, 'ppo/std_scores': 0.24663257598876953, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.0006016925326548517, 'ppo/loss/value': 0.5108507871627808, 'ppo/loss/total': 0.05168677121400833, 'ppo/policy/entropy': 9.217124938964844, 'ppo/policy/approxkl': 7.551161979790777e-05, 'ppo/policy/policykl': -0.0026392340660095215, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.1760058, -3.1760058, -3.1760058, ...,  1.4667641,  1.7437899,
+        1.7286048], dtype=float32), 'ppo/policy/advantages_mean': 1.9520521732374618e-07, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.028683 , 0.9836373,
+       1.0009608], dtype=float32), 'ppo/returns/mean': 0.9621945023536682, 'ppo/returns/var': 0.08601139485836029, 'ppo/val/vpred': 0.01434326171875, 'ppo/val/error': 1.0084980726242065, 'ppo/val/clipfrac': 0.125, 'ppo/val/mean': 0.0005119326524436474, 'ppo/val/var': 0.016446653753519058, 'ppo/time/ppo/optimizer_step': 0.008265018463134766, 'ppo/val/var_explained': -10.725168228149414, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1849944591522217, 'time/ppo/compute_rewards': 0.000347137451171875, 'time/ppo/optimize_step': 1.3727452754974365, 'time/ppo/calc_stats': 0.0016627311706542969, 'time/ppo/total': 2.5706441402435303}
+
+  0%|          | 16/8713 [01:24<12:32:44,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Do you know the maxmum age for the Proboscidea?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please extract the named entities in: ABSTRACT: Six sections from diverse paleogeographic settings in South China provide a high-resolution succession of conodont
+zones and associated ash beds through the Permian-Triassic boundary. Acomplete succession of eight conodont zones and eight associated
+ash beds is recorded in the basin-filling sequences: in ascending order, the Clarkina yini Zone with top ash bed 1, the Clarkina
+meishanensis Zone and ash bed 2 within it, the Clarkina taylorae Zone with ash bed 3 at its base, the H. changxingensis-C.
+microcuspidata Zone with ash bed 4 at its base and ash bed 5 within it, the Hindeodus parvus Zone with top ash bed 6, the Isarcisella
+staeschei Zone and ash bed 7within it, the Isarcisella isarcica Zone and ash bed 8within it, and the Neogondolella krystyni Zone. In slope
+settings, ash bed 3 and the C. taylorae Zone are missing; whereas in the strata of the platform interior, the C. meishanensis Zone and associated
+ash beds 1 and 2 are also missing. This pattern indicates an unconformity that represents increasing missing section in increasingly
+shallower deposits. The Global Stratotype Section and Point for the base of the Triassic, at Meishan, China, is recognized as having been
+formed in a slope setting, with an unconformity at the base ofBed 25. The identification of these conodont zones in Iran indicates their applicability
+outside of South China..  [/INST]
+Resp:  
+
+.,,.,.,,. and
+,,,.
+. and
+Reward Logits:  tensor([1.3256], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2037119e+01, -2.2037119e+01, -2.2037119e+01, ...,
+        -4.5277359e-04, -4.5086708e-04, -5.0400908e-04],
+       [-2.2037119e+01, -2.2037119e+01, -2.2037119e+01, ...,
+        -3.7219589e+00, -3.6519723e+00, -4.0739346e+00]], dtype=float32), 'objective/ref_logprobs': array([[-2.2037119e+01, -2.2037119e+01, -2.2037119e+01, ...,
+        -4.5277359e-04, -4.5086708e-04, -5.0400908e-04],
+       [-2.2037119e+01, -2.2037119e+01, -2.2037119e+01, ...,
+        -3.7219589e+00, -3.6519723e+00, -4.0739346e+00]], dtype=float32), 'objective/kl_coef': 0.1998720383928328, 'objective/entropy': 35.31911087036133, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2747607231140137, 'ppo/std_scores': 0.07196565717458725, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 0.005251787602901459, 'ppo/loss/value': 0.34731364250183105, 'ppo/loss/total': 0.039983153343200684, 'ppo/policy/entropy': 3.854936361312866, 'ppo/policy/approxkl': 0.00013626475993078202, 'ppo/policy/policykl': -0.0025614737533032894, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.1294446, -3.1294446, -3.1294446, ...,  2.2633853,  1.47835  ,
+        1.7624526], dtype=float32), 'ppo/policy/advantages_mean': -1.639127589214695e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0074489 , 0.96427536,
+       0.97125447], dtype=float32), 'ppo/returns/mean': 0.8415163159370422, 'ppo/returns/var': 0.056508537381887436, 'ppo/val/vpred': 0.0830078125, 'ppo/val/error': 0.6721141934394836, 'ppo/val/clipfrac': 0.17500001192092896, 'ppo/val/mean': 0.05734557658433914, 'ppo/val/var': 0.021334409713745117, 'ppo/time/ppo/optimizer_step': 0.008233904838562012, 'ppo/val/var_explained': -10.89402961730957, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.185589075088501, 'time/ppo/compute_rewards': 0.0003402233123779297, 'time/ppo/optimize_step': 1.3717591762542725, 'time/ppo/calc_stats': 0.0017867088317871094, 'time/ppo/total': 2.5701615810394287}
+
+  0%|          | 17/8713 [01:29<12:32:39,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you provide the source of the Benyacarite?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is phyllosilicates with mica sheets, composed of tetrahedral and octahedral nets a narrower category or subdiscipline within diabantite in geoscience?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2036142e+01, -2.2036142e+01, -2.2036142e+01, ...,
+        -4.5384598e-04, -4.0379952e-04, -4.5039048e-04],
+       [-2.2036142e+01, -2.2036142e+01, -2.2036142e+01, ...,
+        -3.4323372e-03, -3.4317430e-03, -4.0741307e-03]], dtype=float32), 'objective/ref_logprobs': array([[-2.2036142e+01, -2.2036142e+01, -2.2036142e+01, ...,
+        -4.5384598e-04, -4.0379952e-04, -4.5039048e-04],
+       [-2.2036142e+01, -2.2036142e+01, -2.2036142e+01, ...,
+        -3.4323372e-03, -3.4317430e-03, -4.0741307e-03]], dtype=float32), 'objective/kl_coef': 0.19986404351129708, 'objective/entropy': 0.029775111004710197, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': -1.8267333871335723e-05, 'ppo/loss/value': 0.41464000940322876, 'ppo/loss/total': 0.04144573211669922, 'ppo/policy/entropy': 0.025258110836148262, 'ppo/policy/approxkl': 1.9142156748586103e-09, 'ppo/policy/policykl': -1.3762799426331185e-05, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-3.4114811, -3.4114811, -3.4114811, ...,  1.1969962,  1.3625901,
+        1.6300285], dtype=float32), 'ppo/policy/advantages_mean': -5.5134293575065385e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0000061, 1.0000008,
+       1.0002186], dtype=float32), 'ppo/returns/mean': 0.7269678115844727, 'ppo/returns/var': 0.07153993844985962, 'ppo/val/vpred': -0.125, 'ppo/val/error': 0.7975634932518005, 'ppo/val/clipfrac': 0.125, 'ppo/val/mean': -0.15913696587085724, 'ppo/val/var': 0.014062627218663692, 'ppo/time/ppo/optimizer_step': 0.008184552192687988, 'ppo/val/var_explained': -10.148507118225098, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1816635131835938, 'time/ppo/compute_rewards': 0.0003457069396972656, 'time/ppo/optimize_step': 1.3677806854248047, 'time/ppo/calc_stats': 0.0016884803771972656, 'time/ppo/total': 2.5615921020507812}
+
+  0%|          | 18/8713 [01:34<12:32:16,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What details can you provide on the Donwilhelmsite's related paper?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Which mode (TerraSirch or Geology scan) is the most suitable in SIR3000 for cavitu detection by using 200MHZ antenna?
+There are numbers of mode provided in SIR3000 screen (Terrasirch, geology scan, utility scan, concrete scan). Please have a look on attached profiles where I have tried Geology scan (Top section ) as well as TerraSirch (bottom section). In TerraSirch mode there is option to control gain which I didn't fine in Geology scan. Bottom section looks better in amplitude varriation but penetration depth is limited. Please advice for further acquisition.  [/INST]
+Resp:  <s>11\\1-\\\\,/\\\\\\\\\\<s>\\1\\\\
+Reward Logits:  tensor([1.4134], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -5.6536903e-04, -5.6536903e-04, -5.6560728e-04],
+       [-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -5.7969856e+00, -4.1582808e+00, -4.3828630e+00]], dtype=float32), 'objective/ref_logprobs': array([[-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -5.6536903e-04, -5.6536903e-04, -5.6560728e-04],
+       [-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -5.7969856e+00, -4.1582808e+00, -4.3828630e+00]], dtype=float32), 'objective/kl_coef': 0.1998560489495566, 'objective/entropy': 48.24026107788086, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.318630337715149, 'ppo/std_scores': 0.1340065747499466, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': -0.0034721284173429012, 'ppo/loss/value': 0.40475994348526, 'ppo/loss/total': 0.03700386732816696, 'ppo/policy/entropy': 4.66114616394043, 'ppo/policy/approxkl': 6.422879232559353e-05, 'ppo/policy/policykl': 0.0019292294746264815, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.8267834, -2.8267834, -2.8267834, ...,  1.4729573,  1.0841844,
+        1.9791181], dtype=float32), 'ppo/policy/advantages_mean': 4.17232506322307e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99940133, 1.0006549 ,
+       1.0008348 ], dtype=float32), 'ppo/returns/mean': 0.8373488783836365, 'ppo/returns/var': 0.06789642572402954, 'ppo/val/vpred': 0.017822265625, 'ppo/val/error': 0.7588294744491577, 'ppo/val/clipfrac': 0.20000000298023224, 'ppo/val/mean': -0.01570739597082138, 'ppo/val/var': 0.013470737263560295, 'ppo/time/ppo/optimizer_step': 0.008222222328186035, 'ppo/val/var_explained': -10.17628002166748, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1836497783660889, 'time/ppo/compute_rewards': 0.000339508056640625, 'time/ppo/optimize_step': 1.3696081638336182, 'time/ppo/calc_stats': 0.0017266273498535156, 'time/ppo/total': 2.565542459487915}
+
+  0%|          | 19/8713 [01:39<12:31:45,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What initiates thrust motion?
+In the literature there are two mechanisms e.g gravity sliding and gravity spreading, but how?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please inform me of the Jahnsite-(NaMnMg)'s lustre.  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -8.9640956e-04, -8.9688599e-04, -8.9688599e-04],
+       [-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -5.6286703e-04, -5.0126860e-04, -5.6298618e-04]], dtype=float32), 'objective/ref_logprobs': array([[-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -8.9640956e-04, -8.9688599e-04, -8.9688599e-04],
+       [-2.2035166e+01, -2.2035166e+01, -2.2035166e+01, ...,
+        -5.6286703e-04, -5.0126860e-04, -5.6298618e-04]], dtype=float32), 'objective/kl_coef': 0.19984805470759862, 'objective/entropy': 0.011941971257328987, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.2238733768463135, 'ppo/std_scores': 0.0, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 20.0, 'tokens/responses_len_std': 0.0, 'tokens/responses_dist': array([20., 20.], dtype=float32), 'ppo/loss/policy': 1.6987323760986328e-06, 'ppo/loss/value': 0.4260398745536804, 'ppo/loss/total': 0.0426056906580925, 'ppo/policy/entropy': 0.010936688631772995, 'ppo/policy/approxkl': 3.925823555128716e-11, 'ppo/policy/policykl': -1.4179180425344384e-06, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-2.8884275, -2.8884275, -2.8884275, ...,  1.1478673,  1.7438781,
+        1.9665368], dtype=float32), 'ppo/policy/advantages_mean': -5.662441537879204e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.9999999 , 0.99999976,
+       1.0000004 ], dtype=float32), 'ppo/returns/mean': 0.741566002368927, 'ppo/returns/var': 0.06683124601840973, 'ppo/val/vpred': -0.091796875, 'ppo/val/error': 0.7965729236602783, 'ppo/val/clipfrac': 0.17499999701976776, 'ppo/val/mean': -0.12529906630516052, 'ppo/val/var': 0.015769921243190765, 'ppo/time/ppo/optimizer_step': 0.00816810131072998, 'ppo/val/var_explained': -10.919169425964355, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.1832575798034668, 'time/ppo/compute_rewards': 0.00031185150146484375, 'time/ppo/optimize_step': 1.3667714595794678, 'time/ppo/calc_stats': 0.0016894340515136719, 'time/ppo/total': 2.562204599380493}
+
+  0%|          | 20/8713 [01:45<12:31:52,  5.19s/it][AInstr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Would you mind telling me the timescale of the Allosaurus whitei?  [/INST]
+Resp:  <s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s><s>
+Reward Logits:  tensor([1.2239], device='cuda:0')
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Attend Conference at Geology Congress 2018 article to be Published in Open Access Journal with Google Scholar citation ?
+This exceptional event brings the opportunity to gather the associated geological research communities to share experiences, present papers from Research scholars, Faculties and collaborators to discuss about new challenges, and to stimulate future rewarding collaborations and have a one to one discussion with collaborators and exhibitors across the globe. This is an invite to th International Conference on Geological and Environmental Sustainability
+August 13-14, 2018, Bali, Indonesia
+The conference offers both researchers and collaborators a chance to view and take part in Many Keynote addresses and chance to be a speaker in one of the sessions. Theme: An Insight into Solid Earth & Soil materials for futuristic advancements Submission deadline: Early Bird before June 15th
+Geology Congress 2018 is a two days conference consisting of a scientific program, comprehensive talks, special sessions, oral and poster presentations of peer-reviewed contributed papers and exciting and innovative research products which can be exhibited for further development of Geology and Earth Science.
+https://geology.conferenceseries.com/conference-brochure.php
+Mark your calendar for the most comprehensive geosciences event particularly focused on understanding the geologic, geophysical, environmental and climatic evolution of the Solid Earth and soil materials. In general, the Conference Scientific Committee invites research papers on all cross-cutting themes of Earth sciences from all regions of the world, principally focusing on 10 major themes. • Geology and Environmental Sustainability • Geology and Environment interactions •Soil and Rock Mechanics •Mining and Mineral Resources •Geology in Civil Engineering •Structural Geology •Petroleum Geology • Gas Reservoirs • Marine Geology •Environmental Geology and More We would like to solicit your gracious presence as a Speaker for the upcoming th International Conference on Geological and Environmental Sustainability” which is scheduled on August, 13-14, 2018, at Bali, Indonesia. The conference is organized with the theme “An Insight into Solid Earth & Soil materials for futuristic advancements”.
+Register today and get a discount of 30% of the Registration charges as an Early Bird Offer for this event.. Benefits: •Abstracts get published in our respective open access journals with DOI provided by Cross Ref. •Abstracts are published in the conference proceedings book and on the conference website. •Access to attend all the talks/workshops/symposiums throughout the 2 days of the conference. •Chance to network with experts in the field of Geology & Earth Science. •Young researcher and best poster awards are also given. •Globalize your research. Hence, we request you to accept our invitation and send your abstract as per the attached template. https://geology.conferenceseries.com/abstract-submission.php Please track the link for further details about the conference: https://geology.conferenceseries.com/ As a Part of the Congress we provide group sessions and registrations, Registrations will include 1. Access to all Sessions 2. Handbook & Conference Kit 3. Certificate Accreditation from the Organizing Committee 4. Abstracts will be published in the conference souvenir and respective international journal . Ask the Expert Forums (One to One Pre-Scheduled meeting on interest and availability) 6. Access to the attendees email list (post-conference) 7. 10% abatement on the registration fees for the next annual conference 8. 10% abatement on the Conference Series Ltd conferences membership 9. 2 Coffee breaks (Refreshments and snacks) during the conference 10. Lunch during the conference 11. Wi-Fi
+Benefits for Collaborators Include For event details: https://geology.conferenceseries.com/ By collaborating with us you can avail the following benefits: • Display of logos on all event and areas around the event space as required. •Access to our attendees & delegates • Collaborators will get discount on Conference registrations. • Special Group discount to your members to attend the Geology Congress 2018. •Possibility to organize a workshop at our events. •Registered Organizations logo will be displayed in the respective conference and supporting journal webpage with a statement "supported by" • Registered Organization for exhibition can organize a small symposium/exhibit a stall with complimentary registration pass at the event •You may avail one allowed Conference pass for the board of director/ higher management from associated organization. If you need any clarification, please do not hesitate to contact
+Grace Kelly Program Manager Geology Congress 2018 47 Churchfield Road
+London, W3 6AY|UK
+Tel: +1-201-380 561; Ext 7003
+Toll No: +44-2088190774
+Email: geology@earthscienceconferences.com
+Looking forward to your registration and hosting you. You can also make early payment through this online portal link https://www.conferenceseries.com/onlinepayment/  [/INST]
+Resp:   Thank you for your question. According to my knowledge base, the answer to your question is:
+Reward Logits:  tensor([1.6064], device='cuda:0')
+  0%|          | 20/8713 [01:51<13:29:36,  5.59s/it]
+epoch:   0%|          | 0/1 [01:51<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 180, in <module>
+    build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer, dataloader)
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 136, in build_pipeline
+    stats = ppo_trainer.step(query_tensors, response_tensors, rewards_list)
+  File "/opt/bwhpc/common/devel/miniconda/3-py39-23.10.0/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 682, in step
+    logprobs, logits, vpreds, _ = self.batched_forward_pass(
+  File "/opt/bwhpc/common/devel/miniconda/3-py39-23.10.0/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 869, in batched_forward_pass
+    logits, _, values = model(**input_kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/models/modeling_value_head.py", line 165, in forward
+    base_model_output = self.pretrained_model(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 806, in forward
+    outputs = self.model(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 693, in forward
+    layer_outputs = decoder_layer(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 408, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 346, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/functional.py", line 1860, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 246.00 MiB. GPU 0 has a total capacity of 44.35 GiB of which 239.38 MiB is free. Including non-PyTorch memory, this process has 44.11 GiB memory in use. Of the allocated memory 42.62 GiB is allocated by PyTorch, and 1.15 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

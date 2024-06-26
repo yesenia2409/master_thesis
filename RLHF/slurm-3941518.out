@@ -1,0 +1,257 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:04<00:21,  4.25s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:08<00:16,  4.23s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:12<00:13,  4.35s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:17<00:08,  4.38s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:22<00:04,  4.48s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:23<00:00,  3.34s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:23<00:00,  3.86s/it]
+WARNING:root:A <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+You are using the legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This means that tokens that come after special tokens will not be properly handled. We recommend you to read the related pull request available at https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+Map:   0%|          | 0/17427 [00:00<?, ? examples/s]Map:   2%|▏         | 272/17427 [00:00<00:06, 2700.83 examples/s]Map:   3%|▎         | 546/17427 [00:00<00:06, 2717.90 examples/s]Map:   5%|▍         | 825/17427 [00:00<00:06, 2737.62 examples/s]Map:   7%|▋         | 1186/17427 [00:00<00:06, 2565.76 examples/s]Map:   8%|▊         | 1456/17427 [00:00<00:06, 2605.71 examples/s]Map:  10%|▉         | 1734/17427 [00:00<00:05, 2657.36 examples/s]Map:  12%|█▏        | 2137/17427 [00:00<00:06, 2547.65 examples/s]Map:  14%|█▍        | 2411/17427 [00:00<00:05, 2596.81 examples/s]Map:  15%|█▌        | 2691/17427 [00:01<00:05, 2645.19 examples/s]Map:  17%|█▋        | 2980/17427 [00:01<00:05, 2710.77 examples/s]Map:  19%|█▉        | 3360/17427 [00:01<00:05, 2640.82 examples/s]Map:  21%|██        | 3637/17427 [00:01<00:05, 2673.69 examples/s]Map:  23%|██▎       | 3923/17427 [00:01<00:04, 2717.89 examples/s]Map:  25%|██▍       | 4307/17427 [00:01<00:04, 2653.88 examples/s]Map:  27%|██▋       | 4625/17427 [00:01<00:05, 2461.30 examples/s]Map:  28%|██▊       | 4902/17427 [00:01<00:04, 2536.31 examples/s]Map:  30%|███       | 5260/17427 [00:02<00:04, 2445.13 examples/s]Map:  32%|███▏      | 5555/17427 [00:02<00:04, 2566.12 examples/s]Map:  33%|███▎      | 5824/17427 [00:02<00:04, 2594.39 examples/s]Map:  35%|███▌      | 6167/17427 [00:02<00:04, 2479.99 examples/s]Map:  37%|███▋      | 6441/17427 [00:02<00:04, 2542.35 examples/s]Map:  39%|███▊      | 6716/17427 [00:02<00:04, 2594.64 examples/s]Map:  40%|████      | 6995/17427 [00:02<00:03, 2646.25 examples/s]Map:  42%|████▏     | 7366/17427 [00:02<00:03, 2578.36 examples/s]Map:  44%|████▍     | 7638/17427 [00:02<00:03, 2612.54 examples/s]Map:  45%|████▌     | 7922/17427 [00:03<00:03, 2668.68 examples/s]Map:  48%|████▊     | 8293/17427 [00:03<00:03, 2590.61 examples/s]Map:  49%|████▉     | 8569/17427 [00:03<00:03, 2633.43 examples/s]Map:  51%|█████     | 8836/17427 [00:03<00:03, 2640.71 examples/s]Map:  53%|█████▎    | 9218/17427 [00:03<00:03, 2601.79 examples/s]Map:  55%|█████▍    | 9508/17427 [00:03<00:02, 2672.54 examples/s]Map:  57%|█████▋    | 9918/17427 [00:03<00:02, 2690.82 examples/s]Map:  59%|█████▉    | 10265/17427 [00:03<00:02, 2557.72 examples/s]Map:  60%|██████    | 10543/17427 [00:04<00:02, 2609.92 examples/s]Map:  62%|██████▏   | 10819/17427 [00:04<00:02, 2645.36 examples/s]Map:  64%|██████▍   | 11174/17427 [00:04<00:02, 2543.32 examples/s]Map:  66%|██████▌   | 11451/17427 [00:04<00:02, 2597.54 examples/s]Map:  67%|██████▋   | 11736/17427 [00:04<00:02, 2638.61 examples/s]Map:  70%|██████▉   | 12137/17427 [00:04<00:02, 2502.47 examples/s]Map:  71%|███████   | 12409/17427 [00:04<00:01, 2554.75 examples/s]Map:  73%|███████▎  | 12681/17427 [00:04<00:01, 2595.74 examples/s]Map:  74%|███████▍  | 12952/17427 [00:04<00:01, 2624.36 examples/s]Map:  77%|███████▋  | 13335/17427 [00:05<00:01, 2595.85 examples/s]Map:  78%|███████▊  | 13624/17427 [00:05<00:01, 2666.70 examples/s]Map:  80%|███████▉  | 13917/17427 [00:05<00:01, 2736.98 examples/s]Map:  82%|████████▏ | 14300/17427 [00:05<00:01, 2664.00 examples/s]Map:  84%|████████▎ | 14584/17427 [00:05<00:01, 2707.17 examples/s]Map:  85%|████████▌ | 14883/17427 [00:05<00:00, 2781.42 examples/s]Map:  88%|████████▊ | 15275/17427 [00:05<00:00, 2700.75 examples/s]Map:  89%|████████▉ | 15561/17427 [00:05<00:00, 2740.46 examples/s]Map:  91%|█████████ | 15850/17427 [00:06<00:00, 2778.90 examples/s]Map:  93%|█████████▎| 16232/17427 [00:06<00:00, 2690.37 examples/s]Map:  95%|█████████▍| 16513/17427 [00:06<00:00, 2719.33 examples/s]Map:  96%|█████████▋| 16799/17427 [00:06<00:00, 2755.46 examples/s]Map:  98%|█████████▊| 17135/17427 [00:06<00:00, 2100.47 examples/s]Map: 100%|█████████▉| 17422/17427 [00:06<00:00, 2270.30 examples/s]Map: 100%|██████████| 17427/17427 [00:06<00:00, 2587.80 examples/s]
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/8713 [00:00<?, ?it/s][ABatch:  {'instruction': ['<s>[INST] <<SYS>>\nPlease answer the questions related to geoscience.\n<</SYS>>\nPlease extract the named entities in: The first fly fossil discovered from the Upper Jurassic Talbragar Fish Bed in Australia is described and illustrated. Based on a single, well preserved wing, Calosargus (Calosargus) talbragarensis new species is assigned to the extinct brachyceran family Archisargidae. Wing morphology suggests a relationship between this extinct family and Stratiomyidae. The Archisargidae have so far only been found in China, Kazakhstan and Mongolia. Calosargus Mostovski, 1997 currently comprises seven species from the Callovian (late Middle Jurassic) of China and three species from the Oxfordian (early Upper Jurassic) of Kazakhstan. This oldest brachyceran fossil from Australia and first record of the Archisargidae in the southern hemisphere presents evidence that higher flies were present in this region in the Jurassic, when this group is thought to have commenced its diversification..  [/INST]', "<s>[INST] <<SYS>>\nPlease answer the questions related to geoscience.\n<</SYS>>\nDoes anyone have experience developing an evaporite karst distribution model?\nI am working with a student to model the distribution of karst in Nova Scotia, Canada, where most karst is underlain by gypsum. We want to map areas with moderate to high probability of surface karst development (we're primarily interested in sink-hole occurrence (dolines)). In addition to bedrock geology, factors that we are considering include depth to water table (previously modelled), overburden depth, and soil porosity (indexed by % of clay in soil). Does anyone have experience with this kind of research? We want to select appropriate parameters for each of these variables (e.g., what depth of overburden, depth to water table, etc.).  [/INST]"], 'output': ['The named entities in the passage can be listed as follows: \n \nUpper Jurassic: Period\nFish: Geo_word\nBed: Geo_word\nAustralia: Location\nWing: Location\nChina: Location\nKazakhstan: Location\nMongolia: Location\nCallovian: Period\nMiddle Jurassic: Period\nChina: Location\nOxfordian: Period\nUpper Jurassic: Period\nKazakhstan: Location\nAustralia: Location\nJurassic: Period', 'You can check this reference about the gypsum Karst of Sorbas (SE Spain). https://www.researchgate.net/publication/258218849_A_geomorphological_and_speleological_approach_in_the_study_of_hydrogeology_of_gypsum_karst_of_Sorbas_(SE_Spain)?ev=prf_pub Best'], 'input_ids': [tensor([    2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            1,     2,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,
+           13, 12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277,
+        29889,    13, 29966,   829, 14816, 29903,  6778,    13, 12148,  6597,
+          278,  4257, 16212,   297, 29901,   450,   937, 11340, 21983,   309,
+        10943,   515,   278, 24929, 16081,   465,   293, 10288, 29890,  1431,
+          279, 12030, 14195,   297,  8314,   338,  5439,   322, 26848, 29889,
+        16564,   373,   263,  2323, 29892,  1532, 21634, 21612, 29892,  3037,
+          359,  1191,   375,   313,  7856,   359,  1191,   375, 29897,  5969,
+        29890,  1431,   279,  6322,   716,  6606,   338,  9859,   304,   278,
+         1294,  5562,  4105, 23766,  2265,   273,  3942,  2595,   275,  1191,
+         3898, 29889, 27792, 18131,  3002, 14661,   263,  9443,  1546,   445,
+         1294,  5562,  3942,   322,  3767,  2219, 16103,  3898, 29889,   450,
+         2595,   275,  1191,  3898,   505,   577,  2215,   871,  1063,  1476,
+          297,  7551, 29892, 15198, 19426, 14411,   322, 21952, 18001, 29889,
+         3037,   359,  1191,   375,  7849,   586,  2574, 29892, 29871, 29896,
+        29929, 29929, 29955,  5279,  7199,  4637,  9881,  6606,   515,   278,
+         3037,  5590,   713,   313,  9632, 14253, 16081,   465,   293, 29897,
+          310,  7551,   322,  2211,  6606,   515,   278, 11045,   713,   313,
+          799,   368, 24929, 16081,   465,   293, 29897,   310, 15198, 19426,
+        14411, 29889,   910, 23947,  4105, 23766,  2265,   273, 21983,   309,
+          515,  8314,   322,   937,  2407,   310,   278,  2595,   275,  1191,
+         3898,   297,   278, 14841,  9736,   275,  9085, 22981, 10757,   393,
+         6133,   285,  3687,   892,  2198,   297,   445,  5120,   297,   278,
+        16081,   465,   293, 29892,   746,   445,  2318,   338,  2714,   304,
+          505,   844,  9223,   967,  6894,  2450,   636, 29871,   518, 29914,
+        25580, 29962], device='cuda:0'), tensor([    2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     1,     2,     1,   518,
+        25580, 29962,  3532, 14816, 29903,  6778,    13, 12148,  1234,   278,
+         5155,  4475,   304,  1737,   359, 15277, 29889,    13, 29966,   829,
+        14816, 29903,  6778,    13, 25125,  5019,   505,  7271, 14338,   385,
+         3415, 26191,   568, 10856,   303,  4978,  1904, 29973,    13, 29902,
+          626,  1985,   411,   263,  8368,   304,  1904,   278,  4978,   310,
+        10856,   303,   297, 16216, 11032,   423, 29892,  7400, 29892,   988,
+         1556, 10856,   303,   338,  1090,  7420,   491, 10966, 15663, 29889,
+         1334,   864,   304,  2910, 10161,   411, 17768,   403,   304,  1880,
+         6976,   310,  7101, 10856,   303,  5849,   313,   705, 29915,   276,
+        19434,  8852,   297, 28169, 29899, 29716, 27170,   313, 29881,   324,
+         1475,  8106,   512,  6124,   304,  6592, 20821,  1737,  3002, 29892,
+        13879,   393,   591,   526, 13858,  3160, 10809,   304,  4094,  1591,
+          313,  1457, 16604,  1904,   839,   511,   975,  8399,  1145, 10809,
+        29892,   322, 22473,  1277,   359,   537,   313,  2248,   287,   491,
+         1273,   310,  1067,   388,   297, 22473,   467,  5538,  5019,   505,
+         7271,   411,   445,  2924,   310,  5925, 29973,  1334,   864,   304,
+         1831,  8210,  4128,   363,  1269,   310,  1438,  3651,   313, 29872,
+        29889, 29887,  1696,   825, 10809,   310,   975,  8399,  1145, 29892,
+        10809,   304,  4094,  1591, 29892,  2992,  6250, 29871,   518, 29914,
+        25580, 29962], device='cuda:0')]}
+Query Temsors:  2
+Query Temsors:  <class 'list'>
+Query Temsors:  [tensor([    2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            1,     2,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,
+           13, 12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277,
+        29889,    13, 29966,   829, 14816, 29903,  6778,    13, 12148,  6597,
+          278,  4257, 16212,   297, 29901,   450,   937, 11340, 21983,   309,
+        10943,   515,   278, 24929, 16081,   465,   293, 10288, 29890,  1431,
+          279, 12030, 14195,   297,  8314,   338,  5439,   322, 26848, 29889,
+        16564,   373,   263,  2323, 29892,  1532, 21634, 21612, 29892,  3037,
+          359,  1191,   375,   313,  7856,   359,  1191,   375, 29897,  5969,
+        29890,  1431,   279,  6322,   716,  6606,   338,  9859,   304,   278,
+         1294,  5562,  4105, 23766,  2265,   273,  3942,  2595,   275,  1191,
+         3898, 29889, 27792, 18131,  3002, 14661,   263,  9443,  1546,   445,
+         1294,  5562,  3942,   322,  3767,  2219, 16103,  3898, 29889,   450,
+         2595,   275,  1191,  3898,   505,   577,  2215,   871,  1063,  1476,
+          297,  7551, 29892, 15198, 19426, 14411,   322, 21952, 18001, 29889,
+         3037,   359,  1191,   375,  7849,   586,  2574, 29892, 29871, 29896,
+        29929, 29929, 29955,  5279,  7199,  4637,  9881,  6606,   515,   278,
+         3037,  5590,   713,   313,  9632, 14253, 16081,   465,   293, 29897,
+          310,  7551,   322,  2211,  6606,   515,   278, 11045,   713,   313,
+          799,   368, 24929, 16081,   465,   293, 29897,   310, 15198, 19426,
+        14411, 29889,   910, 23947,  4105, 23766,  2265,   273, 21983,   309,
+          515,  8314,   322,   937,  2407,   310,   278,  2595,   275,  1191,
+         3898,   297,   278, 14841,  9736,   275,  9085, 22981, 10757,   393,
+         6133,   285,  3687,   892,  2198,   297,   445,  5120,   297,   278,
+        16081,   465,   293, 29892,   746,   445,  2318,   338,  2714,   304,
+          505,   844,  9223,   967,  6894,  2450,   636, 29871,   518, 29914,
+        25580, 29962], device='cuda:0'), tensor([    2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+            2,     2,     2,     2,     2,     2,     1,     2,     1,   518,
+        25580, 29962,  3532, 14816, 29903,  6778,    13, 12148,  1234,   278,
+         5155,  4475,   304,  1737,   359, 15277, 29889,    13, 29966,   829,
+        14816, 29903,  6778,    13, 25125,  5019,   505,  7271, 14338,   385,
+         3415, 26191,   568, 10856,   303,  4978,  1904, 29973,    13, 29902,
+          626,  1985,   411,   263,  8368,   304,  1904,   278,  4978,   310,
+        10856,   303,   297, 16216, 11032,   423, 29892,  7400, 29892,   988,
+         1556, 10856,   303,   338,  1090,  7420,   491, 10966, 15663, 29889,
+         1334,   864,   304,  2910, 10161,   411, 17768,   403,   304,  1880,
+         6976,   310,  7101, 10856,   303,  5849,   313,   705, 29915,   276,
+        19434,  8852,   297, 28169, 29899, 29716, 27170,   313, 29881,   324,
+         1475,  8106,   512,  6124,   304,  6592, 20821,  1737,  3002, 29892,
+        13879,   393,   591,   526, 13858,  3160, 10809,   304,  4094,  1591,
+          313,  1457, 16604,  1904,   839,   511,   975,  8399,  1145, 10809,
+        29892,   322, 22473,  1277,   359,   537,   313,  2248,   287,   491,
+         1273,   310,  1067,   388,   297, 22473,   467,  5538,  5019,   505,
+         7271,   411,   445,  2924,   310,  5925, 29973,  1334,   864,   304,
+         1831,  8210,  4128,   363,  1269,   310,  1438,  3651,   313, 29872,
+        29889, 29887,  1696,   825, 10809,   310,   975,  8399,  1145, 29892,
+        10809,   304,  4094,  1591, 29892,  2992,  6250, 29871,   518, 29914,
+        25580, 29962], device='cuda:0')]
+Response Tensors:  [tensor([[1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966,
+         1966, 1966, 1966, 1966,   13, 1966,   13,   13]], device='cuda:0'), tensor([[   1, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966,
+         1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966]], device='cuda:0')]
+Response Tensors:  2
+Pred:  ['\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n\\\\\n\n', '<s>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\']
+Response:  ['\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n\\\\\n\n', '<s>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\']
+Len Batch Responses:  2
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please extract the named entities in: The first fly fossil discovered from the Upper Jurassic Talbragar Fish Bed in Australia is described and illustrated. Based on a single, well preserved wing, Calosargus (Calosargus) talbragarensis new species is assigned to the extinct brachyceran family Archisargidae. Wing morphology suggests a relationship between this extinct family and Stratiomyidae. The Archisargidae have so far only been found in China, Kazakhstan and Mongolia. Calosargus Mostovski, 1997 currently comprises seven species from the Callovian (late Middle Jurassic) of China and three species from the Oxfordian (early Upper Jurassic) of Kazakhstan. This oldest brachyceran fossil from Australia and first record of the Archisargidae in the southern hemisphere presents evidence that higher flies were present in this region in the Jurassic, when this group is thought to have commenced its diversification..  [/INST]
+Resp:  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\
+
+
+Reward Logits:  tensor([1.4038])
+Instr:  <s>[INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Does anyone have experience developing an evaporite karst distribution model?
+I am working with a student to model the distribution of karst in Nova Scotia, Canada, where most karst is underlain by gypsum. We want to map areas with moderate to high probability of surface karst development (we're primarily interested in sink-hole occurrence (dolines)). In addition to bedrock geology, factors that we are considering include depth to water table (previously modelled), overburden depth, and soil porosity (indexed by % of clay in soil). Does anyone have experience with this kind of research? We want to select appropriate parameters for each of these variables (e.g., what depth of overburden, depth to water table, etc.).  [/INST]
+Resp:  <s>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Reward Logits:  tensor([1.5944])
+Rewards 0:  tensor(1.4038)
+Rewards 1:  tensor(1.5944)
+  0%|          | 0/8713 [00:22<?, ?it/s]
+epoch:   0%|          | 0/1 [00:22<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 181, in <module>
+    build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer, dataloader)
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 137, in build_pipeline
+    stats = ppo_trainer.step(query_tensors, response_tensors, rewards_list)
+  File "/opt/bwhpc/common/devel/miniconda/3-py39-23.10.0/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 596, in step
+    model_inputs = self.prepare_model_inputs(queries, responses)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 822, in prepare_model_inputs
+    input_ids = [torch.cat([q, r]) for q, r in zip(queries, responses)]
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 822, in <listcomp>
+    input_ids = [torch.cat([q, r]) for q, r in zip(queries, responses)]
+RuntimeError: Tensors must have same number of dimensions: got 1 and 2

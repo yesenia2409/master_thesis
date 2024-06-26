@@ -9,25 +9,23 @@ from trl import RewardTrainer
 
 REWARD_MODEL = "weqweasdas/hh_rlhf_rm_open_llama_3b"
 DIR = "RewardModel/"
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def inference(reward_tokenizer, reward_model, sample):
-    values = []
-    for elem in sample:
-        with torch.no_grad():
-            input_ids = reward_tokenizer(
-                sample,
-                # max_length=128,
-                # padding='max_length',
-                # return_tensors='pt'
-            )
-            reward_model.eval()
-            out_reward = reward_model(**input_ids)
+    with torch.no_grad():
+        input_ids = reward_tokenizer(
+            sample,
+            max_length=128,
+            padding='max_length',
+            return_tensors='pt'
+        ).to(DEVICE)
+        reward_model.eval()
+        out_reward = reward_model(**input_ids)
 
-            print("Reward Logits: ", out_reward.logits[0])
-            value = out_reward.logits[0].item()
-            values.append(value)
-    return values
+        print("Reward Logits: ", out_reward.logits[0])
+        value = out_reward.logits[0].item()
+    return value
 
 
 def inference_evaluation(model, tokenizer, before):
