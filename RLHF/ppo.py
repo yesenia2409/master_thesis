@@ -75,7 +75,18 @@ def collator(data):
     return dict((key, [d[key] for d in data]) for key in data[0])
 
 
-def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_tokenizer, dataloader):
+def inference_test(model, tokenizer, prompts, max_new_tokens):
+    model.eval()
+    with torch.no_grad():
+        for prompt in prompts:
+            encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
+            txt_tokens = encode_dict["input_ids"].cuda()
+            kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
+            summ_tokens = model.generate(input_ids=txt_tokens, **kwargs)
+            pred = tokenizer.batch_decode(summ_tokens)[0]
+            print("Prediction with regular inference: ", pred)
+
+def build_pipeline(ppo_config, policy_model, policy_trainer, ppo_tokenizer, reward_model, reward_tokenizer, dataloader):
     generation_kwargs = {
         # "top_p": 0.5,
         # "temperature": 0.7,
@@ -85,17 +96,18 @@ def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_
     }
 
     for epoch in tqdm(range(ppo_config.ppo_epochs), "epoch: "):
-        for batch in tqdm(ppo_trainer.dataloader):
+        for batch in tqdm(policy_trainer.dataloader):
             # print("Batch: ", batch)
 
             query_tensors = batch["input_ids"]
             # print("Query Tensors: ", query_tensors)
 
             # Generate outputs
+            inference_test(policy_model, policy_tokenizer, batch["instruction"], 50)
             response_tensors = []
             for query in query_tensors:
                 query.to(DEVICE)
-                response_tokens = ppo_trainer.generate(query, return_prompt=False, **generation_kwargs)
+                response_tokens = policy_trainer.generate(query, return_prompt=False, **generation_kwargs)
                 response_tensors.append(response_tokens.squeeze().to(DEVICE))
             print("Response Tensors: ", response_tensors)
             pred = [ppo_tokenizer.decode(r.squeeze()) for r in response_tensors]
@@ -113,9 +125,9 @@ def build_pipeline(ppo_config, ppo_trainer, ppo_tokenizer, reward_model, reward_
             # print("Rewards List: ", rewards_list)
 
             # Run PPO step
-            stats = ppo_trainer.step(query_tensors, response_tensors, rewards_list)
+            stats = policy_trainer.step(query_tensors, response_tensors, rewards_list)
             print("Stats: ", stats)
-            ppo_trainer.log_stats(stats, batch, rewards_list)
+            policy_trainer.log_stats(stats, batch, rewards_list)
 
 
 if __name__ == "__main__":
