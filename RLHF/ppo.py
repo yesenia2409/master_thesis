@@ -108,13 +108,13 @@ def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, rewa
             for idx in range(len(pred)):
                 pred[idx] = pred[idx].split("[/INST]")[1].split(policy_tokenizer.eos_token)[0]
             batch["response"] = pred
-            print(pred)
+            # print(pred)
             
             # Compute rewards
             rewards_list = []
             for instr, resp in zip(batch["instruction"], batch["response"]):
-                print("Instr: ", instr)
-                print("Resp: ", resp)
+                # print("Instr: ", instr)
+                # print("Resp: ", resp)
                 reward = reward_inference(reward_tokenizer, reward_model, resp)
                 rewards_list.append(torch.tensor(reward).to(DEVICE))
             # print("Rewards List: ", rewards_list)

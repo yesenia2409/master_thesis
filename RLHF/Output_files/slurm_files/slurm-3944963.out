@@ -1,12 +1,97 @@
 Running simulation
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:04<00:24,  4.89s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:09<00:19,  4.95s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:14<00:15,  5.01s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:19<00:09,  4.86s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:24<00:04,  4.96s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:26<00:00,  3.78s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:26<00:00,  4.37s/it]
+
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]
+Loading checkpoint shards:  17%|█▋        | 1/6 [00:04<00:24,  4.89s/it]
+Loading checkpoint shards:  33%|███▎      | 2/6 [00:09<00:19,  4.95s/it]
+Loading checkpoint shards:  50%|█████     | 3/6 [00:14<00:15,  5.01s/it]
+Loading checkpoint shards:  67%|██████▋   | 4/6 [00:19<00:09,  4.86s/it]
+Loading checkpoint shards:  83%|████████▎ | 5/6 [00:24<00:04,  4.96s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:26<00:00,  3.78s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:26<00:00,  4.37s/it]
 WARNING:root:A <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
 Done loading Policy Model and Tokenizer!
 You are using the legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This means that tokens that come after special tokens will not be properly handled. We recommend you to read the related pull request available at https://github.com/huggingface/transformers/pull/24565
 Done loading Reward Model and Tokenizer!
-Map:   0%|          | 0/17427 [00:00<?, ? examples/s]Map:   1%|          | 203/17427 [00:00<00:08, 1985.77 examples/s]Map:   2%|▏         | 432/17427 [00:00<00:08, 2110.91 examples/s]Map:   4%|▎         | 648/17427 [00:00<00:07, 2130.18 examples/s]Map:   5%|▌         | 881/17427 [00:00<00:07, 2202.66 examples/s]Map:   6%|▋         | 1108/17427 [00:00<00:08, 1828.19 examples/s]Map:   8%|▊         | 1325/17427 [00:00<00:08, 1928.54 examples/s]Map:   9%|▉         | 1543/17427 [00:00<00:07, 1993.02 examples/s]Map:  10%|█         | 1767/17427 [00:00<00:07, 2061.36 examples/s]Map:  11%|█▏        | 1995/17427 [00:00<00:07, 2124.50 examples/s]Map:  13%|█▎        | 2329/17427 [00:01<00:08, 1883.16 examples/s]Map:  15%|█▍        | 2555/17427 [00:01<00:07, 1973.41 examples/s]Map:  16%|█▌        | 2789/17427 [00:01<00:07, 2066.72 examples/s]Map:  18%|█▊        | 3107/17427 [00:01<00:07, 1893.23 examples/s]Map:  19%|█▉        | 3326/17427 [00:01<00:07, 1962.12 examples/s]Map:  20%|██        | 3558/17427 [00:01<00:06, 2051.99 examples/s]Map:  22%|██▏       | 3788/17427 [00:01<00:06, 2116.35 examples/s]Map:  24%|██▎       | 4119/17427 [00:02<00:06, 1944.01 examples/s]Map:  25%|██▍       | 4345/17427 [00:02<00:06, 2017.27 examples/s]Map:  26%|██▌       | 4563/17427 [00:02<00:06, 2056.14 examples/s]Map:  27%|██▋       | 4778/17427 [00:02<00:06, 2079.52 examples/s]Map:  29%|██▊       | 4998/17427 [00:02<00:05, 2111.71 examples/s]Map:  31%|███       | 5318/17427 [00:02<00:06, 1871.93 examples/s]Map:  32%|███▏      | 5547/17427 [00:02<00:06, 1968.84 examples/s]Map:  33%|███▎      | 5780/17427 [00:02<00:05, 2058.93 examples/s]Map:  34%|███▍      | 5995/17427 [00:02<00:05, 2079.96 examples/s]Map:  36%|███▌      | 6218/17427 [00:03<00:06, 1821.18 examples/s]Map:  37%|███▋      | 6438/17427 [00:03<00:05, 1915.43 examples/s]Map:  38%|███▊      | 6653/17427 [00:03<00:05, 1972.05 examples/s]Map:  39%|███▉      | 6879/17427 [00:03<00:05, 2049.20 examples/s]Map:  41%|████▏     | 7197/17427 [00:03<00:05, 1783.94 examples/s]Map:  43%|████▎     | 7424/17427 [00:03<00:05, 1895.20 examples/s]Map:  44%|████▍     | 7643/17427 [00:03<00:04, 1967.32 examples/s]Map:  45%|████▌     | 7866/17427 [00:03<00:04, 2033.94 examples/s]Map:  46%|████▋     | 8100/17427 [00:04<00:05, 1827.14 examples/s]Map:  48%|████▊     | 8316/17427 [00:04<00:04, 1907.22 examples/s]Map:  49%|████▉     | 8544/17427 [00:04<00:04, 1997.22 examples/s]Map:  50%|█████     | 8754/17427 [00:04<00:04, 2014.98 examples/s]Map:  52%|█████▏    | 8980/17427 [00:04<00:04, 2081.91 examples/s]Map:  53%|█████▎    | 9220/17427 [00:04<00:04, 1832.62 examples/s]Map:  54%|█████▍    | 9453/17427 [00:04<00:04, 1958.07 examples/s]Map:  55%|█████▌    | 9671/17427 [00:04<00:03, 2014.39 examples/s]Map:  57%|█████▋    | 9901/17427 [00:04<00:03, 2091.42 examples/s]Map:  59%|█████▊    | 10204/17427 [00:05<00:03, 1816.44 examples/s]Map:  60%|█████▉    | 10410/17427 [00:05<00:03, 1868.28 examples/s]Map:  61%|██████    | 10625/17427 [00:05<00:03, 1931.66 examples/s]Map:  62%|██████▏   | 10843/17427 [00:05<00:03, 1989.53 examples/s]Map:  64%|██████▎   | 11084/17427 [00:05<00:03, 1749.69 examples/s]Map:  65%|██████▍   | 11306/17427 [00:05<00:03, 1859.69 examples/s]Map:  67%|██████▋   | 11612/17427 [00:05<00:03, 1917.58 examples/s]Map:  68%|██████▊   | 11829/17427 [00:06<00:02, 1978.74 examples/s]Map:  69%|██████▉   | 12110/17427 [00:06<00:03, 1766.02 examples/s]Map:  71%|███████   | 12328/17427 [00:06<00:02, 1859.26 examples/s]Map:  72%|███████▏  | 12546/17427 [00:06<00:02, 1937.39 examples/s]Map:  73%|███████▎  | 12764/17427 [00:06<00:02, 1998.47 examples/s]Map:  74%|███████▍  | 12976/17427 [00:06<00:02, 2030.07 examples/s]Map:  76%|███████▌  | 13224/17427 [00:06<00:02, 1828.36 examples/s]Map:  77%|███████▋  | 13435/17427 [00:06<00:02, 1897.14 examples/s]Map:  78%|███████▊  | 13668/17427 [00:06<00:01, 2008.70 examples/s]Map:  80%|███████▉  | 13912/17427 [00:07<00:01, 2125.32 examples/s]Map:  82%|████████▏ | 14213/17427 [00:07<00:01, 1883.23 examples/s]Map:  83%|████████▎ | 14449/17427 [00:07<00:01, 1995.16 examples/s]Map:  84%|████████▍ | 14684/17427 [00:07<00:01, 2084.32 examples/s]Map:  86%|████████▌ | 14907/17427 [00:07<00:01, 2112.57 examples/s]Map:  87%|████████▋ | 15226/17427 [00:07<00:01, 1910.89 examples/s]Map:  89%|████████▊ | 15444/17427 [00:07<00:01, 1971.94 examples/s]Map:  90%|█████████ | 15692/17427 [00:07<00:00, 2094.41 examples/s]Map:  91%|█████████▏| 15918/17427 [00:08<00:00, 2135.20 examples/s]Map:  93%|█████████▎| 16220/17427 [00:08<00:00, 1896.41 examples/s]Map:  94%|█████████▍| 16433/17427 [00:08<00:00, 1946.23 examples/s]Map:  96%|█████████▌| 16656/17427 [00:08<00:00, 2017.12 examples/s]Map:  97%|█████████▋| 16883/17427 [00:08<00:00, 2082.29 examples/s]Map:  98%|█████████▊| 17111/17427 [00:08<00:00, 1825.54 examples/s]Map: 100%|█████████▉| 17342/17427 [00:08<00:00, 1943.34 examples/s]Map: 100%|██████████| 17427/17427 [00:08<00:00, 1959.06 examples/s]
-epoch:   0%|          | 0/1 [00:00<?, ?it/s]
-  0%|          | 0/8713 [00:00<?, ?it/s][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+Map:   0%|          | 0/17427 [00:00<?, ? examples/s]
+Map:   1%|          | 203/17427 [00:00<00:08, 1985.77 examples/s]
+Map:   2%|▏         | 432/17427 [00:00<00:08, 2110.91 examples/s]
+Map:   4%|▎         | 648/17427 [00:00<00:07, 2130.18 examples/s]
+Map:   5%|▌         | 881/17427 [00:00<00:07, 2202.66 examples/s]
+Map:   6%|▋         | 1108/17427 [00:00<00:08, 1828.19 examples/s]
+Map:   8%|▊         | 1325/17427 [00:00<00:08, 1928.54 examples/s]
+Map:   9%|▉         | 1543/17427 [00:00<00:07, 1993.02 examples/s]
+Map:  10%|█         | 1767/17427 [00:00<00:07, 2061.36 examples/s]
+Map:  11%|█▏        | 1995/17427 [00:00<00:07, 2124.50 examples/s]
+Map:  13%|█▎        | 2329/17427 [00:01<00:08, 1883.16 examples/s]
+Map:  15%|█▍        | 2555/17427 [00:01<00:07, 1973.41 examples/s]
+Map:  16%|█▌        | 2789/17427 [00:01<00:07, 2066.72 examples/s]
+Map:  18%|█▊        | 3107/17427 [00:01<00:07, 1893.23 examples/s]
+Map:  19%|█▉        | 3326/17427 [00:01<00:07, 1962.12 examples/s]
+Map:  20%|██        | 3558/17427 [00:01<00:06, 2051.99 examples/s]
+Map:  22%|██▏       | 3788/17427 [00:01<00:06, 2116.35 examples/s]
+Map:  24%|██▎       | 4119/17427 [00:02<00:06, 1944.01 examples/s]
+Map:  25%|██▍       | 4345/17427 [00:02<00:06, 2017.27 examples/s]
+Map:  26%|██▌       | 4563/17427 [00:02<00:06, 2056.14 examples/s]
+Map:  27%|██▋       | 4778/17427 [00:02<00:06, 2079.52 examples/s]
+Map:  29%|██▊       | 4998/17427 [00:02<00:05, 2111.71 examples/s]
+Map:  31%|███       | 5318/17427 [00:02<00:06, 1871.93 examples/s]
+Map:  32%|███▏      | 5547/17427 [00:02<00:06, 1968.84 examples/s]
+Map:  33%|███▎      | 5780/17427 [00:02<00:05, 2058.93 examples/s]
+Map:  34%|███▍      | 5995/17427 [00:02<00:05, 2079.96 examples/s]
+Map:  36%|███▌      | 6218/17427 [00:03<00:06, 1821.18 examples/s]
+Map:  37%|███▋      | 6438/17427 [00:03<00:05, 1915.43 examples/s]
+Map:  38%|███▊      | 6653/17427 [00:03<00:05, 1972.05 examples/s]
+Map:  39%|███▉      | 6879/17427 [00:03<00:05, 2049.20 examples/s]
+Map:  41%|████▏     | 7197/17427 [00:03<00:05, 1783.94 examples/s]
+Map:  43%|████▎     | 7424/17427 [00:03<00:05, 1895.20 examples/s]
+Map:  44%|████▍     | 7643/17427 [00:03<00:04, 1967.32 examples/s]
+Map:  45%|████▌     | 7866/17427 [00:03<00:04, 2033.94 examples/s]
+Map:  46%|████▋     | 8100/17427 [00:04<00:05, 1827.14 examples/s]
+Map:  48%|████▊     | 8316/17427 [00:04<00:04, 1907.22 examples/s]
+Map:  49%|████▉     | 8544/17427 [00:04<00:04, 1997.22 examples/s]
+Map:  50%|█████     | 8754/17427 [00:04<00:04, 2014.98 examples/s]
+Map:  52%|█████▏    | 8980/17427 [00:04<00:04, 2081.91 examples/s]
+Map:  53%|█████▎    | 9220/17427 [00:04<00:04, 1832.62 examples/s]
+Map:  54%|█████▍    | 9453/17427 [00:04<00:04, 1958.07 examples/s]
+Map:  55%|█████▌    | 9671/17427 [00:04<00:03, 2014.39 examples/s]
+Map:  57%|█████▋    | 9901/17427 [00:04<00:03, 2091.42 examples/s]
+Map:  59%|█████▊    | 10204/17427 [00:05<00:03, 1816.44 examples/s]
+Map:  60%|█████▉    | 10410/17427 [00:05<00:03, 1868.28 examples/s]
+Map:  61%|██████    | 10625/17427 [00:05<00:03, 1931.66 examples/s]
+Map:  62%|██████▏   | 10843/17427 [00:05<00:03, 1989.53 examples/s]
+Map:  64%|██████▎   | 11084/17427 [00:05<00:03, 1749.69 examples/s]
+Map:  65%|██████▍   | 11306/17427 [00:05<00:03, 1859.69 examples/s]
+Map:  67%|██████▋   | 11612/17427 [00:05<00:03, 1917.58 examples/s]
+Map:  68%|██████▊   | 11829/17427 [00:06<00:02, 1978.74 examples/s]
+Map:  69%|██████▉   | 12110/17427 [00:06<00:03, 1766.02 examples/s]
+Map:  71%|███████   | 12328/17427 [00:06<00:02, 1859.26 examples/s]
+Map:  72%|███████▏  | 12546/17427 [00:06<00:02, 1937.39 examples/s]
+Map:  73%|███████▎  | 12764/17427 [00:06<00:02, 1998.47 examples/s]
+Map:  74%|███████▍  | 12976/17427 [00:06<00:02, 2030.07 examples/s]
+Map:  76%|███████▌  | 13224/17427 [00:06<00:02, 1828.36 examples/s]
+Map:  77%|███████▋  | 13435/17427 [00:06<00:02, 1897.14 examples/s]
+Map:  78%|███████▊  | 13668/17427 [00:06<00:01, 2008.70 examples/s]
+Map:  80%|███████▉  | 13912/17427 [00:07<00:01, 2125.32 examples/s]
+Map:  82%|████████▏ | 14213/17427 [00:07<00:01, 1883.23 examples/s]
+Map:  83%|████████▎ | 14449/17427 [00:07<00:01, 1995.16 examples/s]
+Map:  84%|████████▍ | 14684/17427 [00:07<00:01, 2084.32 examples/s]
+Map:  86%|████████▌ | 14907/17427 [00:07<00:01, 2112.57 examples/s]
+Map:  87%|████████▋ | 15226/17427 [00:07<00:01, 1910.89 examples/s]
+Map:  89%|████████▊ | 15444/17427 [00:07<00:01, 1971.94 examples/s]
+Map:  90%|█████████ | 15692/17427 [00:07<00:00, 2094.41 examples/s]
+Map:  91%|█████████▏| 15918/17427 [00:08<00:00, 2135.20 examples/s]
+Map:  93%|█████████▎| 16220/17427 [00:08<00:00, 1896.41 examples/s]
+Map:  94%|█████████▍| 16433/17427 [00:08<00:00, 1946.23 examples/s]
+Map:  96%|█████████▌| 16656/17427 [00:08<00:00, 2017.12 examples/s]
+Map:  97%|█████████▋| 16883/17427 [00:08<00:00, 2082.29 examples/s]
+Map:  98%|█████████▊| 17111/17427 [00:08<00:00, 1825.54 examples/s]
+Map: 100%|█████████▉| 17342/17427 [00:08<00:00, 1943.34 examples/s]
+Map: 100%|██████████| 17427/17427 [00:08<00:00, 1959.06 examples/s]
+
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+
+  0%|          | 0/8713 [00:00<?, ?it/s][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Please extract the named entities in: The first fly fossil discovered from the Upper Jurassic Talbragar Fish Bed in Australia is described and illustrated. Based on a single, well preserved wing, Calosargus (Calosargus) talbragarensis new species is assigned to the extinct brachyceran family Archisargidae. Wing morphology suggests a relationship between this extinct family and Stratiomyidae. The Archisargidae have so far only been found in China, Kazakhstan and Mongolia. Calosargus Mostovski, 1997 currently comprises seven species from the Callovian (late Middle Jurassic) of China and three species from the Oxfordian (early Upper Jurassic) of Kazakhstan. This oldest brachyceran fossil from Australia and first record of the Archisargidae in the southern hemisphere presents evidence that higher flies were present in this region in the Jurassic, when this group is thought to have commenced its diversification..  [/INST] The named entities in the passage can be listed as follows: 
@@ -89,7 +174,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         4.592216  ,  4.8828406 ], dtype=float32), 'ppo/policy/advantages_mean': -4.888316418316663e-09, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0091276 , 0.98074424,
        0.9325337 ], dtype=float32), 'ppo/returns/mean': -0.1555928885936737, 'ppo/returns/var': 0.5575933456420898, 'ppo/val/vpred': -0.44921875, 'ppo/val/error': 0.5946406126022339, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.4634200930595398, 'ppo/val/var': 0.004232324659824371, 'ppo/time/ppo/optimizer_step': 0.02124643325805664, 'ppo/val/var_explained': -0.06644141674041748, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.9711744785308838, 'time/ppo/compute_rewards': 0.0008637905120849609, 'time/ppo/optimize_step': 1.2042121887207031, 'time/ppo/calc_stats': 0.0033943653106689453, 'time/ppo/total': 2.191368341445923}
 
-  0%|          | 1/8713 [00:08<20:56:38,  8.65s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 1/8713 [00:08<20:56:38,  8.65s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Could you extract the terms related to earth science mentioned in this passage? The passage: Traditionalist theology, sometimes referred to as the Atharī school, derives its name from the word "tradition" as a translation of the Arabic word hadith or from the Arabic word athar, meaning "narrations". The traditionalist creed is to avoid delving into extensive theological speculation. They rely on the Qur'an, the Sunnah, and sayings of the Sahaba, seeing this as the middle path where the attributes of Allah are accepted without questioning their nature (bi-la kayf). Ahmad ibn Hanbal is regarded as the leader of the traditionalist school of creed. The modern Salafi movement associates itself with the Atharī creed.  [/INST] Certainly, the mentioned terms related to earth science in the passage are: Qur'an, Sunnah, Sahaba, bi-la kayf, Ahmad ibn Hanbal, Salafi.  [/INST
@@ -152,7 +238,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         3.6515489 ,  3.9221663 ], dtype=float32), 'ppo/policy/advantages_mean': -6.0743587937395205e-09, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99193037, 1.0086498 ,
        1.018828  ], dtype=float32), 'ppo/returns/mean': -0.12960705161094666, 'ppo/returns/var': 0.5426892042160034, 'ppo/val/vpred': -0.4765625, 'ppo/val/error': 0.6363281011581421, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.4887537956237793, 'ppo/val/var': 0.0028488198295235634, 'ppo/time/ppo/optimizer_step': 0.006035804748535156, 'ppo/val/var_explained': -0.17254602909088135, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8160598278045654, 'time/ppo/compute_rewards': 0.0005750656127929688, 'time/ppo/optimize_step': 1.0189049243927002, 'time/ppo/calc_stats': 0.0034303665161132812, 'time/ppo/total': 1.8523399829864502}
 
-  0%|          | 2/8713 [00:16<19:42:39,  8.15s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 2/8713 [00:16<19:42:39,  8.15s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 What is the influence of chemistry on static liquefaction?
@@ -229,7 +316,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         3.6725616 ,  3.932393  ], dtype=float32), 'ppo/policy/advantages_mean': 9.557909130819553e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0007188, 0.9970185,
        0.9626559], dtype=float32), 'ppo/returns/mean': -0.29542821645736694, 'ppo/returns/var': 0.07783310115337372, 'ppo/val/vpred': -0.419921875, 'ppo/val/error': 0.08615794777870178, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.4307892918586731, 'ppo/val/var': 0.0025915505830198526, 'ppo/time/ppo/optimizer_step': 0.005902528762817383, 'ppo/val/var_explained': -0.10695767402648926, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8964273929595947, 'time/ppo/compute_rewards': 0.0007078647613525391, 'time/ppo/optimize_step': 1.0905437469482422, 'time/ppo/calc_stats': 0.002568960189819336, 'time/ppo/total': 2.0042459964752197}
 
-  0%|          | 3/8713 [00:24<19:30:33,  8.06s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 3/8713 [00:24<19:30:33,  8.06s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Can you elaborate on premise in connection with 11.22.63?  [/INST] Certainly, when discussing 11.22.63,  
@@ -307,7 +395,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
        -3.2106113], dtype=float32), 'ppo/policy/advantages_mean': -1.888463962984588e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.9216597 , 0.90192336,
        1.007723  ], dtype=float32), 'ppo/returns/mean': -0.39302554726600647, 'ppo/returns/var': 0.20431342720985413, 'ppo/val/vpred': -0.328125, 'ppo/val/error': 0.253173291683197, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.3322976529598236, 'ppo/val/var': 0.002193432068452239, 'ppo/time/ppo/optimizer_step': 0.005722999572753906, 'ppo/val/var_explained': -0.23914170265197754, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8825175762176514, 'time/ppo/compute_rewards': 0.0008482933044433594, 'time/ppo/optimize_step': 1.0684611797332764, 'time/ppo/calc_stats': 0.003167390823364258, 'time/ppo/total': 1.9698030948638916}
 
-  0%|          | 4/8713 [00:32<19:23:51,  8.02s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 4/8713 [00:32<19:23:51,  8.02s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Is tribe ptychomphalides wenz a narrower category or subdiscipline within genus ptychomphalus agassiz, 1839 in geoscience?  [/INST] False.
@@ -371,7 +460,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         3.6366239 ,  3.8879652 ], dtype=float32), 'ppo/policy/advantages_mean': 0.0, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99283504, 0.99245834,
        0.9896597 ], dtype=float32), 'ppo/returns/mean': -0.09439872950315475, 'ppo/returns/var': 0.3492682874202728, 'ppo/val/vpred': -0.419921875, 'ppo/val/error': 0.461272656917572, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.42222854495048523, 'ppo/val/var': 0.00039750378346070647, 'ppo/time/ppo/optimizer_step': 0.005409836769104004, 'ppo/val/var_explained': -0.3206828832626343, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7984354496002197, 'time/ppo/compute_rewards': 0.0010509490966796875, 'time/ppo/optimize_step': 0.9703731536865234, 'time/ppo/calc_stats': 0.0025644302368164062, 'time/ppo/total': 1.7867915630340576}
 
-  0%|          | 5/8713 [00:40<19:07:35,  7.91s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 5/8713 [00:40<19:07:35,  7.91s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 I'd like to know a synonym for the word 'hydrographic basin'.  [/INST] You should see drainage basin. 
@@ -441,7 +531,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         5.5988264], dtype=float32), 'ppo/policy/advantages_mean': -4.332243719318285e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.021633 , 1.003601 ,
        1.0086349], dtype=float32), 'ppo/returns/mean': -0.11893786489963531, 'ppo/returns/var': 0.2658231258392334, 'ppo/val/vpred': -0.283203125, 'ppo/val/error': 0.28610071539878845, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.28743091225624084, 'ppo/val/var': 0.0019055780721828341, 'ppo/time/ppo/optimizer_step': 0.00588834285736084, 'ppo/val/var_explained': -0.07628226280212402, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8894574642181396, 'time/ppo/compute_rewards': 0.0006792545318603516, 'time/ppo/optimize_step': 1.078378438949585, 'time/ppo/calc_stats': 0.0026481151580810547, 'time/ppo/total': 1.984149694442749}
 
-  0%|          | 6/8713 [00:48<19:12:53,  7.94s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 6/8713 [00:48<19:12:53,  7.94s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 What can be proved by the illustration?
@@ -500,7 +591,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         4.917795 ], dtype=float32), 'ppo/policy/advantages_mean': -2.2527739673705582e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0136923 , 1.0113738 ,
        0.99718016], dtype=float32), 'ppo/returns/mean': -0.057523466646671295, 'ppo/returns/var': 0.21030837297439575, 'ppo/val/vpred': -0.32421875, 'ppo/val/error': 0.2799154222011566, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.3293613791465759, 'ppo/val/var': 0.0026526786386966705, 'ppo/time/ppo/optimizer_step': 0.006249189376831055, 'ppo/val/var_explained': -0.33097612857818604, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8146781921386719, 'time/ppo/compute_rewards': 0.000698089599609375, 'time/ppo/optimize_step': 0.9998092651367188, 'time/ppo/calc_stats': 0.0025415420532226562, 'time/ppo/total': 1.8316748142242432}
 
-  0%|          | 7/8713 [00:55<19:02:46,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 7/8713 [00:55<19:02:46,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Could you share the measured chemistry of the Stibnite?  [/INST] Of course, the Stibnite's measured chemistry is No Corresponding Information.  [/INST] Of course, the Stibnite's measured chemistry is No Corresponding Information.  [/INST]
@@ -549,7 +641,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         3.125562 ], dtype=float32), 'ppo/policy/advantages_mean': -1.1995902937655956e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.9999685 , 0.76600015,
        1.0019885 ], dtype=float32), 'ppo/returns/mean': -0.133561909198761, 'ppo/returns/var': 0.20002736151218414, 'ppo/val/vpred': -0.375, 'ppo/val/error': 0.2569371163845062, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.3785707354545593, 'ppo/val/var': 0.0002843440161086619, 'ppo/time/ppo/optimizer_step': 0.00587153434753418, 'ppo/val/var_explained': -0.28450989723205566, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7977044582366943, 'time/ppo/compute_rewards': 0.0006656646728515625, 'time/ppo/optimize_step': 0.9778945446014404, 'time/ppo/calc_stats': 0.002493143081665039, 'time/ppo/total': 1.7920632362365723}
 
-  0%|          | 8/8713 [01:03<18:51:26,  7.80s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 8/8713 [01:03<18:51:26,  7.80s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 How much magnetic anomaly variation (nT) for a particular magnetic Chron we can expect in an oceanic crust along different transects?? Linear magnetic anomalies are observed in the seafloor spreading. If we are having 10 transects in an ocean basin then for a particular magnetic Chron, amplitude of magnetic anomalies (normal or reverse) along all the profiles can vary (due to the thickness of oceanic crust). But how much magnetic anomaly variation, we can expect, for a particular magnetic Chron in all the transects.  [/INST] Dear Mr. S.K.Srivastava,
@@ -619,7 +712,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         3.90787  ], dtype=float32), 'ppo/policy/advantages_mean': -8.106143312147651e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0017219, 1.0041974,
        1.0008858], dtype=float32), 'ppo/returns/mean': 0.07112635672092438, 'ppo/returns/var': 0.556458055973053, 'ppo/val/vpred': -0.3125, 'ppo/val/error': 0.6596536636352539, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.32159101963043213, 'ppo/val/var': 0.0021089036017656326, 'ppo/time/ppo/optimizer_step': 0.005971312522888184, 'ppo/val/var_explained': -0.18545079231262207, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7935936450958252, 'time/ppo/compute_rewards': 0.0007524490356445312, 'time/ppo/optimize_step': 0.968292236328125, 'time/ppo/calc_stats': 0.0033020973205566406, 'time/ppo/total': 1.779822587966919}
 
-  0%|          | 9/8713 [01:11<18:46:23,  7.76s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 9/8713 [01:11<18:46:23,  7.76s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Can you provide a synonym for the word 'pirep'?  [/INST] Sure, you might see report. 
@@ -661,7 +755,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         3.2085707], dtype=float32), 'ppo/policy/advantages_mean': -3.703589612769065e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99243087, 1.0015672 ,
        1.0000706 ], dtype=float32), 'ppo/returns/mean': 0.06090757995843887, 'ppo/returns/var': 0.29253751039505005, 'ppo/val/vpred': -0.33203125, 'ppo/val/error': 0.4577040374279022, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.33788585662841797, 'ppo/val/var': 1.4094979633227922e-05, 'ppo/time/ppo/optimizer_step': 0.004870295524597168, 'ppo/val/var_explained': -0.5645995140075684, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.6999399662017822, 'time/ppo/compute_rewards': 0.0005769729614257812, 'time/ppo/optimize_step': 0.8572757244110107, 'time/ppo/calc_stats': 0.0025017261505126953, 'time/ppo/total': 1.5733776092529297}
 
-  0%|          | 10/8713 [01:18<18:30:10,  7.65s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 10/8713 [01:18<18:30:10,  7.65s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Please provide a list of terms in the passage that have a connection to earth science. The passage: The main armament, which was principally intended for shore bombardment, was originally designed with two 68-pounder and two 32-pounder muzzle-loading smoothbore guns. They were finished, however, with a single 7-inch/110-pounder Armstrong breech-loading gun and a 68-pounder muzzle-loading smoothbore gun. A pair of broadside 20-pounder Armstrong breech-loading guns were also fitted. The 68-pounders were later replaced by a pair of 64-pounder muzzle-loading rifled guns.  [/INST] The terms in the passage connected to earth science are: 68-pounder, 32-pounder, 7-inch/110-pounder, 64-pounder, muzz
@@ -731,7 +826,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         4.5304613], dtype=float32), 'ppo/policy/advantages_mean': 2.119276309997531e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0089356, 1.0025324,
        0.9971754], dtype=float32), 'ppo/returns/mean': 0.13005129992961884, 'ppo/returns/var': 0.36474233865737915, 'ppo/val/vpred': -0.1318359375, 'ppo/val/error': 0.38981735706329346, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.1435742825269699, 'ppo/val/var': 0.005551385227590799, 'ppo/time/ppo/optimizer_step': 0.006136894226074219, 'ppo/val/var_explained': -0.06874716281890869, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.81488037109375, 'time/ppo/compute_rewards': 0.0005643367767333984, 'time/ppo/optimize_step': 0.9974524974822998, 'time/ppo/calc_stats': 0.002656698226928711, 'time/ppo/total': 1.8276760578155518}
 
-  0%|          | 11/8713 [01:26<18:36:28,  7.70s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 11/8713 [01:26<18:36:28,  7.70s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 What is the meaning of the word 'trifoliate orange'?  [/INST] The meaning of the word 'trifoliate orange' is: a citrus tree with trifoliate leaves and small, sweet fruit. 
@@ -811,7 +907,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         5.530029 ], dtype=float32), 'ppo/policy/advantages_mean': 2.5885977805728544e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.9786715, 0.981457 ,
        1.0217631], dtype=float32), 'ppo/returns/mean': 0.12733079493045807, 'ppo/returns/var': 0.15555340051651, 'ppo/val/vpred': -0.1064453125, 'ppo/val/error': 0.24256405234336853, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.11503386497497559, 'ppo/val/var': 0.003983920440077782, 'ppo/time/ppo/optimizer_step': 0.007716536521911621, 'ppo/val/var_explained': -0.5593619346618652, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.051208257675171, 'time/ppo/compute_rewards': 0.0006983280181884766, 'time/ppo/optimize_step': 1.2159199714660645, 'time/ppo/calc_stats': 0.0029861927032470703, 'time/ppo/total': 2.284194231033325}
 
-  0%|          | 12/8713 [01:34<19:02:00,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 12/8713 [01:34<19:02:00,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 What is difference between Riverbed conductance term and streambed leakance/retardation coefficient?
@@ -879,7 +976,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         4.466933 ], dtype=float32), 'ppo/policy/advantages_mean': -7.849171090867912e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0002646, 0.9799272,
        1.0085084], dtype=float32), 'ppo/returns/mean': 0.27935925126075745, 'ppo/returns/var': 0.745614767074585, 'ppo/val/vpred': -0.05908203125, 'ppo/val/error': 0.8418807983398438, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.0693303793668747, 'ppo/val/var': 0.006034845020622015, 'ppo/time/ppo/optimizer_step': 0.006505727767944336, 'ppo/val/var_explained': -0.12910962104797363, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8431177139282227, 'time/ppo/compute_rewards': 0.0005640983581542969, 'time/ppo/optimize_step': 1.0341033935546875, 'time/ppo/calc_stats': 0.0027611255645751953, 'time/ppo/total': 1.8937134742736816}
 
-  0%|          | 13/8713 [01:42<19:02:15,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 13/8713 [01:42<19:02:15,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 Is plate movement the main controller of morphology?
@@ -926,7 +1024,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         2.9813726 ,  3.220795  ], dtype=float32), 'ppo/policy/advantages_mean': -9.16994569166718e-09, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0514739 , 0.99656886,
        0.9995596 ], dtype=float32), 'ppo/returns/mean': 0.30692198872566223, 'ppo/returns/var': 0.5438629388809204, 'ppo/val/vpred': -0.248046875, 'ppo/val/error': 0.814832329750061, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.2532942295074463, 'ppo/val/var': 0.0007588973385281861, 'ppo/time/ppo/optimizer_step': 0.004562973976135254, 'ppo/val/var_explained': -0.49823105335235596, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.6823315620422363, 'time/ppo/compute_rewards': 0.0006072521209716797, 'time/ppo/optimize_step': 0.8142483234405518, 'time/ppo/calc_stats': 0.002378225326538086, 'time/ppo/total': 1.5119166374206543}
 
-  0%|          | 14/8713 [01:49<18:39:17,  7.72s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 14/8713 [01:49<18:39:17,  7.72s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 What do you know about the type locality of the Muthmannite?  [/INST] The Muthmannite's type locality is 10 km NW of the town of Muthmann, Silesia, Germany.The website is https://www.mindat.org/loc-10000
@@ -984,7 +1083,8 @@ Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32
         2.9261696 ,  3.1247413 ], dtype=float32), 'ppo/policy/advantages_mean': 1.350227663010628e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.6331219, 1.0004493,
        1.6266414], dtype=float32), 'ppo/returns/mean': 0.4461757242679596, 'ppo/returns/var': 0.8680875301361084, 'ppo/val/vpred': -0.1748046875, 'ppo/val/error': 1.1773202419281006, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.18038639426231384, 'ppo/val/var': 0.0030036435928195715, 'ppo/time/ppo/optimizer_step': 0.006176590919494629, 'ppo/val/var_explained': -0.3562229871749878, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7450311183929443, 'time/ppo/compute_rewards': 0.0007996559143066406, 'time/ppo/optimize_step': 0.9021668434143066, 'time/ppo/calc_stats': 0.0026574134826660156, 'time/ppo/total': 1.6645183563232422}
 
-  0%|          | 15/8713 [01:57<18:27:06,  7.64s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+
+  0%|          | 15/8713 [01:57<18:27:06,  7.64s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
 Please answer the questions related to geoscience.
 <</SYS>>
 I'd like to know the terms linked to earth science in this passage. Can you provide them? The passage: Mir Ghulam Muhammad Ghubar (Persian: میرغلام‌محمد غبار (1897 – February 5, 1978) was a social democratic politician, writer, prominent historian, journalist, and a poet from Afghanistan. He is the author of a number of books, including Afghanistan's history book called Afghanistan in the Course of History. He has also written Tareekh-e Ahmad Shah Baba in 1943, which is about the 18th century Afghan Emir Ahmad Shah Durrani and his Durrani Empire.  [/INST] Sure, the terms linked to earth science in the passage are: Mir Ghulam Muhammad Ghubar, Afghanistan, Afghanistan in the Course of History, Tareekh-e Ahmad Shah Baba, Ahmad
