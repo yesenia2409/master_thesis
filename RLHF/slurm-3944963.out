@@ -1,0 +1,991 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:04<00:24,  4.89s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:09<00:19,  4.95s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:14<00:15,  5.01s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:19<00:09,  4.86s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:24<00:04,  4.96s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:26<00:00,  3.78s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:26<00:00,  4.37s/it]
+WARNING:root:A <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+You are using the legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This means that tokens that come after special tokens will not be properly handled. We recommend you to read the related pull request available at https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+Map:   0%|          | 0/17427 [00:00<?, ? examples/s]Map:   1%|          | 203/17427 [00:00<00:08, 1985.77 examples/s]Map:   2%|▏         | 432/17427 [00:00<00:08, 2110.91 examples/s]Map:   4%|▎         | 648/17427 [00:00<00:07, 2130.18 examples/s]Map:   5%|▌         | 881/17427 [00:00<00:07, 2202.66 examples/s]Map:   6%|▋         | 1108/17427 [00:00<00:08, 1828.19 examples/s]Map:   8%|▊         | 1325/17427 [00:00<00:08, 1928.54 examples/s]Map:   9%|▉         | 1543/17427 [00:00<00:07, 1993.02 examples/s]Map:  10%|█         | 1767/17427 [00:00<00:07, 2061.36 examples/s]Map:  11%|█▏        | 1995/17427 [00:00<00:07, 2124.50 examples/s]Map:  13%|█▎        | 2329/17427 [00:01<00:08, 1883.16 examples/s]Map:  15%|█▍        | 2555/17427 [00:01<00:07, 1973.41 examples/s]Map:  16%|█▌        | 2789/17427 [00:01<00:07, 2066.72 examples/s]Map:  18%|█▊        | 3107/17427 [00:01<00:07, 1893.23 examples/s]Map:  19%|█▉        | 3326/17427 [00:01<00:07, 1962.12 examples/s]Map:  20%|██        | 3558/17427 [00:01<00:06, 2051.99 examples/s]Map:  22%|██▏       | 3788/17427 [00:01<00:06, 2116.35 examples/s]Map:  24%|██▎       | 4119/17427 [00:02<00:06, 1944.01 examples/s]Map:  25%|██▍       | 4345/17427 [00:02<00:06, 2017.27 examples/s]Map:  26%|██▌       | 4563/17427 [00:02<00:06, 2056.14 examples/s]Map:  27%|██▋       | 4778/17427 [00:02<00:06, 2079.52 examples/s]Map:  29%|██▊       | 4998/17427 [00:02<00:05, 2111.71 examples/s]Map:  31%|███       | 5318/17427 [00:02<00:06, 1871.93 examples/s]Map:  32%|███▏      | 5547/17427 [00:02<00:06, 1968.84 examples/s]Map:  33%|███▎      | 5780/17427 [00:02<00:05, 2058.93 examples/s]Map:  34%|███▍      | 5995/17427 [00:02<00:05, 2079.96 examples/s]Map:  36%|███▌      | 6218/17427 [00:03<00:06, 1821.18 examples/s]Map:  37%|███▋      | 6438/17427 [00:03<00:05, 1915.43 examples/s]Map:  38%|███▊      | 6653/17427 [00:03<00:05, 1972.05 examples/s]Map:  39%|███▉      | 6879/17427 [00:03<00:05, 2049.20 examples/s]Map:  41%|████▏     | 7197/17427 [00:03<00:05, 1783.94 examples/s]Map:  43%|████▎     | 7424/17427 [00:03<00:05, 1895.20 examples/s]Map:  44%|████▍     | 7643/17427 [00:03<00:04, 1967.32 examples/s]Map:  45%|████▌     | 7866/17427 [00:03<00:04, 2033.94 examples/s]Map:  46%|████▋     | 8100/17427 [00:04<00:05, 1827.14 examples/s]Map:  48%|████▊     | 8316/17427 [00:04<00:04, 1907.22 examples/s]Map:  49%|████▉     | 8544/17427 [00:04<00:04, 1997.22 examples/s]Map:  50%|█████     | 8754/17427 [00:04<00:04, 2014.98 examples/s]Map:  52%|█████▏    | 8980/17427 [00:04<00:04, 2081.91 examples/s]Map:  53%|█████▎    | 9220/17427 [00:04<00:04, 1832.62 examples/s]Map:  54%|█████▍    | 9453/17427 [00:04<00:04, 1958.07 examples/s]Map:  55%|█████▌    | 9671/17427 [00:04<00:03, 2014.39 examples/s]Map:  57%|█████▋    | 9901/17427 [00:04<00:03, 2091.42 examples/s]Map:  59%|█████▊    | 10204/17427 [00:05<00:03, 1816.44 examples/s]Map:  60%|█████▉    | 10410/17427 [00:05<00:03, 1868.28 examples/s]Map:  61%|██████    | 10625/17427 [00:05<00:03, 1931.66 examples/s]Map:  62%|██████▏   | 10843/17427 [00:05<00:03, 1989.53 examples/s]Map:  64%|██████▎   | 11084/17427 [00:05<00:03, 1749.69 examples/s]Map:  65%|██████▍   | 11306/17427 [00:05<00:03, 1859.69 examples/s]Map:  67%|██████▋   | 11612/17427 [00:05<00:03, 1917.58 examples/s]Map:  68%|██████▊   | 11829/17427 [00:06<00:02, 1978.74 examples/s]Map:  69%|██████▉   | 12110/17427 [00:06<00:03, 1766.02 examples/s]Map:  71%|███████   | 12328/17427 [00:06<00:02, 1859.26 examples/s]Map:  72%|███████▏  | 12546/17427 [00:06<00:02, 1937.39 examples/s]Map:  73%|███████▎  | 12764/17427 [00:06<00:02, 1998.47 examples/s]Map:  74%|███████▍  | 12976/17427 [00:06<00:02, 2030.07 examples/s]Map:  76%|███████▌  | 13224/17427 [00:06<00:02, 1828.36 examples/s]Map:  77%|███████▋  | 13435/17427 [00:06<00:02, 1897.14 examples/s]Map:  78%|███████▊  | 13668/17427 [00:06<00:01, 2008.70 examples/s]Map:  80%|███████▉  | 13912/17427 [00:07<00:01, 2125.32 examples/s]Map:  82%|████████▏ | 14213/17427 [00:07<00:01, 1883.23 examples/s]Map:  83%|████████▎ | 14449/17427 [00:07<00:01, 1995.16 examples/s]Map:  84%|████████▍ | 14684/17427 [00:07<00:01, 2084.32 examples/s]Map:  86%|████████▌ | 14907/17427 [00:07<00:01, 2112.57 examples/s]Map:  87%|████████▋ | 15226/17427 [00:07<00:01, 1910.89 examples/s]Map:  89%|████████▊ | 15444/17427 [00:07<00:01, 1971.94 examples/s]Map:  90%|█████████ | 15692/17427 [00:07<00:00, 2094.41 examples/s]Map:  91%|█████████▏| 15918/17427 [00:08<00:00, 2135.20 examples/s]Map:  93%|█████████▎| 16220/17427 [00:08<00:00, 1896.41 examples/s]Map:  94%|█████████▍| 16433/17427 [00:08<00:00, 1946.23 examples/s]Map:  96%|█████████▌| 16656/17427 [00:08<00:00, 2017.12 examples/s]Map:  97%|█████████▋| 16883/17427 [00:08<00:00, 2082.29 examples/s]Map:  98%|█████████▊| 17111/17427 [00:08<00:00, 1825.54 examples/s]Map: 100%|█████████▉| 17342/17427 [00:08<00:00, 1943.34 examples/s]Map: 100%|██████████| 17427/17427 [00:08<00:00, 1959.06 examples/s]
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/8713 [00:00<?, ?it/s][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please extract the named entities in: The first fly fossil discovered from the Upper Jurassic Talbragar Fish Bed in Australia is described and illustrated. Based on a single, well preserved wing, Calosargus (Calosargus) talbragarensis new species is assigned to the extinct brachyceran family Archisargidae. Wing morphology suggests a relationship between this extinct family and Stratiomyidae. The Archisargidae have so far only been found in China, Kazakhstan and Mongolia. Calosargus Mostovski, 1997 currently comprises seven species from the Callovian (late Middle Jurassic) of China and three species from the Oxfordian (early Upper Jurassic) of Kazakhstan. This oldest brachyceran fossil from Australia and first record of the Archisargidae in the southern hemisphere presents evidence that higher flies were present in this region in the Jurassic, when this group is thought to have commenced its diversification..  [/INST] The named entities in the passage can be listed as follows: 
+ 
+Calosargus: Location
+Talbragar: Location
+Australia: Location
+Archisargidae: Geo_word
+Stratiomyidae
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Does anyone have experience developing an evaporite karst distribution model?
+I am working with a student to model the distribution of karst in Nova Scotia, Canada, where most karst is underlain by gypsum. We want to map areas with moderate to high probability of surface karst development (we're primarily interested in sink-hole occurrence (dolines)). In addition to bedrock geology, factors that we are considering include depth to water table (previously modelled), overburden depth, and soil porosity (indexed by % of clay in soil). Does anyone have experience with this kind of research? We want to select appropriate parameters for each of these variables (e.g., what depth of overburden, depth to water table, etc.).  [/INST] I have a similar project in the works, and I'm using a similar approach. I'm using a combination of GIS and a statistical model to predict the likelihood of sinkholes in a given area. I'm using a
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 12148,  6597,   278,
+         4257, 16212,   297, 29901,   450,   937, 11340, 21983,   309, 10943,
+          515,   278, 24929, 16081,   465,   293, 10288, 29890,  1431,   279,
+        12030, 14195,   297,  8314,   338,  5439,   322, 26848, 29889, 16564,
+          373,   263,  2323, 29892,  1532, 21634, 21612, 29892,  3037,   359,
+         1191,   375,   313,  7856,   359,  1191,   375, 29897,  5969, 29890,
+         1431,   279,  6322,   716,  6606,   338,  9859,   304,   278,  1294,
+         5562,  4105, 23766,  2265,   273,  3942,  2595,   275,  1191,  3898,
+        29889, 27792, 18131,  3002, 14661,   263,  9443,  1546,   445,  1294,
+         5562,  3942,   322,  3767,  2219, 16103,  3898, 29889,   450,  2595,
+          275,  1191,  3898,   505,   577,  2215,   871,  1063,  1476,   297,
+         7551, 29892, 15198, 19426, 14411,   322, 21952, 18001, 29889,  3037,
+          359,  1191,   375,  7849,   586,  2574, 29892, 29871, 29896, 29929,
+        29929, 29955,  5279,  7199,  4637,  9881,  6606,   515,   278,  3037,
+         5590,   713,   313,  9632, 14253, 16081,   465,   293, 29897,   310,
+         7551,   322,  2211,  6606,   515,   278, 11045,   713,   313,   799,
+          368, 24929, 16081,   465,   293, 29897,   310, 15198, 19426, 14411,
+        29889,   910, 23947,  4105, 23766,  2265,   273, 21983,   309,   515,
+         8314,   322,   937,  2407,   310,   278,  2595,   275,  1191,  3898,
+          297,   278, 14841,  9736,   275,  9085, 22981, 10757,   393,  6133,
+          285,  3687,   892,  2198,   297,   445,  5120,   297,   278, 16081,
+          465,   293, 29892,   746,   445,  2318,   338,  2714,   304,   505,
+          844,  9223,   967,  6894,  2450,   636, 29871,   518, 29914, 25580,
+        29962,   450,  4257, 16212,   297,   278, 13382,   508,   367,  9904,
+          408,  4477, 29901, 29871,    13, 29871,    13,  7856,   359,  1191,
+          375, 29901, 17015,    13, 29911,   284, 29890,  1431,   279, 29901,
+        17015,    13, 22537,   423, 29901, 17015,    13, 13197,   275,  1191,
+         3898, 29901,  1879, 29877, 29918,  1742,    13,  5015,  2219, 16103,
+         3898], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 25125,  5019,   505,
+         7271, 14338,   385,  3415, 26191,   568, 10856,   303,  4978,  1904,
+        29973,    13, 29902,   626,  1985,   411,   263,  8368,   304,  1904,
+          278,  4978,   310, 10856,   303,   297, 16216, 11032,   423, 29892,
+         7400, 29892,   988,  1556, 10856,   303,   338,  1090,  7420,   491,
+        10966, 15663, 29889,  1334,   864,   304,  2910, 10161,   411, 17768,
+          403,   304,  1880,  6976,   310,  7101, 10856,   303,  5849,   313,
+          705, 29915,   276, 19434,  8852,   297, 28169, 29899, 29716, 27170,
+          313, 29881,   324,  1475,  8106,   512,  6124,   304,  6592, 20821,
+         1737,  3002, 29892, 13879,   393,   591,   526, 13858,  3160, 10809,
+          304,  4094,  1591,   313,  1457, 16604,  1904,   839,   511,   975,
+         8399,  1145, 10809, 29892,   322, 22473,  1277,   359,   537,   313,
+         2248,   287,   491,  1273,   310,  1067,   388,   297, 22473,   467,
+         5538,  5019,   505,  7271,   411,   445,  2924,   310,  5925, 29973,
+         1334,   864,   304,  1831,  8210,  4128,   363,  1269,   310,  1438,
+         3651,   313, 29872, 29889, 29887,  1696,   825, 10809,   310,   975,
+         8399,  1145, 29892, 10809,   304,  4094,  1591, 29892,  2992,  6250,
+        29871,   518, 29914, 25580, 29962,   306,   505,   263,  2788,  2060,
+          297,   278,  1736, 29892,   322,   306, 29915, 29885,   773,   263,
+         2788,  2948, 29889,   306, 29915, 29885,   773,   263, 10296,   310,
+          402,  3235,   322,   263, 24148,  1904,   304,  8500,   278,  4188,
+        22342,   310, 28169,  5391,   267,   297,   263,  2183,  4038, 29889,
+          306, 29915, 29885,   773,   263], device='cuda:0')]
+Reward Logits:  tensor([3.6669], device='cuda:0')
+Reward Logits:  tensor([3.5310], device='cuda:0')
+You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.01954  , -22.01954  , -22.01954  , ..., -12.156634 ,
+        -13.1599455, -12.95874  ],
+       [-22.234383 , -22.234383 , -22.234383 , ...,  -6.6274223,
+         -9.682344 ,  -7.968089 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.01954  , -22.01954  , -22.01954  , ..., -12.156634 ,
+        -13.1599455, -12.95874  ],
+       [-22.234383 , -22.234383 , -22.234383 , ...,  -6.6274223,
+         -9.682344 ,  -7.968089 ]], dtype=float32), 'objective/kl_coef': 0.2, 'objective/entropy': 2382.45068359375, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 3.598994731903076, 'ppo/std_scores': 0.0960954874753952, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 273.0, 'tokens/responses_len_std': 39.59798049926758, 'tokens/responses_dist': array([301., 245.], dtype=float32), 'ppo/loss/policy': 0.00018174796423409134, 'ppo/loss/value': 0.29732030630111694, 'ppo/loss/total': 0.029913779348134995, 'ppo/policy/entropy': 8.101482391357422, 'ppo/policy/approxkl': 0.00018714573525357991, 'ppo/policy/policykl': 0.006722963880747557, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-0.40635508, -0.40635508, -0.40635508, ...,  4.342497  ,
+        4.592216  ,  4.8828406 ], dtype=float32), 'ppo/policy/advantages_mean': -4.888316418316663e-09, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0091276 , 0.98074424,
+       0.9325337 ], dtype=float32), 'ppo/returns/mean': -0.1555928885936737, 'ppo/returns/var': 0.5575933456420898, 'ppo/val/vpred': -0.44921875, 'ppo/val/error': 0.5946406126022339, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.4634200930595398, 'ppo/val/var': 0.004232324659824371, 'ppo/time/ppo/optimizer_step': 0.02124643325805664, 'ppo/val/var_explained': -0.06644141674041748, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.9711744785308838, 'time/ppo/compute_rewards': 0.0008637905120849609, 'time/ppo/optimize_step': 1.2042121887207031, 'time/ppo/calc_stats': 0.0033943653106689453, 'time/ppo/total': 2.191368341445923}
+
+  0%|          | 1/8713 [00:08<20:56:38,  8.65s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Could you extract the terms related to earth science mentioned in this passage? The passage: Traditionalist theology, sometimes referred to as the Atharī school, derives its name from the word "tradition" as a translation of the Arabic word hadith or from the Arabic word athar, meaning "narrations". The traditionalist creed is to avoid delving into extensive theological speculation. They rely on the Qur'an, the Sunnah, and sayings of the Sahaba, seeing this as the middle path where the attributes of Allah are accepted without questioning their nature (bi-la kayf). Ahmad ibn Hanbal is regarded as the leader of the traditionalist school of creed. The modern Salafi movement associates itself with the Atharī creed.  [/INST] Certainly, the mentioned terms related to earth science in the passage are: Qur'an, Sunnah, Sahaba, bi-la kayf, Ahmad ibn Hanbal, Salafi.  [/INST
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+I am looking for suggestions for a standard way to analyse marine sediment cores (trace and REE)?
+I am trying to look out for a NIST or canadian standard for analysis of trace and REE elements in marine sediment cores. Previously was using MAG-1 Standard from NIST but now it is unavailable so any alternative to that.  [/INST] I am looking for suggestions for a standard way to analyse marine sediment cores (trace and REE)?
+I am trying to look out for a NIST or canadian standard for analysis of trace and REE elements in marine sediment cores
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 23323,   366,  6597,
+          278,  4958,  4475,   304,  8437, 10466,  5276,   297,   445, 13382,
+        29973,   450, 13382, 29901, 18375,  3245,   391,   278,  3002, 29892,
+         6041, 12992,   304,   408,   278,  9193,   279, 30150,  3762, 29892,
+          589,  3145,   967,  1024,   515,   278,  1734,   376, 29576,   654,
+        29908,   408,   263, 13962,   310,   278, 10387,   293,  1734,   750,
+          389,   470,   515,   278, 10387,   293,  1734, 17622,   279, 29892,
+         6593,   376, 29876,  2749,   800,  1642,   450, 13807,   391,   907,
+          287,   338,   304,  4772,   628,  1747,   964, 20607,   278,  5996,
+         1580,  2785, 29889,  2688, 19104,   373,   278,   660,   332, 29915,
+          273, 29892,   278,   317,  5963,   801, 29892,   322,  1827,   886,
+          310,   278, 24246,  5363, 29892,  8790,   445,   408,   278,  7256,
+         2224,   988,   278,  8393,   310,   838,  8083,   526,  9259,  1728,
+         1139,   292,  1009,  5469,   313,  5365, 29899,   433,   413,   388,
+        29888,   467,   319,  7184,   328, 29736,  7169,  5521,   338, 17878,
+          408,   278, 11822,   310,   278, 13807,   391,  3762,   310,   907,
+          287, 29889,   450,  5400,  3956,  2142, 29875, 10298,  4067,  1078,
+         3528,   411,   278,  9193,   279, 30150,   907,   287, 29889, 29871,
+          518, 29914, 25580, 29962,   315, 13946,   368, 29892,   278,  5276,
+         4958,  4475,   304,  8437, 10466,   297,   278, 13382,   526, 29901,
+          660,   332, 29915,   273, 29892,   317,  5963,   801, 29892, 24246,
+         5363, 29892,  4768, 29899,   433,   413,   388, 29888, 29892,   319,
+         7184,   328, 29736,  7169,  5521, 29892,  3956,  2142, 29875, 29889,
+        29871,   518, 29914, 25580], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 29902,   626,  3063,
+          363, 10529,   363,   263,  3918,   982,   304, 16455,   344, 23585,
+         7048,  2073, 28337,   313, 15003,   322,  5195, 29923,  6877,    13,
+        29902,   626,  1811,   304,  1106,   714,   363,   263,   405,  9047,
+          470, 23801,   713,  3918,   363,  7418,   310,  9637,   322,  5195,
+        29923,  3161,   297, 23585,  7048,  2073, 28337, 29889,  4721, 16604,
+          471,   773,   341, 10051, 29899, 29896, 10117,   515,   405,  9047,
+          541,  1286,   372,   338,   443, 16515,   577,   738,  8671,   304,
+          393, 29889, 29871,   518, 29914, 25580, 29962,   306,   626,  3063,
+          363, 10529,   363,   263,  3918,   982,   304, 16455,   344, 23585,
+         7048,  2073, 28337,   313, 15003,   322,  5195, 29923,  6877,    13,
+        29902,   626,  1811,   304,  1106,   714,   363,   263,   405,  9047,
+          470, 23801,   713,  3918,   363,  7418,   310,  9637,   322,  5195,
+        29923,  3161,   297, 23585,  7048,  2073, 28337], device='cuda:0')]
+Reward Logits:  tensor([3.7959], device='cuda:0')
+Reward Logits:  tensor([2.4664], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.024424, -22.024424, -22.024424, ...,  -6.007363,  -5.154571,
+        -10.69768 ],
+       [-22.275398, -22.275398, -22.273445, ..., -11.536196, -12.455186,
+        -10.40087 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.024424, -22.024424, -22.024424, ...,  -6.007363,  -5.154571,
+        -10.69768 ],
+       [-22.275398, -22.275398, -22.273445, ..., -11.536196, -12.455186,
+        -10.40087 ]], dtype=float32), 'objective/kl_coef': 0.199992, 'objective/entropy': 1887.6474609375, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 3.131134271621704, 'ppo/std_scores': 0.940096914768219, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 205.5, 'tokens/responses_len_std': 68.58935546875, 'tokens/responses_dist': array([254., 157.], dtype=float32), 'ppo/loss/policy': 0.0024687894620001316, 'ppo/loss/value': 0.31816405057907104, 'ppo/loss/total': 0.03428519517183304, 'ppo/policy/entropy': 7.617977142333984, 'ppo/policy/approxkl': 0.0006829712074249983, 'ppo/policy/policykl': -0.0035996870137751102, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-0.44565433, -0.44565433, -0.44565433, ...,  3.4700053 ,
+        3.6515489 ,  3.9221663 ], dtype=float32), 'ppo/policy/advantages_mean': -6.0743587937395205e-09, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99193037, 1.0086498 ,
+       1.018828  ], dtype=float32), 'ppo/returns/mean': -0.12960705161094666, 'ppo/returns/var': 0.5426892042160034, 'ppo/val/vpred': -0.4765625, 'ppo/val/error': 0.6363281011581421, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.4887537956237793, 'ppo/val/var': 0.0028488198295235634, 'ppo/time/ppo/optimizer_step': 0.006035804748535156, 'ppo/val/var_explained': -0.17254602909088135, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8160598278045654, 'time/ppo/compute_rewards': 0.0005750656127929688, 'time/ppo/optimize_step': 1.0189049243927002, 'time/ppo/calc_stats': 0.0034303665161132812, 'time/ppo/total': 1.8523399829864502}
+
+  0%|          | 2/8713 [00:16<19:42:39,  8.15s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What is the influence of chemistry on static liquefaction?
+There are quite a number of factors that influence the static and cyclic liquefaction phenomenon of a geomaterial (tailings or soil) such as confining pressure, initial void ratio, initial stress condition, amount and content of fines, sample preparation method, over consolidation ratio, length of time under sustained pressure etc. Also, authors such as Gratchev et al. (2006) and many others have carried out a series of tests using plasticity index as a benchmark for assessing cyclic behaviour of soil, however, the plasticity index still does not fully capture the whole factors that influence the soil strength under cyclic stress. I would like to know the influence of chemistry on the liquefaction of both montmorillonite and kaoline clay tailings.  [/INST] Dear Dr. Akindele,
+I am not sure if you are still interested in this topic, but I have some information that may be useful to you.
+I have been working on the effect of chemistry on the lique
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Which scientific discipline is most relevant when discussing the term 'saline soil'?
+Choose from:
+A. Geography
+B. Geodesy
+C. Meteorology
+D. Climatology
+E. Oceanography
+F. Geophysics
+G. Geology
+H. Hydrology
+I. Geochemistry
+The answer is:  [/INST] G. Geology. With the meaning of: Soil that contains a high concentration of salt.  [/INST] G. Geology. With the meaning of: Soil that contains a high concentration of salt.  [/INST]
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   338,   278,
+         9949,   310,  8950,  6020,   373,  2294,   619,   802, 29888,  2467,
+        29973,    13,  8439,   526,  3755,   263,  1353,   310, 13879,   393,
+         9949,   278,  2294,   322,  5094, 28746,   619,   802, 29888,  2467,
+        27791,   265,   310,   263, 23216,  3795,   313, 18237,   886,   470,
+        22473, 29897,  1316,   408,  1970,  2827, 12959, 29892,  2847,  1780,
+        11959, 29892,  2847, 22884,  4195, 29892,  5253,   322,  2793,   310,
+         1436,   267, 29892,  4559, 10223,   362,  1158, 29892,   975,  1136,
+        17211,   362, 11959, 29892,  3309,   310,   931,  1090, 15075,  7114,
+        12959,  2992, 29889,  3115, 29892, 15717,  1316,   408,  1632,   905,
+         5750,   634,   394, 29889,   313, 29906, 29900, 29900, 29953, 29897,
+          322,  1784,  4045,   505,  8988,   714,   263,  3652,   310,  6987,
+          773,   715,  6288,   537,  2380,   408,   263, 23513,   363, 24809,
+          292,  5094, 28746, 10468,   310, 22473, 29892,  3138, 29892,   278,
+          715,  6288,   537,  2380,  1603,   947,   451,  8072, 10446,   278,
+         3353, 13879,   393,  9949,   278, 22473,  9324,  1090,  5094, 28746,
+        22884, 29889,   306,   723,   763,   304,  1073,   278,  9949,   310,
+         8950,  6020,   373,   278,   619,   802, 29888,  2467,   310,  1716,
+         7629, 12257, 12794,   568,   322, 13560, 26496,  1067,   388, 12464,
+          886, 29889, 29871,   518, 29914, 25580, 29962,   360,   799,  4942,
+        29889,   319,  9089,   311,   280, 29892,    13, 29902,   626,   451,
+         1854,   565,   366,   526,  1603,  8852,   297,   445, 11261, 29892,
+          541,   306,   505,   777,  2472,   393,  1122,   367,  5407,   304,
+          366, 29889,    13, 29902,   505,  1063,  1985,   373,   278,  2779,
+          310,  8950,  6020,   373,   278,   619,   802], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  8809,   436, 16021,
+        29822,   338,  1556,  8018,   746,  5353,   292,   278,  1840,   525,
+        19585,   457, 22473, 29915, 29973,    13, 15954,   852,   515, 29901,
+           13, 29909, 29889, 27340,    13, 29933, 29889,  1879,  2631, 29891,
+           13, 29907, 29889, 29573,  3002,    13, 29928, 29889,  2233, 15840,
+         3002,    13, 29923, 29889, 21091,  5275,    13, 29943, 29889,  1879,
+         3021,   952,  1199,    13, 29954, 29889,  1879,  3002,    13, 29950,
+        29889,   379, 11279,  1188, 29891,    13, 29902, 29889,  1879,  2878,
+          331,  6020,    13,  1576,  1234,   338, 29901, 29871,   518, 29914,
+        25580, 29962,   402, 29889,  1879,  3002, 29889,  2973,   278,  6593,
+          310, 29901,  1105,   309,   393,  3743,   263,  1880, 26702,   310,
+        15795, 29889, 29871,   518, 29914, 25580, 29962,   402, 29889,  1879,
+         3002, 29889,  2973,   278,  6593,   310, 29901,  1105,   309,   393,
+         3743,   263,  1880, 26702,   310, 15795, 29889, 29871,   518, 29914,
+        25580, 29962], device='cuda:0')]
+Reward Logits:  tensor([0.7232], device='cuda:0')
+Reward Logits:  tensor([0.9987], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.0254   , -22.0254   , -22.0254   , ...,  -8.504293 ,
+        -11.478672 ,  -9.950958 ],
+       [-22.273445 , -22.274422 , -22.143562 , ...,  -5.1127605,
+        -10.631628 ,  -7.9783134]], dtype=float32), 'objective/ref_logprobs': array([[-22.0254   , -22.0254   , -22.0254   , ...,  -8.504293 ,
+        -11.478672 ,  -9.950958 ],
+       [-22.273445 , -22.274422 , -22.143562 , ...,  -5.1127605,
+        -10.631628 ,  -7.9783134]], dtype=float32), 'objective/kl_coef': 0.19998400032, 'objective/entropy': 1920.93896484375, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 0.8609336018562317, 'ppo/std_scores': 0.1947755068540573, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 214.5, 'tokens/responses_len_std': 74.2462158203125, 'tokens/responses_dist': array([267., 162.], dtype=float32), 'ppo/loss/policy': -0.0024353524204343557, 'ppo/loss/value': 0.04307897388935089, 'ppo/loss/total': 0.0018725449917837977, 'ppo/policy/entropy': 7.46450138092041, 'ppo/policy/approxkl': 0.0007947605918161571, 'ppo/policy/policykl': 0.00698450393974781, 'ppo/policy/clipfrac': 0.006172839552164078, 'ppo/policy/advantages': array([-0.49472055, -0.49472055, -0.49472055, ...,  3.5506818 ,
+        3.6725616 ,  3.932393  ], dtype=float32), 'ppo/policy/advantages_mean': 9.557909130819553e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0007188, 0.9970185,
+       0.9626559], dtype=float32), 'ppo/returns/mean': -0.29542821645736694, 'ppo/returns/var': 0.07783310115337372, 'ppo/val/vpred': -0.419921875, 'ppo/val/error': 0.08615794777870178, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.4307892918586731, 'ppo/val/var': 0.0025915505830198526, 'ppo/time/ppo/optimizer_step': 0.005902528762817383, 'ppo/val/var_explained': -0.10695767402648926, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8964273929595947, 'time/ppo/compute_rewards': 0.0007078647613525391, 'time/ppo/optimize_step': 1.0905437469482422, 'time/ppo/calc_stats': 0.002568960189819336, 'time/ppo/total': 2.0042459964752197}
+
+  0%|          | 3/8713 [00:24<19:30:33,  8.06s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you elaborate on premise in connection with 11.22.63?  [/INST] Certainly, when discussing 11.22.63,  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you identify the key terms related to earth science mentioned in this passage? The passage: Baker raised two daughters, French-born Marianne and Moroccan-born Stellina, and 10 sons, Japanese-born Janot (born Teruya) and Akio, Colombian-born Luis, Finnish-born Jari (now Jarry), French-born Jean-Claude, Noël, and Moïse, Algerian-born Brahim (later Brian), Ivorian-born Koffi, and Venezuelan-born Mara. Later on, Josephine Baker would become the legal guardian of another boy, also named Jean-Claude, and considered him an unofficial addition to the Rainbow Tribe. For some time, Baker lived with her children and an enormous staff in the château in Dordogne, France, with her fourth husband, Jo Bouillon. Bouillon claimed that Baker bore one child, it was stillborn in 1941, an incident that precipitated an emergency hysterectomy.  [/INST] Sure, the terms related to earth science mentioned in the passage include: Jean-Claude, Josephine Baker, Jo Bouillon, France, Dordogne, Château, 1941, Hysterectomy.  [
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  6028,   366, 19430,
+          373,  5188,   895,   297,  3957,   411, 29871, 29896, 29896, 29889,
+        29906, 29906, 29889, 29953, 29941, 29973, 29871,   518, 29914, 25580,
+        29962,   315, 13946,   368, 29892,   746,  5353,   292, 29871, 29896,
+        29896, 29889, 29906, 29906, 29889, 29953, 29941, 29892,   259,    13,
+        29871,    13, 29871,    13, 29871,    13, 29871,    13, 29871,    13,
+        29871,    13, 29871,    13, 29871,    13, 29871,    13, 29871,    13,
+        29871,    13, 29871,    13, 29871,    13, 29871,    13, 29871,    13,
+        29871], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  6028,   366, 12439,
+          278,  1820,  4958,  4475,   304,  8437, 10466,  5276,   297,   445,
+        13382, 29973,   450, 13382, 29901, 22652, 10425,  1023, 29215, 29892,
+         5176, 29899,  4939, 24236,   484,   322,  3879,   542,  3068, 29899,
+         4939,   624,   514,  1099, 29892,   322, 29871, 29896, 29900, 18025,
+        29892, 10369, 29899,  4939,  2627,   327,   313,  4939,  5061, 29884,
+         3761, 29897,   322, 10813,   601, 29892, 15253,   713, 29899,  4939,
+        12583, 29892, 21189,   728, 29899,  4939,   435,  1306,   313,  3707,
+        15864,   719,   511,  5176, 29899,  4939,  4581, 29899, 20216,  1151,
+        29892,  1939, 13929, 29892,   322,  4546, 30085,   344, 29892,   838,
+          914,   713, 29899,  4939,  5032, 26994,   313, 29880,  1008, 15733,
+          511,   306,  5267,   713, 29899,  4939,   476,  2696, 29875, 29892,
+          322, 13915,  2491,   273, 29899,  4939,  1085, 29874, 29889, 12699,
+          373, 29892,  6936,   457, 22652,   723,  4953,   278, 11706,  8372,
+          713,   310,  1790,  8023, 29892,   884,  4257,  4581, 29899, 20216,
+         1151, 29892,   322,  5545,  1075,   385,  6888,  7880,  6124,   304,
+          278, 21431, 17729,  8602,   915, 29889,  1152,   777,   931, 29892,
+        22652, 10600,   411,   902,  4344,   322,   385, 18886,   681, 13925,
+          297,   278, 20085,   297,   360,   536, 25666, 29892,  3444, 29892,
+          411,   902, 11582, 10216, 29892,  3650, 12476, 12794, 29889, 12476,
+        12794, 17049,   393, 22652, 23888,   697,  2278, 29892,   372,   471,
+         1603,  4939,   297, 29871, 29896, 29929, 29946, 29896, 29892,   385,
+        15134,   393, 25720, 22731,   385, 11176, 14703,   298,   858,   406,
+          312, 16103, 29889, 29871,   518, 29914, 25580, 29962, 18585, 29892,
+          278,  4958,  4475,   304,  8437, 10466,  5276,   297,   278, 13382,
+         3160, 29901,  4581, 29899, 20216,  1151, 29892,  6936,   457, 22652,
+        29892,  3650, 12476, 12794, 29892,  3444, 29892,   360,   536, 25666,
+        29892,   678, 13796, 29892, 29871, 29896, 29929, 29946, 29896, 29892,
+          379,   858,   406,   312, 16103, 29889, 29871,   518],
+       device='cuda:0')]
+Reward Logits:  tensor([-1.9810], device='cuda:0')
+Reward Logits:  tensor([2.5852], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.159187 , -22.159187 , -22.159187 , ...,  -9.244893 ,
+         -7.79629  ,  -9.395486 ],
+       [-22.027353 , -22.027353 , -22.027353 , ...,  -3.5599928,
+         -5.640316 ,  -5.499859 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.159187 , -22.159187 , -22.159187 , ...,  -9.244893 ,
+         -7.79629  ,  -9.395486 ],
+       [-22.027353 , -22.027353 , -22.027353 , ...,  -3.5599928,
+         -5.640316 ,  -5.499859 ]], dtype=float32), 'objective/kl_coef': 0.1999760009599872, 'objective/entropy': 2037.759765625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 0.30209577083587646, 'ppo/std_scores': 3.2288451194763184, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 204.5, 'tokens/responses_len_std': 146.37110900878906, 'tokens/responses_dist': array([101., 308.], dtype=float32), 'ppo/loss/policy': 0.009917042218148708, 'ppo/loss/value': 0.1265866458415985, 'ppo/loss/total': 0.022575708106160164, 'ppo/policy/entropy': 4.572571277618408, 'ppo/policy/approxkl': 0.002260427689179778, 'ppo/policy/policykl': 0.007675310596823692, 'ppo/policy/clipfrac': 0.004950494971126318, 'ppo/policy/advantages': array([-0.4080455, -0.4080455, -0.4080455, ..., -2.8205154, -2.9528134,
+       -3.2106113], dtype=float32), 'ppo/policy/advantages_mean': -1.888463962984588e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.9216597 , 0.90192336,
+       1.007723  ], dtype=float32), 'ppo/returns/mean': -0.39302554726600647, 'ppo/returns/var': 0.20431342720985413, 'ppo/val/vpred': -0.328125, 'ppo/val/error': 0.253173291683197, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.3322976529598236, 'ppo/val/var': 0.002193432068452239, 'ppo/time/ppo/optimizer_step': 0.005722999572753906, 'ppo/val/var_explained': -0.23914170265197754, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8825175762176514, 'time/ppo/compute_rewards': 0.0008482933044433594, 'time/ppo/optimize_step': 1.0684611797332764, 'time/ppo/calc_stats': 0.003167390823364258, 'time/ppo/total': 1.9698030948638916}
+
+  0%|          | 4/8713 [00:32<19:23:51,  8.02s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is tribe ptychomphalides wenz a narrower category or subdiscipline within genus ptychomphalus agassiz, 1839 in geoscience?  [/INST] False.
+The definition of genus ptychomphalus agassiz, 1839 is that loading, while the concept tribe ptychomphalides wenz means that loading 
+loading 
+loading 
+loading
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Identify the scientific discipline associated with the term 'swale':
+Choose from:
+A. Meteorology
+B. Hydrology
+C. Geography
+D. Geophysics
+E. Climatology
+F. Geology
+G. Geodesy
+H. Oceanography
+I. Geochemistry
+The answer is:  [/INST] F. Geology. With the meaning of: A shallow depression in the ground surface, often forming a drainage line. 
+  [/INST] F. Geology. With the meaning of: A shallow depression
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  3624, 29563,   282,
+         1017,   305,   290, 17206,  2247,   281,  4666,   263, 17655,   307,
+          556,  7663,   470,  1014,  2218, 13326,   457,  2629, 16106,   282,
+         1017,   305,   290, 17206,   375,   946,   465,   466, 29892, 29871,
+        29896, 29947, 29941, 29929,   297,  1737,   359, 15277, 29973, 29871,
+          518, 29914, 25580, 29962,  7700, 29889,    13,  1576,  5023,   310,
+        16106,   282,  1017,   305,   290, 17206,   375,   946,   465,   466,
+        29892, 29871, 29896, 29947, 29941, 29929,   338,   393,  8363, 29892,
+         1550,   278,  6964, 29563,   282,  1017,   305,   290, 17206,  2247,
+          281,  4666,  2794,   393,  8363, 29871,    13, 13234, 29871,    13,
+        13234, 29871,    13, 13234], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  7648,  1598,   278,
+        16021, 29822,  6942,   411,   278,  1840,   525,  2774,   744,  2396,
+           13, 15954,   852,   515, 29901,    13, 29909, 29889, 29573,  3002,
+           13, 29933, 29889,   379, 11279,  1188, 29891,    13, 29907, 29889,
+        27340,    13, 29928, 29889,  1879,  3021,   952,  1199,    13, 29923,
+        29889,  2233, 15840,  3002,    13, 29943, 29889,  1879,  3002,    13,
+        29954, 29889,  1879,  2631, 29891,    13, 29950, 29889, 21091,  5275,
+           13, 29902, 29889,  1879,  2878,   331,  6020,    13,  1576,  1234,
+          338, 29901, 29871,   518, 29914, 25580, 29962,   383, 29889,  1879,
+         3002, 29889,  2973,   278,  6593,   310, 29901,   319,  4091,   340,
+          316,  2590,   297,   278,  5962,  7101, 29892,  4049, 25391,   263,
+          270,  6038,   482,  1196, 29889, 29871,    13, 29871,   518, 29914,
+        25580, 29962,   383, 29889,  1879,  3002, 29889,  2973,   278,  6593,
+          310, 29901,   319,  4091,   340,   316,  2590], device='cuda:0')]
+Reward Logits:  tensor([0.9697], device='cuda:0')
+Reward Logits:  tensor([3.0105], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.285164 , -22.287117 , -22.28614  , ...,  -8.028196 ,
+         -6.3435698, -11.398834 ],
+       [-22.030283 , -22.030283 , -22.030283 , ...,  -9.397812 ,
+         -8.631843 , -11.108991 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.285164 , -22.287117 , -22.28614  , ...,  -8.028196 ,
+         -6.3435698, -11.398834 ],
+       [-22.030283 , -22.030283 , -22.030283 , ...,  -9.397812 ,
+         -8.631843 , -11.108991 ]], dtype=float32), 'objective/kl_coef': 0.1999680019199488, 'objective/entropy': 1531.60693359375, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.9900875091552734, 'ppo/std_scores': 1.4430639743804932, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 140.5, 'tokens/responses_len_std': 23.334524154663086, 'tokens/responses_dist': array([124., 157.], dtype=float32), 'ppo/loss/policy': -0.004509394522756338, 'ppo/loss/value': 0.230636328458786, 'ppo/loss/total': 0.018554238602519035, 'ppo/policy/entropy': 5.054559230804443, 'ppo/policy/approxkl': 0.0013270567869767547, 'ppo/policy/policykl': 0.012485609389841557, 'ppo/policy/clipfrac': 0.01592356711626053, 'ppo/policy/advantages': array([-0.64070743, -0.64070743, -0.64070743, ...,  3.467225  ,
+        3.6366239 ,  3.8879652 ], dtype=float32), 'ppo/policy/advantages_mean': 0.0, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99283504, 0.99245834,
+       0.9896597 ], dtype=float32), 'ppo/returns/mean': -0.09439872950315475, 'ppo/returns/var': 0.3492682874202728, 'ppo/val/vpred': -0.419921875, 'ppo/val/error': 0.461272656917572, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.42222854495048523, 'ppo/val/var': 0.00039750378346070647, 'ppo/time/ppo/optimizer_step': 0.005409836769104004, 'ppo/val/var_explained': -0.3206828832626343, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7984354496002197, 'time/ppo/compute_rewards': 0.0010509490966796875, 'time/ppo/optimize_step': 0.9703731536865234, 'time/ppo/calc_stats': 0.0025644302368164062, 'time/ppo/total': 1.7867915630340576}
+
+  0%|          | 5/8713 [00:40<19:07:35,  7.91s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+I'd like to know a synonym for the word 'hydrographic basin'.  [/INST] You should see drainage basin. 
+  [/INST] I'd like to know a synonym for the word 'hydrographic basin'.  [/INST] You should see drainage basin.
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please extract the named entities in: An example of parasitic drilling in a rhynchonelliform brachiopod is described from the Shiyanhe Formation (Katian, Upper Ordovician) of Henan, central China. The boring extends into the shell almost perpendicular to the surface. The shell has been serially sectioned, and the trace (including boring and bioclaustration) has been modeled in three dimensions. Healing of the shell evident in serial sections supports a long-term relationship between the brachiopod and borer that we interpret as parasitic. Platyceratid gastropods, found at the same locality as these brachiopods, are the most likely drilling organism. Previous reports of Paleozoic brachiopod parasitic traces can be classified into two main groups, constructive association and destructive association, depending on whether parasites damage brachiopod shells. The example in this study belongs to the second type as the brachiopod shell has been partly damaged by the borer..  [/INST] The named entities in the passage can be listed as follows: 
+ 
+Parasitic drilling: Location
+Henan: Location
+Shiyanhe Formation: Location
+Katian: Period
+Upper Ordovician:
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 29902, 29915, 29881,
+          763,   304,  1073,   263,  5222,  4735,   363,   278,  1734,   525,
+        29882, 11279,  4262,   293,  2362,   262,  4286, 29871,   518, 29914,
+        25580, 29962,   887,   881,  1074,   270,  6038,   482,  2362,   262,
+        29889, 29871,    13, 29871,   518, 29914, 25580, 29962,   306, 29915,
+        29881,   763,   304,  1073,   263,  5222,  4735,   363,   278,  1734,
+          525, 29882, 11279,  4262,   293,  2362,   262,  4286, 29871,   518,
+        29914, 25580, 29962,   887,   881,  1074,   270,  6038,   482,  2362,
+          262, 29889], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 12148,  6597,   278,
+         4257, 16212,   297, 29901,   530,  1342,   310,   610,   294,   277,
+          293,  4192,  8873,   297,   263, 18178,   948,   305,   265,   514,
+         5560,  4105,  4161,   459,   397,   338,  5439,   515,   278,  1383,
+        29875, 10094,   354,  3812,   362,   313, 29968,   271,   713, 29892,
+        24929, 16557,   586,  8910, 29897,   310,  4114,   273, 29892,  6555,
+         7551, 29889,   450,   289,  8253,  4988,   964,   278,  6473,  4359,
+          639, 14081, 16311,   304,   278,  7101, 29889,   450,  6473,   756,
+         1063,  7797,   368,  4004,   287, 29892,   322,   278,  9637,   313,
+        18271,   289,  8253,   322,  4768,   542,   433, 11036, 29897,   756,
+         1063,  4464,   839,   297,  2211, 13391, 29889,   940, 12818,   310,
+          278,  6473, 13602,   297,  7797, 13926, 11286,   263,  1472, 29899,
+         8489,  9443,  1546,   278,  4105,  4161,   459,   397,   322,   289,
+         9386,   393,   591,  6613,   408,   610,   294,   277,   293, 29889,
+         1858, 11156,  2265,   271,   333,   330,   579,  1336, 19653, 29892,
+         1476,   472,   278,  1021,  1887,   537,   408,  1438,  4105,  4161,
+          459, 19653, 29892,   526,   278,  1556,  5517,  4192,  8873,  2894,
+         1608, 29889,  4721,  2366, 13676,   310, 26412,  2112, 29877,   293,
+         4105,  4161,   459,   397,   610,   294,   277,   293, 26695,   508,
+          367,   770,  2164,   964,  1023,  1667,  6471, 29892,  3386,   573,
+        15477,   322, 17912,   573, 15477, 29892,  8679,   373,  3692,   610,
+          294,  3246, 18658,  4105,  4161,   459,   397,  6473, 29879, 29889,
+          450,  1342,   297,   445,  6559, 14393,   304,   278,  1473,  1134,
+          408,   278,  4105,  4161,   459,   397,  6473,   756,  1063, 22669,
+         5625,  4063,   491,   278,   289,  9386,   636, 29871,   518, 29914,
+        25580, 29962,   450,  4257, 16212,   297,   278, 13382,   508,   367,
+         9904,   408,  4477, 29901, 29871,    13, 29871,    13,  2177,   294,
+          277,   293,  4192,  8873, 29901, 17015,    13, 24030,   273, 29901,
+        17015,    13,  2713, 29875, 10094,   354,  3812,   362, 29901, 17015,
+           13, 29968,   271,   713, 29901, 29498,    13, 26214, 16557,   586,
+         8910, 29901], device='cuda:0')]
+Reward Logits:  tensor([-0.0420], device='cuda:0')
+Reward Logits:  tensor([4.0825], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.16407  , -22.16407  , -22.167976 , ..., -12.103152 ,
+         -9.134117 ,  -7.4105043],
+       [-22.03126  , -22.03126  , -22.03126  , ...,  -9.691756 ,
+        -12.490603 ,  -4.51317  ]], dtype=float32), 'objective/ref_logprobs': array([[-22.16407  , -22.16407  , -22.167976 , ..., -12.103152 ,
+         -9.134117 ,  -7.4105043],
+       [-22.03126  , -22.03126  , -22.03126  , ...,  -9.691756 ,
+        -12.490603 ,  -4.51317  ]], dtype=float32), 'objective/kl_coef': 0.19996000319987198, 'objective/entropy': 2152.556640625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 2.0202345848083496, 'ppo/std_scores': 2.9164721965789795, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 212.0, 'tokens/responses_len_std': 155.56349182128906, 'tokens/responses_dist': array([102., 322.], dtype=float32), 'ppo/loss/policy': 0.00014221188030205667, 'ppo/loss/value': 0.14305035769939423, 'ppo/loss/total': 0.014447247609496117, 'ppo/policy/entropy': 4.466419696807861, 'ppo/policy/approxkl': 5.746557508246042e-05, 'ppo/policy/policykl': -0.00036190569517202675, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-0.6661048, -0.6661048, -0.6661048, ...,  5.0142255,  5.3197713,
+        5.5988264], dtype=float32), 'ppo/policy/advantages_mean': -4.332243719318285e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.021633 , 1.003601 ,
+       1.0086349], dtype=float32), 'ppo/returns/mean': -0.11893786489963531, 'ppo/returns/var': 0.2658231258392334, 'ppo/val/vpred': -0.283203125, 'ppo/val/error': 0.28610071539878845, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.28743091225624084, 'ppo/val/var': 0.0019055780721828341, 'ppo/time/ppo/optimizer_step': 0.00588834285736084, 'ppo/val/var_explained': -0.07628226280212402, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8894574642181396, 'time/ppo/compute_rewards': 0.0006792545318603516, 'time/ppo/optimize_step': 1.078378438949585, 'time/ppo/calc_stats': 0.0026481151580810547, 'time/ppo/total': 1.984149694442749}
+
+  0%|          | 6/8713 [00:48<19:12:53,  7.94s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What can be proved by the illustration?
+[START_FIGURE] modeled plane wave reflected or transmitted amplitudes versus the angle of incidence at 780 khz for the water saturated porous medium described in table 1 for (a) p wave in water incident on the porous medium. (b) p1 (fast) wave in the porous medium incident on water. (c) p2 (slow) wave in the porous medium incident on water. (d) s wave in the porous medium incident on water. in figures 1a– 1d, the incident wave has an amplitude of unity for the average amplitude between the solid and the fluid components according to equation (2). consequently, the transmitted p wave is larger than unity.[END_FIGURE]  [/INST] The illustration can be used to prove that the transmitted p wave is larger than unity.  [/INST] The illustration can be used to prove that the transmitted p wave is larger than unity.  [/INST] The illustr
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What are the different branches of geoscience that genus polyartemia fischer, 1851 is part of?  [/INST] Some branches of geoscience that genus polyartemia fischer, 1851 is part of include family polyartemiidae.
+The definition of genus polyartemia fischer, 1851 is that loading, while
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   508,   367,
+        11827,   491,   278,  8632,   362, 29973,    13, 29961, 25826, 29918,
+        18667, 11499, 29962,  4464,   839, 10694, 10742, 25312,   470, 18750,
+         4430, 22252,  8192, 23797,   278, 10696,   310,  5528,  5084,   472,
+        29871, 29955, 29947, 29900,   413, 29882, 29920,   363,   278,  4094,
+          269,  1337,   630,  1277,   681, 18350,  5439,   297,  1591, 29871,
+        29896,   363,   313, 29874, 29897,   282, 10742,   297,  4094, 15134,
+          373,   278,  1277,   681, 18350, 29889,   313, 29890, 29897,   282,
+        29896,   313, 11255, 29897, 10742,   297,   278,  1277,   681, 18350,
+        15134,   373,  4094, 29889,   313, 29883, 29897,   282, 29906,   313,
+        28544, 29897, 10742,   297,   278,  1277,   681, 18350, 15134,   373,
+         4094, 29889,   313, 29881, 29897,   269, 10742,   297,   278,  1277,
+          681, 18350, 15134,   373,  4094, 29889,   297, 13994, 29871, 29896,
+        29874, 29994, 29871, 29896, 29881, 29892,   278, 15134, 10742,   756,
+          385, 28347,   310, 20107,   363,   278,  6588, 28347,  1546,   278,
+         7773,   322,   278, 22576,  7117,  5034,   304,  6306,   313, 29906,
+          467, 14161,  2705, 29892,   278, 18750,  4430,   282, 10742,   338,
+         7200,  1135, 20107,  7226, 11794, 29918, 18667, 11499, 29962, 29871,
+          518, 29914, 25580, 29962,   450,  8632,   362,   508,   367,  1304,
+          304,  6356,   393,   278, 18750,  4430,   282, 10742,   338,  7200,
+         1135, 20107, 29889, 29871,   518, 29914, 25580, 29962,   450,  8632,
+          362,   508,   367,  1304,   304,  6356,   393,   278, 18750,  4430,
+          282, 10742,   338,  7200,  1135, 20107, 29889, 29871,   518, 29914,
+        25580, 29962,   450,  8632], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   526,   278,
+         1422, 14202,   310,  1737,   359, 15277,   393, 16106, 15680,   442,
+        29747,   285,  3208, 29892, 29871, 29896, 29947, 29945, 29896,   338,
+          760,   310, 29973, 29871,   518, 29914, 25580, 29962,  3834, 14202,
+          310,  1737,   359, 15277,   393, 16106, 15680,   442, 29747,   285,
+         3208, 29892, 29871, 29896, 29947, 29945, 29896,   338,   760,   310,
+         3160,  3942, 15680,   442, 14208,  3898, 29889,    13,  1576,  5023,
+          310, 16106, 15680,   442, 29747,   285,  3208, 29892, 29871, 29896,
+        29947, 29945, 29896,   338,   393,  8363, 29892,  1550],
+       device='cuda:0')]
+Reward Logits:  tensor([2.0338], device='cuda:0')
+Reward Logits:  tensor([1.5425], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.035166, -22.035166, -22.035166, ...,  -7.43427 ,  -8.596163,
+        -11.056086],
+       [-22.16993 , -22.165047, -22.165047, ..., -11.224682,  -7.768896,
+        -11.537288]], dtype=float32), 'objective/ref_logprobs': array([[-22.035166, -22.035166, -22.035166, ...,  -7.43427 ,  -8.596163,
+        -11.056086],
+       [-22.16993 , -22.165047, -22.165047, ..., -11.224682,  -7.768896,
+        -11.537288]], dtype=float32), 'objective/kl_coef': 0.19995200479974398, 'objective/entropy': 1835.55615234375, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.7881309986114502, 'ppo/std_scores': 0.3473948836326599, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 181.0, 'tokens/responses_len_std': 103.23758697509766, 'tokens/responses_dist': array([254., 108.], dtype=float32), 'ppo/loss/policy': 6.855942046968266e-05, 'ppo/loss/value': 0.1399577111005783, 'ppo/loss/total': 0.014064330607652664, 'ppo/policy/entropy': 4.930863857269287, 'ppo/policy/approxkl': 0.00042186008067801595, 'ppo/policy/policykl': 0.0007259447011165321, 'ppo/policy/clipfrac': 0.0019685039296746254, 'ppo/policy/advantages': array([-0.7252667, -0.7252667, -0.7252667, ...,  4.4294925,  4.7803755,
+        4.917795 ], dtype=float32), 'ppo/policy/advantages_mean': -2.2527739673705582e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0136923 , 1.0113738 ,
+       0.99718016], dtype=float32), 'ppo/returns/mean': -0.057523466646671295, 'ppo/returns/var': 0.21030837297439575, 'ppo/val/vpred': -0.32421875, 'ppo/val/error': 0.2799154222011566, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.3293613791465759, 'ppo/val/var': 0.0026526786386966705, 'ppo/time/ppo/optimizer_step': 0.006249189376831055, 'ppo/val/var_explained': -0.33097612857818604, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8146781921386719, 'time/ppo/compute_rewards': 0.000698089599609375, 'time/ppo/optimize_step': 0.9998092651367188, 'time/ppo/calc_stats': 0.0025415420532226562, 'time/ppo/total': 1.8316748142242432}
+
+  0%|          | 7/8713 [00:55<19:02:46,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Could you share the measured chemistry of the Stibnite?  [/INST] Of course, the Stibnite's measured chemistry is No Corresponding Information.  [/INST] Of course, the Stibnite's measured chemistry is No Corresponding Information.  [/INST]
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+How can I differentiate igneous and metamorphic zircon base on the REE analyses of zircon?
+How can I differentiate igneous and metamorphic zircon base on the REE of zircon for example Eu, CE anomaly or enrichment of HREE
+can anyone suggest references?  [/INST] Dear Amin,
+I think you should look at the REE patterns of the zircon. Igneous zircon has a flat REE pattern, while metamorphic zircon has a positive Eu anomaly.
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 23323,   366,  6232,
+          278, 17005,  8950,  6020,   310,   278,   624,   747, 29876,   568,
+        29973, 29871,   518, 29914, 25580, 29962,  4587,  3236, 29892,   278,
+          624,   747, 29876,   568, 29915, 29879, 17005,  8950,  6020,   338,
+         1939,  2994,  3636,   292, 10343, 29889, 29871,   518, 29914, 25580,
+        29962,  4587,  3236, 29892,   278,   624,   747, 29876,   568, 29915,
+        29879, 17005,  8950,  6020,   338,  1939,  2994,  3636,   292, 10343,
+        29889, 29871,   518, 29914, 25580, 29962], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5328,   508,   306,
+        17473,   403, 29871,  4895,   681,   322,  1539,   314,  5676,   293,
+          503,   381,   535,  2967,   373,   278,  5195, 29923,  3483,   952,
+          267,   310,   503,   381,   535, 29973,    13,  5328,   508,   306,
+        17473,   403, 29871,  4895,   681,   322,  1539,   314,  5676,   293,
+          503,   381,   535,  2967,   373,   278,  5195, 29923,   310,   503,
+          381,   535,   363,  1342, 16430, 29892, 14645, 30081,   273,   290,
+        14997,   470,   427,  4018,   358,   310,   379, 21661,    13,  3068,
+         5019,  4368,  9282, 29973, 29871,   518, 29914, 25580, 29962,   360,
+          799,   319,  1195, 29892,    13, 29902,  1348,   366,   881,  1106,
+          472,   278,  5195, 29923, 15038,   310,   278,   503,   381,   535,
+        29889, 12815,   484,   681,   503,   381,   535,   756,   263, 12151,
+         5195, 29923,  4766, 29892,  1550,  1539,   314,  5676,   293,   503,
+          381,   535,   756,   263,  6374, 16430, 29342, 14997, 29889],
+       device='cuda:0')]
+Reward Logits:  tensor([0.3608], device='cuda:0')
+Reward Logits:  tensor([2.3125], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.167976 , -22.173836 , -22.167976 , ..., -10.201987 ,
+        -11.1908245, -12.627397 ],
+       [-22.039072 , -22.039072 , -22.039072 , ..., -10.138904 ,
+        -10.940956 ,  -4.9638867]], dtype=float32), 'objective/ref_logprobs': array([[-22.167976 , -22.173836 , -22.167976 , ..., -10.201987 ,
+        -11.1908245, -12.627397 ],
+       [-22.039072 , -22.039072 , -22.039072 , ..., -10.138904 ,
+        -10.940956 ,  -4.9638867]], dtype=float32), 'objective/kl_coef': 0.19994400671955198, 'objective/entropy': 1549.9619140625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.3366551399230957, 'ppo/std_scores': 1.38010573387146, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 127.5, 'tokens/responses_len_std': 44.547725677490234, 'tokens/responses_dist': array([ 96., 159.], dtype=float32), 'ppo/loss/policy': 0.0022347690537571907, 'ppo/loss/value': 0.1284685581922531, 'ppo/loss/total': 0.015081624500453472, 'ppo/policy/entropy': 3.6654372215270996, 'ppo/policy/approxkl': 0.0018174884608015418, 'ppo/policy/policykl': 0.006706135347485542, 'ppo/policy/clipfrac': 0.02083333395421505, 'ppo/policy/advantages': array([-0.5779644, -0.5779644, -0.5779644, ...,  2.7333417,  2.950471 ,
+        3.125562 ], dtype=float32), 'ppo/policy/advantages_mean': -1.1995902937655956e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.9999685 , 0.76600015,
+       1.0019885 ], dtype=float32), 'ppo/returns/mean': -0.133561909198761, 'ppo/returns/var': 0.20002736151218414, 'ppo/val/vpred': -0.375, 'ppo/val/error': 0.2569371163845062, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.3785707354545593, 'ppo/val/var': 0.0002843440161086619, 'ppo/time/ppo/optimizer_step': 0.00587153434753418, 'ppo/val/var_explained': -0.28450989723205566, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7977044582366943, 'time/ppo/compute_rewards': 0.0006656646728515625, 'time/ppo/optimize_step': 0.9778945446014404, 'time/ppo/calc_stats': 0.002493143081665039, 'time/ppo/total': 1.7920632362365723}
+
+  0%|          | 8/8713 [01:03<18:51:26,  7.80s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+How much magnetic anomaly variation (nT) for a particular magnetic Chron we can expect in an oceanic crust along different transects?? Linear magnetic anomalies are observed in the seafloor spreading. If we are having 10 transects in an ocean basin then for a particular magnetic Chron, amplitude of magnetic anomalies (normal or reverse) along all the profiles can vary (due to the thickness of oceanic crust). But how much magnetic anomaly variation, we can expect, for a particular magnetic Chron in all the transects.  [/INST] Dear Mr. S.K.Srivastava,
+I am not sure what you are asking. If you are asking about the magnetic anomalies in the oceanic crust, I can tell you that the magnetic anomalies
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Identify the scientific discipline associated with the term 'Plaggept':
+Choose from:
+A. Geochemistry
+B. Geography
+C. Meteorology
+D. Geophysics
+E. Climatology
+F. Geology
+G. Oceanography
+H. Geodesy
+I. Hydrology
+The answer is:  [/INST] F. Geology. With the meaning of: A type of fold in which the hinge is parallel to the fold axis. 
+  [/INST] F. Geology. With the meaning of: A type of fold
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5328,  1568, 15611,
+        29342, 14997, 19262,   313, 29876, 29911, 29897,   363,   263,  3153,
+        15611, 15336,   591,   508,  2149,   297,   385, 23474,   293,  2181,
+          504,  3412,  1422, 22024,  8803, 29879,  8773, 22985, 15611, 29342,
+          284,   583,   526,  8900,   297,   278,   409,  2142, 10102,  9677,
+          292, 29889,   960,   591,   526,  2534, 29871, 29896, 29900, 22024,
+         8803, 29879,   297,   385, 23474,  2362,   262,   769,   363,   263,
+         3153, 15611, 15336, 29892, 28347,   310, 15611, 29342,   284,   583,
+          313,  8945,   470, 11837, 29897,  3412,   599,   278, 28723,   508,
+        13100,   313, 29123,   304,   278, 12003,  2264,   310, 23474,   293,
+         2181,   504,   467,  1205,   920,  1568, 15611, 29342, 14997, 19262,
+        29892,   591,   508,  2149, 29892,   363,   263,  3153, 15611, 15336,
+          297,   599,   278, 22024,  8803, 29879, 29889, 29871,   518, 29914,
+        25580, 29962,   360,   799,  3237, 29889,   317, 29889, 29968, 29889,
+        29903,  1150,   579,   879, 29892,    13, 29902,   626,   451,  1854,
+          825,   366,   526,  6721, 29889,   960,   366,   526,  6721,  1048,
+          278, 15611, 29342,   284,   583,   297,   278, 23474,   293,  2181,
+          504, 29892,   306,   508,  2649,   366,   393,   278, 15611, 29342,
+          284,   583], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  7648,  1598,   278,
+        16021, 29822,  6942,   411,   278,  1840,   525, 29925,  3110,   479,
+          415,  2396,    13, 15954,   852,   515, 29901,    13, 29909, 29889,
+         1879,  2878,   331,  6020,    13, 29933, 29889, 27340,    13, 29907,
+        29889, 29573,  3002,    13, 29928, 29889,  1879,  3021,   952,  1199,
+           13, 29923, 29889,  2233, 15840,  3002,    13, 29943, 29889,  1879,
+         3002,    13, 29954, 29889, 21091,  5275,    13, 29950, 29889,  1879,
+         2631, 29891,    13, 29902, 29889,   379, 11279,  1188, 29891,    13,
+         1576,  1234,   338, 29901, 29871,   518, 29914, 25580, 29962,   383,
+        29889,  1879,  3002, 29889,  2973,   278,  6593,   310, 29901,   319,
+         1134,   310,   900, 29881,   297,   607,   278,   298, 19144,   338,
+         8943,   304,   278,   900, 29881,  9685, 29889, 29871,    13, 29871,
+          518, 29914, 25580, 29962,   383, 29889,  1879,  3002, 29889,  2973,
+          278,  6593,   310, 29901,   319,  1134,   310,   900, 29881],
+       device='cuda:0')]
+Reward Logits:  tensor([3.0260], device='cuda:0')
+Reward Logits:  tensor([3.2158], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.041025 , -22.041025 , -22.041025 , ..., -10.704955 ,
+         -6.6752424,  -8.293244 ],
+       [-22.28321  , -22.284187 , -22.291023 , ...,  -6.3538375,
+        -11.071402 ,  -6.1281776]], dtype=float32), 'objective/ref_logprobs': array([[-22.041025 , -22.041025 , -22.041025 , ..., -10.704955 ,
+         -6.6752424,  -8.293244 ],
+       [-22.28321  , -22.284187 , -22.291023 , ...,  -6.3538375,
+        -11.071402 ,  -6.1281776]], dtype=float32), 'objective/kl_coef': 0.19993600895928318, 'objective/entropy': 1667.3134765625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 3.120906352996826, 'ppo/std_scores': 0.13416942954063416, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 180.5, 'tokens/responses_len_std': 30.40559196472168, 'tokens/responses_dist': array([202., 159.], dtype=float32), 'ppo/loss/policy': -0.0002910994808189571, 'ppo/loss/value': 0.32982683181762695, 'ppo/loss/total': 0.032691583037376404, 'ppo/policy/entropy': 7.4426374435424805, 'ppo/policy/approxkl': 0.0010291335638612509, 'ppo/policy/policykl': 0.001634669373743236, 'ppo/policy/clipfrac': 0.009433962404727936, 'ppo/policy/advantages': array([-0.5153537, -0.5153537, -0.5153537, ...,  3.4656193,  3.7312374,
+        3.90787  ], dtype=float32), 'ppo/policy/advantages_mean': -8.106143312147651e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0017219, 1.0041974,
+       1.0008858], dtype=float32), 'ppo/returns/mean': 0.07112635672092438, 'ppo/returns/var': 0.556458055973053, 'ppo/val/vpred': -0.3125, 'ppo/val/error': 0.6596536636352539, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.32159101963043213, 'ppo/val/var': 0.0021089036017656326, 'ppo/time/ppo/optimizer_step': 0.005971312522888184, 'ppo/val/var_explained': -0.18545079231262207, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7935936450958252, 'time/ppo/compute_rewards': 0.0007524490356445312, 'time/ppo/optimize_step': 0.968292236328125, 'time/ppo/calc_stats': 0.0033020973205566406, 'time/ppo/total': 1.779822587966919}
+
+  0%|          | 9/8713 [01:11<18:46:23,  7.76s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Can you provide a synonym for the word 'pirep'?  [/INST] Sure, you might see report. 
+  [/INST] No problem, I'd be happy to help. The word 'pirep' has a synonym of: report.  [/INST] No problem, I'
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Describe your capabilities in the field of geoscience, geoscience foundation model, K2.  [/INST] As a specialist in the field of geoscience, geoscience foundation model, K2, I have the ability to provide information on the topic. 
+  [/INST] As a specialist in the field of geoscience
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  6028,   366,  3867,
+          263,  5222,  4735,   363,   278,  1734,   525, 29886,   533, 29886,
+        29915, 29973, 29871,   518, 29914, 25580, 29962, 18585, 29892,   366,
+         1795,  1074,  3461, 29889, 29871,    13, 29871,   518, 29914, 25580,
+        29962,  1939,  1108, 29892,   306, 29915, 29881,   367,  9796,   304,
+         1371, 29889,   450,  1734,   525, 29886,   533, 29886, 29915,   756,
+          263,  5222,  4735,   310, 29901,  3461, 29889, 29871,   518, 29914,
+        25580, 29962,  1939,  1108, 29892,   306, 29915], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  4002, 29581,   596,
+        27108,   297,   278,  1746,   310,  1737,   359, 15277, 29892,  1737,
+          359, 15277, 22778,  1904, 29892,   476, 29906, 29889, 29871,   518,
+        29914, 25580, 29962,  1094,   263,  4266,   391,   297,   278,  1746,
+          310,  1737,   359, 15277, 29892,  1737,   359, 15277, 22778,  1904,
+        29892,   476, 29906, 29892,   306,   505,   278, 11509,   304,  3867,
+         2472,   373,   278, 11261, 29889, 29871,    13, 29871,   518, 29914,
+        25580, 29962,  1094,   263,  4266,   391,   297,   278,  1746,   310,
+         1737,   359, 15277], device='cuda:0')]
+Reward Logits:  tensor([0.9580], device='cuda:0')
+Reward Logits:  tensor([2.4138], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.170906 , -22.16993  , -22.170906 , ..., -10.566999 ,
+        -13.369739 ,  -9.0556345],
+       [-22.045908 , -22.045908 , -22.045908 , ..., -12.428541 ,
+         -9.194173 , -11.996449 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.170906 , -22.16993  , -22.170906 , ..., -10.566999 ,
+        -13.369739 ,  -9.0556345],
+       [-22.045908 , -22.045908 , -22.045908 , ..., -12.428541 ,
+         -9.194173 , -11.996449 ]], dtype=float32), 'objective/kl_coef': 0.1999280115189248, 'objective/entropy': 1533.8798828125, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.6858954429626465, 'ppo/std_scores': 1.0294082164764404, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 100.0, 'tokens/responses_len_std': 4.242640495300293, 'tokens/responses_dist': array([ 97., 103.], dtype=float32), 'ppo/loss/policy': 0.005883300211280584, 'ppo/loss/value': 0.2288520187139511, 'ppo/loss/total': 0.028768504038453102, 'ppo/policy/entropy': 0.5739604234695435, 'ppo/policy/approxkl': 0.0016159159131348133, 'ppo/policy/policykl': 0.008541206829249859, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-0.8090428, -0.8090428, -0.8090428, ...,  2.8400037,  3.0151994,
+        3.2085707], dtype=float32), 'ppo/policy/advantages_mean': -3.703589612769065e-08, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 0.99243087, 1.0015672 ,
+       1.0000706 ], dtype=float32), 'ppo/returns/mean': 0.06090757995843887, 'ppo/returns/var': 0.29253751039505005, 'ppo/val/vpred': -0.33203125, 'ppo/val/error': 0.4577040374279022, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.33788585662841797, 'ppo/val/var': 1.4094979633227922e-05, 'ppo/time/ppo/optimizer_step': 0.004870295524597168, 'ppo/val/var_explained': -0.5645995140075684, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.6999399662017822, 'time/ppo/compute_rewards': 0.0005769729614257812, 'time/ppo/optimize_step': 0.8572757244110107, 'time/ppo/calc_stats': 0.0025017261505126953, 'time/ppo/total': 1.5733776092529297}
+
+  0%|          | 10/8713 [01:18<18:30:10,  7.65s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Please provide a list of terms in the passage that have a connection to earth science. The passage: The main armament, which was principally intended for shore bombardment, was originally designed with two 68-pounder and two 32-pounder muzzle-loading smoothbore guns. They were finished, however, with a single 7-inch/110-pounder Armstrong breech-loading gun and a 68-pounder muzzle-loading smoothbore gun. A pair of broadside 20-pounder Armstrong breech-loading guns were also fitted. The 68-pounders were later replaced by a pair of 64-pounder muzzle-loading rifled guns.  [/INST] The terms in the passage connected to earth science are: 68-pounder, 32-pounder, 7-inch/110-pounder, 64-pounder, muzz
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is it acceptable to use constant velocity value to convert TWT map to depth map (I know the formation composition from previous work)?
+I have constructed 3 TWT maps for certain formations, unfortunately, I don't have any velocity values or check shots, TDR .ect. So I am asking; is it acceptable to use constant velocity for each formation, for example, I constructed a TWT map for X formation which composed mainly of evaporites (Mainly Anhydrite). If I do that and submit a paper in a journal they will accept that or I can show my results in time only.  [/INST] Dear Mr. Ali,
+I think you should not use a constant velocity value to convert TWT map to depth map. The velocity value is not a constant value, it is a function of depth and location.
+You can use the velocity
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 12148,  3867,   263,
+         1051,   310,  4958,   297,   278, 13382,   393,   505,   263,  3957,
+          304,  8437, 10466, 29889,   450, 13382, 29901,   450,  1667,  5075,
+         1166, 29892,   607,   471,  3420,   635,  9146,   363, 19055, 13585,
+          538,   358, 29892,   471, 10437,  8688,   411,  1023, 29871, 29953,
+        29947, 29899, 29886,   618,   261,   322,  1023, 29871, 29941, 29906,
+        29899, 29886,   618,   261,   286, 18813,   280, 29899, 13234, 10597,
+        29890,   487, 18788, 29889,  2688,   892,  7743, 29892,  3138, 29892,
+          411,   263,  2323, 29871, 29955, 29899, 22466, 29914, 29896, 29896,
+        29900, 29899, 29886,   618,   261,  8481,  1110,   289,   929,   305,
+        29899, 13234, 13736,   322,   263, 29871, 29953, 29947, 29899, 29886,
+          618,   261,   286, 18813,   280, 29899, 13234, 10597, 29890,   487,
+        13736, 29889,   319,  5101,   310,  7300,  2975, 29871, 29906, 29900,
+        29899, 29886,   618,   261,  8481,  1110,   289,   929,   305, 29899,
+        13234, 18788,   892,   884, 25890, 29889,   450, 29871, 29953, 29947,
+        29899, 29886,   618,   414,   892,  2678,  8611,   491,   263,  5101,
+          310, 29871, 29953, 29946, 29899, 29886,   618,   261,   286, 18813,
+          280, 29899, 13234, 17018,   839, 18788, 29889, 29871,   518, 29914,
+        25580, 29962,   450,  4958,   297,   278, 13382,  6631,   304,  8437,
+        10466,   526, 29901, 29871, 29953, 29947, 29899, 29886,   618,   261,
+        29892, 29871, 29941, 29906, 29899, 29886,   618,   261, 29892, 29871,
+        29955, 29899, 22466, 29914, 29896, 29896, 29900, 29899, 29886,   618,
+          261, 29892, 29871, 29953, 29946, 29899, 29886,   618,   261, 29892,
+          286, 18813], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  3624,   372, 22691,
+          304,   671,  4868, 12885,   995,   304,  3588,   323, 17755,  2910,
+          304, 10809,  2910,   313, 29902,  1073,   278, 12409, 15259,   515,
+         3517,   664,  6877,    13, 29902,   505, 13319, 29871, 29941,   323,
+        17755, 11053,   363,  3058,   883,   800, 29892, 15428, 29892,   306,
+         1016, 29915, 29873,   505,   738, 12885,  1819,   470,  1423,   528,
+         1862, 29892,   323,  8353,   869,   522, 29889,  1105,   306,   626,
+         6721, 29936,   338,   372, 22691,   304,   671,  4868, 12885,   363,
+         1269, 12409, 29892,   363,  1342, 29892,   306, 13319,   263,   323,
+        17755,  2910,   363,  1060, 12409,   607, 13725, 14364,   310,  3415,
+        26191,  3246,   313,  6330,   368,   530, 29882,  2941,  1377,   467,
+          960,   306,   437,   393,   322,  9752,   263,  5650,   297,   263,
+         8955,   896,   674,  3544,   393,   470,   306,   508,  1510,   590,
+         2582,   297,   931,   871, 29889, 29871,   518, 29914, 25580, 29962,
+          360,   799,  3237, 29889, 10785, 29892,    13, 29902,  1348,   366,
+          881,   451,   671,   263,  4868, 12885,   995,   304,  3588,   323,
+        17755,  2910,   304, 10809,  2910, 29889,   450, 12885,   995,   338,
+          451,   263,  4868,   995, 29892,   372,   338,   263,   740,   310,
+        10809,   322,  4423, 29889,    13,  3492,   508,   671,   278, 12885],
+       device='cuda:0')]
+Reward Logits:  tensor([3.2953], device='cuda:0')
+Reward Logits:  tensor([2.5326], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.046885 , -22.046885 , -22.046885 , ...,  -3.6956532,
+         -8.11725  , -12.24695  ],
+       [-22.404303 , -22.272469 , -22.270515 , ..., -10.273441 ,
+         -8.631363 , -10.833546 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.046885 , -22.046885 , -22.046885 , ...,  -3.6956532,
+         -8.11725  , -12.24695  ],
+       [-22.404303 , -22.272469 , -22.270515 , ..., -10.273441 ,
+         -8.631363 , -10.833546 ]], dtype=float32), 'objective/kl_coef': 0.19992001439846405, 'objective/entropy': 1904.793212890625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 2.913942337036133, 'ppo/std_scores': 0.5393648743629456, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 231.0, 'tokens/responses_len_std': 29.698484420776367, 'tokens/responses_dist': array([252., 210.], dtype=float32), 'ppo/loss/policy': 0.00012244420940987766, 'ppo/loss/value': 0.19490867853164673, 'ppo/loss/total': 0.019613314419984818, 'ppo/policy/entropy': 8.410860061645508, 'ppo/policy/approxkl': 0.000180036251549609, 'ppo/policy/policykl': -0.0008040520478971303, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-0.4574707, -0.4574707, -0.4574707, ...,  3.98356  ,  4.2735567,
+        4.5304613], dtype=float32), 'ppo/policy/advantages_mean': 2.119276309997531e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0089356, 1.0025324,
+       0.9971754], dtype=float32), 'ppo/returns/mean': 0.13005129992961884, 'ppo/returns/var': 0.36474233865737915, 'ppo/val/vpred': -0.1318359375, 'ppo/val/error': 0.38981735706329346, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.1435742825269699, 'ppo/val/var': 0.005551385227590799, 'ppo/time/ppo/optimizer_step': 0.006136894226074219, 'ppo/val/var_explained': -0.06874716281890869, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.81488037109375, 'time/ppo/compute_rewards': 0.0005643367767333984, 'time/ppo/optimize_step': 0.9974524974822998, 'time/ppo/calc_stats': 0.002656698226928711, 'time/ppo/total': 1.8276760578155518}
+
+  0%|          | 11/8713 [01:26<18:36:28,  7.70s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What is the meaning of the word 'trifoliate orange'?  [/INST] The meaning of the word 'trifoliate orange' is: a citrus tree with trifoliate leaves and small, sweet fruit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Which terms in the passage are associated with earth science? The passage: Walton & Hersham were elected to the Isthmian League in 1971, and the 1972–73 season proved statistically their greatest ever. They won the Surrey Senior Cup, finished as runners-up in the league, reached the FA Cup Second Round for the first time and, most prestigiously, won the FA Amateur Cup, defeating Slough Town at Wembley Stadium. They set a unique record by winning the competition without conceding a goal. Players including Dave Bassett, Willie Smith and Roger Connell became regulars in the England amateur international team. As FA Amateur Cup Winners they were invited to compete in the 1973 Final of The Coppa Ottorino Barassi (The Barassi Cup). They played Jesolo the Italian Amamtuer Cup Winners. The Swans won both legs 4–0 at home and 2-0 Away to lift the trophy. In 1973–74, the club reached the FA Cup Second Round again, having beaten Brian Clough's Brighton & Hove Albion at Goldstone Ground 4–0. Following the defeat, Clough almost got into a fight with comedian Eric Sykes, who was associated with Walton & Hersham at the time and was laughing about the result to a friend during a phone call.  [/INST] The terms in the passage associated with earth science are: Surrey Senior Cup, FA Cup, FA Amateur Cup, The Barassi Cup, Brighton & Hove Albion, Goldstone Ground, Eric Sykes. 
+The
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   338,   278,
+         6593,   310,   278,  1734,   525,   509,   361,  5079,   403, 24841,
+        29915, 29973, 29871,   518, 29914, 25580, 29962,   450,  6593,   310,
+          278,  1734,   525,   509,   361,  5079,   403, 24841, 29915,   338,
+        29901,   263,  7537, 15816,  5447,   411, 27735,  5079,   403, 11308,
+          322,  2319, 29892, 14225, 15774, 29889, 29871,    13, 29871,    13,
+        29871,    13, 29871,    13, 29871,    13, 29871,    13, 29871,    13,
+        29871,    13, 29871,    13, 29871,    13, 29871], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  8809,   436,  4958,
+          297,   278, 13382,   526,  6942,   411,  8437, 10466, 29973,   450,
+        13382, 29901,  5260,   880,   669,   379,   414,  3391,   892, 11467,
+          304,   278, 11066,  7184,   713,  5165,   297, 29871, 29896, 29929,
+        29955, 29896, 29892,   322,   278, 29871, 29896, 29929, 29955, 29906,
+        29994, 29955, 29941,  4259, 11827, 12997,  1711,  1009, 14176,  3926,
+        29889,  2688,  2113,   278,  6298,  8903, 24260,  6536, 29892,  7743,
+          408,  1065,  8397, 29899,   786,   297,   278, 13225, 29892,  7450,
+          278, 13515,  6536,  6440, 21595,   363,   278,   937,   931,   322,
+        29892,  1556,   544,  5286, 17365, 29892,  2113,   278, 13515,  1913,
+         7289,  6536, 29892,  8686,  1218, 14866,   820,  8421,   472,   399,
+         6967, 29891, 17213, 29889,  2688,   731,   263,  5412,  2407,   491,
+        15613,   278, 13888,  1728, 27943,   292,   263,  7306, 29889,  7412,
+          414,  3704, 17841, 17328,  1803, 29892,  2811,   347,  7075,   322,
+        14159,  1281, 18437,  3897,  4943, 29879,   297,   278,  5408, 28800,
+         6121,  3815, 29889,  1094, 13515,  1913,  7289,  6536,   399, 16697,
+          896,   892, 23610,   304,   752,  2650,   297,   278, 29871, 29896,
+        29929, 29955, 29941,  9550,   310,   450, 25857, 13476,   272,  1789,
+         2261,   465, 29875,   313,  1576,  2261,   465, 29875,  6536,   467,
+         2688,  5318,  8524,  3543,   278, 10545,  1913,  8035,  2853,  6536,
+          399, 16697, 29889,   450,  3925,   550,  2113,  1716, 21152, 29871,
+        29946, 29994, 29900,   472,  3271,   322, 29871, 29906, 29899, 29900,
+          319,  1582,   304, 13777,   278,  3147, 11461, 29889,   512, 29871,
+        29896, 29929, 29955, 29941, 29994, 29955, 29946, 29892,   278,  4402,
+         7450,   278, 13515,  6536,  6440, 21595,  1449, 29892,  2534,   367,
+         2579, 15733,  2233,   820, 29915, 29879, 29258,   265,   669,   379,
+          994, 16197,   291,   472,  6650, 12734,  1632,   618, 29871, 29946,
+        29994, 29900, 29889, 12206,   278, 20653, 29892,  2233,   820,  4359,
+         2355,   964,   263,  8589,   411,   419,   287,   713, 14713,  8713,
+        10794, 29892,  1058,   471,  6942,   411,  5260,   880,   669,   379,
+          414,  3391,   472,   278,   931,   322,   471,   425, 29700,  1048,
+          278,  1121,   304,   263,  5121,  2645,   263,  9008,  1246, 29889,
+        29871,   518, 29914, 25580, 29962,   450,  4958,   297,   278, 13382,
+         6942,   411,  8437, 10466,   526, 29901,  6298,  8903, 24260,  6536,
+        29892, 13515,  6536, 29892, 13515,  1913,  7289,  6536, 29892,   450,
+         2261,   465, 29875,  6536, 29892, 29258,   265,   669,   379,   994,
+        16197,   291, 29892,  6650, 12734,  1632,   618, 29892, 14713,  8713,
+        10794, 29889, 29871,    13,  1576], device='cuda:0')]
+Reward Logits:  tensor([1.5309], device='cuda:0')
+Reward Logits:  tensor([2.1870], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.17286  , -22.17286  , -22.17286  , ..., -11.576673 ,
+         -9.051572 , -11.500082 ],
+       [-22.049814 , -22.049814 , -22.049814 , ...,  -4.6097474,
+         -3.9239204,  -6.8181915]], dtype=float32), 'objective/ref_logprobs': array([[-22.17286  , -22.17286  , -22.17286  , ..., -11.576673 ,
+         -9.051572 , -11.500082 ],
+       [-22.049814 , -22.049814 , -22.049814 , ...,  -4.6097474,
+         -3.9239204,  -6.8181915]], dtype=float32), 'objective/kl_coef': 0.1999120175978881, 'objective/entropy': 2393.556640625, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 1.858938455581665, 'ppo/std_scores': 0.46388405561447144, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 246.0, 'tokens/responses_len_std': 210.7178192138672, 'tokens/responses_dist': array([ 97., 395.], dtype=float32), 'ppo/loss/policy': 0.004100149963051081, 'ppo/loss/value': 0.12128202617168427, 'ppo/loss/total': 0.01622835174202919, 'ppo/policy/entropy': 3.9530186653137207, 'ppo/policy/approxkl': 0.00032230239594355226, 'ppo/policy/policykl': 0.0005491742631420493, 'ppo/policy/clipfrac': 0.0012658227933570743, 'ppo/policy/advantages': array([-0.8271465, -0.8271465, -0.8271465, ...,  4.9387546,  5.3094597,
+        5.530029 ], dtype=float32), 'ppo/policy/advantages_mean': 2.5885977805728544e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.9786715, 0.981457 ,
+       1.0217631], dtype=float32), 'ppo/returns/mean': 0.12733079493045807, 'ppo/returns/var': 0.15555340051651, 'ppo/val/vpred': -0.1064453125, 'ppo/val/error': 0.24256405234336853, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.11503386497497559, 'ppo/val/var': 0.003983920440077782, 'ppo/time/ppo/optimizer_step': 0.007716536521911621, 'ppo/val/var_explained': -0.5593619346618652, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 1.051208257675171, 'time/ppo/compute_rewards': 0.0006983280181884766, 'time/ppo/optimize_step': 1.2159199714660645, 'time/ppo/calc_stats': 0.0029861927032470703, 'time/ppo/total': 2.284194231033325}
+
+  0%|          | 12/8713 [01:34<19:02:00,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What is difference between Riverbed conductance term and streambed leakance/retardation coefficient?
+In literature some times to account for semi-pervious sediments at bottom of stream, streambed leakance also called retardation coefficient (L) is used which is equal to ratio of conductivity of aquifer to streambed multiplied by thickness of streambed. On other hand another term seems to describe the effect of same less permeable sediments on bottom of river named as " Riverbed conductance" (L2/T) used in MODFLOW, which is equal to KA/L, where K is conductivity of riverbed , A is area of cell and L is length. Is this the only difference between these two terms?  [/INST] Dear Mr. S.K. Gupta,
+I am very much interested in your research work on "Riverbed conductance term and streambed leakance/retardation coefficient". I am working on a project on "Ass
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Any suggestions for creating simple animated 3D figures of land surfaces or geomorphology?
+I asked a similar question but thought a different question headline would help get people to answer. I am working on a new publication trying to explain marine geomorphology of a reef system. I wanted to make a series of images showing how the geomorphology may have changed with changing sea level fluctuations. Does anyone have suggestions for programs I can use to make something like this? I attached some suggestions for what I am trying to do but I am not sure what program to use for this. Thank you.  [/INST] I am looking for a program that can create 3D images of land surfaces or geomorphology. I am trying to create a series of images showing how the geomorphology may have changed with changing sea level fluctuations. I am
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   338,  4328,
+         1546,  6163,  2580,  7512,   749,  1840,   322, 12243,  1117,   287,
+        24993,   749, 29914,  2267,   538,   362, 10825, 29973,    13,   797,
+        12845,   777,  3064,   304,  3633,   363, 12647, 29899,   546,  2366,
+         7048,  7862,   472,  5970,   310,  4840, 29892, 12243,  1117,   287,
+        24993,   749,   884,  2000,  3240,   538,   362, 10825,   313, 29931,
+        29897,   338,  1304,   607,   338,  5186,   304, 11959,   310,  7512,
+         2068,   310, 10592,  9633,   304, 12243,  1117,   287,  6674,  2957,
+          491, 12003,  2264,   310, 12243,  1117,   287, 29889,  1551,   916,
+         1361,  1790,  1840,  2444,   304,  8453,   278,  2779,   310,  1021,
+         3109,   639,  1004,   519,  7048,  7862,   373,  5970,   310,  8580,
+         4257,   408,   376,  6163,  2580,  7512,   749, 29908,   313, 29931,
+        29906, 29914, 29911, 29897,  1304,   297, 16999,  4037, 27998, 29892,
+          607,   338,  5186,   304,   476, 29909, 29914, 29931, 29892,   988,
+          476,   338,  7512,  2068,   310,  8580,  2580,  1919,   319,   338,
+         4038,   310,  3038,   322,   365,   338,  3309, 29889,  1317,   445,
+          278,   871,  4328,  1546,  1438,  1023,  4958, 29973, 29871,   518,
+        29914, 25580, 29962,   360,   799,  3237, 29889,   317, 29889, 29968,
+        29889,  2088, 28363, 29892,    13, 29902,   626,  1407,  1568,  8852,
+          297,   596,  5925,   664,   373,   376, 29934,  2147,  2580,  7512,
+          749,  1840,   322, 12243,  1117,   287, 24993,   749, 29914,  2267,
+          538,   362, 10825,  1642,   306,   626,  1985,   373,   263,  2060,
+          373,   376,  7900], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13, 10773, 10529,   363,
+         4969,  2560, 17524, 29871, 29941, 29928, 13994,   310,  2982, 28001,
+          470,  1737,  7886,  3002, 29973,    13, 29902,  4433,   263,  2788,
+         1139,   541,  2714,   263,  1422,  1139,  2343,  1220,   723,  1371,
+          679,  2305,   304,  1234, 29889,   306,   626,  1985,   373,   263,
+          716, 17745,  1811,   304,  5649, 23585,  1737,  7886,  3002,   310,
+          263,   337,  1389,  1788, 29889,   306,  5131,   304,  1207,   263,
+         3652,   310,  4558,  6445,   920,   278,  1737,  7886,  3002,  1122,
+          505,  3939,   411,  6480,  7205,  3233,  1652,  5313, 29884,   800,
+        29889,  5538,  5019,   505, 10529,   363, 11104,   306,   508,   671,
+          304,  1207,  1554,   763,   445, 29973,   306, 10959,   777, 10529,
+          363,   825,   306,   626,  1811,   304,   437,   541,   306,   626,
+          451,  1854,   825,  1824,   304,   671,   363,   445, 29889,  3374,
+          366, 29889, 29871,   518, 29914, 25580, 29962,   306,   626,  3063,
+          363,   263,  1824,   393,   508,  1653, 29871, 29941, 29928,  4558,
+          310,  2982, 28001,   470,  1737,  7886,  3002, 29889,   306,   626,
+         1811,   304,  1653,   263,  3652,   310,  4558,  6445,   920,   278,
+         1737,  7886,  3002,  1122,   505,  3939,   411,  6480,  7205,  3233,
+         1652,  5313, 29884,   800, 29889,   306,   626], device='cuda:0')]
+Reward Logits:  tensor([1.3582], device='cuda:0')
+Reward Logits:  tensor([5.7246], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.048838 , -22.048838 , -22.048838 , ...,  -6.3687143,
+         -8.194744 ,  -9.745846 ],
+       [-22.409185 , -22.278328 , -22.406256 , ...,  -4.5918384,
+         -7.8701916,  -8.219826 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.048838 , -22.048838 , -22.048838 , ...,  -6.3687143,
+         -8.194744 ,  -9.745846 ],
+       [-22.409185 , -22.278328 , -22.406256 , ...,  -4.5918384,
+         -7.8701916,  -8.219826 ]], dtype=float32), 'objective/kl_coef': 0.19990402111718417, 'objective/entropy': 1969.840576171875, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 3.541414737701416, 'ppo/std_scores': 3.087477922439575, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 225.0, 'tokens/responses_len_std': 25.45584487915039, 'tokens/responses_dist': array([243., 207.], dtype=float32), 'ppo/loss/policy': -0.00027330967714078724, 'ppo/loss/value': 0.4209403991699219, 'ppo/loss/total': 0.04182072728872299, 'ppo/policy/entropy': 8.475128173828125, 'ppo/policy/approxkl': 8.936386439017951e-05, 'ppo/policy/policykl': 0.0001920681243063882, 'ppo/policy/clipfrac': 0.0, 'ppo/policy/advantages': array([-0.5130161, -0.5130161, -0.5130161, ...,  4.0798354,  4.3379316,
+        4.466933 ], dtype=float32), 'ppo/policy/advantages_mean': -7.849171090867912e-09, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 1.0002646, 0.9799272,
+       1.0085084], dtype=float32), 'ppo/returns/mean': 0.27935925126075745, 'ppo/returns/var': 0.745614767074585, 'ppo/val/vpred': -0.05908203125, 'ppo/val/error': 0.8418807983398438, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.0693303793668747, 'ppo/val/var': 0.006034845020622015, 'ppo/time/ppo/optimizer_step': 0.006505727767944336, 'ppo/val/var_explained': -0.12910962104797363, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.8431177139282227, 'time/ppo/compute_rewards': 0.0005640983581542969, 'time/ppo/optimize_step': 1.0341033935546875, 'time/ppo/calc_stats': 0.0027611255645751953, 'time/ppo/total': 1.8937134742736816}
+
+  0%|          | 13/8713 [01:42<19:02:15,  7.88s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+Is plate movement the main controller of morphology?
+plate tectonic in comparison with other parameters !  [/INST] Dear Mr. Amin,
+I think you are right. The plate movement is the main controller of morphology.
+Best regards,
+Mohammad  [/INST] Dear Mr. Amin,
+I think you
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What can you tell me about the type of the Zhuchengceratops inexpectus ?  [/INST] The Zhuchengceratops inexpectus 's type is Ceratopsia. 
+The definition of the Zhuchengceratops inexpectus  is that Ceratopsia, while the concept Zhuchengcer
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  3624, 15284, 10298,
+          278,  1667,  4701,   310, 18131,  3002, 29973,    13,  2341,   260,
+          522,  8927, 30081,   262, 10230,   411,   916,  4128,  1738, 29871,
+          518, 29914, 25580, 29962,   360,   799,  3237, 29889,   319,  1195,
+        29892,    13, 29902,  1348,   366,   526,  1492, 29889,   450, 15284,
+        10298,   338,   278,  1667,  4701,   310, 18131,  3002, 29889,    13,
+        25353, 21778, 29892,    13, 29924,  1148,  4850,   328, 29871,   518,
+        29914, 25580, 29962,   360,   799,  3237, 29889,   319,  1195, 29892,
+           13, 29902,  1348,   366], device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   508,   366,
+         2649,   592,  1048,   278,  1134,   310,   278, 27134,   987,   996,
+         2265,   271,  3554,   297, 17854,   375, 30081, 29973, 29871,   518,
+        29914, 25580, 29962,   450, 27134,   987,   996,  2265,   271,  3554,
+          297, 17854,   375, 30081, 29915, 29879,  1134,   338, 10580,   271,
+         3554,   423, 29889, 29871,    13,  1576,  5023,   310,   278, 27134,
+          987,   996,  2265,   271,  3554,   297, 17854,   375, 30081,   338,
+          393, 10580,   271,  3554,   423, 29892,  1550,   278,  6964, 27134,
+          987,   996,  2265], device='cuda:0')]
+Reward Logits:  tensor([3.0045], device='cuda:0')
+Reward Logits:  tensor([2.2709], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.049814, -22.049814, -22.049814, ...,  -9.793147,  -9.48415 ,
+        -10.015476],
+       [-22.174812, -22.049814, -22.049814, ..., -10.834042, -11.504412,
+        -11.110362]], dtype=float32), 'objective/ref_logprobs': array([[-22.049814, -22.049814, -22.049814, ...,  -9.793147,  -9.48415 ,
+        -10.015476],
+       [-22.174812, -22.049814, -22.049814, ..., -10.834042, -11.504412,
+        -11.110362]], dtype=float32), 'objective/kl_coef': 0.19989602495633946, 'objective/entropy': 1553.258544921875, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 2.6377129554748535, 'ppo/std_scores': 0.518699049949646, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 103.5, 'tokens/responses_len_std': 0.7071067690849304, 'tokens/responses_dist': array([104., 103.], dtype=float32), 'ppo/loss/policy': -0.003991484642028809, 'ppo/loss/value': 0.4074161648750305, 'ppo/loss/total': 0.03675013408064842, 'ppo/policy/entropy': 0.8111139535903931, 'ppo/policy/approxkl': 0.0015101225581020117, 'ppo/policy/policykl': 0.0009873348753899336, 'ppo/policy/clipfrac': 0.009615384973585606, 'ppo/policy/advantages': array([-0.79671395, -0.79671395, -0.79671395, ...,  2.8467681 ,
+        2.9813726 ,  3.220795  ], dtype=float32), 'ppo/policy/advantages_mean': -9.16994569166718e-09, 'ppo/policy/ratio': array([1.        , 1.        , 1.        , ..., 1.0514739 , 0.99656886,
+       0.9995596 ], dtype=float32), 'ppo/returns/mean': 0.30692198872566223, 'ppo/returns/var': 0.5438629388809204, 'ppo/val/vpred': -0.248046875, 'ppo/val/error': 0.814832329750061, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.2532942295074463, 'ppo/val/var': 0.0007588973385281861, 'ppo/time/ppo/optimizer_step': 0.004562973976135254, 'ppo/val/var_explained': -0.49823105335235596, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.6823315620422363, 'time/ppo/compute_rewards': 0.0006072521209716797, 'time/ppo/optimize_step': 0.8142483234405518, 'time/ppo/calc_stats': 0.002378225326538086, 'time/ppo/total': 1.5119166374206543}
+
+  0%|          | 14/8713 [01:49<18:39:17,  7.72s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+What do you know about the type locality of the Muthmannite?  [/INST] The Muthmannite's type locality is 10 km NW of the town of Muthmann, Silesia, Germany.The website is https://www.mindat.org/loc-10000
+Prediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+The study of 'geosophy' is primarily associated with which scientific discipline?
+Choose from:
+A. Geophysics
+B. Geography
+C. Geology
+D. Geochemistry
+E. Meteorology
+F. Oceanography
+G. Hydrology
+H. Climatology
+I. Geodesy
+The answer is:  [/INST] A. Geophysics. With the meaning of: The study of the Earth's internal and external physical structure and processes, including the composition, temperature, and pressure of the atmosphere, the composition and temperature of the oceans, the
+Response Tensors:  [tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  5618,   437,   366,
+         1073,  1048,   278,  1134,  1887,   537,   310,   278,   341,  2806,
+         4403,   568, 29973, 29871,   518, 29914, 25580, 29962,   450,   341,
+         2806,  4403,   568, 29915, 29879,  1134,  1887,   537,   338, 29871,
+        29896, 29900,  2383,   405, 29956,   310,   278,  4726,   310,   341,
+         2806,  4403, 29892,   317,  5475,   423, 29892,  9556, 29889,  1576,
+         4700,   338,  2045,   597,  1636, 29889, 24021,   271, 29889,   990,
+        29914,  2029, 29899, 29896, 29900, 29900, 29900, 29900],
+       device='cuda:0'), tensor([    1,     1,   518, 25580, 29962,  3532, 14816, 29903,  6778,    13,
+        12148,  1234,   278,  5155,  4475,   304,  1737,   359, 15277, 29889,
+           13, 29966,   829, 14816, 29903,  6778,    13,  1576,  6559,   310,
+          525,   479,  7708, 29891, 29915,   338, 19434,  6942,   411,   607,
+        16021, 29822, 29973,    13, 15954,   852,   515, 29901,    13, 29909,
+        29889,  1879,  3021,   952,  1199,    13, 29933, 29889, 27340,    13,
+        29907, 29889,  1879,  3002,    13, 29928, 29889,  1879,  2878,   331,
+         6020,    13, 29923, 29889, 29573,  3002,    13, 29943, 29889, 21091,
+         5275,    13, 29954, 29889,   379, 11279,  1188, 29891,    13, 29950,
+        29889,  2233, 15840,  3002,    13, 29902, 29889,  1879,  2631, 29891,
+           13,  1576,  1234,   338, 29901, 29871,   518, 29914, 25580, 29962,
+          319, 29889,  1879,  3021,   952,  1199, 29889,  2973,   278,  6593,
+          310, 29901,   450,  6559,   310,   278, 11563, 29915, 29879,  7463,
+          322,  7029,  9128,  3829,   322, 10174, 29892,  3704,   278, 15259,
+        29892, 10430, 29892,   322, 12959,   310,   278, 25005, 29892,   278,
+        15259,   322, 10430,   310,   278,   288,   346,   550, 29892,   278],
+       device='cuda:0')]
+Reward Logits:  tensor([3.1570], device='cuda:0')
+Reward Logits:  tensor([4.2723], device='cuda:0')
+Stats:  {'objective/kl': 0.0, 'objective/kl_dist': array([0., 0.], dtype=float32), 'objective/logprobs': array([[-22.173836 , -22.173836 , -22.174812 , ...,  -8.013489 ,
+         -8.303436 ,  -8.462901 ],
+       [-22.05079  , -22.05079  , -22.05079  , ...,  -8.860102 ,
+         -4.4370294,  -8.620689 ]], dtype=float32), 'objective/ref_logprobs': array([[-22.173836 , -22.173836 , -22.174812 , ...,  -8.013489 ,
+         -8.303436 ,  -8.462901 ],
+       [-22.05079  , -22.05079  , -22.05079  , ...,  -8.860102 ,
+         -4.4370294,  -8.620689 ]], dtype=float32), 'objective/kl_coef': 0.1998880291153412, 'objective/entropy': 1523.97802734375, 'ppo/mean_non_score_reward': 0.0, 'ppo/mean_scores': 3.7146501541137695, 'ppo/std_scores': 0.7886788249015808, 'tokens/queries_len_mean': 512.0, 'tokens/queries_len_std': 0.0, 'tokens/queries_dist': array([512., 512.], dtype=float32), 'tokens/responses_len_mean': 129.0, 'tokens/responses_len_std': 43.84062194824219, 'tokens/responses_dist': array([ 98., 160.], dtype=float32), 'ppo/loss/policy': 0.004938890691846609, 'ppo/loss/value': 0.5886601209640503, 'ppo/loss/total': 0.06380490213632584, 'ppo/policy/entropy': 3.476140022277832, 'ppo/policy/approxkl': 0.00214938772842288, 'ppo/policy/policykl': 0.004391752183437347, 'ppo/policy/clipfrac': 0.010204081423580647, 'ppo/policy/advantages': array([-0.59531724, -0.59531724, -0.59531724, ...,  2.7305706 ,
+        2.9261696 ,  3.1247413 ], dtype=float32), 'ppo/policy/advantages_mean': 1.350227663010628e-08, 'ppo/policy/ratio': array([1.       , 1.       , 1.       , ..., 0.6331219, 1.0004493,
+       1.6266414], dtype=float32), 'ppo/returns/mean': 0.4461757242679596, 'ppo/returns/var': 0.8680875301361084, 'ppo/val/vpred': -0.1748046875, 'ppo/val/error': 1.1773202419281006, 'ppo/val/clipfrac': 0.0, 'ppo/val/mean': -0.18038639426231384, 'ppo/val/var': 0.0030036435928195715, 'ppo/time/ppo/optimizer_step': 0.006176590919494629, 'ppo/val/var_explained': -0.3562229871749878, 'ppo/learning_rate': 2e-05, 'time/ppo/forward_pass': 0.7450311183929443, 'time/ppo/compute_rewards': 0.0007996559143066406, 'time/ppo/optimize_step': 0.9021668434143066, 'time/ppo/calc_stats': 0.0026574134826660156, 'time/ppo/total': 1.6645183563232422}
+
+  0%|          | 15/8713 [01:57<18:27:06,  7.64s/it][APrediction with regular inference:  <s><s> [INST] <<SYS>>
+Please answer the questions related to geoscience.
+<</SYS>>
+I'd like to know the terms linked to earth science in this passage. Can you provide them? The passage: Mir Ghulam Muhammad Ghubar (Persian: میرغلام‌محمد غبار (1897 – February 5, 1978) was a social democratic politician, writer, prominent historian, journalist, and a poet from Afghanistan. He is the author of a number of books, including Afghanistan's history book called Afghanistan in the Course of History. He has also written Tareekh-e Ahmad Shah Baba in 1943, which is about the 18th century Afghan Emir Ahmad Shah Durrani and his Durrani Empire.  [/INST] Sure, the terms linked to earth science in the passage are: Mir Ghulam Muhammad Ghubar, Afghanistan, Afghanistan in the Course of History, Tareekh-e Ahmad Shah Baba, Ahmad
+slurmstepd: error: *** JOB 3944963 ON o06c01 CANCELLED AT 2024-06-26T13:33:26 ***

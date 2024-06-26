@@ -77,6 +77,8 @@ def collator(data):
 
 def inference_test(model, tokenizer, prompts, max_new_tokens):
     model.eval()
+    tokens = []
+    preds = []
     with torch.no_grad():
         for prompt in prompts:
             encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
@@ -85,6 +87,9 @@ def inference_test(model, tokenizer, prompts, max_new_tokens):
             summ_tokens = model.generate(input_ids=txt_tokens, **kwargs)
             pred = tokenizer.batch_decode(summ_tokens)[0]
             print("Prediction with regular inference: ", pred)
+            tokens.append(summ_tokens.squeeze())
+            preds.append(pred)
+    return tokens, preds
 
 def build_pipeline(ppo_config, policy_model, policy_trainer, ppo_tokenizer, reward_model, reward_tokenizer, dataloader):
     generation_kwargs = {
@@ -103,14 +108,15 @@ def build_pipeline(ppo_config, policy_model, policy_trainer, ppo_tokenizer, rewa
             # print("Query Tensors: ", query_tensors)
 
             # Generate outputs
-            inference_test(policy_model, policy_tokenizer, batch["instruction"], 50)
-            response_tensors = []
-            for query in query_tensors:
-                query.to(DEVICE)
-                response_tokens = policy_trainer.generate(query, return_prompt=False, **generation_kwargs)
-                response_tensors.append(response_tokens.squeeze().to(DEVICE))
+            response_tensors, pred = inference_test(policy_model, ppo_tokenizer, batch["instruction"], 50)
+            # response_tensors = []
+            # for query in query_tensors:
+            #     query.unsqueeze(0).to(DEVICE)
+            #     # response_tokens = policy_trainer.generate(query, return_prompt=False, **generation_kwargs)
+            #     response_tokens, pred = inference_test(policy_model, ppo_tokenizer, query, 50)
+            #     response_tensors.append(response_tokens.squeeze().to(DEVICE))
             print("Response Tensors: ", response_tensors)
-            pred = [ppo_tokenizer.decode(r.squeeze()) for r in response_tensors]
+            # pred = [ppo_tokenizer.decode(r.squeeze()) for r in response_tensors]
             # pred = pred.split("[EOS]")[1].split(ppo_trainer.tokenizer.eos_token)[0].split("[/EOS]")[0].replace("<|endoftext|>", "")
             batch["response"] = pred
             # print("Response: ", batch["response"])
@@ -118,8 +124,8 @@ def build_pipeline(ppo_config, policy_model, policy_trainer, ppo_tokenizer, rewa
             # Compute rewards
             rewards_list = []
             for instr, resp in zip(batch["instruction"], batch["response"]):
-                print("Instr: ", instr)
-                print("Resp: ", resp)
+                # print("Instr: ", instr)
+                # print("Resp: ", resp)
                 reward = inference(reward_tokenizer, reward_model, resp)
                 rewards_list.append(torch.tensor(reward).to(DEVICE))
             # print("Rewards List: ", rewards_list)
@@ -169,4 +175,4 @@ if __name__ == "__main__":
         data_collator=collator #dataloader
     )
 
-    build_pipeline(ppo_config, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer, dataloader)
+    build_pipeline(ppo_config, policy_model, ppo_trainer, policy_tokenizer, reward_model, reward_tokenizer, dataloader)
