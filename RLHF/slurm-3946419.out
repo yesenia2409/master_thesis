@@ -1,0 +1,78 @@
+Running simulation
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:04<00:22,  4.59s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:08<00:17,  4.40s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:13<00:12,  4.32s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:17<00:08,  4.17s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:21<00:04,  4.39s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:23<00:00,  3.33s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:23<00:00,  3.84s/it]
+WARNING:root:A <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/5000 [00:00<?, ?it/s][ABatch:  0
+Loss:  0.2222168743610382  and KL penalty  0.0
+
+  0%|          | 1/5000 [00:35<48:43:46, 35.09s/it][ABatch:  1
+Loss:  0.32318612933158875  and KL penalty  0.0003277782234363258
+
+  0%|          | 2/5000 [01:06<45:35:50, 32.84s/it][ABatch:  2
+Loss:  0.23133163154125214  and KL penalty  0.00039123595342971385
+
+  0%|          | 3/5000 [01:37<44:37:33, 32.15s/it][ABatch:  3
+Loss:  0.632620632648468  and KL penalty  0.00033755559707060456
+
+  0%|          | 4/5000 [02:09<44:19:36, 31.94s/it][ABatch:  4
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.40 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3043600916862488  and KL penalty  0.0008909157477319241
+
+  0%|          | 5/5000 [02:40<44:02:48, 31.75s/it][ABatch:  5
+Loss:  0.20790451765060425  and KL penalty  0.00027931033400818706
+
+  0%|          | 6/5000 [03:12<44:13:16, 31.88s/it][ABatch:  6
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.09 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.18208211660385132  and KL penalty  0.000590588606428355
+
+  0%|          | 7/5000 [03:44<44:17:55, 31.94s/it][ABatch:  7
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.62 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2226867377758026  and KL penalty  0.0006579908076673746
+
+  0%|          | 8/5000 [04:18<45:12:16, 32.60s/it][ABatch:  8
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.02 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.14118072390556335  and KL penalty  0.0003480565792415291
+
+  0%|          | 9/5000 [04:54<46:24:33, 33.48s/it][ABatch:  9
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -2.36 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1709909439086914  and KL penalty  0.0015256551560014486
+
+  0%|          | 10/5000 [05:25<45:25:47, 32.78s/it][ABatch:  10
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.83 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1670668125152588  and KL penalty  0.0011495526414364576
+
+  0%|          | 11/5000 [05:56<44:48:41, 32.34s/it][ABatch:  11
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -2.05 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.48557597398757935  and KL penalty  0.001329947030171752
+
+  0%|          | 12/5000 [06:28<44:18:11, 31.98s/it][ABatch:  12
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.51 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2698245644569397  and KL penalty  0.0009854782838374376
+
+  0%|          | 13/5000 [06:59<43:57:27, 31.73s/it][ABatch:  13
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -1.79 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.12400440126657486  and KL penalty  0.0007632586639374495
+
+  0%|          | 14/5000 [07:31<44:22:06, 32.04s/it][ABatch:  14
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1133: UserWarning: KL divergence is starting to become negative: -2.46 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.16099853813648224  and KL penalty  0.0013865389628335834
+
+  0%|          | 15/5000 [08:03<44:20:51, 32.03s/it][ABatch:  15
+slurmstepd: error: *** JOB 3946419 ON o03c02 CANCELLED AT 2024-06-27T10:39:54 ***

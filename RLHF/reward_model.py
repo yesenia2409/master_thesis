@@ -12,15 +12,16 @@ DIR = "RewardModel/"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-def inference(reward_tokenizer, reward_model, sample):
+def inference(reward_tokenizer, reward_model, sample, max_length):
+    reward_tokenizer.truncation_side = 'left'
     with torch.no_grad():
         input_ids = reward_tokenizer(
             sample,
-            max_length=128,
-            padding='max_length',
+            max_length=max_length,
+            truncation=True,
             return_tensors='pt'
         ).to(DEVICE)
-        reward_model.eval()
+        # reward_model.eval()
         out_reward = reward_model(**input_ids)
 
         # print("Reward Logits: ", out_reward.logits[0])
