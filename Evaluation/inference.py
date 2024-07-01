@@ -72,7 +72,7 @@ def create_model_and_tokenizer(model_dir):
         bnb_4bit_compute_dtype=torch.float16,
     )
 
-    model = AutoModelForCausalLMWithValueHead.from_pretrained(
+    model = AutoModelForCausalLM.from_pretrained(
         pretrained_model_name_or_path=model_dir,
         trust_remote_code=True,
         local_files_only=True,
@@ -91,7 +91,7 @@ def create_model_and_tokenizer(model_dir):
 
 if __name__ == "__main__":
     # Variables
-    model_dir_local = "../RLHF/Policy_Model/" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
+    model_dir_local = "/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/PolicyModel/" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
     benchmark = "apstudy"

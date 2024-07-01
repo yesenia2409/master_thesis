@@ -196,18 +196,17 @@ if __name__ == "__main__":
         optimizer=optimizer
     )
 
-    build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
+    # build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
     
 
-    # _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("Policy_Model/")
-    
-    # kwargs = {
-    #     "min_length": -1,
-    #     "max_new_tokens": 256,
-    #     "eos_token_id": 50256,
-    #     "pad_token_id": 50256,
-    #     "do_sample": True,
-    #    "temperature": 0.5,
-    # }
-    # x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
-    # print(pred)
+    _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("Policy_Model/")
+    kwargs = {
+        "min_length": -1,
+        "max_new_tokens": 256,
+        "eos_token_id": 50256,
+        "pad_token_id": 50256,
+        "do_sample": True,
+        "temperature": 0.5,
+    }
+    x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
+    print(pred)
