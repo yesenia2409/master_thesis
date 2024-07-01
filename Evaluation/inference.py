@@ -37,7 +37,7 @@ def inference(model, tokenizer, prompts, labels, max_new_tokens):
         kwargs = {"max_new_tokens": max_new_tokens, "eos_token_id": 50256, "pad_token_id": 50256}
         summ_tokens = model.generate(input_ids=txt_tokens, attention_mask=attention_mask, **kwargs)
         pred = tokenizer.batch_decode(summ_tokens)[0]
-        pred = pred.split("</s><s>")[1]
+        pred = pred.split("[/INST]")[0]
         pred_list.append(pred)
         input_list.append(prompt.replace(" [EOS]", ""))
         label_list.append(label.replace("\n", " "))
@@ -101,7 +101,6 @@ if __name__ == "__main__":
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
-    data = data[:10]
     # data = data.loc[data['id'].isin(["discussion"])]
     # counter = 0
 
