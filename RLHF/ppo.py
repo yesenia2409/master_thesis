@@ -1,7 +1,7 @@
-
 from datasets import Dataset
 import torch
-from peft import LoraConfig, PeftConfig, TaskType
+import bitsandbytes as bnb
+from peft import LoraConfig, PeftConfig, TaskType, prepare_model_for_kbit_training
 from reward_model import inference as reward_inference
 from tqdm import tqdm
 from transformers import AutoTokenizer, BitsAndBytesConfig
@@ -18,26 +18,30 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def build_dataset(dataset_path):
     train_set = pd.read_pickle(dataset_path)
     ppo_data = Dataset.from_pandas(train_set)
+    ppo_data = ppo_data.rename_columns({"instruction": "query"})
     ppo_data = ppo_data.remove_columns(['type', 'category', 'text', '__index_level_0__'])
-    ppo_data = ppo_data.shuffle()
-    # ppo_data = Dataset.from_dict(ppo_data)    
+    ppo_data = ppo_data.filter(lambda x: len(x["query"]) <= 256, batched=False)
+    print("Number of Rows in Dataset: ", len(ppo_data))
+    ppo_data = ppo_data.shuffle()[:3600]
+    ppo_data = Dataset.from_dict(ppo_data)
     ppo_data.set_format("pytorch")
     return ppo_data
 
 
 def load_model_and_tokenizer(MODEL_PATH):
     
-    lora_config = LoraConfig(
-        r=16,
-        lora_alpha=32,
-        # lora_dropout=0.05,
-        bias="none",
-        task_type="CAUSAL_LM",
-    )
+    # lora_config = LoraConfig(
+    #     r=16,
+    #     lora_alpha=32,
+    #     # lora_dropout=0.05,
+    #    bias="none",
+    #     # target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj", "lm_head"],
+    #     task_type="CAUSAL_LM",
+    # )
 
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
-        bnb_4bit_use_double_quant=True,
+        # bnb_4bit_use_double_quant=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.float16,
     )
@@ -49,15 +53,16 @@ def load_model_and_tokenizer(MODEL_PATH):
         use_safetensors=True,
         device_map="auto",
         quantization_config=bnb_config, 
-        peft_config=lora_config,
     )
+    # model = prepare_model_for_kbit_training(model)
     model.config.use_cache = False
     model = model.to(DEVICE)
     model.bfloat16()
-    
-    ref_model = create_reference_model(model)
+        
+    ref_model = create_reference_model(model, num_shared_layers=10)
     ref_model.config.use_cache = False
-    ref_model = ref_model.to(DEVICE)
+    ref_model.eval()
+    # ref_model = ref_model.to(DEVICE)
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, padding_side="left")
     tokenizer.pad_token = tokenizer.eos_token
@@ -72,11 +77,11 @@ def load_reward_model_and_tokenizer():
         low_cpu_mem_usage=True,
         torch_dtype=torch.float16,
     )
+    reward_model.config.use_cache = False
     reward_model.eval()
     reward_model = reward_model.to(DEVICE)
     reward_model.config.pad_token_id = reward_model.config.eos_token_id
-    reward_model.config.use_cache = False
-
+    
     reward_tokenizer = AutoTokenizer.from_pretrained("weqweasdas/hh_rlhf_rm_open_llama_3b", padding_side="left")
     reward_tokenizer.pad_token = reward_tokenizer.eos_token
 
@@ -92,26 +97,31 @@ def inference(model, tokenizer, prompts, kwargs):
     query_tokens = []
     response_tokens = []
     preds = []
+
     for prompt in prompts:
         encode_dict = tokenizer(prompt, return_tensors="pt", padding=True)
         txt_tokens = encode_dict["input_ids"].cuda()
-        summ_tokens = model.generate(input_ids=txt_tokens, **kwargs)
+        with torch.cuda.amp.autocast():
+            summ_tokens = model.generate(input_ids=txt_tokens, **kwargs)
         pred = tokenizer.batch_decode(summ_tokens)[0]
         query_tokens.append(txt_tokens.squeeze())
         response_tokens.append(summ_tokens.squeeze())
         preds.append(pred)
+        print("Inference done for one prompt..")
     return query_tokens, response_tokens, preds
 
 
 def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer):
     log_history = []
     kwargs = {
-        "min_length": -1,
+        # "min_length": -1,
+        "top_p": 1.0,
+        "top_k": 0.0,
         "max_new_tokens": 256,
         "eos_token_id": 50256,
         "pad_token_id": 50256,
         "do_sample": True, 
-        "temperature": 0.5,
+        # "temperature": 0.5,
     }
 
     for epoch in tqdm(range(ppo_config.ppo_epochs), "epoch: "):
@@ -120,31 +130,29 @@ def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, rewa
             print("Batch: ", batch_counter)
 
             # Generate outputs
-            query_tensors, response_tensors, pred = inference(policy_model, policy_tokenizer, batch["instruction"], kwargs)
-            # print("Response Tensors: ", response_tensors)
+            # policy_model.config.use_cache = True
+            query_tensors, response_tensors, pred = inference(policy_model, policy_tokenizer, batch["query"], kwargs)
+            # policy_model.config.use_cache = False
             for idx in range(len(pred)):
                 pred[idx] = pred[idx].split("[/INST]")[1].split(policy_tokenizer.eos_token)[0]
             batch["response"] = pred
-            del pred
-            torch.cuda.empty_cache()
-            # print(pred)
-            
+
             # Compute rewards
             rewards_list = []
-            for instr, resp in zip(batch["instruction"], batch["response"]):
+            for instr, resp in zip(batch["query"], batch["response"]):
                 # print("Instr: ", instr)
                 # print("Resp: ", resp)
                 reward = reward_inference(reward_tokenizer, reward_model, resp, kwargs["max_new_tokens"])
+                print(reward)
                 rewards_list.append(torch.tensor(reward).to(DEVICE))
-            # print("Rewards List: ", rewards_list)
 
             # Run PPO step
             stats = ppo_trainer.step(query_tensors, response_tensors, rewards_list)
-            # print("Stats: ", stats)
             ppo_trainer.log_stats(stats, batch, rewards_list)
             log_history.append(stats)
             print("Loss: ", stats['ppo/loss/value'], " and KL penalty ", stats['ppo/mean_non_score_reward'])
             batch_counter += 1
+            torch.cuda.empty_cache()
 
     with open("Output_files/slurm_files/trainer_log_history_1epoch_2_00E-5Lr_2batch.txt", "a") as text_file:
         text_file.write(str(log_history))
@@ -161,7 +169,7 @@ if __name__ == "__main__":
     set_seed(42)
     ref_model, policy_model, policy_tokenizer = load_model_and_tokenizer(MODEL_PATH)
     reward_model, reward_tokenizer = load_reward_model_and_tokenizer()
-
+    # print(torch.cuda.memory_summary())
     ################
     # Dataset
     ################
@@ -171,17 +179,21 @@ if __name__ == "__main__":
     ################
     # Training
     ################
-    policy_model.gradient_checkpointing_enable()
+    policy_model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+    optimizer = bnb.optim.Adam8bit(policy_model.parameters(), lr=0.000002)
 
     ppo_config = PPOConfig(
-        batch_size=2,
-        mini_batch_size=2,
+        batch_size=4,
+        mini_batch_size=4,
         gradient_accumulation_steps=1,
         ppo_epochs=1,
         model_name=MODEL_PATH,
         learning_rate=0.000002,
         remove_unused_columns=False,
         seed=42,
+        use_score_scaling=True, # Paper: Secrets of RLHF in Large Language Models Part I: PPO
+        use_score_norm=True,
+        score_clip=0.5,
         optimize_device_cache=True, 
         optimize_cuda_cache=True,
     )
@@ -192,7 +204,8 @@ if __name__ == "__main__":
         ref_model,
         policy_tokenizer,
         dataset=dataset,
-        data_collator=collator
+        data_collator=collator,
+        optimizer=optimizer
     )
 
     build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
