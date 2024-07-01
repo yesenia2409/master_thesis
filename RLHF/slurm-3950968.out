@@ -1,0 +1,48 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:17,  3.52s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:14,  3.51s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:10<00:10,  3.63s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:14<00:07,  3.58s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:18<00:03,  3.65s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  2.73s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.17s/it]
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/8713 [00:00<?, ?it/s][ABatch:  0
+Loss:  0.17730285227298737  and KL penalty  0.0
+
+  0%|          | 1/8713 [00:39<95:31:04, 39.47s/it][ABatch:  1
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/utils/checkpoint.py:90: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Loss:  0.25755250453948975  and KL penalty  -2.1248188204481266e-05
+
+  0%|          | 2/8713 [02:07<164:31:11, 67.99s/it][ABatch:  2
+Loss:  0.27230632305145264  and KL penalty  9.369409235659987e-05
+
+  0%|          | 3/8713 [03:34<185:13:49, 76.56s/it][ABatch:  3
+Loss:  0.14756277203559875  and KL penalty  -8.916334627429023e-05
+
+  0%|          | 4/8713 [05:01<195:56:40, 81.00s/it][ABatch:  4
+Loss:  0.23257490992546082  and KL penalty  6.103339546825737e-05
+
+  0%|          | 5/8713 [06:29<201:14:45, 83.20s/it][ABatch:  5
+Loss:  0.15036678314208984  and KL penalty  0.00022304337471723557
+
+  0%|          | 6/8713 [08:01<208:58:33, 86.40s/it][ABatch:  6
+Loss:  0.2554346024990082  and KL penalty  2.3019578293315135e-05
+
+  0%|          | 7/8713 [09:32<212:31:13, 87.88s/it][ABatch:  7
+Loss:  0.12133141607046127  and KL penalty  -7.579050725325942e-05
+
+  0%|          | 8/8713 [10:59<211:26:06, 87.44s/it][ABatch:  8
+Loss:  0.09223947674036026  and KL penalty  0.00025106515386141837
+
+  0%|          | 9/8713 [12:28<212:43:54, 87.99s/it][ABatch:  9
+Loss:  0.14713743329048157  and KL penalty  1.4893661500536837e-05
+
+  0%|          | 10/8713 [13:55<211:50:14, 87.63s/it][ABatch:  10
+Loss:  0.08697975426912308  and KL penalty  0.0002612442767713219
+
+  0%|          | 11/8713 [15:22<211:56:18, 87.68s/it][ABatch:  11
+slurmstepd: error: *** JOB 3950968 ON o06c01 CANCELLED AT 2024-06-27T15:29:07 ***

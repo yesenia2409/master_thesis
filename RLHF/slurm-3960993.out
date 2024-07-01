@@ -1,0 +1,1393 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:18,  3.76s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:14,  3.71s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:11<00:11,  3.82s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:14<00:07,  3.66s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:18<00:03,  3.69s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  2.76s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.25s/it]
+WARNING:root:A <class 'transformers.models.llama.modeling_llama.LlamaForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+Filter:   0%|          | 0/17427 [00:00<?, ? examples/s]Filter:   6%|▌         | 1000/17427 [00:00<00:02, 7684.90 examples/s]Filter: 100%|██████████| 17427/17427 [00:00<00:00, 101667.19 examples/s]
+Number of Rows in Dataset:  10701
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/1250 [00:00<?, ?it/s][ABatch:  0
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.595703125
+6.03125
+-0.39794921875
+3.615234375
+Loss:  0.14190509915351868  and KL penalty  1.3325333384273108e-05
+
+  0%|          | 1/1250 [00:57<19:50:13, 57.18s/it][ABatch:  1
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+5.90234375
+2.947265625
+-0.73486328125
+2.015625
+Loss:  0.1268688440322876  and KL penalty  7.313455716939643e-05
+
+  0%|          | 2/1250 [04:48<55:21:57, 159.71s/it][ABatch:  2
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.09368896484375
+1.6484375
+7.5390625
+-1.228515625
+Loss:  0.12086410820484161  and KL penalty  -0.00014377888874150813
+
+  0%|          | 3/1250 [08:40<66:44:27, 192.68s/it][ABatch:  3
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.95703125
+1.5302734375
+-0.416015625
+-0.55029296875
+Loss:  0.12287268042564392  and KL penalty  -1.5174995269262581e-06
+
+  0%|          | 4/1250 [12:33<72:12:10, 208.61s/it][ABatch:  4
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.81640625
+2.681640625
+6.95703125
+2.05859375
+Loss:  0.13056276738643646  and KL penalty  2.2982587324804626e-05
+
+  0%|          | 5/1250 [16:25<75:02:02, 216.97s/it][ABatch:  5
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.6337890625
+2.111328125
+0.53515625
+0.499267578125
+Loss:  0.12710390985012054  and KL penalty  -9.566795051796362e-05
+
+  0%|          | 6/1250 [20:16<76:39:37, 221.85s/it][ABatch:  6
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.9248046875
+-0.619140625
+1.02734375
+-0.141357421875
+Loss:  0.14286744594573975  and KL penalty  -0.0002221659233327955
+
+  1%|          | 7/1250 [24:08<77:43:40, 225.12s/it][ABatch:  7
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.552734375
+1.4189453125
+0.443603515625
+2.169921875
+Loss:  0.1285354346036911  and KL penalty  -1.051438448484987e-05
+
+  1%|          | 8/1250 [27:59<78:20:18, 227.07s/it][ABatch:  8
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.421875
+-0.39697265625
+2.07421875
+8.2578125
+Loss:  0.10884431004524231  and KL penalty  1.673000156188209e-06
+
+  1%|          | 9/1250 [31:50<78:41:27, 228.27s/it][ABatch:  9
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.896484375
+-0.274658203125
+5.1015625
+2.310546875
+Loss:  0.10468890517950058  and KL penalty  1.18198058771668e-05
+
+  1%|          | 10/1250 [35:42<78:58:59, 229.31s/it][ABatch:  10
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.383544921875
+1.8955078125
+1.9501953125
+-0.1746826171875
+Loss:  0.10840505361557007  and KL penalty  -6.866661715321243e-05
+
+  1%|          | 11/1250 [39:33<79:06:04, 229.83s/it][ABatch:  11
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.12109375
+8.421875
+1.3955078125
+1.427734375
+Loss:  0.11095091700553894  and KL penalty  -1.3499427041097078e-05
+
+  1%|          | 12/1250 [43:25<79:17:08, 230.56s/it][ABatch:  12
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.5361328125
+1.1826171875
+-0.408203125
+0.11614990234375
+Loss:  0.11733350157737732  and KL penalty  6.000265420880169e-05
+
+  1%|          | 13/1250 [47:19<79:31:35, 231.44s/it][ABatch:  13
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.0
+3.564453125
+4.3984375
+2.34765625
+Loss:  0.13935357332229614  and KL penalty  2.4011228560993914e-06
+
+  1%|          | 14/1250 [51:10<79:29:33, 231.53s/it][ABatch:  14
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.65234375
+-0.20361328125
+2.0625
+4.34765625
+Loss:  0.16082967817783356  and KL penalty  0.0002915012009907514
+
+  1%|          | 15/1250 [55:02<79:24:28, 231.47s/it][ABatch:  15
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+6.58203125
+1.8701171875
+0.75244140625
+1.0205078125
+Loss:  0.14388343691825867  and KL penalty  -0.00026031563174910843
+
+  1%|▏         | 16/1250 [58:52<79:15:52, 231.24s/it][ABatch:  16
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.837890625
+2.544921875
+1.267578125
+1.033203125
+Loss:  0.10746714472770691  and KL penalty  8.8393637270201e-05
+
+  1%|▏         | 17/1250 [1:02:43<79:09:44, 231.13s/it][ABatch:  17
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.0654296875
+2.814453125
+1.310546875
+8.5390625
+Loss:  0.13991276919841766  and KL penalty  -0.00014818717318121344
+
+  1%|▏         | 18/1250 [1:06:36<79:17:18, 231.69s/it][ABatch:  18
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.4990234375
+1.6142578125
+1.3427734375
+6.64453125
+Loss:  0.12491921335458755  and KL penalty  -9.483179746894166e-05
+
+  2%|▏         | 19/1250 [1:10:27<79:07:27, 231.40s/it][ABatch:  19
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.305419921875
+0.1119384765625
+0.97607421875
+4.0
+Loss:  0.12102526426315308  and KL penalty  -4.655463635572232e-05
+
+  2%|▏         | 20/1250 [1:14:18<78:59:03, 231.17s/it][ABatch:  20
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.4169921875
+4.484375
+0.1544189453125
+3.625
+Loss:  0.12695461511611938  and KL penalty  -6.815196684328839e-05
+
+  2%|▏         | 21/1250 [1:18:10<79:02:58, 231.55s/it][ABatch:  21
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.509765625
+0.935546875
+2.146484375
+1.8994140625
+Loss:  0.11216259002685547  and KL penalty  -2.4732953534112312e-05
+
+  2%|▏         | 22/1250 [1:22:03<79:08:37, 232.02s/it][ABatch:  22
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.6640625
+5.58203125
+0.8720703125
+2.462890625
+Loss:  0.11726892739534378  and KL penalty  1.1674294910335448e-05
+
+  2%|▏         | 23/1250 [1:25:54<78:58:31, 231.71s/it][ABatch:  23
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.158203125
+1.02734375
+0.2435302734375
+-0.3359375
+Loss:  0.10714772343635559  and KL penalty  2.0814712115679868e-05
+
+  2%|▏         | 24/1250 [1:29:47<79:03:48, 232.16s/it][ABatch:  24
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.494873046875
+0.288330078125
+0.80615234375
+-0.80712890625
+Loss:  0.09603933990001678  and KL penalty  -0.00021580087195616215
+
+  2%|▏         | 25/1250 [1:33:39<78:55:38, 231.95s/it][ABatch:  25
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.923828125
+1.876953125
+-0.26416015625
+3.078125
+Loss:  0.11431247740983963  and KL penalty  0.0001706042530713603
+
+  2%|▏         | 26/1250 [1:37:29<78:43:24, 231.54s/it][ABatch:  26
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.033203125
+0.529296875
+5.5625
+-0.45263671875
+Loss:  0.12385144829750061  and KL penalty  0.00022479381004814059
+
+  2%|▏         | 27/1250 [1:41:21<78:38:51, 231.51s/it][ABatch:  27
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.638671875
+1.5888671875
+0.51904296875
+1.990234375
+Loss:  0.14382760226726532  and KL penalty  -0.0001288235216634348
+
+  2%|▏         | 28/1250 [1:45:12<78:31:08, 231.32s/it][ABatch:  28
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.291015625
+-0.27294921875
+2.0390625
+0.79736328125
+Loss:  0.1596594750881195  and KL penalty  -0.00011763627844629809
+
+  2%|▏         | 29/1250 [1:49:04<78:33:38, 231.63s/it][ABatch:  29
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.189453125
+1.6162109375
+9.125
+5.2109375
+Loss:  0.10507155954837799  and KL penalty  2.611877062008716e-05
+
+  2%|▏         | 30/1250 [1:52:56<78:30:27, 231.66s/it][ABatch:  30
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.56689453125
+2.61328125
+-0.42578125
+1.2509765625
+Loss:  0.13484252989292145  and KL penalty  0.0002443654229864478
+
+  2%|▏         | 31/1250 [1:56:47<78:23:57, 231.53s/it][ABatch:  31
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.7978515625
+6.3984375
+2.615234375
+-0.9521484375
+Loss:  0.14502523839473724  and KL penalty  4.463585719349794e-05
+
+  3%|▎         | 32/1250 [2:00:39<78:25:05, 231.78s/it][ABatch:  32
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.404296875
+0.6201171875
+1.306640625
+1.7890625
+Loss:  0.14945673942565918  and KL penalty  -3.561621633707546e-05
+
+  3%|▎         | 33/1250 [2:04:32<78:24:27, 231.94s/it][ABatch:  33
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.8330078125
+6.2890625
+2.41015625
+6.65234375
+Loss:  0.1333928108215332  and KL penalty  3.297731018392369e-05
+
+  3%|▎         | 34/1250 [2:08:22<78:13:27, 231.58s/it][ABatch:  34
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.9482421875
+0.8779296875
+2.443359375
+0.818359375
+Loss:  0.12938904762268066  and KL penalty  -2.959935227409005e-05
+
+  3%|▎         | 35/1250 [2:12:13<78:06:16, 231.42s/it][ABatch:  35
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.0118255615234375
+1.82421875
+1.0634765625
+-0.54150390625
+Loss:  0.11194567382335663  and KL penalty  -7.356054265983403e-05
+
+  3%|▎         | 36/1250 [2:16:04<77:57:07, 231.16s/it][ABatch:  36
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.353515625
+2.228515625
+0.87158203125
+1.9296875
+Loss:  0.1538889855146408  and KL penalty  -0.00011011026799678802
+
+  3%|▎         | 37/1250 [2:19:55<77:50:33, 231.03s/it][ABatch:  37
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-1.2177734375
+4.984375
+2.169921875
+0.79541015625
+Loss:  0.11341042071580887  and KL penalty  -7.99568006186746e-05
+
+  3%|▎         | 38/1250 [2:23:47<77:52:35, 231.32s/it][ABatch:  38
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.36669921875
+2.224609375
+3.65625
+4.796875
+Loss:  0.14902913570404053  and KL penalty  4.654453005059622e-05
+
+  3%|▎         | 39/1250 [2:27:38<77:45:55, 231.18s/it][ABatch:  39
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.982421875
+-0.150634765625
+0.84619140625
+3.11328125
+Loss:  0.12144747376441956  and KL penalty  0.00019530653662513942
+
+  3%|▎         | 40/1250 [2:31:29<77:41:11, 231.13s/it][ABatch:  40
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.4931640625
+-0.470703125
+7.203125
+1.0380859375
+Loss:  0.16617843508720398  and KL penalty  -0.00034490894176997244
+
+  3%|▎         | 41/1250 [2:35:21<77:45:26, 231.54s/it][ABatch:  41
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.103515625
+0.6083984375
+-1.4404296875
+1.64453125
+Loss:  0.1434943675994873  and KL penalty  -0.00017652823589742184
+
+  3%|▎         | 42/1250 [2:39:14<77:49:56, 231.95s/it][ABatch:  42
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.45849609375
+0.7431640625
+1.0537109375
+1.685546875
+Loss:  0.11193318665027618  and KL penalty  0.0002865385904442519
+
+  3%|▎         | 43/1250 [2:43:05<77:38:39, 231.58s/it][ABatch:  43
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.75390625
+2.0546875
+1.603515625
+1.6494140625
+Loss:  0.10972695797681808  and KL penalty  -0.0002130870270775631
+
+  4%|▎         | 44/1250 [2:46:58<77:44:34, 232.07s/it][ABatch:  44
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.7548828125
+4.7578125
+2.642578125
+-0.466552734375
+Loss:  0.13855582475662231  and KL penalty  -6.679625948891044e-05
+
+  4%|▎         | 45/1250 [2:50:51<77:47:09, 232.39s/it][ABatch:  45
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.95849609375
+1.8779296875
+0.91943359375
+2.8359375
+Loss:  0.10532525926828384  and KL penalty  0.00017857071361504495
+
+  4%|▎         | 46/1250 [2:54:43<77:41:12, 232.29s/it][ABatch:  46
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.441650390625
+0.395751953125
+1.4130859375
+2.677734375
+Loss:  0.1161254495382309  and KL penalty  6.564444629475474e-05
+
+  4%|▍         | 47/1250 [2:58:34<77:30:23, 231.94s/it][ABatch:  47
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.529296875
+3.9765625
+2.6171875
+2.287109375
+Loss:  0.14080214500427246  and KL penalty  0.0001459560007788241
+
+  4%|▍         | 48/1250 [3:02:27<77:28:40, 232.05s/it][ABatch:  48
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.2095947265625
+1.544921875
+2.130859375
+0.87060546875
+Loss:  0.13400594890117645  and KL penalty  0.00019555556355044246
+
+  4%|▍         | 49/1250 [3:06:18<77:23:34, 231.99s/it][ABatch:  49
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.177734375
+6.30859375
+5.31640625
+1.7412109375
+Loss:  0.1187039390206337  and KL penalty  4.338970757089555e-05
+
+  4%|▍         | 50/1250 [3:10:10<77:19:14, 231.96s/it][ABatch:  50
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.744140625
+1.548828125
+1.568359375
+2.154296875
+Loss:  0.14931805431842804  and KL penalty  -9.13918629521504e-05
+
+  4%|▍         | 51/1250 [3:14:02<77:14:28, 231.92s/it][ABatch:  51
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.41015625
+3.13671875
+3.73828125
+0.828125
+Loss:  0.12349333614110947  and KL penalty  4.0407707274425775e-05
+
+  4%|▍         | 52/1250 [3:17:53<77:04:29, 231.61s/it][ABatch:  52
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.5322265625
+0.65625
+3.041015625
+4.5546875
+Loss:  0.13801097869873047  and KL penalty  0.00013260115520097315
+
+  4%|▍         | 53/1250 [3:21:45<77:02:17, 231.69s/it][ABatch:  53
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.6884765625
+1.1689453125
+4.62890625
+1.5986328125
+Loss:  0.18003375828266144  and KL penalty  0.00018767398432828486
+
+  4%|▍         | 54/1250 [3:25:37<77:00:23, 231.79s/it][ABatch:  54
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.546875
+0.0863037109375
+-0.5009765625
+4.41796875
+Loss:  0.10899537056684494  and KL penalty  0.00019067198445554823
+
+  4%|▍         | 55/1250 [3:29:28<76:51:57, 231.56s/it][ABatch:  55
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.720703125
+1.185546875
+-0.041778564453125
+1.8466796875
+Loss:  0.1397101730108261  and KL penalty  -1.2876924984084326e-06
+
+  4%|▍         | 56/1250 [3:33:19<76:48:08, 231.56s/it][ABatch:  56
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.6416015625
+3.671875
+2.849609375
+0.8681640625
+Loss:  0.13682571053504944  and KL penalty  0.0001774563716026023
+
+  5%|▍         | 57/1250 [3:37:10<76:40:06, 231.35s/it][ABatch:  57
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.413818359375
+2.373046875
+1.8115234375
+1.9609375
+Loss:  0.10836717486381531  and KL penalty  8.65748806972988e-05
+
+  5%|▍         | 58/1250 [3:41:02<76:37:36, 231.42s/it][ABatch:  58
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.7529296875
+2.40625
+2.021484375
+1.328125
+Loss:  0.11672316491603851  and KL penalty  -4.415496368892491e-05
+
+  5%|▍         | 59/1250 [3:44:52<76:26:19, 231.05s/it][ABatch:  59
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.488037109375
+-0.2734375
+0.8427734375
+-0.044158935546875
+Loss:  0.10864928364753723  and KL penalty  -0.00011746110249077901
+
+  5%|▍         | 60/1250 [3:48:43<76:24:15, 231.14s/it][ABatch:  60
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.876953125
+1.416015625
+1.3837890625
+1.5390625
+Loss:  0.13071104884147644  and KL penalty  3.225493117042788e-07
+
+  5%|▍         | 61/1250 [3:52:35<76:21:16, 231.18s/it][ABatch:  61
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.39453125
+1.4912109375
+0.36181640625
+-0.65087890625
+Loss:  0.12632407248020172  and KL penalty  0.0001879789197118953
+
+  5%|▍         | 62/1250 [3:56:27<76:24:34, 231.54s/it][ABatch:  62
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.021484375
+1.1455078125
+-0.2493896484375
+1.9345703125
+Loss:  0.11129564791917801  and KL penalty  -0.00018751937022898346
+
+  5%|▌         | 63/1250 [4:00:19<76:24:35, 231.74s/it][ABatch:  63
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.015625
+2.123046875
+0.19091796875
+0.0975341796875
+Loss:  0.11090431362390518  and KL penalty  -0.00010312155063729733
+
+  5%|▌         | 64/1250 [4:04:10<76:12:30, 231.32s/it][ABatch:  64
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.61962890625
+1.58984375
+4.1796875
+3.28125
+Loss:  0.11311764270067215  and KL penalty  -3.963385552196996e-06
+
+  5%|▌         | 65/1250 [4:08:01<76:11:20, 231.46s/it][ABatch:  65
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.06640625
+-0.52197265625
+2.244140625
+2.087890625
+Loss:  0.13498038053512573  and KL penalty  -0.00010799123265314847
+
+  5%|▌         | 66/1250 [4:11:54<76:15:35, 231.87s/it][ABatch:  66
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.6240234375
+7.1796875
+2.3515625
+1.953125
+Loss:  0.09118810296058655  and KL penalty  0.00040256427018903196
+
+  5%|▌         | 67/1250 [4:15:46<76:09:24, 231.75s/it][ABatch:  67
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.171875
+-0.1630859375
+0.5673828125
+3.177734375
+Loss:  0.13968761265277863  and KL penalty  -9.907839557854459e-05
+
+  5%|▌         | 68/1250 [4:19:37<75:59:54, 231.47s/it][ABatch:  68
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.6025390625
+2.279296875
+5.05859375
+-0.01461029052734375
+Loss:  0.12328711897134781  and KL penalty  -2.1911395378992893e-05
+
+  6%|▌         | 69/1250 [4:23:29<76:01:39, 231.75s/it][ABatch:  69
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.2109375
+0.904296875
+3.6640625
+2.134765625
+Loss:  0.10507091879844666  and KL penalty  9.675346518633887e-06
+
+  6%|▌         | 70/1250 [4:27:21<76:01:14, 231.93s/it][ABatch:  70
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.0029296875
+3.02734375
+2.263671875
+-0.62548828125
+Loss:  0.15998761355876923  and KL penalty  4.570683813653886e-05
+
+  6%|▌         | 71/1250 [4:31:12<75:49:12, 231.51s/it][ABatch:  71
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.9609375
+2.080078125
+3.79296875
+-0.07037353515625
+Loss:  0.1072700172662735  and KL penalty  -0.0001398543536197394
+
+  6%|▌         | 72/1250 [4:35:04<75:50:26, 231.77s/it][ABatch:  72
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.0068359375
+5.98046875
+2.181640625
+1.2412109375
+Loss:  0.13592955470085144  and KL penalty  0.00035781055339612067
+
+  6%|▌         | 73/1250 [4:38:55<75:39:26, 231.41s/it][ABatch:  73
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.90625
+2.1484375
+0.125244140625
+2.572265625
+Loss:  0.09495621174573898  and KL penalty  0.00010867519449675456
+
+  6%|▌         | 74/1250 [4:42:46<75:35:50, 231.42s/it][ABatch:  74
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.02685546875
+4.06640625
+1.2958984375
+3.384765625
+Loss:  0.11600209772586823  and KL penalty  9.059766853170004e-06
+
+  6%|▌         | 75/1250 [4:46:38<75:32:17, 231.44s/it][ABatch:  75
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+5.85546875
+0.6259765625
+0.5673828125
+1.234375
+Loss:  0.1051526814699173  and KL penalty  3.8540663808817044e-05
+
+  6%|▌         | 76/1250 [4:50:30<75:32:31, 231.65s/it][ABatch:  76
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.205078125
+3.978515625
+1.3642578125
+-0.314208984375
+Loss:  0.14159460365772247  and KL penalty  1.0495062269910704e-05
+
+  6%|▌         | 77/1250 [4:54:23<75:37:12, 232.08s/it][ABatch:  77
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.0131988525390625
+2.53125
+0.67724609375
+1.06640625
+Loss:  0.12718673050403595  and KL penalty  -8.899200474843383e-05
+
+  6%|▌         | 78/1250 [4:58:13<75:23:54, 231.60s/it][ABatch:  78
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.00390625
+2.88671875
+0.91943359375
+6.74609375
+Loss:  0.1395433247089386  and KL penalty  0.00010332824604120106
+
+  6%|▋         | 79/1250 [5:02:06<75:23:00, 231.75s/it][ABatch:  79
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.232421875
+1.1728515625
+5.3203125
+1.6103515625
+Loss:  0.13362181186676025  and KL penalty  8.337344479514286e-05
+
+  6%|▋         | 80/1250 [5:05:57<75:15:55, 231.59s/it][ABatch:  80
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.208984375
+3.48828125
+2.98828125
+7.0546875
+Loss:  0.14599181711673737  and KL penalty  -0.00013817203580401838
+
+  6%|▋         | 81/1250 [5:09:49<75:14:49, 231.73s/it][ABatch:  81
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.7080078125
+1.2119140625
+7.109375
+2.115234375
+Loss:  0.12906159460544586  and KL penalty  -5.005187267670408e-05
+
+  7%|▋         | 82/1250 [5:13:40<75:05:20, 231.44s/it][ABatch:  82
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.98486328125
+3.578125
+3.408203125
+1.8486328125
+Loss:  0.1472977250814438  and KL penalty  0.00018032011575996876
+
+  7%|▋         | 83/1250 [5:17:31<74:58:59, 231.31s/it][ABatch:  83
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.395263671875
+1.6171875
+0.9501953125
+-0.100830078125
+Loss:  0.14157189428806305  and KL penalty  -0.00017884789849631488
+
+  7%|▋         | 84/1250 [5:21:24<75:05:09, 231.83s/it][ABatch:  84
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.9736328125
+2.69921875
+2.5703125
+2.08984375
+Loss:  0.13538219034671783  and KL penalty  -0.00021233422739896923
+
+  7%|▋         | 85/1250 [5:25:15<74:56:38, 231.59s/it][ABatch:  85
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.364501953125
+8.046875
+8.453125
+0.3935546875
+Loss:  0.11782970279455185  and KL penalty  -0.00015925191110000014
+
+  7%|▋         | 86/1250 [5:29:06<74:54:20, 231.67s/it][ABatch:  86
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.2763671875
+1.0478515625
+1.5439453125
+0.68505859375
+Loss:  0.1013178601861  and KL penalty  8.940065163187683e-05
+
+  7%|▋         | 87/1250 [5:32:58<74:48:13, 231.55s/it][ABatch:  87
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.46875
+4.765625
+2.0859375
+0.89306640625
+Loss:  0.12664970755577087  and KL penalty  4.98960871482268e-05
+
+  7%|▋         | 88/1250 [5:36:49<74:40:01, 231.33s/it][ABatch:  88
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.65625
+3.509765625
+0.57763671875
+0.91650390625
+Loss:  0.12740328907966614  and KL penalty  0.0002782341034617275
+
+  7%|▋         | 89/1250 [5:40:41<74:41:35, 231.61s/it][ABatch:  89
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.5
+3.0234375
+4.75390625
+1.1201171875
+Loss:  0.1410970389842987  and KL penalty  0.0002498721587471664
+
+  7%|▋         | 90/1250 [5:44:32<74:37:55, 231.62s/it][ABatch:  90
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.806640625
+0.170654296875
+1.96875
+5.4765625
+Loss:  0.14530658721923828  and KL penalty  -8.143857849063352e-05
+
+  7%|▋         | 91/1250 [5:48:24<74:34:55, 231.66s/it][ABatch:  91
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.06988525390625
+2.990234375
+1.3935546875
+1.544921875
+Loss:  0.09996151924133301  and KL penalty  3.797743920586072e-05
+
+  7%|▋         | 92/1250 [5:52:17<74:35:31, 231.89s/it][ABatch:  92
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.62841796875
+1.1279296875
+1.9052734375
+1.083984375
+Loss:  0.13480713963508606  and KL penalty  0.00017325383669231087
+
+  7%|▋         | 93/1250 [5:56:07<74:24:12, 231.51s/it][ABatch:  93
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.7421875
+2.310546875
+1.091796875
+3.77734375
+Loss:  0.13469937443733215  and KL penalty  0.0001462859654566273
+
+  8%|▊         | 94/1250 [5:59:59<74:19:19, 231.45s/it][ABatch:  94
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.869140625
+3.275390625
+-0.2281494140625
+1.4287109375
+Loss:  0.12786661088466644  and KL penalty  0.00022008370433468372
+
+  8%|▊         | 95/1250 [6:03:49<74:08:53, 231.11s/it][ABatch:  95
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.0084228515625
+-0.77392578125
+1.103515625
+0.112548828125
+Loss:  0.1391136646270752  and KL penalty  6.246892007766291e-05
+
+  8%|▊         | 96/1250 [6:07:40<74:06:28, 231.19s/it][ABatch:  96
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.4931640625
+0.7529296875
+-0.869140625
+0.27734375
+Loss:  0.11319438368082047  and KL penalty  1.958865141205024e-05
+
+  8%|▊         | 97/1250 [6:11:32<74:05:02, 231.31s/it][ABatch:  97
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.395751953125
+6.23046875
+3.23046875
+3.46484375
+Loss:  0.12647134065628052  and KL penalty  -0.00011196285777259618
+
+  8%|▊         | 98/1250 [6:15:25<74:11:35, 231.85s/it][ABatch:  98
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.494140625
+3.623046875
+0.41064453125
+0.79443359375
+Loss:  0.14894621074199677  and KL penalty  -0.0001625696459086612
+
+  8%|▊         | 99/1250 [6:19:18<74:14:00, 232.18s/it][ABatch:  99
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+5.26953125
+2.62109375
+0.90380859375
+0.310546875
+Loss:  0.1382136344909668  and KL penalty  -0.0001697879924904555
+
+  8%|▊         | 100/1250 [6:23:11<74:14:12, 232.39s/it][ABatch:  100
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.2890625
+0.72900390625
+0.69580078125
+0.80810546875
+Loss:  0.13309712707996368  and KL penalty  0.00014219991862773895
+
+  8%|▊         | 101/1250 [6:27:02<74:03:23, 232.03s/it][ABatch:  101
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.708984375
+1.779296875
+4.00390625
+0.50537109375
+Loss:  0.11395561695098877  and KL penalty  -9.668851271271706e-05
+
+  8%|▊         | 102/1250 [6:30:54<73:58:29, 231.98s/it][ABatch:  102
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.04296875
+2.064453125
+0.5966796875
+0.888671875
+Loss:  0.1584130972623825  and KL penalty  0.00022492183779831976
+
+  8%|▊         | 103/1250 [6:34:45<73:47:13, 231.59s/it][ABatch:  103
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.55078125
+0.173095703125
+5.32421875
+0.5634765625
+Loss:  0.13774782419204712  and KL penalty  -0.00013014633441343904
+
+  8%|▊         | 104/1250 [6:38:36<73:44:42, 231.66s/it][ABatch:  104
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.134765625
+0.0799560546875
+1.2041015625
+1.6611328125
+Loss:  0.16709508001804352  and KL penalty  -2.084115840261802e-05
+
+  8%|▊         | 105/1250 [6:42:28<73:39:08, 231.57s/it][ABatch:  105
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.331787109375
+0.1319580078125
+0.2293701171875
+2.9453125
+Loss:  0.1614800989627838  and KL penalty  -0.00013397543807514012
+
+  8%|▊         | 106/1250 [6:46:18<73:26:00, 231.08s/it][ABatch:  106
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.7392578125
+0.66845703125
+1.728515625
+6.25390625
+Loss:  0.1493733823299408  and KL penalty  -4.21908735006582e-05
+
+  9%|▊         | 107/1250 [6:50:10<73:26:27, 231.31s/it][ABatch:  107
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.46875
+0.126953125
+-0.31591796875
+4.83203125
+Loss:  0.12096265703439713  and KL penalty  5.170666554477066e-06
+
+  9%|▊         | 108/1250 [6:54:00<73:20:26, 231.20s/it][ABatch:  108
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+5.3359375
+5.296875
+2.09375
+3.609375
+Loss:  0.11728579550981522  and KL penalty  1.1534635632415302e-05
+
+  9%|▊         | 109/1250 [6:57:52<73:16:30, 231.19s/it][ABatch:  109
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+2.0078125
+1.2421875
+1.3828125
+-0.19970703125
+Loss:  0.10289255529642105  and KL penalty  -0.0001758403523126617
+
+  9%|▉         | 110/1250 [7:01:44<73:18:30, 231.50s/it][ABatch:  110
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.609375
+3.033203125
+3.875
+1.9658203125
+Loss:  0.15041100978851318  and KL penalty  0.0002901519474107772
+
+  9%|▉         | 111/1250 [7:05:35<73:11:26, 231.33s/it][ABatch:  111
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.306640625
+1.6357421875
+1.240234375
+1.306640625
+Loss:  0.11860520392656326  and KL penalty  0.00027999491430819035
+
+  9%|▉         | 112/1250 [7:09:26<73:04:17, 231.16s/it][ABatch:  112
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.196044921875
+1.52734375
+-0.23095703125
+6.17578125
+Loss:  0.11830119043588638  and KL penalty  5.220153252594173e-05
+
+  9%|▉         | 113/1250 [7:13:17<73:00:46, 231.18s/it][ABatch:  113
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+6.21875
+-1.462890625
+0.5634765625
+1.1064453125
+Loss:  0.13039186596870422  and KL penalty  0.00015258959319908172
+
+  9%|▉         | 114/1250 [7:17:08<72:59:07, 231.29s/it][ABatch:  114
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-1.3857421875
+1.326171875
+0.367431640625
+6.1953125
+Loss:  0.13807550072669983  and KL penalty  3.373034269316122e-05
+
+  9%|▉         | 115/1250 [7:21:01<73:05:04, 231.81s/it][ABatch:  115
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.61083984375
+4.234375
+2.884765625
+0.52978515625
+Loss:  0.12960441410541534  and KL penalty  0.000120180455269292
+
+  9%|▉         | 116/1250 [7:24:55<73:09:45, 232.26s/it][ABatch:  116
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.67578125
+1.609375
+0.54150390625
+-0.66845703125
+Loss:  0.1566062718629837  and KL penalty  -3.6838994219579035e-06
+
+  9%|▉         | 117/1250 [7:28:47<73:05:45, 232.26s/it][ABatch:  117
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+4.17578125
+1.5888671875
+1.4375
+2.884765625
+Loss:  0.1194005236029625  and KL penalty  3.945670323446393e-05
+
+  9%|▉         | 118/1250 [7:32:37<72:51:55, 231.73s/it][ABatch:  118
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.4609375
+0.71533203125
+2.98828125
+1.41015625
+Loss:  0.11645568162202835  and KL penalty  6.60224468447268e-05
+
+ 10%|▉         | 119/1250 [7:36:31<72:56:07, 232.16s/it][ABatch:  119
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+3.4609375
+6.18359375
+2.11328125
+0.8486328125
+Loss:  0.13753877580165863  and KL penalty  0.0002883211709558964
+
+ 10%|▉         | 120/1250 [7:40:22<72:46:27, 231.85s/it][ABatch:  120
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+1.943359375
+0.146240234375
+5.1171875
+3.296875
+Loss:  0.0928533598780632  and KL penalty  0.00015146569057833403
+
+ 10%|▉         | 121/1250 [7:44:14<72:44:18, 231.94s/it][ABatch:  121
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.387939453125
+1.0791015625
+2.17578125
+-0.8466796875
+Loss:  0.10337213426828384  and KL penalty  -0.00011198786523891613
+
+ 10%|▉         | 122/1250 [7:48:05<72:34:39, 231.63s/it][ABatch:  122
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.274658203125
+0.75390625
+0.053680419921875
+1.5322265625
+Loss:  0.11067863553762436  and KL penalty  -0.00030747955315746367
+
+ 10%|▉         | 123/1250 [7:51:57<72:36:20, 231.93s/it][ABatch:  123
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+0.200439453125
+-0.64013671875
+-0.00823211669921875
+-0.5302734375
+Loss:  0.14254584908485413  and KL penalty  -7.737454870948568e-05
+
+ 10%|▉         | 124/1250 [7:55:50<72:39:06, 232.28s/it][ABatch:  124
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+-0.243896484375
+1.5205078125
+2.12890625
+1.681640625
+Loss:  0.1147017851471901  and KL penalty  0.000312333955662325
+
+ 10%|█         | 125/1250 [7:59:43<72:35:17, 232.28s/it][ABatch:  125
+Inference done for one prompt..
+Inference done for one prompt..
+Inference done for one prompt..
+slurmstepd: error: *** JOB 3960993 ON p08c01 CANCELLED AT 2024-06-29T02:57:28 ***

@@ -1,0 +1,21 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:17,  3.58s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:14,  3.54s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:10<00:10,  3.64s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:14<00:07,  3.59s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:18<00:03,  3.73s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  2.78s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.21s/it]
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/8713 [00:00<?, ?it/s][ABatch:  0
+  0%|          | 0/8713 [00:18<?, ?it/s]
+epoch:   0%|          | 0/1 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 194, in <module>
+    build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 123, in build_pipeline
+    query_tensors, response_tensors, pred = inference(policy_model, policy_tokenizer, batch["instruction"], kwargs)
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 100, in inference
+    query_tokens.append(txt_tokens.squeeze().requires_grad_(True))
+RuntimeError: only Tensors of floating point dtype can require gradients

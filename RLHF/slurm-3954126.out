@@ -1,0 +1,1249 @@
+Running simulation
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:18,  3.60s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:14,  3.58s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:10<00:11,  3.69s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:14<00:07,  3.61s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:18<00:03,  3.68s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  2.76s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.21s/it]
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from '../SFT/merged_model/SFT_for_expert_alignment/', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+Done loading Policy Model and Tokenizer!
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Done loading Reward Model and Tokenizer!
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+epoch:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/4400 [00:00<?, ?it/s][ABatch:  0
+Loss:  0.12684018909931183  and KL penalty  0.0
+
+  0%|          | 1/4400 [00:41<50:54:15, 41.66s/it][ABatch:  1
+Loss:  0.2619068920612335  and KL penalty  0.0002821177477017045
+
+  0%|          | 2/4400 [01:21<49:52:13, 40.82s/it][ABatch:  2
+Loss:  0.1447373777627945  and KL penalty  0.00016130504081957042
+
+  0%|          | 3/4400 [02:01<49:13:50, 40.31s/it][ABatch:  3
+Loss:  0.14746469259262085  and KL penalty  -5.73034085391555e-05
+
+  0%|          | 4/4400 [02:41<49:09:18, 40.25s/it][ABatch:  4
+Loss:  0.13202005624771118  and KL penalty  -6.666620902251452e-05
+
+  0%|          | 5/4400 [03:21<49:00:33, 40.14s/it][ABatch:  5
+Loss:  0.45514199137687683  and KL penalty  -3.11687690555118e-05
+
+  0%|          | 6/4400 [04:01<49:00:24, 40.15s/it][ABatch:  6
+Loss:  0.39200884103775024  and KL penalty  0.00012859268463216722
+
+  0%|          | 7/4400 [04:41<48:57:52, 40.13s/it][ABatch:  7
+Loss:  0.1827698051929474  and KL penalty  0.000182312389370054
+
+  0%|          | 8/4400 [05:22<48:58:17, 40.14s/it][ABatch:  8
+Loss:  0.26336824893951416  and KL penalty  -8.238823647843674e-05
+
+  0%|          | 9/4400 [06:02<48:55:07, 40.11s/it][ABatch:  9
+Loss:  0.2164316326379776  and KL penalty  5.287796284392243e-06
+
+  0%|          | 10/4400 [06:42<49:00:47, 40.19s/it][ABatch:  10
+Loss:  0.21572192013263702  and KL penalty  7.647235179319978e-05
+
+  0%|          | 11/4400 [07:23<49:08:53, 40.31s/it][ABatch:  11
+Loss:  0.4009847939014435  and KL penalty  -8.823681127978489e-05
+
+  0%|          | 12/4400 [08:03<49:03:47, 40.25s/it][ABatch:  12
+Loss:  0.2566268742084503  and KL penalty  -0.0001260701974388212
+
+  0%|          | 13/4400 [08:43<49:06:51, 40.30s/it][ABatch:  13
+Loss:  0.19795869290828705  and KL penalty  -0.0002306574024260044
+
+  0%|          | 14/4400 [09:24<49:12:57, 40.40s/it][ABatch:  14
+Loss:  0.2446165382862091  and KL penalty  3.803183790296316e-05
+
+  0%|          | 15/4400 [10:04<49:08:52, 40.35s/it][ABatch:  15
+Loss:  0.12049560993909836  and KL penalty  7.222904969239607e-05
+
+  0%|          | 16/4400 [10:44<49:04:32, 40.30s/it][ABatch:  16
+Loss:  0.28219541907310486  and KL penalty  8.602311572758481e-05
+
+  0%|          | 17/4400 [11:24<49:00:31, 40.25s/it][ABatch:  17
+Loss:  0.37318554520606995  and KL penalty  -7.094645843608305e-05
+
+  0%|          | 18/4400 [12:05<49:00:49, 40.27s/it][ABatch:  18
+Loss:  0.11467811465263367  and KL penalty  -0.0001426354720024392
+
+  0%|          | 19/4400 [12:44<48:49:53, 40.13s/it][ABatch:  19
+Loss:  0.20053982734680176  and KL penalty  9.648224659031257e-05
+
+  0%|          | 20/4400 [13:24<48:28:53, 39.85s/it][ABatch:  20
+Loss:  0.17192748188972473  and KL penalty  -0.0001445786328986287
+
+  0%|          | 21/4400 [14:03<48:11:32, 39.62s/it][ABatch:  21
+Loss:  0.15487506985664368  and KL penalty  -7.590481254737824e-05
+
+  0%|          | 22/4400 [14:42<48:00:28, 39.48s/it][ABatch:  22
+Loss:  0.12212817370891571  and KL penalty  -6.532931729452685e-05
+
+  1%|          | 23/4400 [15:22<48:05:30, 39.55s/it][ABatch:  23
+Loss:  0.29225558042526245  and KL penalty  0.00021436666429508477
+
+  1%|          | 24/4400 [16:01<47:54:26, 39.41s/it][ABatch:  24
+Loss:  0.15214243531227112  and KL penalty  1.6055460946517996e-05
+
+  1%|          | 25/4400 [16:40<47:51:48, 39.38s/it][ABatch:  25
+Loss:  0.21147723495960236  and KL penalty  0.00012734884512610734
+
+  1%|          | 26/4400 [17:19<47:49:51, 39.37s/it][ABatch:  26
+Loss:  0.3204231858253479  and KL penalty  -9.691681043477729e-05
+
+  1%|          | 27/4400 [17:59<47:48:14, 39.35s/it][ABatch:  27
+Loss:  0.26647913455963135  and KL penalty  -1.1890638234035578e-05
+
+  1%|          | 28/4400 [18:38<47:41:36, 39.27s/it][ABatch:  28
+Loss:  0.26046836376190186  and KL penalty  0.0001222630962729454
+
+  1%|          | 29/4400 [19:18<47:55:23, 39.47s/it][ABatch:  29
+Loss:  0.23684021830558777  and KL penalty  -5.367689300328493e-05
+
+  1%|          | 30/4400 [19:58<48:19:42, 39.81s/it][ABatch:  30
+Loss:  0.22845160961151123  and KL penalty  0.00011563896987354383
+
+  1%|          | 31/4400 [20:38<48:26:58, 39.92s/it][ABatch:  31
+Loss:  0.2927945852279663  and KL penalty  2.7856183805852197e-05
+
+  1%|          | 32/4400 [21:19<48:44:16, 40.17s/it][ABatch:  32
+Loss:  0.1621592938899994  and KL penalty  4.81763927382417e-05
+
+  1%|          | 33/4400 [21:59<48:40:43, 40.13s/it][ABatch:  33
+Loss:  0.24172620475292206  and KL penalty  0.00011222043394809589
+
+  1%|          | 34/4400 [22:39<48:26:56, 39.95s/it][ABatch:  34
+Loss:  0.2744547724723816  and KL penalty  -4.311251541366801e-05
+
+  1%|          | 35/4400 [23:18<48:10:11, 39.73s/it][ABatch:  35
+Loss:  0.3056727945804596  and KL penalty  0.00016574052278883755
+
+  1%|          | 36/4400 [23:58<48:14:23, 39.79s/it][ABatch:  36
+Loss:  0.2733493745326996  and KL penalty  1.2765290193783585e-05
+
+  1%|          | 37/4400 [24:37<48:00:12, 39.61s/it][ABatch:  37
+Loss:  0.15168911218643188  and KL penalty  0.00010606552677927539
+
+  1%|          | 38/4400 [25:16<47:52:36, 39.51s/it][ABatch:  38
+Loss:  0.14390960335731506  and KL penalty  -0.0001050150312948972
+
+  1%|          | 39/4400 [25:56<47:49:57, 39.49s/it][ABatch:  39
+Loss:  0.4658931791782379  and KL penalty  9.115005377680063e-05
+
+  1%|          | 40/4400 [26:35<47:50:57, 39.51s/it][ABatch:  40
+Loss:  0.16700513660907745  and KL penalty  0.0002590085787232965
+
+  1%|          | 41/4400 [27:15<47:42:28, 39.40s/it][ABatch:  41
+Loss:  0.1280464082956314  and KL penalty  -6.18111589574255e-05
+
+  1%|          | 42/4400 [27:54<47:46:39, 39.47s/it][ABatch:  42
+Loss:  0.23829373717308044  and KL penalty  -9.763743582880124e-05
+
+  1%|          | 43/4400 [28:33<47:41:09, 39.40s/it][ABatch:  43
+Loss:  0.5627959966659546  and KL penalty  -0.0001196299126604572
+
+  1%|          | 44/4400 [29:13<47:38:33, 39.37s/it][ABatch:  44
+Loss:  0.23731888830661774  and KL penalty  -5.644717384711839e-05
+
+  1%|          | 45/4400 [29:52<47:41:06, 39.42s/it][ABatch:  45
+Loss:  0.3972138464450836  and KL penalty  0.0002612553653307259
+
+  1%|          | 46/4400 [30:32<47:54:31, 39.61s/it][ABatch:  46
+Loss:  0.3720830976963043  and KL penalty  -4.9496138672111556e-05
+
+  1%|          | 47/4400 [31:11<47:43:10, 39.46s/it][ABatch:  47
+Loss:  0.20911331474781036  and KL penalty  1.1926647857762873e-05
+
+  1%|          | 48/4400 [31:52<48:09:31, 39.84s/it][ABatch:  48
+Loss:  0.2689356803894043  and KL penalty  9.778974344953895e-06
+
+  1%|          | 49/4400 [32:31<47:55:36, 39.65s/it][ABatch:  49
+Loss:  0.21433599293231964  and KL penalty  -3.4916916774818674e-05
+
+  1%|          | 50/4400 [33:10<47:41:44, 39.47s/it][ABatch:  50
+Loss:  0.17762359976768494  and KL penalty  7.864030339987949e-05
+
+  1%|          | 51/4400 [33:50<47:34:49, 39.39s/it][ABatch:  51
+Loss:  0.45119085907936096  and KL penalty  -8.36304243421182e-05
+
+  1%|          | 52/4400 [34:29<47:31:33, 39.35s/it][ABatch:  52
+Loss:  0.09827640652656555  and KL penalty  0.00021694242605008185
+
+  1%|          | 53/4400 [35:08<47:27:48, 39.31s/it][ABatch:  53
+Loss:  0.11845038831233978  and KL penalty  -3.360785194672644e-05
+
+  1%|          | 54/4400 [35:49<48:00:19, 39.77s/it][ABatch:  54
+Loss:  0.41663020849227905  and KL penalty  -6.11592986388132e-05
+
+  1%|▏         | 55/4400 [36:28<47:47:40, 39.60s/it][ABatch:  55
+Loss:  0.19174924492835999  and KL penalty  3.538584496709518e-05
+
+  1%|▏         | 56/4400 [37:07<47:36:35, 39.46s/it][ABatch:  56
+Loss:  0.12189909815788269  and KL penalty  8.460641402052715e-05
+
+  1%|▏         | 57/4400 [37:47<47:34:30, 39.44s/it][ABatch:  57
+Loss:  0.12387905269861221  and KL penalty  0.00018973958503920585
+
+  1%|▏         | 58/4400 [38:26<47:34:32, 39.45s/it][ABatch:  58
+Loss:  0.18959671258926392  and KL penalty  0.00010886526433750987
+
+  1%|▏         | 59/4400 [39:05<47:28:56, 39.38s/it][ABatch:  59
+Loss:  0.2319468855857849  and KL penalty  -0.00012466033513192087
+
+  1%|▏         | 60/4400 [39:45<47:31:38, 39.42s/it][ABatch:  60
+Loss:  0.37925732135772705  and KL penalty  7.279433702933602e-06
+
+  1%|▏         | 61/4400 [40:24<47:29:18, 39.40s/it][ABatch:  61
+Loss:  0.14788682758808136  and KL penalty  1.7923806808539666e-05
+
+  1%|▏         | 62/4400 [41:04<47:43:55, 39.61s/it][ABatch:  62
+Loss:  0.1828315407037735  and KL penalty  -0.00010641704284353182
+
+  1%|▏         | 63/4400 [41:44<47:35:27, 39.50s/it][ABatch:  63
+Loss:  0.35662010312080383  and KL penalty  0.00010314794781152159
+
+  1%|▏         | 64/4400 [42:23<47:30:27, 39.44s/it][ABatch:  64
+Loss:  0.34625372290611267  and KL penalty  -8.579926361562684e-05
+
+  1%|▏         | 65/4400 [43:02<47:33:15, 39.49s/it][ABatch:  65
+Loss:  0.16269519925117493  and KL penalty  0.00036906436434946954
+
+  2%|▏         | 66/4400 [43:42<47:31:44, 39.48s/it][ABatch:  66
+Loss:  0.4905364215373993  and KL penalty  5.130551289767027e-05
+
+  2%|▏         | 67/4400 [44:21<47:33:26, 39.51s/it][ABatch:  67
+Loss:  0.19625282287597656  and KL penalty  3.409004784771241e-05
+
+  2%|▏         | 68/4400 [45:00<47:19:31, 39.33s/it][ABatch:  68
+Loss:  0.2773689925670624  and KL penalty  0.00011012615141225979
+
+  2%|▏         | 69/4400 [45:40<47:28:27, 39.46s/it][ABatch:  69
+Loss:  0.3255821466445923  and KL penalty  1.8847470073524164e-06
+
+  2%|▏         | 70/4400 [46:21<47:52:30, 39.80s/it][ABatch:  70
+Loss:  0.20922790467739105  and KL penalty  -4.3248553993180394e-05
+
+  2%|▏         | 71/4400 [47:01<47:50:48, 39.79s/it][ABatch:  71
+Loss:  0.2389717549085617  and KL penalty  0.00035369969555176795
+
+  2%|▏         | 72/4400 [47:40<47:34:24, 39.57s/it][ABatch:  72
+Loss:  0.13729225099086761  and KL penalty  0.0002679326571524143
+
+  2%|▏         | 73/4400 [48:19<47:24:04, 39.44s/it][ABatch:  73
+Loss:  0.19752885401248932  and KL penalty  -4.294336395105347e-05
+
+  2%|▏         | 74/4400 [48:58<47:21:46, 39.41s/it][ABatch:  74
+Loss:  0.2233855277299881  and KL penalty  0.00020249602675903589
+
+  2%|▏         | 75/4400 [49:37<47:16:24, 39.35s/it][ABatch:  75
+Loss:  0.14509832859039307  and KL penalty  -8.932106720749289e-05
+
+  2%|▏         | 76/4400 [50:17<47:13:40, 39.32s/it][ABatch:  76
+Loss:  0.11003264784812927  and KL penalty  1.9587494534789585e-05
+
+  2%|▏         | 77/4400 [50:56<47:13:47, 39.33s/it][ABatch:  77
+Loss:  0.22028468549251556  and KL penalty  0.0003042413154616952
+
+  2%|▏         | 78/4400 [51:35<47:11:55, 39.31s/it][ABatch:  78
+Loss:  0.10192099958658218  and KL penalty  5.710018626814417e-07
+
+  2%|▏         | 79/4400 [52:14<47:10:30, 39.30s/it][ABatch:  79
+Loss:  0.33720946311950684  and KL penalty  -0.0003585759550333023
+
+  2%|▏         | 80/4400 [52:54<47:10:31, 39.31s/it][ABatch:  80
+Loss:  0.5225619673728943  and KL penalty  0.00010928509436780587
+
+  2%|▏         | 81/4400 [53:33<47:08:00, 39.29s/it][ABatch:  81
+Loss:  0.7697693705558777  and KL penalty  0.00010768797801574692
+
+  2%|▏         | 82/4400 [54:12<47:09:44, 39.32s/it][ABatch:  82
+Loss:  0.1436619907617569  and KL penalty  -0.0001444164226995781
+
+  2%|▏         | 83/4400 [54:52<47:05:32, 39.27s/it][ABatch:  83
+Loss:  0.24181336164474487  and KL penalty  6.722960097249597e-05
+
+  2%|▏         | 84/4400 [55:31<47:06:45, 39.30s/it][ABatch:  84
+Loss:  0.16184194386005402  and KL penalty  6.050378942745738e-05
+
+  2%|▏         | 85/4400 [56:11<47:15:10, 39.42s/it][ABatch:  85
+Loss:  0.2710094153881073  and KL penalty  8.046997390920296e-05
+
+  2%|▏         | 86/4400 [56:50<47:21:43, 39.52s/it][ABatch:  86
+Loss:  0.16235750913619995  and KL penalty  -0.0005538514233194292
+
+  2%|▏         | 87/4400 [57:30<47:24:34, 39.57s/it][ABatch:  87
+Loss:  0.1412762701511383  and KL penalty  0.00011395682668080553
+
+  2%|▏         | 88/4400 [58:09<47:19:06, 39.51s/it][ABatch:  88
+Loss:  0.19253885746002197  and KL penalty  7.289463246706873e-05
+
+  2%|▏         | 89/4400 [58:49<47:13:41, 39.44s/it][ABatch:  89
+Loss:  0.22411949932575226  and KL penalty  -0.00013907338143326342
+
+  2%|▏         | 90/4400 [59:28<47:07:39, 39.36s/it][ABatch:  90
+Loss:  0.2683829367160797  and KL penalty  0.00013173681509215385
+
+  2%|▏         | 91/4400 [1:00:08<47:18:21, 39.52s/it][ABatch:  91
+Loss:  0.10073937475681305  and KL penalty  -0.00019621907267719507
+
+  2%|▏         | 92/4400 [1:00:48<47:25:40, 39.63s/it][ABatch:  92
+Loss:  0.2716944217681885  and KL penalty  1.4198827557265759e-05
+
+  2%|▏         | 93/4400 [1:01:28<47:32:11, 39.73s/it][ABatch:  93
+Loss:  0.327755868434906  and KL penalty  -2.4871058485587128e-05
+
+  2%|▏         | 94/4400 [1:02:08<47:50:47, 40.00s/it][ABatch:  94
+Loss:  0.205912247300148  and KL penalty  0.000249677337706089
+
+  2%|▏         | 95/4400 [1:02:48<47:53:44, 40.05s/it][ABatch:  95
+Loss:  0.16958007216453552  and KL penalty  -0.00021760546951554716
+
+  2%|▏         | 96/4400 [1:03:29<47:57:28, 40.11s/it][ABatch:  96
+Loss:  0.28257912397384644  and KL penalty  0.00014980550622567534
+
+  2%|▏         | 97/4400 [1:04:09<47:59:04, 40.15s/it][ABatch:  97
+Loss:  0.12031926959753036  and KL penalty  0.00029863620875403285
+
+  2%|▏         | 98/4400 [1:04:49<47:58:04, 40.14s/it][ABatch:  98
+Loss:  0.22248774766921997  and KL penalty  -2.422926809231285e-05
+
+  2%|▏         | 99/4400 [1:05:30<48:06:24, 40.27s/it][ABatch:  99
+Loss:  0.1575954258441925  and KL penalty  0.00021149874373804778
+
+  2%|▏         | 100/4400 [1:06:10<48:05:12, 40.26s/it][ABatch:  100
+Loss:  0.3839510381221771  and KL penalty  4.882710345555097e-05
+
+  2%|▏         | 101/4400 [1:06:50<48:03:39, 40.25s/it][ABatch:  101
+Loss:  0.2930589020252228  and KL penalty  0.0004158028750680387
+
+  2%|▏         | 102/4400 [1:07:30<48:04:03, 40.26s/it][ABatch:  102
+Loss:  0.2646922767162323  and KL penalty  0.0003914827248081565
+
+  2%|▏         | 103/4400 [1:08:11<48:02:02, 40.24s/it][ABatch:  103
+Loss:  0.1506473869085312  and KL penalty  0.00010721931903390214
+
+  2%|▏         | 104/4400 [1:08:51<48:01:09, 40.24s/it][ABatch:  104
+Loss:  0.23612600564956665  and KL penalty  0.00018902582814916968
+
+  2%|▏         | 105/4400 [1:09:31<47:59:34, 40.23s/it][ABatch:  105
+Loss:  0.25454413890838623  and KL penalty  2.8277820092625916e-05
+
+  2%|▏         | 106/4400 [1:10:11<47:57:14, 40.20s/it][ABatch:  106
+Loss:  0.5551939606666565  and KL penalty  -8.718207391211763e-05
+
+  2%|▏         | 107/4400 [1:10:51<47:46:55, 40.07s/it][ABatch:  107
+Loss:  0.12389902025461197  and KL penalty  0.0001442897628294304
+
+  2%|▏         | 108/4400 [1:11:31<47:43:59, 40.04s/it][ABatch:  108
+Loss:  0.27779361605644226  and KL penalty  5.003394471714273e-05
+
+  2%|▏         | 109/4400 [1:12:11<47:53:52, 40.18s/it][ABatch:  109
+Loss:  0.3943536579608917  and KL penalty  0.00015103320765774697
+
+  2%|▎         | 110/4400 [1:12:51<47:48:04, 40.11s/it][ABatch:  110
+Loss:  0.1607816219329834  and KL penalty  0.00015259742212947458
+
+  3%|▎         | 111/4400 [1:13:31<47:45:19, 40.08s/it][ABatch:  111
+Loss:  0.1547294557094574  and KL penalty  0.0001041704963427037
+
+  3%|▎         | 112/4400 [1:14:12<47:51:41, 40.18s/it][ABatch:  112
+Loss:  0.20136861503124237  and KL penalty  0.00012250785948708653
+
+  3%|▎         | 113/4400 [1:14:52<47:51:22, 40.19s/it][ABatch:  113
+Loss:  0.19765082001686096  and KL penalty  0.0001263189478777349
+
+  3%|▎         | 114/4400 [1:15:32<47:41:20, 40.06s/it][ABatch:  114
+Loss:  0.2195025235414505  and KL penalty  -0.00012052481906721368
+
+  3%|▎         | 115/4400 [1:16:11<47:21:56, 39.79s/it][ABatch:  115
+Loss:  0.18026426434516907  and KL penalty  -9.307352229370736e-06
+
+  3%|▎         | 116/4400 [1:16:51<47:28:42, 39.90s/it][ABatch:  116
+Loss:  0.1593254804611206  and KL penalty  -0.0001835473522078246
+
+  3%|▎         | 117/4400 [1:17:31<47:26:45, 39.88s/it][ABatch:  117
+Loss:  0.29206904768943787  and KL penalty  0.000348433677572757
+
+  3%|▎         | 118/4400 [1:18:10<47:14:11, 39.71s/it][ABatch:  118
+Loss:  0.10261069238185883  and KL penalty  0.0003054975823033601
+
+  3%|▎         | 119/4400 [1:18:49<47:02:48, 39.56s/it][ABatch:  119
+Loss:  0.2482658177614212  and KL penalty  5.047787999501452e-05
+
+  3%|▎         | 120/4400 [1:19:29<47:00:12, 39.54s/it][ABatch:  120
+Loss:  0.3958398401737213  and KL penalty  -0.00034171444713138044
+
+  3%|▎         | 121/4400 [1:20:08<46:55:35, 39.48s/it][ABatch:  121
+Loss:  0.18549324572086334  and KL penalty  0.0003698533691931516
+
+  3%|▎         | 122/4400 [1:20:48<46:54:37, 39.48s/it][ABatch:  122
+Loss:  0.5376696586608887  and KL penalty  1.548478758195415e-05
+
+  3%|▎         | 123/4400 [1:21:28<47:15:00, 39.77s/it][ABatch:  123
+Loss:  0.11577194184064865  and KL penalty  0.00022283433645498008
+
+  3%|▎         | 124/4400 [1:22:08<47:08:43, 39.69s/it][ABatch:  124
+Loss:  0.3531544506549835  and KL penalty  0.00023517876979894936
+
+  3%|▎         | 125/4400 [1:22:47<47:08:17, 39.70s/it][ABatch:  125
+Loss:  0.14935152232646942  and KL penalty  7.611508772242814e-05
+
+  3%|▎         | 126/4400 [1:23:27<47:02:52, 39.63s/it][ABatch:  126
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.03 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17891883850097656  and KL penalty  0.0006750065367668867
+
+  3%|▎         | 127/4400 [1:24:06<46:50:17, 39.46s/it][ABatch:  127
+Loss:  0.26067039370536804  and KL penalty  0.00014083572023082525
+
+  3%|▎         | 128/4400 [1:24:45<46:49:57, 39.47s/it][ABatch:  128
+Loss:  0.12527069449424744  and KL penalty  0.0003360385599080473
+
+  3%|▎         | 129/4400 [1:25:25<46:42:33, 39.37s/it][ABatch:  129
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.48 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1762837916612625  and KL penalty  0.0004408996901474893
+
+  3%|▎         | 130/4400 [1:26:06<47:25:16, 39.98s/it][ABatch:  130
+Loss:  0.1571311354637146  and KL penalty  8.823857206152752e-05
+
+  3%|▎         | 131/4400 [1:26:46<47:19:34, 39.91s/it][ABatch:  131
+Loss:  0.18550917506217957  and KL penalty  -4.8485300794709474e-05
+
+  3%|▎         | 132/4400 [1:27:25<47:03:51, 39.70s/it][ABatch:  132
+Loss:  0.13893045485019684  and KL penalty  -1.569528285472188e-05
+
+  3%|▎         | 133/4400 [1:28:07<48:04:30, 40.56s/it][ABatch:  133
+Loss:  0.22112639248371124  and KL penalty  0.0003612178552430123
+
+  3%|▎         | 134/4400 [1:28:47<47:39:57, 40.22s/it][ABatch:  134
+Loss:  0.10006950050592422  and KL penalty  0.00024199219478759915
+
+  3%|▎         | 135/4400 [1:29:26<47:14:47, 39.88s/it][ABatch:  135
+Loss:  0.22125615179538727  and KL penalty  -0.0001110681623686105
+
+  3%|▎         | 136/4400 [1:30:05<47:00:26, 39.69s/it][ABatch:  136
+Loss:  0.16285723447799683  and KL penalty  0.0002972815709654242
+
+  3%|▎         | 137/4400 [1:30:45<46:52:13, 39.58s/it][ABatch:  137
+Loss:  0.15397755801677704  and KL penalty  -7.820240716682747e-05
+
+  3%|▎         | 138/4400 [1:31:24<46:56:20, 39.65s/it][ABatch:  138
+Loss:  0.325344055891037  and KL penalty  0.0003941003524232656
+
+  3%|▎         | 139/4400 [1:32:04<46:47:30, 39.53s/it][ABatch:  139
+Loss:  0.1368044763803482  and KL penalty  0.00046341889537870884
+
+  3%|▎         | 140/4400 [1:32:43<46:45:56, 39.52s/it][ABatch:  140
+Loss:  0.2570855915546417  and KL penalty  0.0003436974948272109
+
+  3%|▎         | 141/4400 [1:33:22<46:42:06, 39.48s/it][ABatch:  141
+Loss:  0.2218630313873291  and KL penalty  -6.723858678014949e-05
+
+  3%|▎         | 142/4400 [1:34:02<46:43:24, 39.50s/it][ABatch:  142
+Loss:  0.24102315306663513  and KL penalty  -0.00044544879347085953
+
+  3%|▎         | 143/4400 [1:34:41<46:39:58, 39.46s/it][ABatch:  143
+Loss:  0.12135300785303116  and KL penalty  0.0004936410114169121
+
+  3%|▎         | 144/4400 [1:35:21<46:36:43, 39.43s/it][ABatch:  144
+Loss:  0.1482267528772354  and KL penalty  -3.466080306679942e-05
+
+  3%|▎         | 145/4400 [1:36:00<46:31:26, 39.36s/it][ABatch:  145
+Loss:  0.19666112959384918  and KL penalty  0.00014732703857589513
+
+  3%|▎         | 146/4400 [1:36:39<46:30:07, 39.35s/it][ABatch:  146
+Loss:  0.9376360177993774  and KL penalty  0.00033578573493286967
+
+  3%|▎         | 147/4400 [1:37:19<46:30:29, 39.37s/it][ABatch:  147
+Loss:  0.28062644600868225  and KL penalty  0.00018710536824073642
+
+  3%|▎         | 148/4400 [1:37:58<46:32:18, 39.40s/it][ABatch:  148
+Loss:  0.16152437031269073  and KL penalty  0.00030871666967868805
+
+  3%|▎         | 149/4400 [1:38:37<46:28:54, 39.36s/it][ABatch:  149
+Loss:  0.14457106590270996  and KL penalty  0.0005585639737546444
+
+  3%|▎         | 150/4400 [1:39:17<46:26:03, 39.33s/it][ABatch:  150
+Loss:  0.171249657869339  and KL penalty  0.0005327767576090991
+
+  3%|▎         | 151/4400 [1:39:56<46:29:03, 39.38s/it][ABatch:  151
+Loss:  0.24480122327804565  and KL penalty  0.0003582557837944478
+
+  3%|▎         | 152/4400 [1:40:36<46:27:54, 39.38s/it][ABatch:  152
+Loss:  0.18649666011333466  and KL penalty  0.0003260555095039308
+
+  3%|▎         | 153/4400 [1:41:15<46:38:42, 39.54s/it][ABatch:  153
+Loss:  0.17578402161598206  and KL penalty  0.00014629376528318971
+
+  4%|▎         | 154/4400 [1:41:55<46:47:24, 39.67s/it][ABatch:  154
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.06 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.20828261971473694  and KL penalty  0.0006623805966228247
+
+  4%|▎         | 155/4400 [1:42:35<46:38:36, 39.56s/it][ABatch:  155
+Loss:  0.12075931578874588  and KL penalty  -3.675930202007294e-05
+
+  4%|▎         | 156/4400 [1:43:15<46:47:07, 39.69s/it][ABatch:  156
+Loss:  0.5813520550727844  and KL penalty  0.00030053898808546364
+
+  4%|▎         | 157/4400 [1:43:54<46:39:11, 39.58s/it][ABatch:  157
+Loss:  0.18383711576461792  and KL penalty  -0.00024531164672225714
+
+  4%|▎         | 158/4400 [1:44:34<46:51:05, 39.76s/it][ABatch:  158
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.63 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.19952192902565002  and KL penalty  0.0009025981999002397
+
+  4%|▎         | 159/4400 [1:45:14<46:47:06, 39.71s/it][ABatch:  159
+Loss:  0.19347324967384338  and KL penalty  0.0004241816932335496
+
+  4%|▎         | 160/4400 [1:45:53<46:44:23, 39.68s/it][ABatch:  160
+Loss:  0.11801642179489136  and KL penalty  0.0003265667473897338
+
+  4%|▎         | 161/4400 [1:46:33<46:39:10, 39.62s/it][ABatch:  161
+Loss:  0.09641266614198685  and KL penalty  0.00016106237308122218
+
+  4%|▎         | 162/4400 [1:47:13<46:47:18, 39.74s/it][ABatch:  162
+Loss:  0.5840910077095032  and KL penalty  -0.0005477317608892918
+
+  4%|▎         | 163/4400 [1:47:54<47:06:15, 40.02s/it][ABatch:  163
+Loss:  0.1882607489824295  and KL penalty  0.0004200585826765746
+
+  4%|▎         | 164/4400 [1:48:34<47:16:16, 40.17s/it][ABatch:  164
+Loss:  0.42587488889694214  and KL penalty  0.00016357582353521138
+
+  4%|▍         | 165/4400 [1:49:14<47:09:56, 40.09s/it][ABatch:  165
+Loss:  0.26768606901168823  and KL penalty  0.00011156333494000137
+
+  4%|▍         | 166/4400 [1:49:54<47:14:22, 40.17s/it][ABatch:  166
+Loss:  0.29001757502555847  and KL penalty  -0.00019545303075574338
+
+  4%|▍         | 167/4400 [1:50:35<47:17:49, 40.22s/it][ABatch:  167
+Loss:  0.3095281720161438  and KL penalty  0.00043569618719629943
+
+  4%|▍         | 168/4400 [1:51:15<47:19:50, 40.26s/it][ABatch:  168
+Loss:  0.14947932958602905  and KL penalty  -0.0002660059544723481
+
+  4%|▍         | 169/4400 [1:51:55<47:13:25, 40.18s/it][ABatch:  169
+Loss:  0.10081125050783157  and KL penalty  0.00010792646207846701
+
+  4%|▍         | 170/4400 [1:52:34<46:53:01, 39.90s/it][ABatch:  170
+Loss:  0.09621342271566391  and KL penalty  -2.6984711439581588e-05
+
+  4%|▍         | 171/4400 [1:53:14<46:50:06, 39.87s/it][ABatch:  171
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.28 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1446293592453003  and KL penalty  0.0008350113639608026
+
+  4%|▍         | 172/4400 [1:53:53<46:38:01, 39.71s/it][ABatch:  172
+Loss:  0.12897232174873352  and KL penalty  0.0005145653267391026
+
+  4%|▍         | 173/4400 [1:54:33<46:30:34, 39.61s/it][ABatch:  173
+Loss:  0.2836402356624603  and KL penalty  7.215789810288697e-05
+
+  4%|▍         | 174/4400 [1:55:13<46:39:43, 39.75s/it][ABatch:  174
+Loss:  0.1418691724538803  and KL penalty  -6.372309871949255e-05
+
+  4%|▍         | 175/4400 [1:55:53<46:55:30, 39.98s/it][ABatch:  175
+Loss:  0.1572323441505432  and KL penalty  0.0003299779782537371
+
+  4%|▍         | 176/4400 [1:56:34<47:05:34, 40.14s/it][ABatch:  176
+Loss:  0.17916980385780334  and KL penalty  -0.0001800128084141761
+
+  4%|▍         | 177/4400 [1:57:16<47:46:33, 40.73s/it][ABatch:  177
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.39 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.12122984975576401  and KL penalty  0.0009034793474711478
+
+  4%|▍         | 178/4400 [1:57:56<47:35:57, 40.59s/it][ABatch:  178
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.32 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3474658727645874  and KL penalty  0.0007781644235365093
+
+  4%|▍         | 179/4400 [1:58:37<47:32:50, 40.55s/it][ABatch:  179
+Loss:  0.21857121586799622  and KL penalty  0.00016235503426287323
+
+  4%|▍         | 180/4400 [1:59:17<47:26:08, 40.47s/it][ABatch:  180
+Loss:  0.19884973764419556  and KL penalty  0.00027784635312855244
+
+  4%|▍         | 181/4400 [1:59:57<47:23:07, 40.43s/it][ABatch:  181
+Loss:  0.1787423938512802  and KL penalty  0.0002612815296743065
+
+  4%|▍         | 182/4400 [2:00:38<47:20:57, 40.41s/it][ABatch:  182
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.09 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.15434570610523224  and KL penalty  0.0006335850921459496
+
+  4%|▍         | 183/4400 [2:01:17<46:57:38, 40.09s/it][ABatch:  183
+Loss:  0.13438649475574493  and KL penalty  -0.000123142875963822
+
+  4%|▍         | 184/4400 [2:01:58<47:03:19, 40.18s/it][ABatch:  184
+Loss:  0.288796991109848  and KL penalty  0.0002873220364563167
+
+  4%|▍         | 185/4400 [2:02:37<46:47:16, 39.96s/it][ABatch:  185
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.46 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2219318151473999  and KL penalty  0.0009240486542694271
+
+  4%|▍         | 186/4400 [2:03:16<46:37:07, 39.83s/it][ABatch:  186
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.01 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.20496496558189392  and KL penalty  0.0005668478552252054
+
+  4%|▍         | 187/4400 [2:03:56<46:32:16, 39.77s/it][ABatch:  187
+Loss:  0.1856938600540161  and KL penalty  0.0005933333304710686
+
+  4%|▍         | 188/4400 [2:04:35<46:23:11, 39.65s/it][ABatch:  188
+Loss:  0.22172442078590393  and KL penalty  6.949044473003596e-05
+
+  4%|▍         | 189/4400 [2:05:16<46:48:53, 40.02s/it][ABatch:  189
+Loss:  0.27735865116119385  and KL penalty  0.00028202508110553026
+
+  4%|▍         | 190/4400 [2:05:56<46:36:58, 39.86s/it][ABatch:  190
+Loss:  0.13340015709400177  and KL penalty  0.000359672267222777
+
+  4%|▍         | 191/4400 [2:06:35<46:28:16, 39.75s/it][ABatch:  191
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.77 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.36151471734046936  and KL penalty  0.0011405901750549674
+
+  4%|▍         | 192/4400 [2:07:15<46:20:26, 39.65s/it][ABatch:  192
+Loss:  0.18808619678020477  and KL penalty  7.772473327349871e-05
+
+  4%|▍         | 193/4400 [2:07:55<46:24:51, 39.72s/it][ABatch:  193
+Loss:  0.5246918201446533  and KL penalty  0.0006742281839251518
+
+  4%|▍         | 194/4400 [2:08:34<46:19:21, 39.65s/it][ABatch:  194
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.18 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17357823252677917  and KL penalty  0.0007622763514518738
+
+  4%|▍         | 195/4400 [2:09:14<46:14:06, 39.58s/it][ABatch:  195
+Loss:  0.15061940252780914  and KL penalty  0.00054154172539711
+
+  4%|▍         | 196/4400 [2:09:53<46:09:38, 39.53s/it][ABatch:  196
+Loss:  0.4204890727996826  and KL penalty  0.00044646181049756706
+
+  4%|▍         | 197/4400 [2:10:33<46:11:06, 39.56s/it][ABatch:  197
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.04 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.5201603174209595  and KL penalty  0.0006232733139768243
+
+  4%|▍         | 198/4400 [2:11:12<46:05:12, 39.48s/it][ABatch:  198
+Loss:  0.15208345651626587  and KL penalty  7.889704284025356e-05
+
+  5%|▍         | 199/4400 [2:11:51<46:03:14, 39.47s/it][ABatch:  199
+Loss:  0.11910911649465561  and KL penalty  0.0003703513357322663
+
+  5%|▍         | 200/4400 [2:12:33<46:39:32, 39.99s/it][ABatch:  200
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.37 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.48474177718162537  and KL penalty  0.0008498710813000798
+
+  5%|▍         | 201/4400 [2:13:13<46:42:21, 40.04s/it][ABatch:  201
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.91 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.24624289572238922  and KL penalty  0.0009060807060450315
+
+  5%|▍         | 202/4400 [2:13:54<46:57:47, 40.27s/it][ABatch:  202
+Loss:  0.22791828215122223  and KL penalty  0.0002583914319984615
+
+  5%|▍         | 203/4400 [2:14:34<46:56:28, 40.26s/it][ABatch:  203
+Loss:  0.14549081027507782  and KL penalty  0.00031969379051588476
+
+  5%|▍         | 204/4400 [2:15:15<47:06:12, 40.41s/it][ABatch:  204
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.08 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.11374085396528244  and KL penalty  0.00047428489779122174
+
+  5%|▍         | 205/4400 [2:15:56<47:20:28, 40.63s/it][ABatch:  205
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.39 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1797952651977539  and KL penalty  0.0015544260386377573
+
+  5%|▍         | 206/4400 [2:16:36<47:13:55, 40.54s/it][ABatch:  206
+Loss:  0.14489467442035675  and KL penalty  0.00018763729894999415
+
+  5%|▍         | 207/4400 [2:17:16<47:06:48, 40.45s/it][ABatch:  207
+Loss:  0.14810658991336823  and KL penalty  0.0011534671066328883
+
+  5%|▍         | 208/4400 [2:17:56<47:00:15, 40.37s/it][ABatch:  208
+Loss:  0.49138879776000977  and KL penalty  0.0005889586172997952
+
+  5%|▍         | 209/4400 [2:18:37<47:00:16, 40.38s/it][ABatch:  209
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.97 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3361286222934723  and KL penalty  0.001279738382436335
+
+  5%|▍         | 210/4400 [2:19:17<47:00:39, 40.39s/it][ABatch:  210
+Loss:  0.17844994366168976  and KL penalty  0.0001051140934578143
+
+  5%|▍         | 211/4400 [2:19:59<47:25:29, 40.76s/it][ABatch:  211
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.12 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3432712256908417  and KL penalty  0.0012501553865149617
+
+  5%|▍         | 212/4400 [2:20:39<47:20:46, 40.70s/it][ABatch:  212
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.43 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2887902557849884  and KL penalty  0.0009314136696048081
+
+  5%|▍         | 213/4400 [2:21:20<47:07:51, 40.52s/it][ABatch:  213
+Loss:  0.27780506014823914  and KL penalty  0.0004921280778944492
+
+  5%|▍         | 214/4400 [2:21:59<46:41:45, 40.16s/it][ABatch:  214
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.51 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3126145601272583  and KL penalty  0.002228597179055214
+
+  5%|▍         | 215/4400 [2:22:39<46:35:45, 40.08s/it][ABatch:  215
+Loss:  0.5029498338699341  and KL penalty  0.0004216316738165915
+
+  5%|▍         | 216/4400 [2:23:19<46:42:01, 40.18s/it][ABatch:  216
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.81 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2951880395412445  and KL penalty  0.0011667944490909576
+
+  5%|▍         | 217/4400 [2:23:59<46:25:14, 39.95s/it][ABatch:  217
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.06 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.7811394333839417  and KL penalty  0.0012900623260065913
+
+  5%|▍         | 218/4400 [2:24:38<46:11:52, 39.77s/it][ABatch:  218
+Loss:  0.29712575674057007  and KL penalty  -7.776254642521963e-05
+
+  5%|▍         | 219/4400 [2:25:18<46:08:20, 39.73s/it][ABatch:  219
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.16 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.4199066758155823  and KL penalty  0.0007415568106807768
+
+  5%|▌         | 220/4400 [2:25:57<46:02:41, 39.66s/it][ABatch:  220
+Loss:  0.30125486850738525  and KL penalty  0.0002600325969979167
+
+  5%|▌         | 221/4400 [2:26:37<46:03:29, 39.68s/it][ABatch:  221
+Loss:  0.6111372709274292  and KL penalty  0.00035080191446468234
+
+  5%|▌         | 222/4400 [2:27:16<45:57:56, 39.61s/it][ABatch:  222
+Loss:  0.29400190711021423  and KL penalty  0.0008949684561230242
+
+  5%|▌         | 223/4400 [2:27:56<45:53:19, 39.55s/it][ABatch:  223
+Loss:  0.13680744171142578  and KL penalty  2.0084966308786534e-05
+
+  5%|▌         | 224/4400 [2:28:35<45:47:29, 39.48s/it][ABatch:  224
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.43 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.22153280675411224  and KL penalty  0.0014549561310559511
+
+  5%|▌         | 225/4400 [2:29:14<45:45:56, 39.46s/it][ABatch:  225
+Loss:  0.23666486144065857  and KL penalty  0.0003505112254060805
+
+  5%|▌         | 226/4400 [2:29:54<45:54:21, 39.59s/it][ABatch:  226
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.41 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.10858408361673355  and KL penalty  0.0021455250680446625
+
+  5%|▌         | 227/4400 [2:30:34<45:50:53, 39.55s/it][ABatch:  227
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.56 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2921905815601349  and KL penalty  0.002300787717103958
+
+  5%|▌         | 228/4400 [2:31:14<46:01:24, 39.71s/it][ABatch:  228
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.99 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.11413699388504028  and KL penalty  0.0019448668463155627
+
+  5%|▌         | 229/4400 [2:31:54<46:12:09, 39.88s/it][ABatch:  229
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.09 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.18247558176517487  and KL penalty  0.0010646573500707746
+
+  5%|▌         | 230/4400 [2:32:35<46:31:46, 40.17s/it][ABatch:  230
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.70 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.10463643819093704  and KL penalty  0.0017322301864624023
+
+  5%|▌         | 231/4400 [2:33:15<46:35:22, 40.23s/it][ABatch:  231
+Loss:  0.13247150182724  and KL penalty  0.0004729671054519713
+
+  5%|▌         | 232/4400 [2:33:56<46:39:42, 40.30s/it][ABatch:  232
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.88 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.4111514389514923  and KL penalty  0.0011747208191081882
+
+  5%|▌         | 233/4400 [2:34:35<46:21:44, 40.05s/it][ABatch:  233
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.72 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.5380910634994507  and KL penalty  0.0017149710329249501
+
+  5%|▌         | 234/4400 [2:35:15<46:09:35, 39.89s/it][ABatch:  234
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.10 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.12222453206777573  and KL penalty  0.0018297979841008782
+
+  5%|▌         | 235/4400 [2:35:54<46:00:52, 39.77s/it][ABatch:  235
+Loss:  0.22236022353172302  and KL penalty  0.0002753124281298369
+
+  5%|▌         | 236/4400 [2:36:35<46:13:52, 39.97s/it][ABatch:  236
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.25 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1310720145702362  and KL penalty  0.0007087406702339649
+
+  5%|▌         | 237/4400 [2:37:15<46:18:57, 40.05s/it][ABatch:  237
+Loss:  0.17537541687488556  and KL penalty  0.0004896963946521282
+
+  5%|▌         | 238/4400 [2:37:56<46:30:07, 40.22s/it][ABatch:  238
+Loss:  0.3144352436065674  and KL penalty  0.0002862729597836733
+
+  5%|▌         | 239/4400 [2:38:36<46:34:16, 40.29s/it][ABatch:  239
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.31 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.29221439361572266  and KL penalty  0.0007940171053633094
+
+  5%|▌         | 240/4400 [2:39:16<46:36:37, 40.34s/it][ABatch:  240
+Loss:  0.422027587890625  and KL penalty  -0.0003564563230611384
+
+  5%|▌         | 241/4400 [2:39:57<46:38:02, 40.37s/it][ABatch:  241
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.36 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.43944844603538513  and KL penalty  0.00215273629873991
+
+  6%|▌         | 242/4400 [2:40:37<46:36:45, 40.36s/it][ABatch:  242
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.27 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.12148071080446243  and KL penalty  0.0026367485988885164
+
+  6%|▌         | 243/4400 [2:41:17<46:32:05, 40.30s/it][ABatch:  243
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.02 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.07298225164413452  and KL penalty  0.00236893561668694
+
+  6%|▌         | 244/4400 [2:41:57<46:09:33, 39.98s/it][ABatch:  244
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.38 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2668987512588501  and KL penalty  0.001528217107988894
+
+  6%|▌         | 245/4400 [2:42:36<45:51:44, 39.74s/it][ABatch:  245
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.97 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.16276831924915314  and KL penalty  0.0018099065637215972
+
+  6%|▌         | 246/4400 [2:43:15<45:42:45, 39.62s/it][ABatch:  246
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.93 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17589475214481354  and KL penalty  0.002317252568900585
+
+  6%|▌         | 247/4400 [2:43:55<45:52:37, 39.77s/it][ABatch:  247
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.88 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.16547198593616486  and KL penalty  0.0031721501145511866
+
+  6%|▌         | 248/4400 [2:44:35<46:00:24, 39.89s/it][ABatch:  248
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.79 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.5167861580848694  and KL penalty  0.00179109291639179
+
+  6%|▌         | 249/4400 [2:45:16<46:06:35, 39.99s/it][ABatch:  249
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.94 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.15540459752082825  and KL penalty  0.0025779211428016424
+
+  6%|▌         | 250/4400 [2:45:56<46:07:32, 40.01s/it][ABatch:  250
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.47 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3014119863510132  and KL penalty  0.0006721031968481839
+
+  6%|▌         | 251/4400 [2:46:36<46:23:27, 40.25s/it][ABatch:  251
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.47 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.12529167532920837  and KL penalty  0.003459412371739745
+
+  6%|▌         | 252/4400 [2:47:17<46:19:12, 40.20s/it][ABatch:  252
+Loss:  0.2307029813528061  and KL penalty  0.0005717107560485601
+
+  6%|▌         | 253/4400 [2:47:56<46:07:17, 40.04s/it][ABatch:  253
+Loss:  0.28287196159362793  and KL penalty  0.0004038114857394248
+
+  6%|▌         | 254/4400 [2:48:36<45:52:02, 39.83s/it][ABatch:  254
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.95 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.19818027317523956  and KL penalty  0.001070171594619751
+
+  6%|▌         | 255/4400 [2:49:15<45:43:35, 39.71s/it][ABatch:  255
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.72 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.6349571347236633  and KL penalty  0.0009880521101877093
+
+  6%|▌         | 256/4400 [2:49:55<45:39:46, 39.67s/it][ABatch:  256
+Loss:  0.09938529878854752  and KL penalty  0.0011935655493289232
+
+  6%|▌         | 257/4400 [2:50:35<45:51:04, 39.84s/it][ABatch:  257
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.22 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.20464175939559937  and KL penalty  0.0020845229737460613
+
+  6%|▌         | 258/4400 [2:51:15<46:02:44, 40.02s/it][ABatch:  258
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.76 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.10109401494264603  and KL penalty  0.0017563131405040622
+
+  6%|▌         | 259/4400 [2:51:55<46:05:38, 40.07s/it][ABatch:  259
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.38 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.28345564007759094  and KL penalty  0.0028221269603818655
+
+  6%|▌         | 260/4400 [2:52:36<46:07:23, 40.11s/it][ABatch:  260
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.40 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2078545093536377  and KL penalty  0.0026583936996757984
+
+  6%|▌         | 261/4400 [2:53:15<45:58:17, 39.98s/it][ABatch:  261
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.03 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.18820162117481232  and KL penalty  0.0009375098161399364
+
+  6%|▌         | 262/4400 [2:53:55<45:53:53, 39.93s/it][ABatch:  262
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.69 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1672673225402832  and KL penalty  0.00228773127309978
+
+  6%|▌         | 263/4400 [2:54:35<45:58:39, 40.01s/it][ABatch:  263
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.94 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.25165021419525146  and KL penalty  0.0010835679713636637
+
+  6%|▌         | 264/4400 [2:55:16<46:05:33, 40.12s/it][ABatch:  264
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.11 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2133212834596634  and KL penalty  0.0026819186750799417
+
+  6%|▌         | 265/4400 [2:55:56<45:59:46, 40.05s/it][ABatch:  265
+Loss:  0.16931624710559845  and KL penalty  0.0021078360732644796
+
+  6%|▌         | 266/4400 [2:56:36<46:05:21, 40.14s/it][ABatch:  266
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.31 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.29923540353775024  and KL penalty  0.0034739321563392878
+
+  6%|▌         | 267/4400 [2:57:16<45:54:41, 39.99s/it][ABatch:  267
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -6.55 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2939547896385193  and KL penalty  0.003366864752024412
+
+  6%|▌         | 268/4400 [2:57:55<45:49:36, 39.93s/it][ABatch:  268
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.01 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2124767154455185  and KL penalty  0.003278140677139163
+
+  6%|▌         | 269/4400 [2:58:35<45:50:20, 39.95s/it][ABatch:  269
+Loss:  0.32865604758262634  and KL penalty  1.7221518646692857e-05
+
+  6%|▌         | 270/4400 [2:59:17<46:20:20, 40.39s/it][ABatch:  270
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.76 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.23495644330978394  and KL penalty  0.0009713307372294366
+
+  6%|▌         | 271/4400 [2:59:57<46:16:50, 40.35s/it][ABatch:  271
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.86 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2580820918083191  and KL penalty  0.0016568867722526193
+
+  6%|▌         | 272/4400 [3:00:37<46:15:53, 40.35s/it][ABatch:  272
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.98 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.30338767170906067  and KL penalty  0.0019522281363606453
+
+  6%|▌         | 273/4400 [3:01:18<46:11:34, 40.29s/it][ABatch:  273
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.37 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1397068202495575  and KL penalty  0.0014801914803683758
+
+  6%|▌         | 274/4400 [3:01:58<46:09:17, 40.27s/it][ABatch:  274
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.85 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17801043391227722  and KL penalty  0.0010876546148210764
+
+  6%|▋         | 275/4400 [3:02:38<46:08:24, 40.27s/it][ABatch:  275
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.08 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.4543270766735077  and KL penalty  0.0019358496647328138
+
+  6%|▋         | 276/4400 [3:03:18<46:05:56, 40.24s/it][ABatch:  276
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -6.03 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.21590913832187653  and KL penalty  0.003089143428951502
+
+  6%|▋         | 277/4400 [3:03:59<46:13:31, 40.36s/it][ABatch:  277
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.55 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1890096813440323  and KL penalty  0.0014455249765887856
+
+  6%|▋         | 278/4400 [3:04:39<46:12:37, 40.36s/it][ABatch:  278
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.16 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.21198628842830658  and KL penalty  0.003313463181257248
+
+  6%|▋         | 279/4400 [3:05:19<46:06:07, 40.27s/it][ABatch:  279
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.33 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3507269024848938  and KL penalty  0.002442790661007166
+
+  6%|▋         | 280/4400 [3:05:59<46:04:43, 40.26s/it][ABatch:  280
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.82 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17727471888065338  and KL penalty  0.0009860924910753965
+
+  6%|▋         | 281/4400 [3:06:41<46:21:49, 40.52s/it][ABatch:  281
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.75 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1742999255657196  and KL penalty  0.00242132181301713
+
+  6%|▋         | 282/4400 [3:07:21<46:11:03, 40.37s/it][ABatch:  282
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.82 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.7746216654777527  and KL penalty  0.002332806121557951
+
+  6%|▋         | 283/4400 [3:08:00<45:45:00, 40.00s/it][ABatch:  283
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.10 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.25150325894355774  and KL penalty  0.0012356541119515896
+
+  6%|▋         | 284/4400 [3:08:40<45:40:46, 39.95s/it][ABatch:  284
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.04 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1165262833237648  and KL penalty  0.0024359612725675106
+
+  6%|▋         | 285/4400 [3:09:20<45:53:29, 40.15s/it][ABatch:  285
+Loss:  0.8077340126037598  and KL penalty  0.001777489436790347
+
+  6%|▋         | 286/4400 [3:10:00<45:53:43, 40.16s/it][ABatch:  286
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.86 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.13818053901195526  and KL penalty  0.001082680537365377
+
+  7%|▋         | 287/4400 [3:10:41<45:53:17, 40.16s/it][ABatch:  287
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.29 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.25649163126945496  and KL penalty  0.002789311809465289
+
+  7%|▋         | 288/4400 [3:11:21<45:48:51, 40.11s/it][ABatch:  288
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.18 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.30194416642189026  and KL penalty  0.0033242919016629457
+
+  7%|▋         | 289/4400 [3:12:01<45:47:47, 40.10s/it][ABatch:  289
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.21 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3194325566291809  and KL penalty  0.0005416401545517147
+
+  7%|▋         | 290/4400 [3:12:41<45:47:31, 40.11s/it][ABatch:  290
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.64 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17014646530151367  and KL penalty  0.0009235350298695266
+
+  7%|▋         | 291/4400 [3:13:22<46:02:21, 40.34s/it][ABatch:  291
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.46 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3710441291332245  and KL penalty  0.0020074883941560984
+
+  7%|▋         | 292/4400 [3:14:01<45:48:40, 40.15s/it][ABatch:  292
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.59 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.15020465850830078  and KL penalty  0.001320395153015852
+
+  7%|▋         | 293/4400 [3:14:41<45:41:30, 40.05s/it][ABatch:  293
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.24 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.18683992326259613  and KL penalty  0.002507268451154232
+
+  7%|▋         | 294/4400 [3:15:21<45:41:12, 40.06s/it][ABatch:  294
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.42 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.29243242740631104  and KL penalty  0.0026055846828967333
+
+  7%|▋         | 295/4400 [3:16:01<45:32:54, 39.94s/it][ABatch:  295
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.26 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2739121615886688  and KL penalty  0.0004975600750185549
+
+  7%|▋         | 296/4400 [3:16:42<45:56:08, 40.29s/it][ABatch:  296
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.58 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2442026436328888  and KL penalty  0.0016511885914951563
+
+  7%|▋         | 297/4400 [3:17:22<45:56:23, 40.31s/it][ABatch:  297
+Loss:  0.15152084827423096  and KL penalty  0.0009513439727015793
+
+  7%|▋         | 298/4400 [3:18:04<46:22:36, 40.70s/it][ABatch:  298
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.65 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1646358221769333  and KL penalty  0.0006355597288347781
+
+  7%|▋         | 299/4400 [3:18:45<46:27:52, 40.79s/it][ABatch:  299
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.04 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.10703837126493454  and KL penalty  0.0011806110851466656
+
+  7%|▋         | 300/4400 [3:19:25<46:14:16, 40.60s/it][ABatch:  300
+Loss:  0.13811539113521576  and KL penalty  5.866722494829446e-05
+
+  7%|▋         | 301/4400 [3:20:07<46:36:22, 40.93s/it][ABatch:  301
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.64 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17662860453128815  and KL penalty  0.000938871584367007
+
+  7%|▋         | 302/4400 [3:20:47<46:21:39, 40.73s/it][ABatch:  302
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.28 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17951081693172455  and KL penalty  0.0019695989321917295
+
+  7%|▋         | 303/4400 [3:21:27<46:10:49, 40.58s/it][ABatch:  303
+Loss:  0.4090193808078766  and KL penalty  0.0011138124391436577
+
+  7%|▋         | 304/4400 [3:22:07<46:01:13, 40.45s/it][ABatch:  304
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.89 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.136861190199852  and KL penalty  0.002456392627209425
+
+  7%|▋         | 305/4400 [3:22:48<46:00:54, 40.45s/it][ABatch:  305
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.29 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.17102542519569397  and KL penalty  0.0011142389848828316
+
+  7%|▋         | 306/4400 [3:23:28<46:00:18, 40.45s/it][ABatch:  306
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.80 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.09488334506750107  and KL penalty  0.0030342594254761934
+
+  7%|▋         | 307/4400 [3:24:09<45:52:41, 40.35s/it][ABatch:  307
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.68 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.19113732874393463  and KL penalty  0.0023016564082354307
+
+  7%|▋         | 308/4400 [3:24:48<45:43:02, 40.22s/it][ABatch:  308
+Loss:  0.16264663636684418  and KL penalty  0.002025236375629902
+
+  7%|▋         | 309/4400 [3:25:29<45:39:56, 40.19s/it][ABatch:  309
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.90 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.322368323802948  and KL penalty  0.0024598638992756605
+
+  7%|▋         | 310/4400 [3:26:09<45:39:42, 40.19s/it][ABatch:  310
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -3.47 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.2772769033908844  and KL penalty  0.001949165016412735
+
+  7%|▋         | 311/4400 [3:26:49<45:41:42, 40.23s/it][ABatch:  311
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -6.15 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.16324482858181  and KL penalty  0.0039006266742944717
+
+  7%|▋         | 312/4400 [3:27:29<45:38:18, 40.19s/it][ABatch:  312
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.56 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.3495863676071167  and KL penalty  0.0036560422740876675
+
+  7%|▋         | 313/4400 [3:28:09<45:34:34, 40.15s/it][ABatch:  313
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.31 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.38432642817497253  and KL penalty  0.002140864497050643
+
+  7%|▋         | 314/4400 [3:28:50<45:42:51, 40.28s/it][ABatch:  314
+Loss:  0.2466019093990326  and KL penalty  0.0016998869832605124
+
+  7%|▋         | 315/4400 [3:29:30<45:46:34, 40.34s/it][ABatch:  315
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -1.40 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1554066240787506  and KL penalty  0.0005712835700251162
+
+  7%|▋         | 316/4400 [3:30:11<45:58:54, 40.53s/it][ABatch:  316
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -4.84 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.16170400381088257  and KL penalty  0.0023861804511398077
+
+  7%|▋         | 317/4400 [3:30:52<46:05:23, 40.64s/it][ABatch:  317
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -5.72 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.1895207017660141  and KL penalty  0.003714219434186816
+
+  7%|▋         | 318/4400 [3:31:32<45:55:32, 40.50s/it][ABatch:  318
+/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py:1289: UserWarning: KL divergence is starting to become negative: -2.48 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+Loss:  0.29298287630081177  and KL penalty  0.001163447042927146
+
+  7%|▋         | 319/4400 [3:32:13<45:59:51, 40.58s/it][ABatch:  319
+This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+  7%|▋         | 319/4400 [3:33:58<45:37:24, 40.25s/it]
+epoch:   0%|          | 0/1 [3:33:58<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 201, in <module>
+    build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
+  File "/gpfs/bwfor/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/ppo.py", line 143, in build_pipeline
+    stats = ppo_trainer.step(query_tensors, response_tensors, rewards_list)
+  File "/opt/bwhpc/common/devel/miniconda/3-py39-23.10.0/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 798, in step
+    logprobs, logits, vpreds, _ = self.batched_forward_pass(
+  File "/opt/bwhpc/common/devel/miniconda/3-py39-23.10.0/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/trainer/ppo_trainer.py", line 994, in batched_forward_pass
+    logits, _, values = model(**input_kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1561, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/trl/models/modeling_value_head.py", line 171, in forward
+    base_model_output = self.pretrained_model(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/peft/peft_model.py", line 1071, in forward
+    return self.base_model(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/peft/tuners/tuners_utils.py", line 108, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1176, in forward
+    outputs = self.model(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1019, in forward
+    layer_outputs = decoder_layer(
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 755, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 241, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/bitsandbytes/nn/modules.py", line 468, in forward
+    out = bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/bitsandbytes/autograd/_functions.py", line 579, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/tu/tu_tu/tu_zxojp43/.local/lib/python3.9/site-packages/bitsandbytes/autograd/_functions.py", line 509, in forward
+    output = torch.nn.functional.linear(A, F.dequantize_4bit(B, quant_state).to(A.dtype).t(), bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 478.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 415.25 MiB is free. Including non-PyTorch memory, this process has 78.73 GiB memory in use. Of the allocated memory 77.51 GiB is allocated by PyTorch, and 724.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
