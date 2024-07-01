@@ -31,11 +31,12 @@ def generate_evaluation(df, model):
 
 if __name__ == "__main__":
     input_file_path = "Output_files/answers/output_for_evaluation_apstudy_base.csv"
-    output_path = "Output_files/evaluated_answers/evaluation_results_apstudy_base.csv"
+    output_path = "Output_files/evaluated_answers/evaluation_results_apstudy_.csv"
     client = OpenAI(api_key="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")
     MODEL = "gpt-4o"
 
     df = pd.read_csv(input_file_path)
+    df = df[:10]
     # df = df.loc[df['id'].isin(["choice"])]
 
     # print(df)

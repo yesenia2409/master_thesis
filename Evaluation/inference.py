@@ -11,6 +11,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
 import os
 import pandas as pd
+from trl import AutoModelForCausalLMWithValueHead
 
 
 def inference(model, tokenizer, prompts, labels, max_new_tokens):
@@ -71,17 +72,17 @@ def create_model_and_tokenizer(model_dir):
         bnb_4bit_compute_dtype=torch.float16,
     )
 
-    model = AutoModelForCausalLM.from_pretrained(
+    model = AutoModelForCausalLMWithValueHead.from_pretrained(
         pretrained_model_name_or_path=model_dir,
+        trust_remote_code=True,
         local_files_only=True,
         use_safetensors=True,
         quantization_config=bnb_config,
         device_map="auto",
     )
-
     model.config.use_cache = False
 
-    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-13b-chat-hf")
+    tokenizer = AutoTokenizer.from_pretrained(model_dir)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"
 
@@ -90,28 +91,28 @@ def create_model_and_tokenizer(model_dir):
 
 if __name__ == "__main__":
     # Variables
-    model_dir_local = "meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
-    max_new_tokens = 512
+    model_dir_local = "../RLHF/Policy_Model" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
+    max_new_tokens = 128
     output_dir = "Output_files/answers/"
-    benchmark = "npee_discussion"
-    model_name = "base"
+    benchmark = "apstudy"
+    model_name = "RLHF"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
-    data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
-    data = data.loc[data['id'].isin(["discussion"])]
-    counter = 0
+    data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
+    # data = data.loc[data['id'].isin(["discussion"])]
+    # counter = 0
 
-    for idx, row in data.iterrows(): # row 1074-1379 --> first 305 entries
-        if counter <= 304:
-            prompt_list = row["prompt"].split("<</SYS>> \n")
-            prompt_list.insert(1, "<</SYS>>")
-            prompt_list.insert(2, "Briefly discuss the following statement/question:")
+    # for idx, row in data.iterrows(): # row 1074-1379 --> first 305 entries
+    #     if counter <= 304:
+    #         prompt_list = row["prompt"].split("<</SYS>> \n")
+    #         prompt_list.insert(1, "<</SYS>>")
+    #         prompt_list.insert(2, "Briefly discuss the following statement/question:")
 
-            row["prompt"] = ' '.join(prompt_list)
-            counter += 1
-            # print(row["prompt"])
+    #         row["prompt"] = ' '.join(prompt_list)
+    #         counter += 1
+    #         # print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
