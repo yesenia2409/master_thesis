@@ -29,19 +29,8 @@ def build_dataset(dataset_path):
 
 
 def load_model_and_tokenizer(MODEL_PATH):
-    
-    # lora_config = LoraConfig(
-    #     r=16,
-    #     lora_alpha=32,
-    #     # lora_dropout=0.05,
-    #    bias="none",
-    #     # target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "up_proj", "down_proj", "gate_proj", "lm_head"],
-    #     task_type="CAUSAL_LM",
-    # )
-
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
-        # bnb_4bit_use_double_quant=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.float16,
     )
@@ -54,7 +43,6 @@ def load_model_and_tokenizer(MODEL_PATH):
         device_map="auto",
         quantization_config=bnb_config, 
     )
-    # model = prepare_model_for_kbit_training(model)
     model.config.use_cache = False
     model = model.to(DEVICE)
     model.bfloat16()

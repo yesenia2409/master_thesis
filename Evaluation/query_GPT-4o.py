@@ -36,7 +36,6 @@ if __name__ == "__main__":
     MODEL = "gpt-4o"
 
     df = pd.read_csv(input_file_path)
-    df = df[:10]
     # df = df.loc[df['id'].isin(["choice"])]
 
     # print(df)
