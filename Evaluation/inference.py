@@ -91,7 +91,7 @@ def create_model_and_tokenizer(model_dir):
 
 if __name__ == "__main__":
     # Variables
-    model_dir_local = "../RLHF/Policy_Model" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
+    model_dir_local = "../RLHF/Policy_Model/" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
     benchmark = "apstudy"
@@ -101,6 +101,7 @@ if __name__ == "__main__":
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
+    data = data[:10]
     # data = data.loc[data['id'].isin(["discussion"])]
     # counter = 0
 

@@ -154,7 +154,7 @@ def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, rewa
             batch_counter += 1
             torch.cuda.empty_cache()
 
-    with open("Output_files/slurm_files/ppo/trainer_log_history_1epoch_2_00E-6Lr_4batch_36ksamples.txt", "a") as text_file:
+    with open("Output_files/slurm_files/trainer_log_history_1epoch_2_00E-5Lr_2batch.txt", "a") as text_file:
         text_file.write(str(log_history))
     
     policy_model.save_pretrained("Policy_Model/", save_serialisation=True)
