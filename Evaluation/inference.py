@@ -94,15 +94,15 @@ if __name__ == "__main__":
     model_dir_local = "/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/PolicyModel/" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
     max_new_tokens = 128
     output_dir = "Output_files/answers/"
-    benchmark = "apstudy"
+    benchmark = "npee_mc"
     model_name = "RLHF"
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
-    data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
+    data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
     # data = data[:10]
-    # data = data.loc[data['id'].isin(["discussion"])]
+    data = data.loc[data['id'].isin(["choice"])]
     # counter = 0
 
     # for idx, row in data.iterrows(): # row 1074-1379 --> first 305 entries
