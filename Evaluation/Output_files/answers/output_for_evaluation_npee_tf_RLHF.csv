@@ -1,0 +1,1076 @@
+input,gold,pred
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Minerals all have cleavage [/INST] </s>",False," #1. The cleavage of minerals is a breakage of the crystal lattice along certain planes.
+#2. The cleavage of minerals is a breakage of the crystal lattice along certain planes.
+#3. The cleavage of minerals is a breakage of the crystal lattice along certain planes.
+#4. The cleavage of minerals is a breakage of the crystal lattice along certain planes.
+#5. The cleavage of minerals is a breakage of the crystal lattice along certain plan"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ According to the content of quartz, magmatic rocks can be further divided into four categories: ultrabasic, basic, neutral and acidic [/INST] </s>",False," #1. Ultrabasic: Ultrabasic rocks are composed of quartz and feldspar, but they have a very low silica content. They have a very low silica content and are usually found in subduction zones.
+
+#2. Basic: Basic rocks are composed of quartz and feldspar, but they have a higher silica content than ultrabasic rocks. They are usually found in continental rifts and subduction zones.
+
+#3. Neutral: Neutral rocks are composed of quartz and feldspar, but"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The upper wall of a fault refers to the ascending disk of a fault [/INST] </s>",False," # No, the upper wall of a fault refers to the part of the fault that is closest to the surface. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The first period of Mesozoic is called Triassic [/INST] </s>",True, #True.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Permian is the last period of Paleozoic [/INST] </s>",True, # Permian is the last period of Paleozoic  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Physical weathering does not change the chemical composition of rocks [/INST] </s>",True, #Physical weathering does not change the chemical composition of rocks.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The largest flat surface of gravel in alluvium tends to the upper reaches of rivers [/INST] </s>",True, #1. The largest flat surface of gravel in alluvium tends to the upper reaches of rivers.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ There is no groundwater in magmatic rock area [/INST] </s>",False," #1: There is no groundwater in magmatic rock area.
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Most glacial deposits have obvious bedding [/INST] </s>",False, #True  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Sediments in the ocean are carried by rivers [/INST] </s>",False," # Sediments in the ocean are carried by rivers
+Rivers are the primary source of sediment in the ocean. The sediment carried by rivers includes clay, silt, sand, and gravel. These sediments are washed into the ocean through river mouths, where they settle on the ocean floor.
+
+The amount and type of sediment carried by a river depends on several factors, including the river's size, the amount of water flowing through it, and the geological makeup of the surrounding terrain. Larger rivers with more water flowing through them tend to carry more sediment"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Desert is mainly formed by the geological action of wind [/INST] </s>",False," #1. Desert is mainly formed by the geological action of wind.
+
+#2. Desert is mainly formed by the geological action of rain.
+
+#3. Desert is mainly formed by the geological action of snow.
+
+#4. Desert is mainly formed by the geological action of tectonic activity.
+
+#5. Desert is mainly formed by the geological action of ocean currents.
+
+#6. Desert is mainly formed by the geological action of volcanic eruptions.
+
+#7. Desert is mainly formed by"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ In the anticline structure, the rock strata in the central part are relatively old [/INST] </s>",True, #GeoScience: The anticline structure is formed when the rock strata in the central part are relatively old.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Weathering is the geological action of wind [/INST] </s>",False, #Weathering #Geological action #Wind  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Bedding is an important structure of sedimentary rocks [/INST] </s>",True, #Bedding is an important structure of sedimentary rocks.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ If the strike of rock strata is known, the tendency of rock strata will be known [/INST] </s>",True," #1: Dear Ava, I am a geologist and I have a question about rock strata. If the strike of rock strata is known, the tendency of rock strata will be known.
+
+#2: Dear Ava, I am a geologist and I have a question about rock strata. If the strike of rock strata is known, the tendency of rock strata will be known.
+
+#3: Dear Ava, I am a geologist and I have a question about rock strata. If the strike of rock strata is known, the t"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Sea earthquakes often lead to turbidity current on the seabed [/INST] </s>",True," # Sea earthquakes can cause turbidity current on the seabed.
+# Turbidity current is a mixture of water and sediment that can be carried by gravity or water currents.
+# Sea earthquakes can cause turbidity current on the seabed by causing a sudden release of sediment from the seafloor.
+# Turbidity current can be dangerous to ships and marine life.
+# Turbidity current can also affect the ocean's chemistry by carrying nutrients and pollutants to different areas.
+# Turbidity current can be measured using instruments"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Rock folds are mainly formed by external dynamic geological processes [/INST] </s>",False, # Rock folds are mainly formed by external dynamic geological processes.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The contact relationship between two sets of strata with the same occurrence is called integrated contact [/INST] </s>",False," #ContactRelationship #Stratigraphy #Geology #Geoscience
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The gravity sold by matter on the earth is the universal gravitation of the earth [/INST] </s>",False, #The gravity sold by matter on the earth is the universal gravitation of the earth  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The hardness of quartz is greater than that of calcite [/INST] </s>",True," # Yes.
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Stomatal structures are common in volcanic rocks [/INST] </s>",True," #Stomatal structures are common in volcanic rocks
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Differential weathering is caused by different climates [/INST] </s>",False, #Differential weathering is caused by different climates.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Bedrock is a rock foundation [/INST] </s>",False, # Geoscience: Bedrock is a rock foundation  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ In the original horizontal state, the overlying strata are newer and the underlying strata are older [/INST] </s>",True, #The overlying strata are younger and the underlying strata are older.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Earthquake damage to the ground and buildings is called earthquake intensity [/INST] </s>",True," #Earthquake damage to the ground and buildings is called earthquake intensity
+Geoscience  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The coastline is the boundary between continental crust and oceanic crust [/INST] </s>",False," # 1: Coastline
+The coastline is the boundary between continental crust and oceanic crust.
+# 2: The boundary between continental crust and oceanic crust
+The boundary between continental crust and oceanic crust is called the coastline.
+# 3: Coastline
+The coastline is the boundary between continental crust and oceanic crust.
+# 4: The boundary between continental crust and oceanic crust
+The boundary between continental crust and oceanic crust is called the coastline.
+# 5: Coast"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The higher the position of the valley terrace, the earlier the terrace formed [/INST] </s>",True, #Yes  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Plate structure, thousand-piece structure and sheet structure are common structures in metamorphic rocks [/INST] </s>",True," #1
+The plate structure is a common structure in metamorphic rocks. It is formed when the rocks are subjected to high pressure and temperature, causing them to deform and recrystallize into large plates. The plates are usually made of minerals like mica, chlorite, and talc.
+
+#2
+The thousand-piece structure is also a common structure in metamorphic rocks. It is formed when the rocks are subjected to high pressure and temperature, causing them to deform and recrystallize into small pieces. These pieces are then"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The surface gravity value increases with the increase of latitude and decreases with the increase of altitude [/INST] </s>",False," #1: The surface gravity value increases with the increase of latitude and decreases with the increase of altitude. 
+The surface gravity value increases with the increase of latitude and decreases with the increase of altitude. 
+The surface gravity value increases with the increase of latitude and decreases with the increase of altitude. 
+The surface gravity value increases with the increase of latitude and decreases with the increase of altitude. 
+The surface gravity value increases with the increase of latitude and decreases with the increase of altitude. 
+The surface gravity value increases with the increase of latitude and decreases with"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Lithosphere refers to the crust [/INST] </s>",False, # Lithosphere refers to the crust  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Quartz has well developed cleavage [/INST] </s>",False," #Cleavage is the breaking of a crystal into flat slabs by cleaving it along a crystallographic plane. In the case of quartz, the cleavage is along the {001} plane. 
+#Quartz is a mineral that is commonly found in igneous, sedimentary and metamorphic rocks. It is a very hard mineral with a high melting point and is used in many industrial applications.
+#Quartz is one of the most common minerals found on Earth and is often associated with other minerals such"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Marine geological processes are mainly sedimentation [/INST] </s>",False," 
+1. What is the main process of marine geological processes?
+
+A. 
+B. Sedimentation
+C. Weathering
+D. Erosion
+E. Deposition
+
+The answer is: 
+B. Sedimentation  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ When side erosion occurs, the convex banks of rivers are scoured and collapsed [/INST] </s>",False," #Riverside
+Riverside is a city in Riverside County, California, United States, located in the Inland Empire area of Southern California. It is named for its location next to the Santa Ana River. Riverside is the county seat of Riverside County and is known for its historical significance, cultural diversity, and natural beauty.
+
+Riverside has a population of approximately 325,000 people and is part of the Greater Los Angeles Area. It is known for its mild climate and is a popular destination for outdoor activities such as hiking,"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Jointed plane refers to the plane formed by the fracture of minerals along a certain direction inside the crystal after being acted by mechanical force [/INST] </s>",False," #1: In geoscience, jointed plane refers to the plane formed by the fracture of minerals along a certain direction inside the crystal after being acted by mechanical force.
+#2: In geoscience, jointed plane refers to the plane formed by the fracture of minerals along a certain direction inside the crystal after being acted by mechanical force.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The type of glaciers in China belongs to mountain glaciers [/INST] </s>",True, #mountain glaciers  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Diluvium is the product of river flood period [/INST] </s>",True," # No 
+
+Diluvium is the product of glacial flood period  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The geological process of swamp is mainly biological sedimentation [/INST] </s>",True," #Swamp
+The geological process of swamp is mainly biological sedimentation.
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Differential weathering is caused by different climates [/INST] </s>",False," #Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is caused by different climates. 
+#Differential weathering is"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Bottom erosion is the erosion that widens the riverbed and valley floor [/INST] </s>",False," #Geoscience #Riverbed #Valley floor
+Riverbed is the bottom of a river, and it is the area where the water flows. The bottom erosion of a river is the erosion that widens the riverbed and valley floor. This is caused by the flow of water, which can erode the soil and rocks at the bottom of the river. This can lead to the formation of a wider riverbed and a deeper valley.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The hardness of quartz is greater than that of calcite [/INST] </s>",True, #No  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Shear waves cannot pass through liquid objects [/INST] </s>",True," # False 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Ice stains have good bedding, sorting and roundness [/INST] </s>",False," #1. Ice stains have good bedding.
+#2. Ice stains have good sorting.
+#3. Ice stains have good roundness. 0
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ When the river turns, the sedimentation mainly occurs on the convex bank side [/INST] </s>",True, # Sedimentation mainly occurs on the convex bank side when the river turns.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The water level in general civil wells can represent the water level of the phreatic surface in this area [/INST] </s>",True, # The water level in general civil wells can represent the water level of the phreatic surface in this area  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The crystal plane of quartz has grease luster, and its fracture surface has glass luster [/INST] </s>",False," 
+The crystal plane of quartz has grease luster, and its fracture surface has glass luster.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The chemical formula of calcite is “CaCO3” [/INST] </s>",True," #1: The chemical formula of calcite is “CaCO3”
+The correct answer is:
+#2: The chemical formula of calcite is “CaCO3”
+The correct answer is:
+#3: The chemical formula of calcite is “CaCO3”
+The correct answer is:
+#4: The chemical formula of calcite is “CaCO3”
+The correct answer is:
+#5: The chemical formula of calcite is “CaCO3”
+The correct answer is:
+#6: The chemical formula of calcite is “CaCO3”
+The"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Karst caves are mainly formed near the phreatic surface [/INST] </s>",True," #1 Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are mainly formed near the phreatic surface.
+Karst caves are"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Almond-shaped structure mainly occurs in volcanic rocks [/INST] </s>",True, #1: Almond-shaped structure mainly occurs in volcanic rocks  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Calcite has two groups of cleavage [/INST] </s>",False," #1. Along prismatic cleavage (crystallographic cleavage)
+#2. Along basal cleavage (optical cleavage)  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Most earthquakes in the world belong to tectonic earthquakes [/INST] </s>",True," # Yes, most earthquakes in the world belong to tectonic earthquakes.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Calcite is the main mineral composition of limestone and marble [/INST] </s>",True, #True  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Field investigation is the most basic and important link in earth science work, which can obtain the first-hand information of the studied objects. [/INST] </s>",True," #Field investigation is the most basic and important link in earth science work, which can obtain the first-hand information of the studied objects.
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The shape and size of the earth refers to the shape and size of the geoid. [/INST] </s>",True," #1 The shape of the earth is a spheroid. 
+#2 The size of the earth is 12,742 km in diameter. 
+#3 The size of the earth is 12,742 km in diameter. 
+#4 The shape of the earth is a spheroid. 
+#5 The shape of the earth is a spheroid. 
+#6 The shape of the earth is a spheroid. 
+#7 The size of the earth is 12,742 km in diameter. 
+"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Each ocean floor has a ridge or uplift, of which the Pacific Ocean floor is an uplift and the other three ocean floors are ridges. [/INST] </s>",True," #1: The Pacific Ocean floor is an uplift.
+
+#2: The Indian Ocean floor is a ridge.
+
+#3: The Atlantic Ocean floor is a ridge.
+
+#4: The Arctic Ocean floor is a ridge.
+
+#5: The Southern Ocean floor is a ridge.
+
+#6: The Pacific Ocean floor is an uplift.
+
+#7: The Indian Ocean floor is a ridge.
+
+#8: The Atlantic Ocean floor is a ridge.
+
+#9: The Arctic Ocean floor is a ridge"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Flat-topped seamounts are seamounts near sea level, which are formed by regional subsidence and submergence after their tops are leveled by weathering, denudation and seawater erosion. [/INST] </s>",True," # Flat-topped seamounts are seamounts near sea level, which are formed by regional subsidence and submergence after their tops are leveled by weathering, denudation and seawater erosion.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The earth's crust consists of two layers: silicon-aluminum layer and silicon-magnesium layer. [/INST] </s>",False," #Silicon-aluminum layer
+#Silicon-magnesium layer  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The boundary between continental crust and oceanic crust is at the coastline. [/INST] </s>",False, #The boundary between continental crust and oceanic crust is at the coastline.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The gravity of the surface decreases with the increase of latitude. [/INST] </s>",False," #1 The gravity of the surface decreases with the increase of latitude.
+Answer: False  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The electrical properties of the earth's interior are mainly related to the magnetic permeability and conductivity of the materials in the earth. [/INST] </s>",True," #1: Magnetic permeability and conductivity of the materials in the earth.
+#2: Magnetic permeability and conductivity of the materials in the earth.
+#3: Magnetic permeability and conductivity of the materials in the earth.
+#4: Magnetic permeability and conductivity of the materials in the earth.
+#5: Magnetic permeability and conductivity of the materials in the earth.
+#6: Magnetic permeability and conductivity of the materials in the earth.
+#7: Magnetic per"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Radioactive elements are generally concentrated in the surface of the solid earth, and mainly concentrated in metamorphic rocks. [/INST] </s>",False," #1: Radioactive elements are generally concentrated in the surface of the solid earth, and mainly concentrated in metamorphic rocks.
+
+The correct answer is: False.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Crustal movement can be divided into horizontal movement and vertical movement according to the direction of movement. [/INST] </s>",True," #Horizontal movement: This refers to the movement of the earth's crust along the surface of the earth, which is also known as lateral movement. This type of movement is caused by the movement of tectonic plates along the surface of the earth.
+
+#Vertical movement: This refers to the movement of the earth's crust along the vertical direction, which is also known as vertical movement. This type of movement is caused by the movement of tectonic plates along the vertical direction.
+
+Crustal movement can be divided into horizontal movement and vertical movement according to the direction of movement."
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The crustal movement after Quaternary is generally called neotectonic movement. [/INST] </s>",True," #Neotectonic movement is a relatively recent term that refers to the movement of the Earth's crust since the end of the last ice age. It is characterized by the movement of the Earth's crust due to the melting of the ice sheets and the subsequent isostatic rebound.
+#The neotectonic movement is different from the prehistoric tectonic movement, which refers to the movement of the Earth's crust that occurred before the end of the last ice age. The prehistoric tectonic movement is characterized by the movement of the Earth's cr"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The root cause of earthquakes lies in plate movement. [/INST] </s>",False, #1: Plate movement.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Active volcanoes can only be distributed at the edge of plates. [/INST] </s>",False," #1: The active volcanoes in the Pacific Northwest are located on the Cascadia subduction zone. 
+#2: The active volcanoes in the Andes are located on the Peru-Chile subduction zone. 
+#3: The active volcanoes in the Mediterranean are located on the Africa-Eurasia subduction zone. 
+#4: The active volcanoes in the Indian Ocean are located on the Australia-Antarctica subduction zone. 
+#5: The active volcanoes in the South Pacific are located on"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The whole interior of the earth is molten, and magma exists everywhere. [/INST] </s>",False," # The whole interior of the earth is molten, and magma exists everywhere.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ In metamorphism, the main function of static pressure is to raise the temperature of metamorphic reaction. [/INST] </s>",True," #False. In metamorphism, the main function of static pressure is to increase the pressure of metamorphic reaction.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ When clastic material is transported in flowing water, clay-grade particles once deposited are eroded again, which requires greater flowing water speed. [/INST] </s>",True," #1: Increase in water flow speed erodes clay-grade particles.
+#2: The flow speed of water is the speed of water flowing in a given direction.
+#3: The clay-grade particles are the fine particles of clay that are deposited in the stream bed.
+#4: The stream bed is the bottom of a stream.
+#5: The flow speed of water is increased when the water flow rate is increased.
+#6: The flow speed of water is decreased when the water flow rate is decreased.
+#7: The flow speed of"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The retreat of the waterfall is caused by the erosion of the river. [/INST] </s>",True, # The retreat of the waterfall is caused by the erosion of the river.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The stone forest in Lunan, Yunnan Province was formed by river erosion. [/INST] </s>",False," #Geoscience
+The stone forest in Lunan, Yunnan Province was formed by river erosion.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Finland, a country of thousands of lakes, has many lakes that are the causes of rivers. [/INST] </s>",False," The lakes in Finland are a significant source of water for rivers. The country has a vast network of rivers and streams, which are fed by the numerous lakes that dot the landscape. The lakes are formed by glacial activity and other geological processes, and they play a crucial role in the hydrological cycle of the region. The rivers that flow from the lakes are an essential source of water for many communities, and they also provide habitat for a wide range of aquatic and terrestrial species.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The amygdala in volcanic rocks belongs to the form of crystalline aggregates. [/INST] </s>",False, # The amygdala in volcanic rocks belongs to the form of crystalline aggregates.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ According to Rick's Law, deep in the earth's crust, minerals precipitate in the direction of maximum stress and dissolve in the direction of minimum stress. [/INST] </s>",False," # Rick's Law
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+#"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ According to the classification standard of debris particle size in petroleum industry, the debris particles of 0.25 ~ 0.5 mm are medium sand. [/INST] </s>",True, The classification standard of debris particle size in petroleum industry is based on the diameter of the particles. The particles with a diameter of 0.25 ~ 0.5 mm are classified as medium sand.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Generally speaking, clastic particles with good roundness have higher sphericity. [/INST] </s>",False," 
+Sphericity is a measure of the degree of roundness of a particle. It is calculated by dividing the particle's surface area by its volume. The formula for sphericity is:
+
+Sphericity = (4πA/V)
+
+where A is the surface area of the particle and V is its volume.
+
+The value of sphericity ranges from 0 (flat) to 1 (spherical). The higher the sphericity, the more round the particle is.
+
+Clastic particles with good roundness have a higher sphericity because they are more likely to"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Alluvial fan facies sediments are generally poorly sorted and rounded. [/INST] </s>",True," This is not a correct statement. Alluvial fan facies sediments are not always poorly sorted and rounded. In fact, alluvial fan facies sediments can be very well-sorted and non-rounded. The sorting of alluvial fan facies sediments depends on the size of the sediment and the speed of the water that is carrying it. If the water is moving slowly, the sediment will be more well-sorted and if the water is moving quickly, the sediment will be less well-sorted. Additionally, the shape of alluvial fan facies sediments can also be"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Salty lakes refer to lakes with salinity greater than 35%. [/INST] </s>",True," #1: Salty lakes refer to lakes with salinity greater than 35%.
+#2: Salty lakes refer to lakes with salinity less than 35%.
+#3: Salty lakes refer to lakes with salinity greater than 35%.
+#4: Salty lakes refer to lakes with salinity less than 35%.
+#5: Salty lakes refer to lakes with salinity greater than 35%.
+#6: Salty lakes refer to lakes with salinity less than 35%.
+#"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ According to PH value, seawater belongs to weakly alkaline medium. [/INST] </s>",True," # 1. According to PH value, seawater belongs to weakly alkaline medium.
+
+Answer: # 1. According to PH value, seawater belongs to weakly alkaline medium.
+
+# 2. According to PH value, seawater belongs to weakly alkaline medium.
+
+Answer: # 2. According to PH value, seawater belongs to weakly alkaline medium.
+
+# 3. According to PH value, seawater belongs to weakly alkaline medium.
+
+Answer: #"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The change of material composition and bedding structure of turbidite in vertical direction follows Bowma sequence, and turbidite profiles in nature should show complete Bowma sequence. [/INST] </s>",False," #Geoscience: The change of material composition and bedding structure of turbidite in vertical direction follows Bowma sequence, and turbidite profiles in nature should show complete Bowma sequence.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The code name of Cretaceous is T. [/INST] </s>",False," #T 
+  [INST] <<SYS>> 
+You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The original occurrence of volcanic eruptions is mostly inclined. [/INST] </s>",True," # Volcanic eruptions are mostly inclined. 
+The original occurrence of volcanic eruptions is mostly inclined.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ On the plane, the dome structure is characterized by old rock strata at the center and young rock strata around it. [/INST] </s>",True," #1: On the plane, the dome structure is characterized by old rock strata at the center and young rock strata around it.
+
+A: The dome structure is characterized by old rock strata at the center and young rock strata around it.
+
+B: The dome structure is characterized by young rock strata at the center and old rock strata around it.
+
+C: The dome structure is characterized by the presence of a central peak.
+
+D: The dome structure is characterized by the presence of a central depression.
+
+Answer:"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Field investigation is the most basic and important link in earth science work, which can obtain the first-hand information of the studied objects. [/INST] </s>",True," # Field investigation is the most basic and important link in earth science work, which can obtain the first-hand information of the studied objects. #  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The shape and size of the earth refers to the shape and size of the geoid. [/INST] </s>",True, #1: The shape and size of the earth refers to the shape and size of the geoid.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Each ocean floor has a ridge or uplift, of which the Pacific Ocean floor is an uplift and the other three ocean floors are ridges. [/INST] </s>",True," #OceanFloor
+ 
+The Pacific Ocean floor is an uplift. 
+The Indian Ocean floor is a ridge. 
+The Atlantic Ocean floor is a ridge. 
+The Arctic Ocean floor is a ridge. 
+The Southern Ocean floor is a ridge. 
+The Southern Ocean floor is a ridge. 
+The Southern Ocean floor is a ridge. 
+The Southern Ocean floor is a ridge. 
+The Southern Ocean floor is a ridge. 
+The Southern Ocean floor is a ridge. 
+The Southern Ocean floor is a r"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Flat-topped seamounts are seamounts near sea level, which are formed by regional subsidence and submergence after their tops are leveled by weathering, denudation and seawater erosion. [/INST] </s>",True, #geoscience #seamounts #subsidence #submergence  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The earth's crust consists of two layers: silicon-aluminum layer and silicon-magnesium layer. [/INST] </s>",False," #1. The crust of the earth is divided into two layers: the continental crust and the oceanic crust. The continental crust is made of silicon-aluminum and the oceanic crust is made of silicon-magnesium. 
+
+#2. The continental crust is composed of granite and gneiss, which are rocks that are rich in silicon and aluminum. The oceanic crust is composed of basalt and gabbro, which are rocks that are rich in silicon and magnesium.
+
+#3. The"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The boundary between continental crust and oceanic crust is at the coastline. [/INST] </s>",False, #The boundary between continental crust and oceanic crust is at the coastline.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The gravity of the surface decreases with the increase of latitude. [/INST] </s>",False," # The gravity of the surface decreases with the increase of latitude. 
+True  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The electrical properties of the earth's interior are mainly related to the magnetic permeability and conductivity of the materials in the earth. [/INST] </s>",True," #Geoscience#Earth's Interior#Electrical Properties#Magnetic Permeability#Conductivity
+The electrical properties of the earth's interior are mainly related to the magnetic permeability and conductivity of the materials in the earth.
+
+The magnetic permeability of a material is its ability to support the flow of magnetic fields, while the conductivity of a material is its ability to conduct electricity.
+
+The earth's interior is made up of a variety of materials with different magnetic permeability and conductivity. The outer crust of the earth is made"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Radioactive elements are generally concentrated in the surface of the solid earth, and mainly concentrated in metamorphic rocks. [/INST] </s>",False," #Radioactive elements are generally concentrated in the surface of the solid earth, and mainly concentrated in metamorphic rocks.
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Crustal movement can be divided into horizontal movement and vertical movement according to the direction of movement. [/INST] </s>",True," # Horizontal movement: The movement of the Earth's crust along a single plane is known as horizontal movement. This type of movement is caused by the movement of tectonic plates, which can cause the ground to stretch, thin, or compress. Examples of horizontal movement include the formation of mid-ocean ridges, where new oceanic crust is created as magma rises from the Earth's mantle and solidifies, and the movement of continents along the spreading centers.
+
+# Vertical movement: The movement of the Earth's crust along a single line is"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The crustal movement after Quaternary is generally called neotectonic movement. [/INST] </s>",True, # The crustal movement after Quaternary is generally called neotectonic movement.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The root cause of earthquakes lies in plate movement. [/INST] </s>",False," #1. The root cause of earthquakes lies in plate movement.
+The root cause of earthquakes lies in plate movement.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Active volcanoes can only be distributed at the edge of plates. [/INST] </s>",False," #1: Volcanoes are not limited to the edge of plates. They can form anywhere on the surface of the Earth, and the distribution of volcanoes is not limited to the edges of tectonic plates.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The whole interior of the earth is molten, and magma exists everywhere. [/INST] </s>",False," # The whole interior of the earth is molten, and magma exists everywhere.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ In metamorphism, the main function of static pressure is to raise the temperature of metamorphic reaction. [/INST] </s>",True, #NoAnswer#  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ When clastic material is transported in flowing water, clay-grade particles once deposited are eroded again, which requires greater flowing water speed. [/INST] </s>",True," #1. The rate of erosion is proportional to the flow velocity. 
+#2. The rate of erosion is inversely proportional to the size of the particles. 
+#3. The rate of erosion is directly proportional to the flow velocity. 
+#4. The rate of erosion is directly proportional to the size of the particles. 
+#5. The rate of erosion is inversely proportional to the flow velocity. 
+#6. The rate of erosion is inversely proportional to the size of the particles. 
+#7"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The retreat of the waterfall is caused by the erosion of the river. [/INST] </s>",True, #The retreat of the waterfall is caused by the erosion of the river.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The stone forest in Lunan, Yunnan Province was formed by river erosion. [/INST] </s>",False," #The stone forest in Lunan, Yunnan Province was formed by river erosion.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Finland, a country of thousands of lakes, has many lakes that are the causes of rivers. [/INST] </s>",False," #Finland #Lake #River
+Finland, a country of thousands of lakes, has many lakes that are the causes of rivers.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The amygdala in volcanic rocks belongs to the form of crystalline aggregates. [/INST] </s>",False, 1. The amygdala in volcanic rocks belongs to the form of crystalline aggregates.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Gutenberg surface is the interface between crust and mantle [/INST] </s>",False," #Gutenberg surface is the interface between crust and mantle #geoscience
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The Earth's crust consists of silicon-aluminum layer and silicon-magnesium layer [/INST] </s>",False," #1: The Earth's crust consists of silicon-aluminum layer and silicon-magnesium layer
+The Earth's crust consists of silicon-aluminum layer and silicon-magnesium layer.
+The silicon-aluminum layer is the upper layer of the Earth's crust, while the silicon-magnesium layer is the lower layer.
+The silicon-aluminum layer is composed of silicate minerals, such as quartz, feldspar, and mica, which are formed from the cool"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The whole interior of the earth is molten and magma exists everywhere [/INST] </s>",False, # The whole interior of the earth is molten and magma exists everywhere  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ In metamorphism, the main function of static pressure is to raise the temperature of metamorphic reaction [/INST] </s>",True," #1 The static pressure of metamorphism is a pressure that is applied to the metamorphic system. It is the pressure that is exerted by the overlying rock and it can cause the metamorphic system to rise in temperature.
+#2 The static pressure of metamorphism is a pressure that is exerted by the overlying rock and it can cause the metamorphic system to rise in temperature.
+#3 The static pressure of metamorphism is a pressure that is exerted by the overlying rock and it can cause the metamorphic system to rise in temperature"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Mylonite is a rock formed by dynamic metamorphism [/INST] </s>",True, #mylonite #metamorphism #rock #geology #geoscience  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Hydration does not belong to chemical weathering [/INST] </s>",False," 1. Hydration does not belong to chemical weathering.
+2. Hydration does not belong to chemical weathering.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Under the same climatic conditions, rocks with amorphous, fine grained, isogranular structure or large porosity are less likely to be chemically weathered than rocks with the same composition, such as crystalline, unisogranular and coarse grains [/INST] </s>",False," #1: Under the same climatic conditions, rocks with amorphous, fine grained, isogranular structure or large porosity are less likely to be chemically weathered than rocks with the same composition, such as crystalline, unisogranular and coarse grains.
+
+Correct answer: False
+
+Explanation:
+Rocks with amorphous, fine grained, isogranular structure or large porosity are more likely to be chemically weathered than rocks with the same composition, such as crystalline, unisogran"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ In weathering, quartz is the most difficult mineral component of rock to be weathered [/INST] </s>",True," # The quartz is the most difficult mineral component of rock to be weathered.
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Honeycomb stone is the product of wind erosion [/INST] </s>",True, #Honeycomb stone is the product of wind erosion  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Aeolian deposits include Aeolian sand and Aeolian loess [/INST] </s>",True," #1: Aeolian sand:
+Aeolian sand is a type of sediment that is transported by wind. It is formed when wind blows over a surface and picks up small particles of sand, which are then carried away and deposited in a new location. Aeolian sand can be found in a variety of environments, including deserts, beaches, and dunes.
+
+#2: Aeolian loess:
+Aeolian loess is a type of sediment that is formed when wind blows over a surface and picks up fine-gra"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Structural water does not participate in crystal composition and has nothing to do with mineral crystals [/INST] </s>",False, #Structural water does not participate in crystal composition and has nothing to do with mineral crystals  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The amygdala in volcanic rocks belongs to the morphology of crystalline aggregates [/INST] </s>",False," #A
+The amygdala in volcanic rocks belongs to the morphology of crystalline aggregates.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The color of minerals can be described by analogy, such as the pig liver color of hematite [/INST] </s>",True," #1. The color of minerals can be described by analogy, such as the pig liver color of hematite.
+
+The color of minerals can be described by analogy, such as the pig liver color of hematite.
+
+The color of minerals can be described by analogy, such as the pig liver color of hematite.
+
+The color of minerals can be described by analogy, such as the pig liver color of hematite.
+
+The color of minerals can be described by analogy"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The luster of mineral actually refers to the luminescence of mineral surface [/INST] </s>",False, #The luster of mineral actually refers to the luminescence of mineral surface  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The Mohs hardness of diamond is 10 [/INST] </s>",True," #diamond #hardness
+
+The answer is:
+
+10 
+
+The correct answer is:
+
+10 
+
+The explanation is:
+
+Diamond is a mineral with a hardness of 10 on the Mohs scale. 
+
+The definition of diamond is:
+
+A mineral composed of pure carbon that is crystalline and is the hardest known mineral.
+
+The synonym of diamond is:
+
+Diamond
+
+The related term of diamond is:
+
+Diamond
+
+The word"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The cleavage of muscovite is incomplete [/INST] </s>",False," #1: The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscovite is incomplete.
+
+The cleavage of muscov"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Both augite and hornblende are chain structure silicate minerals [/INST] </s>",True, # True  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Kaolinite and mica are silicate minerals with layered structure [/INST] </s>",True," #Kaolinite is a clay mineral that is made up of layers of silicate sheets. It is also known as ""china clay"" because it is often used in the production of porcelain.
+
+#Mica is a group of minerals that are also made up of layers of silicate sheets. It is known for its shiny, flaky appearance and is often used in cosmetics and other products.
+
+#Both kaolinite and mica are silicate minerals with layered structures. However, they differ in their chemical composition and physical properties."
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Sedimentary rocks and metamorphic rocks can be transformed into each other [/INST] </s>",True," # Sedimentary rocks and metamorphic rocks can be transformed into each other.
+
+Sedimentary rocks:
+Sedimentary rocks are formed from the accumulation and compaction of sediment, such as sand, clay, and gravel. They can be transformed into metamorphic rocks through the process of metamorphism, which involves changes in temperature, pressure, and chemical composition.
+
+Metamorphic rocks:
+Metamorphic rocks are formed when sedimentary rocks are subjected to high temperatures and pressures, causing changes in their mineral composition and structure"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Quartz and amphibole in magmatic rocks have special significance and can reflect SiO2 saturation in magmatic rocks, so they can be called acidity indicator minerals [/INST] </s>",False," # Thank you for the question. Quartz and amphibole are two minerals that are commonly associated with magmatic rocks. They can reflect the acidity of the magmatic rocks and are considered as acidity indicator minerals.
+# The reason why they can reflect the acidity of the magmatic rocks is that they have a high concentration of silica in them. Silica is a key component of magmatic rocks, and its concentration can affect the acidity of the rocks. Quartz and amphibole have a high concentration of silica, so they can reflect the acid"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Bowen reaction series explains the general law of mineral symbiosis and association in magmatic rocks [/INST] </s>",True," #1: The Bowen reaction series is a model that explains the formation of minerals in magmatic rocks. It is based on the idea that minerals in a magma will react with each other in a specific order, with the most reactive minerals forming first and the least reactive minerals forming last.
+
+#2: The Bowen reaction series is a way to understand how minerals form in magmatic rocks. It is based on the idea that minerals will react with each other in a specific order, with the most reactive minerals forming first and"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Granite is an acid plutonic intrusive rock [/INST] </s>",True," #1 Granite is a type of plutonic rock that is formed by the cooling and solidification of magma.
+
+#2 Granite is a type of acid rock that is formed by the cooling and solidification of magma.
+
+#3 Granite is a type of plutonic rock that is formed by the cooling and solidification of magma.
+
+#4 Granite is a type of acid rock that is formed by the cooling and solidification of magma.
+
+#5 Granite is a type of plutonic rock that is formed by the cooling and solidification"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Andesite is a neutral extrusive rock [/INST] </s>",True," #1:
+#2:
+#3:
+#4:
+#5:
+#6:
+#7:
+#8:
+#9:
+#10:
+#11:
+#12:
+#13:
+#14:
+#15:
+#16:
+#17:
+#18:
+#19:
+#20:
+#21:
+#22:
+#23:
+#24:
+#25:
+#26:
+#27:
+#"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Metamorphic rocks formed by metamorphism of sedimentary rocks are called orthomorphic rocks [/INST] </s>",False," #Metamorphic rocks formed by metamorphism of sedimentary rocks are called orthomorphic rocks
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Gneiss is a regional metamorphic rock [/INST] </s>",True, #True  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ As a result of mechanical sedimentary differentiation, sediments are distributed regularly along the transport direction in the order of gravel-sand-silt-clay [/INST] </s>",True," #Gravel
+#Sand
+#Silt
+#Clay  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The white color of pure quartz sandstone inherits the color of quartz, which is a kind of inherited color [/INST] </s>",True," 1. The color of pure quartz sandstone is white.
+2. The color of pure quartz sandstone is inherited from the color of quartz.
+3. The color of pure quartz sandstone is inherited from the color of the minerals in the sandstone.
+4. The color of pure quartz sandstone is inherited from the color of the rock in which it is found.
+5. The color of pure quartz sandstone is inherited from the color of the sediment in which it is found.
+6. The color of pure quartz sandstone is inherited from the color"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Rock strata with a thickness of 0.5 ~ 0.lm are called thin strata [/INST] </s>",False, #2: Thick strata are those with a thickness of 10.5 ~ 100 m.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ A clastic rock containing 8% medium gravel, 10% fine gravel, 17% coarse sand, 16% medium sand, 18% fine sand, 14% coarse silty sand and 17% fine silty sand should be named as ""gravel-bearing silty sandstone"" [/INST] </s>",True," #199307: The geological nomenclature of the sedimentary rocks should be based on their lithology, composition, texture, and structure, and the lithofacies of the sedimentary rocks should be named according to their sedimentary facies.
+The sedimentary facies of the sedimentary rocks should be named according to the sedimentary facies of the sedimentary rocks.
+The sedimentary facies of the sedimentary rocks should be named according to the sedimentary facies of the sedimentary rocks.
+The sed"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Detrital particles with good roundness generally have higher sphericity [/INST] </s>",False, #Detrital particles with good roundness generally have higher sphericity.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Basement cementation represents the simultaneous deposition of debris and cementation, which is the product of rapid accumulation [/INST] </s>",True, #Basement #cementation #debris #cementation #geoscience  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ Clay rock is mainly composed of fine particles with grain size < 0.05 mm, and contains a large amount of clay minerals (kaolinite, montmorillonite, hydromica, etc.) loose or consolidated rock [/INST] </s>",False," 
+Clay rock is a type of fine-grained rock that is composed primarily of clay minerals. It is characterized by its fine grain size, typically less than 0.05 mm, and the presence of a large amount of clay minerals, such as kaolinite, montmorillonite, and hydromica. Clay rocks can be either loose or consolidated, and they can form a variety of different types of deposits, including sedimentary deposits, metamorphic deposits, and hydrothermal deposits.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+ <</SYS>> 
+ The ""bamboo leaf"" body in bamboo leaf limestone widely distributed in North China is a typical internal clastic [/INST] </s>",False," #North China
+#bamboo leaf
+#limestone
+#clastic  "
