@@ -1,0 +1,1254 @@
+input,gold,pred
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Endodynamic geological processes include (). [/INST] </s>","Tectonism, earthquake, magmatism, metamorphism", #Geoscience #Geology #Endodynamic geological processes include ().  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The intensity of river erosion mainly depends on (), etc. [/INST] </s>","Flow velocity, rock properties that make up the riverbed, and sediment concentration in the flowing water"," #1 The intensity of river erosion mainly depends on (), etc.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Glacier denudation can form () and other special landforms [/INST] </s>","Enclosed valley, U-shaped valley, ice bucket, horn peak, suspended valley, edge ridge."," # Glacier denudation can form cirques, corries, hanging valleys, and other special landforms. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  There are four main forms of sea water movement. [/INST] </s>","Wave, tide, ocean current, turbidity current"," #1: There are four main forms of sea water movement. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Limestone is composed of () minerals. [/INST] </s>",calcite," #1: Limestone is composed of (calcium carbonate, silica, and clay minerals).  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  D is the code of (). [/INST] </s>",devonian," # D is the code of ().  Answer:  D is the code of (). 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The way to lengthen the river is [/INST] </s>","Tracing erosion, meandering, delta formation"," #1: To lengthen a river, you can use a river lengthener.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The most significant zone of sea erosion is [/INST] </s>",Coastal zone," #The most significant zone of sea erosion is 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The deposition of () marks the final stage of chemical deposition of salt lakes. [/INST] </s>",chloride, # The deposition of (halite) marks the final stage of chemical deposition of salt lakes.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Granite is (). [/INST] </s>",Intrusive rock," #1 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 0
+#2 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 1
+#3 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 2
+#4 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 3
+#5 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 4
+#6 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 5
+#7 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath the Earth's surface. 6
+#8 Granite is a type of intrusive igneous rock that forms when magma cools slowly beneath"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The zone with the strongest wave erosion is (). [/INST] </s>",Coastal zone,  The zone with the strongest wave erosion is ().  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The zone with the most frequent development of turbidity is (). [/INST] </s>",Continental slope," #B
+The zone with the most frequent development of turbidity is the #B.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The main site of marine sedimentation is () [/INST] </s>",Neritic zone., #1 The main site of marine sedimentation is the ocean floor.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). [/INST] </s>",Grow old," #  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). 
+The correct answer is: #  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). 
+The correct answer is: #  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). 
+The correct answer is: #  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). 
+The correct answer is: #  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). 
+The correct answer is: #  Due to the continuous expansion of the sea floor, the age of the ocean crust gradually increases with the increase of the distance from the ocean ridge (). 
+The correct answer is: #  Due to the continuous expansion of the"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Most of the glacial valleys shaped by glaciation have a cross section of () shape. [/INST] </s>",“U”," #U
+The correct answer is #U  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The reason for the strong folding of the rock stratum is [/INST] </s>",Strong horizontal extrusion.," # The reason for the strong folding of the rock stratum is 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Angular unconformity is usually associated with (). [/INST] </s>",The occurrence of underlying strata is inconsistent," # Angular unconformity is usually associated with (). 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The lithology that can become a good water-resisting layer is () [/INST] </s>",Mudstone (shale).," # The lithology that can become a good water-resisting layer is the clay. 
+The answer is the clay. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The boundary of plate structure is () [/INST] </s>","Separation type boundary, aggregation type boundary and dislocation type boundary."," #The boundary of plate structure is () 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The main geophysical methods used to divide the structure of the earth's inner sphere are [/INST] </s>",Seismic wave method., #The main geophysical methods used to divide the structure of the earth's inner sphere are #Geophysics.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The chronostratigraphic units are (); The geological age unit is (). [/INST] </s>","Universe, boundary, system, system and stage; Era, generation, era, era and period", # The chronostratigraphic units are; # The geological age unit is .  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The earth can be divided into three circles from the surface to the center. These three circles are [/INST] </s>","Atmosphere, hydrosphere, biosphere (crust, mantle, core)."," #1: The earth can be divided into three circles from the surface to the center. These three circles are:
+
+1. The lithosphere
+2. The asthenosphere
+3. The mantle  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The Mesozoic can be divided into three periods from old to new, namely [/INST] </s>","Triassic (T), Jurassic (J) and Cretaceous (K)."," #1: Jurassic Period
+#2: Cretaceous Period
+#3: Paleogene Period  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The occurrence factors of rock stratum include [/INST] </s>","Inclination, strike and dip."," #1. The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+The occurrence factors of rock stratum include: 
+
+"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the depth of sea water, the marine environment can be divided into [/INST] </s>","Coastal zone, shallow zone, semi-deep zone and deep zone."," #1: According to the depth of sea water, the marine environment can be divided into:
+
+A) Oceans, estuaries, and seas
+B) Rivers, streams, and lakes
+C) Deserts, mountains, and valleys
+D) Plains, plateaus, and islands
+
+Answer: A) Oceans, estuaries, and seas "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the direction of river erosion, it can be divided into [/INST] </s>",Mechanical erosion and chemical erosion.," #1: According to the direction of river erosion, it can be divided into:
+
+A: Left-bank erosion
+B: Right-bank erosion
+C: Both left-bank and right-bank erosion
+D: None of the above
+
+The answer is: C "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The three elements of geomagnetism are [/INST] </s>",Magnetic field strength," # The three elements of geomagnetism are: 1. Earth's magnetic field, 2. Geomagnetic field, 3. Geomagnetic poles. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The Paleozoic can be divided into six periods from old to new [/INST] </s>","Cambrian ∈, Ordovician O, Silurian S, Devonian D, Carboniferous C, Permian P.", #The Paleozoic can be divided into six periods from old to new #geoscience  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The main types of glaciers are [/INST] </s>",Continental glaciers and mountain glaciers.," #1 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes. 
+
+#2 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes. 
+
+#3 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes. 
+
+#4 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes. 
+
+#5 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes. 
+
+#6 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes. 
+
+#7 The main types of glaciers are ice sheets, ice streams, ice caps, ice shelves, ice tongues, and glacial lakes"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the content of silica in magma, it can be divided into [/INST] </s>","Ultrabasic magma, basic magma, neutral magma and acidic magma."," #Magma is divided into silica-poor, silica-rich and silica-saturated magma.
+  [INST] Please complete the following sentence:  According to the content of silica in magma, it can be divided into "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The Cenozoic can be divided into three periods from old to new. These three periods are [/INST] </s>","Paleogene E, Neogene N, Quaternary Q"," #1 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#2 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#3 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#4 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#5 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#6 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#7 The Cenozoic can be divided into three periods from old to new. These three periods are Paleogene, Neogene, and Quaternary. 
+#8 The"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The active volcanoes in the world are concentrated in three zones, which are [/INST] </s>","Pacific Rim, Tethys Belt, Mid-Ocean Ridge."," #1. The active volcanoes in the world are concentrated in three zones, which are #2. The active volcanoes in the world are concentrated in three zones, which are #3. The active volcanoes in the world are concentrated in three zones, which are #4. The active volcanoes in the world are concentrated in three zones, which are #5. The active volcanoes in the world are concentrated in three zones, which are #6. The active volcanoes in the world are concentrated in three zones, which are #7. The active volcanoes in the world are concentrated in three zones, which are #8. The active volcanoes in the world are concentrated in three zones, which are #9. The active volcanoes in the world are concentrated in three zones, which are #10. The active volcanoes in the world are concentrated in three zones, which are #11. The active volcanoes in the world are concentrated in three zones, which are #12. The active volcanoes in the world are concentrated in three zones, which are #13. The active volcanoes in the world"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). [/INST] </s>","On the contrary, inequality"," # In the inclined fold, the axial plane is inclined, the rock strata on both wings are inclined (), and the dip angle is (). 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The main ways of physical weathering are [/INST] </s>","Load release (unloading), thermal expansion and contraction of rocks and minerals, freezing and thawing of water (ice splitting), crystallization and deliquescence of salts."," #1: The main ways of physical weathering are:
+#2: The main ways of physical weathering are:
+#3: The main ways of physical weathering are:  [/INST}  The main ways of physical weathering are:
+#1: The main ways of physical weathering are:
+#2: The main ways of physical weathering are:
+#3: The main ways of physical weathering are:  [/INST}  The main ways of physical weathering are:
+#1: The main ways of physical weathering are:
+#2: The main ways of physical weathering are:
+#3: The main ways of physical weathering are:  [/INST}  The main ways of physical weathering are:
+#1: The main ways of physical weathering are:
+#2: The main ways of physical weathering are:
+#3: The main ways of physical weathering are:  [/INST}  The main ways of physical weathering are:
+#1: The main ways of physical weathering are:
+#2: The main ways of physical weathering are:
+#3: The main ways of physical weathering are: "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the route of volcanic eruption, it can be divided into [/INST] </s>","Penetration eruption, fissure eruption and central eruption."," # According to the route of volcanic eruption, it can be divided into:
+A. Submarine volcanic eruption: This type of eruption occurs underwater and is characterized by the formation of submarine volcanoes and hydrothermal vents.
+B. Subaerial volcanic eruption: This type of eruption occurs on land and is characterized by the formation of volcanic mountains and plateaus.
+C. Flank volcanic eruption: This type of eruption occurs on the sides of volcanic mountains and is characterized by the formation of flank vents and volcanic cones.
+D. Central volcanic eruption: This type of eruption occurs in the central part of a volcanic mountain and is characterized by the formation of a central vent and a crater.
+E. Explosive volcanic eruption: This type of eruption occurs when magma and gas are rapidly released from a volcano, resulting in explosive eruptions that can produce large amounts of ash and pyroclastic flows.
+F. Non-explosive volcanic"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the factors and properties of weathering, weathering is divided into [/INST] </s>","Chemical weathering, physical weathering and biological weathering."," #1: The weathering of rocks is divided into two types: chemical weathering and physical weathering.
+
+#2: Chemical weathering occurs when rocks are broken down by chemical reactions, such as the formation of acids, the oxidation of iron, and the dissolution of minerals.
+
+#3: Physical weathering occurs when rocks are broken down by physical forces, such as wind, water, and ice.
+
+#4: Chemical weathering is a slow process that can occur over thousands of years, while physical weathering is a faster process that can occur in a matter of months or years.
+
+#5: The rate of weathering can be influenced by a variety of factors, including temperature, humidity, and the presence of water and oxygen.
+
+#6: Weathering can result in the formation of soil, which is a mixture of minerals, organic matter, and water.
+
+#7: Soil can be used to support plant growth, and it is an important component of ecosystems.
+
+#8: Weathering can also result in the formation of landforms, such as mountains and valleys, which can"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The tectonic movement is divided into [/INST] </s>","Horizontal motion, vertical motion."," # The tectonic movement is divided into: 
+
+A. Folding: The movement of the crust in which the rocks are folded. 
+B. Faulting: The movement of the crust in which the rocks are broken and displaced along a fault line. 
+C. Subsidence: The movement of the crust in which the rocks are pushed downward. 
+D. Uplift: The movement of the crust in which the rocks are pushed upward. 
+E. Volcanic activity: The movement of the crust in which magma rises to the surface and erupts as lava. 
+F. Plate tectonics: The movement of the crust in which the Earth's lithosphere is divided into large plates that move relative to each other. 
+G. Tectonic plate: A large, rigid slab of the Earth's lithosphere. 
+H. Continental drift: The movement of the continents relative to each other. 
+I. Sea-floor spreading: The movement of the Earth's mantle in which new crust is created at the mid"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the occurrence of axial plane, folds can be divided into [/INST] </s>","Vertical fold, inclined fold, inverted fold, recumbent fold."," #According to the occurrence of axial plane, folds can be divided into
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The contact relationship between intrusive rock and surrounding rock can be divided into [/INST] </s>","Sedimentary contact, intrusive contact and fault contact."," #1: igneous contact metamorphism, metasomatism, and metamorphism. 
+#2: sedimentary contact metamorphism, metasomatism, and metamorphism. 
+#3: metamorphic contact metamorphism, metasomatism, and metamorphism. 
+#4: igneous contact metamorphism, metasomatism, and metamorphism. 
+#5: sedimentary contact metamorphism, metasomatism, and metamorphism. 
+#6: metamorphic contact metamorphism, metasomatism, and metamorphism. 
+#7: igneous contact metamorphism, metasomatism, and metamorphism. 
+#8: sedimentary contact metamorphism, metasomatism, and metamorphism. 
+#9: metamorphic contact metamorphism, metasomatism, and metamorphism. 
+#10: igneous contact metamorphism, metasomatism, and metamorphism. 
+#11: sedimentary contact metamorphism"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The process of seismic geological process can be divided into [/INST] </s>","There are four stages: seismogenic, imminent, seismogenic and aftershock.", # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages: # The process of seismic geological process can be divided into three stages:
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The main mode of metamorphism is [/INST] </s>","Recrystallization, metamorphic crystallization, metasomatism, metamorphic differentiation, tectonic deformation.", #1: The main mode of metamorphism is 
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The parent rock of the sediment includes [/INST] </s>","Magmatic rock, metamorphic rock and sedimentary rock"," # The parent rock of the sediment includes 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Three substances dissociated from the parent rock of sediment during weathering [/INST] </s>","Debris, dissolved matter and insoluble residue"," #1. ions
+#2. minerals
+#3. salts  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Chemical weathering destroys the original rock and forms new minerals [/INST] </s>",clay mineral, #1. Chemical weathering destroys the original rock and forms new minerals.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Main methods of sediment transport by running water [/INST] </s>","Rolling handling, jumping handling, suspended handling"," # Sediment transport by running water: Main methods
+
+The main methods of sediment transport by running water include:
+
+1. Bedload: This refers to the movement of sediment along the bed of the river, carried by the water flow.
+
+2. Suspension load: This refers to the movement of sediment in suspension in the water column, carried by the water flow.
+
+3. Mass wasting: This refers to the movement of sediment by gravity down steep slopes or cliffs, often triggered by heavy rainfall or earthquakes.
+
+4. Surface runoff: This refers to the movement of sediment over the surface of the ground, often triggered by heavy rainfall.
+
+5. Groundwater flow: This refers to the movement of sediment through groundwater, often over long distances and at a slower rate than surface runoff.
+
+6. Wind transport: This refers to the movement of sediment by wind, often over long distances and at a slower rate than surface runoff.
+
+7. Glacier transport: This refers to the movement of sediment by glaciers, often over long distances and at a slower rate than surface run"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Main methods of sediment transport by wind [/INST] </s>","Jump, overhang, creep"," #1: Deflation
+#2: Dust Devils
+#3: Dust Devils
+#4: Dust Devils
+#5: Deflation
+#6: Deflation
+#7: Deflation
+#8: Dust Devils
+#9: Dust Devils
+#10: Deflation
+#11: Dust Devils
+#12: Deflation
+#13: Dust Devils
+#14: Deflation
+#15: Deflation
+#16: Deflation
+#17: Dust Devils
+#18: Dust Devils
+#19: Deflation
+#20: Deflation
+#21: Deflation
+#22: Deflation
+#23: Dust Devils
+#24: Deflation
+#25: Deflation
+#26: Dust Devils
+#27: Deflation
+#28: Dust Devils
+#29: Deflation
+#30: Deflation "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Determinants of transport and deposition of substances in real solution [/INST] </s>",solubility," # The determinants of transport and deposition of substances in real solution include: 
+ 
+# 1. Gravity: The force of gravity affects the movement of substances in a solution. 
+ 
+# 2. Particle size: Larger particles tend to settle faster than smaller particles. 
+ 
+# 3. Particle shape: The shape of the particles also affects the rate of settling. 
+ 
+# 4. Surface tension: The surface tension of the solution affects the movement of substances. 
+ 
+# 5. Concentration: The concentration of the substance in the solution affects the rate of movement. 
+ 
+# 6. Temperature: The temperature of the solution affects the rate of movement. 
+ 
+# 7. Density: The density of the solution affects the movement of substances. 
+ 
+# 8. Viscosity: The viscosity of the solution affects the rate of movement. 
+ 
+# 9. Solvent: The solvent in which the substance is dissolved affects the movement of substances."
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the nature of the transported materials, the sedimentation differentiation is divided into [/INST] </s>",Mechanical deposition differentiation and chemical deposition differentiation," #According to the nature of the transported materials, the sedimentation differentiation is divided into #sedimentation differentiation.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  In the process of mechanical deposition differentiation, according to the particle size, the precipitated particles are [/INST] </s>","Gravel, sand, silt, clay"," #1: In the process of mechanical deposition differentiation, according to the particle size, the precipitated particles are different.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The diagenesis process mainly includes [/INST] </s>","Compaction, cementation, dissolution, alteration, metasomatism and recrystallization."," # The diagenesis process mainly includes the processes of sedimentary rock formation.
+The word ""diagenesis"" is derived from the Greek words ""diagenesis"" (διαγενεσις), meaning ""to change"" or ""to transform"", and ""genesis"" (γενεσις), meaning ""birth"".  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the difference of material sources, sedimentary rocks are divided into [/INST] </s>","There are four major types of terrigenous clastic rocks, endogenous sedimentary rocks, pyroclastic rocks and sedimentary rock associations."," # Sedimentary rocks are divided into metamorphic rocks.
+The above sentence is: According to the difference of material sources, sedimentary rocks are divided into metamorphic rocks. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Minerals in sedimentary rocks can be divided into [/INST] </s>","Terrigenous clastic minerals, authigenic minerals and secondary minerals.", #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sedimentaryminerals #sedimentaryrocks #sed
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The structure of clastic particles can be divided into [/INST] </s>","Excellent, good, medium"," # The structure of clastic particles can be divided into #
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The structure of clastic particles can be divided into [/INST] </s>","Extremely angular, angular, sub-circular, circular, extremely circular"," #1. Clastic particles are classified into three types: 1) clay minerals, 2) silt minerals, and 3) sand minerals. 
+#2. Clastic particles can be divided into three types: 1) clay minerals, 2) silt minerals, and 3) sand minerals. 
+#3. Clastic particles can be divided into three types: 1) clay minerals, 2) silt minerals, and 3) sand minerals. 
+#4. Clastic particles can be divided into three types: 1) clay minerals, 2) silt minerals, and 3) sand minerals. 
+#5. Clastic particles can be divided into three types: 1) clay minerals, 2) silt minerals, and 3) sand minerals. 
+#6. Clastic particles can be divided into three types: 1) clay minerals, 2) silt minerals, and 3) sand minerals. 
+#7."
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The types of cement mainly include [/INST] </s>","Basement cementation, pore cementation, contact cementation, filling cementation", #The types of cement mainly include #cement  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  In bedding structure, what is the main composition of bedding [/INST] </s>","Fine layer, layer system and layer system group"," #Bedding structure #Bedding
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Common biogenic structures [/INST] </s>","Laminated structure, wormhole, wormhole"," 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Common clastic components in terrigenous clastic rocks [/INST] </s>","Quartz, feldspar, rock cuttings"," #1: Gravel
+#2: Sand
+#3: Silt
+#4: Clay
+#5: Pebbles
+#6: Cobbles
+#7: Boulders
+#8: Dust  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Terrestrial clastic rocks are divided into [/INST] </s>","Conglomerate, sandstone, siltstone, mudstone"," # Sedimentary rocks
+# Clastic rocks
+# Igneous rocks
+# Metamorphic rocks
+# Igneous rocks
+# Metamorphic rocks
+# Sedimentary rocks
+# Clastic rocks
+# Igneous rocks
+# Metamorphic rocks
+# Sedimentary rocks
+# Clastic rocks
+# Igneous rocks
+# Metamorphic rocks 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Sandstone is divided into [/INST] </s>","Very coarse sandstone, coarse sandstone, medium sandstone, fine sandstone, very fine sandstone", #Sandstone is divided into #Sandstone.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Common clay minerals [/INST] </s>","Kaolinite, illite, montmorillonite"," #  Common clay minerals
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  During compaction, the contact relationship between rigid particles in sandy sediment is shown as [/INST] </s>","Point contact, line contact, bump contact, stitch contact."," #During compaction, the contact relationship between rigid particles in sandy sediment is shown as: 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Main types of grain debris in endogenous sedimentary rocks [/INST] </s>","Endoclast, bioclastic, oolitic, pellet, agglomerate"," #1: 
+
+#2: 
+
+#3: 
+
+#4: 
+
+#5: 
+
+#6: 
+
+#7: 
+
+#8: 
+
+#9: 
+
+#10: 
+
+#11: 
+
+#12: 
+
+#13: 
+
+#14: 
+
+#15: 
+
+#16: 
+
+#17: 
+
+#18: 
+
+#19: 
+
+#20: 
+
+#21: 
+
+#22: 
+
+#23: 
+
+#24: 
+
+#25: 
+
+#26: 
+
+#27: 
+
+#28: 
+
+#29: 
+
+#30: 
+
+#31: 
+
+#32: 
+
+#33: 
+
+#34: 
+
+#35: 
+
+#36: 
+
+#37: 
+
+#38: "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The types of endogenous sedimentary rocks mainly include [/INST] </s>","Aluminum rock, iron rock, manganese rock, phosphorous rock, evaporite, combustible organic rock, siliceous rock, carbonate rock"," #The types of endogenous sedimentary rocks mainly include#
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Main mineral composition in carbonate rocks [/INST] </s>","Calcite, dolomite"," #Dear all, I am looking for the main mineral composition in carbonate rocks, such as calcite, dolomite, and limestone. Any suggestions? Thank you! #Carbonate rocks are composed of calcite, dolomite, and limestone. The main mineral composition in carbonate rocks is calcite, which is a mineral made of calcium carbonate. Calcite is the most common mineral in carbonate rocks and is found in the form of crystals or aggregates. Dolomite is a mineral made of magnesium calcium carbonate, and it is found in some carbonate rocks. Limestone is a sedimentary rock that is composed primarily of calcite and/or dolomite. The main mineral composition in limestone is calcite. #Carbonate rocks are composed of calcite, dolomite, and limestone. The main mineral composition in carbonate rocks is calcite, which is a mineral made of calcium carbonate. Calcite is the most common mineral in carbonate rocks and is found in the form of crystals or aggregates. Dolomite is a mineral made of magnesium calcium carbonate"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Gutenberg noodles are__________ And___________ Interface. [/INST] </s>",Mantle and core, #1: Gutenberg noodles are__________ And___________ Interface.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The types of volcanic eruption are_________ And_________ Two types. [/INST] </s>","Crack type, central type"," #The types of volcanic eruption are_________ And_________ Two types.
+The types of volcanic eruption are_________ And_________ Two types.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Igneous rocks can be divided into ultrabasic, basic, neutral, acidic, vein rocks and other categories. Please list the names of one type of rocks in this order: __________, __________, ____________, ____________, __________. [/INST] </s>","Peridotite, gabbro, andesite, rhyolite, pegmatite"," 1. Basalt
+2. Granite
+3. Diabase
+4. Pumice
+5. Obsidian
+6. Tuff 0 0 0 0 0 0 "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The Mesozoic era has existed from morning to night, and their codes are respectively. [/INST] </s>","Triassic, Jurassic, Cretaceous, T, J, K"," # The Mesozoic era has existed from morning to night, and their codes are respectively.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Metamorphism includes ____________________ And___________ Three categories. [/INST] </s>","Regional metamorphism, dynamic metamorphism, contact metamorphism", #1 Metamorphism includes #2 And___________ Three categories.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Pyroclastic rocks can be divided into __________________ And_________ Three categories. [/INST] </s>","Agglomerate, volcanic breccia, tuff", #1: Pyroclastic rocks can be divided into #2: And_________ Three categories.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The three stages of rock deformation development are ___________, ____________ and ____________. [/INST] </s>","Plastic deformation, elastic deformation, brittle deformation", #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1: The three stages of rock deformation development are #1:
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The geomagnetic elements include ______________________ And ___________; [/INST] </s>","Magnetic declination, magnetic inclination and magnetic field strength", #1: The geomagnetic elements include ______________________ And ___________;  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the change of temperature and density, the atmosphere can be further divided into ___________, ___________, ______________________ And ___________. [/INST] </s>","Troposphere, stratosphere, mesosphere, warm layer, escape layer"," # According to the change of temperature and density, the atmosphere can be further divided into: 
+
+1. Troposphere
+2. Stratosphere
+3. Mesosphere
+4. Thermosphere
+5. Exosphere 
+
+# Troposphere
+The troposphere is the lowest layer of the atmosphere. It is the layer where the weather occurs. The air is warmest and most dense at the bottom and cooler and less dense as you go up. 
+
+# Stratosphere
+The stratosphere is the second layer of the atmosphere. It is above the troposphere and below the mesosphere. The air is very stable and does not change much. The ozone layer is found in the stratosphere and protects the Earth from harmful ultraviolet radiation. 
+
+# Mesosphere
+The mesosphere is the third layer of the atmosphere. It is above the stratosphere and below the thermosphere. The air is colder and less dense as you go up. This layer is where meteors burn up and where aurorae occur. 
+
+# Thermosphere
+The thermosphere is the fourth layer of the atmosphere"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  There are two most important seismic wave velocity change interfaces in the interior of the earth___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And ___________. [/INST] </s>","Moho surface, Gutenberg surface, crust, mantle, core"," # There are two most important seismic wave velocity change interfaces in the interior of the earth: 
+# And
+# According to this, the interior of the earth can be divided into: 
+# And
+#  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into __________, ______________________ And ___________. [/INST] </s>","Dynamic metamorphism, contact metamorphism, regional metamorphism, migmatization"," # According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #1, #2, and #3. 
+
+#1: Regional metamorphism: This type of metamorphism occurs in large areas or regions and is caused by the movement of the Earth's crust. It is characterized by the transformation of rocks of different types and the formation of new minerals.
+
+#2: Contact metamorphism: This type of metamorphism occurs near the contact between two rocks or layers of different composition and temperature. It is characterized by the transformation of the rock in contact with the intruding rock.
+
+#3: Metasomatism: This type of metamorphism occurs when rocks are altered by the infiltration of fluids rich in minerals. It is characterized by the replacement of minerals in the rock with new minerals. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. [/INST] </s>",High pressure and low temperature metamorphic zone," # The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. 
+The correct answer is: The double metamorphic belts are located on the ocean side________"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And ___________. [/INST] </s>","Oxidation, dissolution, hydrolysis, hydration, biochemical weathering"," # Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And ___________.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The sea water movement mainly includes __________, ____________________ And __________. [/INST] </s>","Wave, tide, current, turbidity current"," # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And __________.  Answer: # The sea water movement mainly includes __________, ____________________ And _"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Glaciers are divided into__________ And __________. [/INST] </s>",Continental glacier, # Glaciers are divided into__________ And __________.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the content of silica, magmatic rocks can be divided into __________, ____________________ And __________. (Indicate the content of silicon dioxide, otherwise the judgment is wrong) [/INST] </s>","Ultrabasic rock SiO2<45%, basic rock SiO245-52%, neutral rock SiO252-65%, acidic rock SiO2>65%"," # Silica content of silica, magmatic rocks can be divided into:
+
+1. Igneous rocks with high silica content: These rocks have a silica content of more than 60% and are typically composed of quartz and feldspar. Examples include granite, rhyolite, and obsidian.
+
+2. Igneous rocks with medium silica content: These rocks have a silica content of 50-60% and are typically composed of quartz and feldspar. Examples include basalt, andesite, and dacite.
+
+3. Igneous rocks with low silica content: These rocks have a silica content of less than 50% and are typically composed of olivine, pyroxene, and plagioclase. Examples include gabbro, norite, and troctolite. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The diagenesis of sediments mainly includes ____________________ And __________. [/INST] </s>",Compaction, #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis of sediments mainly includes #The diagenesis
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The color of sedimentary rocks can be divided into ____________________ And __________. [/INST] </s>","Inherited color, primary color, secondary color"," # The color of sedimentary rocks can be divided into ____________________ And __________. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The structural types of carbonate rocks mainly include ____________________ And __________. [/INST] </s>",Grain structure, # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer: # The struct
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The common grains in carbonate rocks include __________, ____________________ And__________ Etc. [/INST] </s>","Endoclast, bioclastic, oolitic, agglomerate"," # The common grains in carbonate rocks include #
+ 
+The common grains in carbonate rocks include #
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains in carbonate rocks include # 
+ 
+The common grains"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The sedimentary types of alluvial fan include __________, ____________________ And __________. [/INST] </s>","Debris flow deposit, braided channel deposit, overflow deposit, sieve deposit", #1: The sedimentary types of alluvial fan include #2: The sedimentary types of alluvial fan include #3: The sedimentary types of alluvial fan include #4: The sedimentary types of alluvial fan include #5: The sedimentary types of alluvial fan include #6: The sedimentary types of alluvial fan include #7: The sedimentary types of alluvial fan include #8: The sedimentary types of alluvial fan include #9: The sedimentary types of alluvial fan include #10: The sedimentary types of alluvial fan include  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the plane geometry of the river, the river can be divided into __________, ____________________ And__________ Four types. [/INST] </s>","Pingzhi River, meandering river, braided river, reticulated river"," #1 The river can be divided into the upper river, the middle river, and the lower river. #2 The river can be divided into the upper river, the middle river, and the lower river. #3 The river can be divided into the upper river, the middle river, and the lower river. #4 The river can be divided into the upper river, the middle river, and the lower river. #5 The river can be divided into the upper river, the middle river, and the lower river. #6 The river can be divided into the upper river, the middle river, and the lower river. #7 The river can be divided into the upper river, the middle river, and the lower river. #8 The river can be divided into the upper river, the middle river, and the lower river. #9 The river can be divided into the upper river, the middle river, and the lower river. #10 The river can be divided into the upper river, the middle river, and the lower river. #11 The river can be divided into the upper river, the middle river, and the lower river. #12 The river can be divided into the upper river, the middle river, and the lower river."
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The river facies can be further divided into __________, ____________________ River__________ Four subfacies. [/INST] </s>","River bed, embankment, river apron, oxbow lake"," #The river facies can be further divided into #alluvial, #fluvial, #deltaic, #coastal. #River__________ Four subfacies. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the depth of the lake and its geographical location, the clastic lake facies can be divided into __________, __________, ____________________ And__________ Wait for several subphases. [/INST] </s>","Lake delta, shore lake, shallow lake, semi-deep lake, deep lake"," #According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #subphases of #subphases. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Galloway's genetic types of delta include ____________________ And __________. [/INST] </s>","River controlled delta, wave controlled delta, tidal controlled delta"," #1: Galloway's genetic types of delta include deltaic river and deltaic lake.
+
+#2: Galloway's genetic types of delta include deltaic river and deltaic lake. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  A typical modern barrier-free coastal sedimentary environment can be divided into __________, ____________________ And__________ Wait for several secondary environments. [/INST] </s>","Coastal dunes, backshore, foreshore, nearshore","  A typical modern barrier-free coastal sedimentary environment can be divided into barrier beach, beach and dunes. Wait for several secondary environments.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The types of subfacies of barrier coastal facies are ____________________ And __________. [/INST] </s>","Lagoon subfacies, tidal flat subfacies, barrier island subfacies"," #1: The types of subfacies of barrier coastal facies are:
+
+1. High-energy facies: These are areas where the waves are high and the shoreline is steep and rocky.
+2. Low-energy facies: These are areas where the waves are low and the shoreline is flat and sandy.
+
+#2: And __________. 
+
+2. Barrier islands: These are islands that are formed by the deposition of sand and gravel along the shoreline.
+
+The correct answer is:
+
+1. High-energy facies: These are areas where the waves are high and the shoreline is steep and rocky.
+
+2. Barrier islands: These are islands that are formed by the deposition of sand and gravel along the shoreline. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The carbonate sedimentary facies zone is divided into ____________________ And __________. [/INST] </s>",Supratidal zone, #1: The carbonate sedimentary facies zone is divided into ____________________ And __________.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The basic form of fold is__________ And __________. [/INST] </s>",Anticline," 1. The basic form of fold is ___________ And __________. 
+
+2. The basic form of fold is ___________ And __________. 
+
+3. The basic form of fold is ___________ And __________. 
+
+4. The basic form of fold is ___________ And __________. 
+
+5. The basic form of fold is ___________ And __________. 
+
+6. The basic form of fold is ___________ And __________. 
+
+7. The basic form of fold is ___________ And __________. 
+
+8. The basic form of fold is ___________ And __________. 
+
+9. The basic form of fold is ___________ And __________. 
+
+10. The basic form of fold is ___________ And __________. 
+
+11. The basic form of fold is ___________ And __________. 
+
+12. The basic form of fold is ___________ And __________. 
+
+13. The basic form of fold is ___________ And __________. 
+
+14."
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the mechanical properties at the time of formation, joints can be divided into__________ And__________ Two types. [/INST] </s>",Shear joint," #1: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#2: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#3: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#4: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#5: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#6: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#7: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#8: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#9: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#10: According to the mechanical properties at the time of formation, joints can be divided into: 
+ 
+#11:"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the relative displacement relationship between the two walls of the fault, it can be divided into __________, __________ There are four types of translation fault and hinge fault. [/INST] </s>",Normal fault," # According to the relative displacement relationship between the two walls of the fault, it can be divided into #translation fault and #hinge fault. There are four types of translation fault and hinge fault. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The primary structural unit within the petroliferous basin is ____________________ And __________. [/INST] </s>","Uplift, depression, slope"," #The primary structural unit within the petroliferous basin is ____________________ And __________. 
+The primary structural unit within the petroliferous basin is Basin and Structure. 
+Basin is the most basic unit of the petroliferous basin, and it is a large area of sedimentary rocks that is bounded by faults. It is the primary unit of the petroliferous basin, and it is usually associated with other petroliferous basins. Structure is a general term that refers to the arrangement of sedimentary rocks in the petroliferous basin. It is the most basic unit of the petroliferous basin, and it is usually associated with other petroliferous basins. 
+ "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The boundaries between plates are __________, ____________________ And__________ Four types. [/INST] </s>","Hailing, transform fault, subduction zone and deep trench, ground suture", #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 - The boundaries between plates are #1 -
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Gutenberg noodles are__________ And___________ Interface. [/INST] </s>",Mantle and core, #Gutenberg noodles are__________ And___________ Interface. #Gutenberg noodles are__________ And___________ Interface.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The types of volcanic eruption are_________ And_________ Two types. [/INST] </s>","Crack type, central type"," # The types of volcanic eruption are_________ And_________ Two types. 
+The answer is:
+The types of volcanic eruption are explosive and effusive. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Igneous rocks can be divided into ultrabasic, basic, neutral, acidic, vein rocks and other categories. Please list the names of one type of rocks in this order: __________, __________, ____________, ____________, __________. [/INST] </s>","Peridotite, gabbro, andesite, rhyolite, pegmatite"," #1: Igneous rocks can be divided into ultrabasic, basic, neutral, acidic, vein rocks and other categories. Please list the names of one type of rocks in this order: __________, __________, ____________, ____________, __________. 
+The answer is: #1: Igneous rocks can be divided into ultrabasic, basic, neutral, acidic, vein rocks and other categories. Please list the names of one type of rocks in this order: __________, __________, ____________, ____________, __________. 
+The correct answer is: #1: Igneous rocks can be divided into ultrabasic, basic, neutral, acidic, vein rocks and other categories. Please list the names of one type of rocks in this order: __________, __________, ____________, ____________, __________. 
+The answer is: #1: Igneous rocks can be divided into ultrabasic, basic, neutral, acidic, vein rocks and other categories. Please list the names of one type of rocks in this order: __________, __________, ____________, ___________"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The Mesozoic era has existed from morning to night, and their codes are respectively. [/INST] </s>","The Mesozoic era has existed from morning to night, and their codes are respectively."," #The Mesozoic era has existed from morning to night, and their codes are respectively.#  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Metamorphism includes ____________________ And___________ Three categories. [/INST] </s>","Regional metamorphism, dynamic metamorphism, contact metamorphism"," 1. Metamorphism includes contact metamorphism, regional metamorphism, and burial metamorphism. 
+2. And___________ Three categories. 
+The answer is: And___________ Three categories. 
+The correct answer is: And___________ Three categories. 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is: 
+The answer is: 
+The correct answer is: 
+The explanation is:"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Pyroclastic rocks can be divided into __________________ And_________ Three categories. [/INST] </s>","Agglomerate, volcanic breccia, tuff", # Pyroclastic rocks can be divided into # 1. Pyroclastic breccia # 2. Pyroclastic tuff # 3. Pyroclastic agglomerate 
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The three stages of rock deformation development are ___________, ____________ and ____________. [/INST] </s>","Plastic deformation, elastic deformation, brittle deformation"," #1 The three stages of rock deformation development are:
+
+1. Stable stage
+2. Deformation stage
+3. Fracture stage  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The geomagnetic elements include ______________________ And ___________; [/INST] </s>","Magnetic declination, magnetic inclination and magnetic field strength"," 1. The geomagnetic elements include ______________________ And ___________;
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________; 
+The geomagnetic elements include ______________________ And ___________;"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the change of temperature and density, the atmosphere can be further divided into ___________, ___________, ______________________ And ___________. [/INST] </s>","Troposphere, stratosphere, mesosphere, warm layer, escape layer"," #1 According to the change of temperature and density, the atmosphere can be further divided into #2 #3 #4 #5.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  There are two most important seismic wave velocity change interfaces in the interior of the earth___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And ___________. [/INST] </s>","Moho surface, Gutenberg surface, crust, mantle, core"," #The two most important seismic wave velocity change interfaces in the interior of the earth are:
+
+#And #
+
+#The interior of the earth can be divided into #
+
+#And #  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into __________, ______________________ And ___________. [/INST] </s>","Dynamic metamorphism, contact metamorphism, regional metamorphism, migmatization"," #1 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #2 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #3 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #4 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #5 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #6 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #7 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #8 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #9 According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #10 According to the geological environment and physicochemical factors of metamorphism, met"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The double metamorphic belts are located on the ocean side___________ ___________ parallel to it. [/INST] </s>",High pressure and low temperature metamorphic zone," #1: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it.
+The answer is: The double metamorphic belts are located on the ocean side___________ ___________ parallel to it.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And ___________. [/INST] </s>","Oxidation, dissolution, hydrolysis, hydration, biochemical weathering"," #1:  Chemical weathering includes several important chemical reactions, which are:
+#2:  Chemical weathering includes several important chemical reactions, which are:
+#3:  Chemical weathering includes several important chemical reactions, which are:
+#4:  Chemical weathering includes several important chemical reactions, which are:
+#5:  Chemical weathering includes several important chemical reactions, which are:  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The sea water movement mainly includes __________, ____________________ And __________. [/INST] </s>","Wave, tide, current, turbidity current","  The sea water movement mainly includes tides, waves, and ocean currents. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Glaciers are divided into__________ And __________. [/INST] </s>",Continental glacier, # Glaciers are divided into__________ And __________.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the content of silica, magmatic rocks can be divided into __________, ____________________ And __________. (Indicate the content of silicon dioxide, otherwise the judgment is wrong) [/INST] </s>",Ultrabasic rock SiO265%," 1. Igneous rocks with high silica content: igneous rocks with high silica content.
+2. Igneous rocks with low silica content: igneous rocks with low silica content.
+3. Igneous rocks with intermediate silica content: igneous rocks with intermediate silica content. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The diagenesis of sediments mainly includes ____________________ And __________. [/INST] </s>",Compaction," #The diagenesis of sediments mainly includes the process of converting sediment into sedimentary rock, and the process of converting sediment into sedimentary rock.# "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The color of sedimentary rocks can be divided into ____________________ And __________. [/INST] </s>","Inherited color, primary color, secondary color"," #1 The color of sedimentary rocks can be divided into brown and red.
+#2 The color of sedimentary rocks can be divided into red and brown. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The structural types of carbonate rocks mainly include ____________________ And __________. [/INST] </s>",Grain structure," # The structural types of carbonate rocks mainly include ____________________ And __________.  Answer:  The structural types of carbonate rocks mainly include folded and faulted carbonate rocks, and the structural types of carbonate rocks mainly include folded and faulted carbonate rocks.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The common grains in carbonate rocks include __________, ____________________ And__________ Etc. [/INST] </s>","Endoclast, bioclastic, oolitic, agglomerate", #1 The common grains in carbonate rocks include #2 ____________________ And #3 ____________________ Etc.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The sedimentary types of alluvial fan include __________, ____________________ And __________. [/INST] </s>","Debris flow deposit, braided channel deposit, overflow deposit, sieve deposit"," #1: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#2: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#3: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#4: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#5: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#6: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#7: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#8: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#9: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#10: The sedimentary types of alluvial fan include sand, gravel, and clay. 
+#11:"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the plane geometry of the river, the river can be divided into __________, ____________________ And__________ Four types. [/INST] </s>","Pingzhi River, meandering river, braided river, reticulated river"," #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1: According to the plane geometry of the river, the river can be divided into #1:"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The river facies can be further divided into __________, ____________________ River__________ Four subfacies. [/INST] </s>","River bed, embankment, river apron, oxbow lake", #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies can be further divided into #The river facies
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the depth of the lake and its geographical location, the clastic lake facies can be divided into __________, __________, ____________________ And__________ Wait for several subphases. [/INST] </s>","Lake delta, shore lake, shallow lake, semi-deep lake, deep lake"," # According to the depth of the lake and its geographical location, the clastic lake facies can be divided into #shallow-water facies, #intermediate-water facies, #deep-water facies, #sub-deep-water facies, and #sub-shallow-water facies. #Wait for several subphases. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Galloway's genetic types of delta include ____________________ And __________. [/INST] </s>","River controlled delta, wave controlled delta, tidal controlled delta", #1: Galloway's genetic types of delta include ____________________ And __________.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  A typical modern barrier-free coastal sedimentary environment can be divided into __________, ____________________ And__________ Wait for several secondary environments. [/INST] </s>","Coastal dunes, backshore, foreshore, nearshore"," #1: A typical modern barrier-free coastal sedimentary environment can be divided into __________, ____________________ And__________ Wait for several secondary environments.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The types of subfacies of barrier coastal facies are ____________________ And __________. [/INST] </s>","Lagoon subfacies, tidal flat subfacies, barrier island subfacies"," #1 The types of subfacies of barrier coastal facies are barrier beach facies, barrier spit facies, barrier island facies, barrier peninsula facies, and barrier headland facies.
+
+#2 And barrier beach facies, barrier spit facies, barrier island facies, barrier peninsula facies, and barrier headland facies. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  There are two most important seismic wave velocity variation boundaries in the interior of the earth, namely___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And___________ [/INST] </s>","(Moho, Gutenberg, crust, mantle, core)"," #1: There are two most important seismic wave velocity variation boundaries in the interior of the earth, namely___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And___________
+
+#2: There are two most important seismic wave velocity variation boundaries in the interior of the earth, namely___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And__________
+
+#3: There are two most important seismic wave velocity variation boundaries in the interior of the earth, namely___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And__________
+
+#4: There are two most important seismic wave velocity variation boundaries in the interior of the earth, namely___________ And ___________, According to this, the interior of the earth can be divided into ______________________ And__________
+
+#5: There are two most important seismic wave velocity variation boundaries in the interior of the earth, namely___________ And ___________, According to this, the interior of the earth can be divided into ______________________"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the energy sources and characteristics that cause geological work, it can be divided into internal energy and external energy, which include ___________, ____________, ___________, _______________________ And____________ [/INST] </s>","(Heavy energy, radioactive energy, page 4 of 8, rotational energy, crystal energy and chemical energy, solar radiation energy, solar and lunar gravitational energy)"," # According to the energy sources and characteristics that cause geological work, it can be divided into internal energy and external energy, which include # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into __________, ______________________ And___________ [/INST] </s>","(dynamic metamorphism, contact metamorphism, regional metamorphism, migmatization)"," # According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism can be divided into #According to the geological environment and physicochemical factors of metamorphism, metamorphism"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ [/INST] </s>","(oxidation, dissolution, hydrolysis, hydration, biochemical weathering)"," 1. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+2. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+3. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+4. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+5. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+6. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+7. Chemical weathering includes several important chemical reactions, which are ___________, ___________, ______________________ And___________ 
+ 
+8. Chemical weathering includes several important chemical reactions, which are _"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The main factors affecting weathering are___________ And___________ [/INST] </s>","(Physical and geographical conditions, lithology)", #1 The main factors affecting weathering are___________ And___________  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The loose deposits on the surface are passed by the wind ______________________ And___________ Transport to other places [/INST] </s>","(suspension, jump, push)", # The loose deposits on the surface are passed by the wind # And___________ Transport to other places  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Aeolian deposits include__________ And___________ [/INST] </s>","(eolian sand, eolian loess)",  Aeolian deposits include__________ And___________  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into __________, __________, ____________________ And__________ [/INST] </s>","(adsorbed water, crystal water, structural water, zeolite water, interlayer water)"," #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided into #1: According to the existing form of water in minerals and its role in the crystal structure of minerals, it can be divided"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the content of silica, magmatic rocks can be divided into __________, ____________________ And__________ [/INST] </s>","(Ultrabasic rock SiO2<45%, basic rock SiO245-52%, neutral rock SiO252-65%, acidic rock SiO2>65%)"," #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of silica, magmatic rocks can be divided into #1: According to the content of"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The diagenesis of sediments mainly includes ____________________ And__________ [/INST] </s>","(compaction, cementation, recrystallization)"," # The diagenesis of sediments mainly includes diagenesis of clastic sediments and diagenesis of chemical sediments. 
+# The diagenesis of clastic sediments mainly includes lithification, compaction, cementation, and diagenesis of biogenic sediments. 
+# The diagenesis of chemical sediments mainly includes precipitation, dissolution, and diagenesis of chemical sediments. 
+# The diagenesis of biogenic sediments mainly includes biogenic sediments, such as shells, corals, and algae. 
+# The diagenesis of diagenesis of sediments mainly includes the diagenesis of clastic sediments and the diagenesis of chemical sediments. 
+# The diagenesis of sediments mainly includes the diagenesis of clastic sediments and the diagenesis of chemical sediments. 
+# The diagenesis of clastic sediments mainly includes lithification, compaction, cementation, and diagenesis of biogenic sediments. 
+# The diagenesis of chemical sediments mainly includes precipitation, dissolution, and diagenesis of chemical sediments. "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The color of sedimentary rocks can be divided into ____________________ And__________ [/INST] </s>","(Inherited color, primary color, secondary color)"," # The color of sedimentary rocks can be divided into brown, black, red, yellow, and gray. #  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The structural types of carbonate rocks mainly include ____________________ And__________ [/INST] </s>","(particle structure, biological skeleton structure, grain structure)"," # The structural types of carbonate rocks mainly include ____________________ And__________ 
+The answer is: # The structural types of carbonate rocks mainly include ____________________ And__________ 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The common grains in carbonate rocks include __________, ____________________ And__________ etc. [/INST] </s>","(endoclastic, bioclastic, oolitic, agglomerate)", #1: The common grains in carbonate rocks include #2: The common grains in carbonate rocks include #3: The common grains in carbonate rocks include  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  , their codes are respectively. [/INST] </s>","Triassic, Jurassic, Cretaceous, T, J, K"," #2019-12-11 10:15:38 , their codes are respectively. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  From morning to night in the Mesozoic era [/INST] </s>","Regional metamorphism, dynamic metamorphism, contact metamorphism", # From morning to night in the Mesozoic era  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Metamorphism includes ____________________ And___________ Three categories. [/INST] </s>","Standard, standard, cycle, cycle, environment, environment", #1: Metamorphism includes #2: And #3: Three categories.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  When dividing the strata of a region, it is generally to establish a___________ Section. All sections with complete stratigraphic exposure, normal sequence, clear contact relationship and well preserved fossils can be used as___________ Section. If it is marine strata, it often shows repeated changes of lithofacies from coarse to fine and from fine to coarse. Such a change is called a deposit ___________, That is, each set of transgressive horizon and regressive horizon constitutes a complete sedimentary ___________. Strata can also be divided according to lithology. The lithologic change reflects the sedimentation to a certain extent___________ Changes, while deposition___________ The change of the earth's crust is often closely related to the crustal movement. Therefore, the strata are divided into many units according to lithology, which can basically represent the development stage of local geological history________ and [/INST] </s>","Physical weathering, chemical weathering, biological weathering"," #Geoscience#Geology#Stratigraphy
+When dividing the strata of a region, it is generally to establish a___________ Section. All sections with complete stratigraphic exposure, normal sequence, clear contact relationship and well preserved fossils can be used as___________ Section. If it is marine strata, it often shows repeated changes of lithofacies from coarse to fine and from fine to coarse. Such a change is called a deposit ___________, That is, each set of transgressive horizon and regressive horizon constitutes a complete sedimentary ___________. Strata can also be divided according to lithology. The lithologic change reflects the sedimentation to a certain extent___________ Changes, while deposition___________ The change of the earth's crust is often closely related to the crustal movement. Therefore, the strata are divided into many units according to lithology, which can basically represent the development stage of local geological history________ and "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Weathering includes ____________________ And___________ Three categories. [/INST] </s>","Volcanic agglomerate, volcanic breccia, tuff"," #1 Weathering includes #1: The formation of soil.
+#2: The formation of sediment.
+#3: The formation of minerals. 0 0
+#1 Weathering includes #1: The formation of soil.
+#2: The formation of sediment.
+#3: The formation of minerals. 0 0
+#1 Weathering includes #1: The formation of soil.
+#2: The formation of sediment.
+#3: The formation of minerals. 0 0
+#1 Weathering includes #1: The formation of soil.
+#2: The formation of sediment.
+#3: The formation of minerals. 0 0
+#1 Weathering includes #1: The formation of soil.
+#2: The formation of sediment.
+#3: The formation of minerals. 0 0
+#1 Weathering includes #1: The formation of soil.
+#2: The formation of sediment.
+#3: The formation of minerals. 0 0
+#1 Weathering includes #1: The formation of soil.
+"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Pyroclastic rocks can be divided into_________ Three categories. [/INST] </s>","Fault, seismic wave, magnitude"," #1. Pyroclastic rocks can be divided into three categories. 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  The Mesozoic era has existed from morning to night, and their codes are respectively. [/INST] </s>","Triassic, Jurassic, Cretaceous T, J, K"," # The Mesozoic era has existed from morning to night, and their codes are respectively.  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  According to the mechanical properties of plate activity, the contact types of plate boundary can be divided into _________________ And_________ Three. [/INST] </s>","Tension type, convergence type, shear type"," # According to the mechanical properties of plate activity, the contact types of plate boundary can be divided into #divergent boundary #convergent boundary #transform boundary 
+  "
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  In 1968, Lepihon divided the global lithosphere into __________, ___________, __________, _____________________ And___________ Six sectors________ and [/INST] </s>","Eurasian plate, Indian Ocean plate, Antarctica plate, Africa plate, Pacific plate, America plate"," #In 1968, Lepihon divided the global lithosphere into #East Pacific, #North Atlantic, #South Atlantic, #North Pacific, #South Pacific, #Indian, #Eurasian, #African, #Antarctic and #Arctic Six sectors________ and #North American, #South American, #European, #African, #Asian, #Australian and #Antarctic. 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Weathering includes ____________________ And___________ Three categories. [/INST] </s>","Physical weathering, chemical weathering, biological weathering",  Weathering includes ____________________ And___________ Three categories.  
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Pyroclastic rocks can be divided into_________ Three categories. [/INST] </s>","Volcanic agglomerate, volcanic breccia, tuff"," #1 - Ash
+#2 - Tuff
+#3 - Volcanic breccias
+#4 - Pyroclastic flow
+#5 - Volcanic ash fall
+#6 - Volcanic ash layer
+#7 - Volcanic ash sheet
+#8 - Volcanic ash blanket
+#9 - Volcanic ash deposit
+#10 - Volcanic ash deposits
+#11 - Volcanic ash deposit
+#12 - Volcanic ash deposit
+#13 - Volcanic ash deposit
+#14 - Volcanic ash deposit
+#15 - Volcanic ash deposit
+#16 - Volcanic ash deposit
+#17 - Volcanic ash deposit
+#18 - Volcanic ash deposit
+#19 - Volcanic ash deposit
+#20 - Volcanic ash deposit
+#21 - Volcanic ash deposit
+#22 - Volcanic ash deposit
+#23 - Volcanic ash deposit
+#24 - Volcanic ash deposit
+#25 - Volcanic ash deposit
+#2"
+"<s> [INST] <<SYS>> 
+ You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature. If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don’t know the answer to a question, please don’t share false information. 
+ Please answer the questions related to geoscience. 
+  <</SYS>> Please complete the following sentence:  Most earthquakes are generated by brittle rocks in the earth's crust, and seismic energy is transmitted in a certain way. It is commonly used to measure the intensity of energy released by an earthquake. [/INST] </s>","Fault, seismic wave, magnitude", # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is: # The answer to the question is
