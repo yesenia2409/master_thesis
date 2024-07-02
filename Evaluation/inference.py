@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
     # Functions
     data = pd.read_pickle("Input_files/pkl/geobench_apstudy.pkl")
-    data = data[:10]
+    # data = data[:10]
     # data = data.loc[data['id'].isin(["discussion"])]
     # counter = 0
 
