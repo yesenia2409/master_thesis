@@ -10,7 +10,7 @@ def generate_evaluation(df, model):
     for idx, row in df.iterrows():
         prompt = row["input"].split("<</SYS>>")[1].split("[/INST]")[0]
         label = row["gold"]
-        pred = row["pred"].split("[/INST]")[0]
+        pred = row["pred"]  # .split("[/INST]")[0]
         completion = client.chat.completions.create(
             model=model,
             messages=[
@@ -24,19 +24,19 @@ def generate_evaluation(df, model):
         prompts.append(prompt)
         predictions.append(pred)
         evaluation.append(completion.choices[0].message.content)
-        print(evaluation)
+        # print(evaluation)
         print(idx)
     return prompts, predictions, evaluation
 
 
 if __name__ == "__main__":
-    input_file_path = "Output_files/answers/output_for_evaluation_apstudy_base.csv"
-    output_path = "Output_files/evaluated_answers/evaluation_results_apstudy_.csv"
+    input_file_path = "Output_files/answers/output_for_evaluation_npee_tf_RLHF.csv"
+    output_path = "Output_files/evaluated_answers/evaluation_results_npee_tf_RLHF.csv"
     client = OpenAI(api_key="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")
     MODEL = "gpt-4o"
 
     df = pd.read_csv(input_file_path)
-    # df = df.loc[df['id'].isin(["choice"])]
+    # df = df[:10]
 
     # print(df)
     prompts, preds, eval_results = generate_evaluation(df, MODEL)
@@ -44,4 +44,3 @@ if __name__ == "__main__":
     df['input'] = prompts
     df['pred'] = preds
     df.to_csv(output_path, index=False)
-

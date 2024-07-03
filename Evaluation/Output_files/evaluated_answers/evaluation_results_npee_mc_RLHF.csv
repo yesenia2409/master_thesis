@@ -1,0 +1,1956 @@
+input,gold,pred,evaluation
+" 
+ The following structures that can coexist in the same type of rocks are:
+Choose from:
+
+A. Stomatal, almond-shaped, thousand-piece
+B. Plate-shaped, gneiss-shaped, pillow-shaped
+C. Wave marks, mud cracks, parallel bedding ",C," # The answer is:
+ 
+A. Stomatal, almond-shaped, thousand-piece
+ 
+The explanation is:
+ 
+Stomatal, almond-shaped, thousand-piece structures are the most common type of structures that can coexist in the same type of rocks. They are formed due to the contraction of the rock as it cools and solidifies. 
+ 
+The other options are not correct because they do not describe the formation of structures in rocks. 
+ 
+The correct answer is A. Stomatal, almond-shaped",0
+" 
+ The most soluble of the following rocks are:
+Choose from:
+
+A. Limestone
+B. Dolomite
+C. Mudstone ",C, #C. Mudstone  ,0
+" 
+ The following materials are mainly formed by groundwater metasomatism:
+Choose from:
+
+A. Nodule
+B. Sinter
+C. Silicified Wood
+D. Stone Salt Pseudocrystal ",B, #1: D. Stone Salt Pseudocrystal  ,0
+" 
+ Among the following structures, the smallest displacement of geological body is:
+Choose from:
+
+A. Normal Fault
+B. Reverse Fault
+C. Translation Fault
+D. Joint ",D, #C. Translation Fault  ,0
+" 
+ The following geological ages are arranged from old to new as:
+Choose from:
+
+A. S-O-Z-T-P
+B. Z-O-S-P-T
+C. Z-S-O-T-P
+D. S-Z-O-P-T ",B, #A  ,0
+" 
+ The following fully cleaved minerals are:
+Choose from:
+
+A. Quartz
+B. Muscovite
+C. Pyroxene ",C," #1: Quartz
+#2: Muscovite
+#3: Pyroxene  ",0
+" 
+ The sequence of various leases in the formation of sedimentary rocks is:
+Choose from:
+
+A. Weathering-transporting-denudation-sedimentary-diagenesis
+B. Weathering-denudation-transporting-sedimentary-diagenesis
+C. Denudation-weathering-transporting-sedimentary-diagenesis ",B," #A. 
+The correct sequence of the formation of sedimentary rocks is:
+
+Weathering-Transporting-Denudation-Sedimentary-Diagenesis. 
+
+1. Weathering: The process of breaking down rocks into smaller pieces through chemical, physical, and biological means.
+
+2. Transporting: The movement of rocks and sediments from one place to another through wind, water, ice, and gravity.
+
+3. Denudation: The removal of rocks and sediments from their original place through erosion, weathering, and transportation",0
+" 
+ Chemical weathering is most easily carried out at:
+Choose from:
+
+A. Cold and dry areas
+B. Warm and humid areas
+C. Arid areas ",B, #B  ,1
+" 
+ The plate-like intrusive rock mass formed by magma intrusion along the fault plane (zone) of surrounding rock is called:
+Choose from:
+
+A. Rock Plant
+B. Rock Bed
+C. Rock Wall ",C, #B. Rock Wall  ,1
+" 
+ Most volcanoes on the Earth are located in:
+Choose from:
+
+A. Continental Rift Zone
+B. Pacific Rim Zone
+C. Alpine-Mediterranean-Himalayan Zone ",B, #B  ,1
+" 
+ The process in which the original rock is basically in solid state and is changed into another new rock mainly by internal dynamic geological process is called:
+Choose from:
+
+A. Magmatism
+B. Weathering
+C. Metamorphism ",C," 
+C. Metamorphism  ",1
+" 
+ The main changes of limestone metamorphism into marble are:
+Choose from:
+
+A. Mineral composition
+B. Rock color
+C. Rock structure ",C, #1: A. Mineral composition  ,0
+" 
+ River erosion mainly occurs in:
+Choose from:
+
+A. Downstream
+B. Midstream
+C. Upstream ",C, #B  ,0
+" 
+ The bedrock is formed by magma:
+Choose from:
+
+A. Ejection
+B. Intrusion
+C. Metasomatism ",B,"  B. Intrusion 
+The correct answer is:
+  B. Intrusion 
+  ",1
+" 
+ Root cleavage of plants belongs to:
+Choose from:
+
+A. Chemical weathering
+B. Physical weathering
+C. Biological weathering ",C," #C
+  ",1
+" 
+ The interface between crust and mantle is called:
+Choose from:
+
+A. Gutenberg
+B. Conrad
+C. Moho ",C, #C  ,0
+" 
+ Gabbro is:
+Choose from:
+
+A. Extrusive Rock
+B. Intrusive Rock
+C. Metamorphic Rock ",B,  B. Intrusive Rock  ,1
+" 
+ Among the following rocks, the weakest resistance to chemical weathering is:
+Choose from:
+
+A. Granite
+B. Limestone
+C. Quartz Sandstone ",B," #1. Quartz Sandstone
+  ",0
+" 
+ Gymnosperms flourished in:
+Choose from:
+
+A. Paleozoic
+B. Cenozoic
+C. Cenozoic 29. Streaks were (color mineral powder
+D. mineral surface ",C, #B.  ,0
+" 
+ The morphology of amphibole is:
+Choose from:
+
+A. Flaky
+B. Granular
+C. Long columnar ",C, #A. Flaky  ,0
+" 
+ Reptiles flourished in:
+Choose from:
+
+A. Paleozoic
+B. Cenozoic
+C. Mesozoic ",C, #C. Mesozoic  ,1
+" 
+ In the Mohs hardness tester, the minerals with hardness grade 7 are:
+Choose from:
+
+A. Gypsum
+B. Quartz
+C. Topaz ",B, #A. Gypsum  ,0
+" 
+ Quiet volcanoes emit mainly:
+Choose from:
+
+A. Acid lava
+B. Basic lava
+C. Neutral lava ",B," #B 
+  ",0
+" 
+ The main mineral compositions of gabbro are:
+Choose from:
+
+A. Hornblende and plagioclase
+B. Pyroxene and plagioclase
+C. Plagioclase and quartz ",B, #B  ,1
+" 
+ Glaciers:
+Choose from:
+
+A. Have sorting function
+B. Have rounding function
+C. Have no sorting function' in the process of detritus transportation ",C, #C. Have no sorting function  ,1
+" 
+ The half order of lake chemical deposition in arid climate region is:
+Choose from:
+
+A. Sulfate-chloride-carbonate
+B. Chloride-sulfate-carbonate
+C. Carbonate-sulfate-chloride ",C, #C  ,0
+" 
+ In which period did human, true images and real horses appear:
+Choose from:
+
+A. J
+B. K
+C. T
+D. Q ",D, #B  ,0
+" 
+ Indosinian movement occurred in the period of:
+Choose from:
+
+A. Carboniferous
+B. Permian
+C. Triassic
+D. Cretaceous ",C," #B 
+The correct answer is #B. Permian. 
+The Indosinian movement occurred during the Permian period, specifically during the Gujaratian stage (260.4-251.9 Ma) of the Permian. 
+It is characterized by the collision of the Indian and Eurasian plates, resulting in the formation of the Himalayan orogeny. 
+ ",0
+" 
+ The skarn type deposit was formed by which of the following metamorphism:
+Choose from:
+
+A. Contact metasomatic metamorphism
+B. Regional metamorphism
+C. Burial metamorphism
+D. Dynamic metamorphism ",A," #D 
+The correct answer is: D. Dynamic metamorphism. 
+The skarn type deposit was formed by dynamic metamorphism, which is a type of metamorphism that occurs during mountain building processes, such as subduction or collision. The metamorphism is caused by the movement of rocks through the Earth's crust, and the resulting heat and pressure can cause the rocks to change their mineral composition. The skarn type deposit is formed when the minerals in the rocks are replaced by new minerals, such as garnet, biotite, and pyro",0
+" 
+ Caledonian movement occurs in:
+Choose from:
+
+A. Mesozoic
+B. Late Paleozoic
+C. Early Paleozoic
+D. Cenozoic ",C, #C. Early Paleozoic  ,1
+" 
+ Which of the following fold structures must have undergone stratigraphic inversion:
+Choose from:
+
+A. Tilting fold
+B. Vertical fold
+C. Inclined fold
+D. Rolling fold ",D," #B 
+The answer is B. Vertical fold.
+  ",0
+" 
+ In a nappe structure, if the younger rock block is exposed in the older rock block due to strong erosion, the structure is called:
+Choose from:
+
+A. Klippe
+B. Structural window
+C. Overthrust fault
+D. Thrust fault ",B," #A 
+  ",0
+" 
+ Sheet structure is a common structure in regional metamorphic rocks. Which of the following is the most metamorphic structure:
+Choose from:
+
+A. Plate structure
+B. Thousand-piece structure
+C. Sheet structure
+D. Strong gneiss ",D, #B  ,0
+" 
+ According to isotopic dating, the longest geological period is:
+Choose from:
+
+A. Proterozoic
+B. Paleozoic
+C. Mesozoic
+D. Cenozoic ",A, # A. Proterozoic  ,1
+" 
+ If trilobites are found in the strata, then the stratigraphic age is:
+Choose from:
+
+A. Early Ordovician
+B. Tertiary
+C. Cretaceous
+D. Early Cambrian ",D," 
+B. Tertiary 
+The answer is B. Tertiary. 
+The definition of trilobites is that 1, while the concept Early Ordovician means that 1. 
+The concept Tertiary means that 1, while the concept Cretaceous means that 1. 
+The concept Early Cambrian means that 1. 
+The question If trilobites are found in the strata, then the stratigraphic age is: is answered by B. Tertiary. 
+ ",0
+" 
+ Which sedimentary formation reflects the transformation from marine facies to continental facies:
+Choose from:
+
+A. flysch deposition
+B. turbidity current deposition
+C. molasite deposition
+D. pyroclastic deposition ",C, #1: C. molasite deposition.  ,1
+" 
+ Which part of the earth belongs between Gutenberg surface and Moho surface:
+Choose from:
+
+A. Upper crust
+B. Lower crust
+C. Mantle
+D. Core ",C, #D. Core  ,0
+" 
+ Mesozoic gymnosperms have been unprecedented development, which of the following plant fossils do not belong to gymnosperms:
+Choose from:
+
+A. Big feather fern
+B. Cycad
+C. Pine and cypress
+D. Ginkgo biloba ",A," #1: Big feather fern 
+#2: Cycad
+#3: Pine and cypress
+#4: Ginkgo biloba 
+  ",1
+" 
+ The boundary, system, series and order are:
+Choose from:
+
+A. Lithostratigraphic unit
+C. Biological taxonomic unit
+B. Time unit
+D. Chronostratigraphic unit ",A, #B. Time unit  ,0
+" 
+ What class does quartz belong to in Mohs hardness tester:
+Choose from:
+
+A. 5
+B. 6
+C. 7 ",C,  B. 6  ,0
+" 
+ Which of the following rocks belongs to dynamic metamorphic rocks:
+Choose from:
+
+A. Schist
+B. Gneiss
+C. Mylonite
+D. Marble ",C," #1 A. Schist
+#2 B. Gneiss
+#3 C. Mylonite
+#4 D. Marble  ",1
+" 
+ Which of the following is a monoelemental mineral:
+Choose from:
+
+A. Quartz
+B. Plagioclase
+C. Biotite
+D. Diamond ",D, #A  ,1
+" 
+ Fine-grained dikes belong to:
+Choose from:
+
+A. plutonic rocks
+B. shallow rocks
+C. sedimentary rocks
+D. subvolcanic rocks ",B," 
+D. subvolcanic rocks 
+The correct answer is:
+
+D. subvolcanic rocks 
+Explanation:
+
+Fine-grained dikes are typically composed of small crystals of minerals such as plagioclase, orthoclase, and pyroxene. These minerals are commonly found in subvolcanic rocks, which are rocks that form in the crust near a volcano. The fine-grained texture of these rocks is due to the rapid cooling of the magma, which prevented the formation of large",0
+" 
+ The unique mineral group formed by metamorphism is:
+Choose from:
+
+A. Olivine, pyroxene, hornblende, biotite
+B. Andalusite, hornblende, kaolinite, magnetite
+C. Sericite, andalusite, wollastonite, garnet
+D. Pyroxene, kyanite, graphite, garnet ",C, #A  ,0
+" 
+ Streamline structure generally occurs in which of the following rock types:
+Choose from:
+
+A. Basalt
+B. Andesite
+C. Rhyolite
+D. Trachyte ",C," #C 
+  ",0
+" 
+ Basalt belongs to:
+Choose from:
+
+A. Ultrabasic rock
+B. Basic rock
+C. Acid rock
+D. Neutral rock ",B," 
+B. Basic rock  ",1
+" 
+ The shape of the earth is:
+Choose from:
+
+A. Spherical
+B. Ideal rotating ellipsoid
+C. Apple shape
+D. An approximately pear-shaped ellipsoid of revolution ",D, #B  ,0
+" 
+ The following units that do not belong to the continental surface form are:
+Choose from:
+
+A. Island arc
+B. Hills
+C. Rift Valley
+D. Basin ",A," #B 
+The correct answer is:
+
+The following units that do not belong to the continental surface form are:
+Choose from:
+
+A. Island arc
+B. Hills
+C. Rift Valley
+D. Basin  ",0
+" 
+ In the following places, the greatest gravity of the earth is:
+Choose from:
+
+A. Equator
+B. Antarctica
+C. Tropic of Cancer
+D. Beijing ",B, #B  ,0
+" 
+ Among the following areas, the area with the highest heat flow value is:
+Choose from:
+
+A. Continental area
+B. Pacific
+C. Atlantic
+D. The Indian Ocean ",B," #B
+  ",1
+" 
+ What is closely related to human activities and geological processes in the atmosphere is:
+Choose from:
+
+A. Troposphere
+B. Stratosphere
+C. Middle layer
+D. The warm layer ",A," #C
+The correct answer is: C. Middle layer  ",0
+" 
+ Among the following areas, the area with the smallest earthquake probability is:
+Choose from:
+
+A. Japan
+B. Taiwan
+C. Alaska
+D. Guangzhou ",D," #D. Guangzhou
+  ",1
+" 
+ Among the following silicate minerals, the most easily weathered is:
+Choose from:
+
+A. Quartz
+B. Biotite
+C. Olivine
+D. Hornblende ",C," #D 
+  ",0
+" 
+ Earthquakes distributed in the mid-ocean ridge are characterized by:
+Choose from:
+
+A. Shallow source and large magnitude
+B. The source is deep and the magnitude is large
+C. The source is shallow and the magnitude is small
+D. The source is deep and the magnitude is small ",C, # A. Shallow source and large magnitude  ,0
+" 
+ The following phenomena that do not belong to groundwater sedimentation are:
+Choose from:
+
+A. Dropping stones in karst caves
+B. Petrified wood
+C. Sinter
+D. Bottom-showing structure ",D, #C  ,0
+" 
+ The following are not minerals:
+Choose from:
+
+A. Ice
+B. Quartz
+C. Coal
+D. Natural gold ",C,"  The answer is:
+
+C. Coal
+
+Explanation:
+Coal is not a mineral, but rather a fossil fuel formed from the remains of plants that lived millions of years ago. It is composed primarily of carbon and hydrogen, and is used as a source of energy for generating electricity and heat. 
+  ",1
+" 
+ Among the following minerals, the hardness is greater than that of quartz:
+Choose from:
+
+A. Topaz
+B. Fluorite
+C. Orthoclase
+D. Calcite ",A," #1: Calcite 
+#2: Fluorite
+#3: Topaz
+#4: Orthoclase 
+The answer is:
+#1: Calcite 
+#2: Fluorite
+#3: Topaz
+#4: Orthoclase 
+The answer is:
+#1: Calcite 
+#2: Fluorite
+#3: Topaz
+#4: Orthoclase 
+The answer is:
+#1: Calcite 
+#2: Fluorite
+#3: Topaz
+#",0
+" 
+ Granite belongs to:
+Choose from:
+
+A. Acid plutonic intrusive rocks
+B. Neutral epithermal intrusive rocks
+C. Basic plutonic intrusive rocks
+D. Basic epithermal intrusive rocks ",A," #C 
+The answer is:
+C. Basic plutonic intrusive rocks 
+  ",0
+" 
+ A clastic rock containing 8% medium gravel, 10% fine gravel, 17% coarse sand, 16% medium sand, 18% fine sand, 14% coarse silty sand and 17% fine silty sand should be named:
+Choose from:
+
+A. Silty sandstone containing gravel
+B. Gravel sandstone containing silt
+C. Gravel siltstone
+D. Silty conglomerate ",A," #D. Silty conglomerate 
+The Answer: 
+  ",0
+" 
+ Among the wave zones in the barrier-free coastal zone, the highest energy is:
+Choose from:
+
+A. Rising wave zone
+B. Wave-breaking zone
+C. Broken wave zone
+D. Surfing belt ",B, #B  ,0
+" 
+ The sand flat in the tidal flat subfacies of the barrier coast belongs to:
+Choose from:
+
+A. High tide flat
+B. Mesotidal flat
+C. Low tide flat
+D. Chaoshangping ",C, #B. Mesotidal flat  ,0
+" 
+ Yanshan tectonic stage belongs to:
+Choose from:
+
+A. Cenozoic
+B. Mesozoic
+C. Paleozoic
+D. Proterozoic ",B," #B
+  ",0
+" 
+ The most important standard fossil of Cambrian is:
+Choose from:
+
+A. graptolite
+B. Coral
+C. Semi-freshwater fish
+D. Trilobites ",D, #C. Semi-freshwater fish  ,0
+" 
+ According to the distribution of temperature below the continental surface and the source of geothermal energy, the interior of the earth can be divided into the following temperature layers:
+Choose from:
+
+A. High thermal layer
+B. Outer thermosphere
+C. Normal temperature layer
+D. Inner thermal layer ",B," 
+B. Outer thermosphere 
+The choice B. Outer thermosphere is correct because the outer thermosphere is the region of the atmosphere above 1000 km, where the temperature increases with altitude due to the absorption of ultraviolet radiation from the sun. This layer is also known as the thermosphere, and its temperature can reach up to 1500°C. 
+
+The correct answer is:
+
+B. Outer thermosphere 
+
+The best answer is:
+
+B. Outer thermosphere 
+
+",0
+" 
+ The continental crust is composed of:
+Choose from:
+
+A. Silicon-aluminum layer; B Silicon magnesium layer
+B. Magnesium iron layer
+C. Ferrosilicon layer ",A, #B. Magnesium iron layer  ,0
+" 
+ Among the following actions, mechanical weathering of rocks is:
+Choose from:
+
+A. Temperature change
+B. Ice splitting
+C. Release weight of rock
+D. Root cleavage ",A, #C  ,0
+" 
+ When the river flows, the energy is related to:
+Choose from:
+
+A. Riverbed width
+B. River flow
+C. Velocity of river water
+D. Height difference of riverbed topography ",B, #B  ,0
+" 
+ The movement mode of seawater is mainly as follows:
+Choose from:
+
+A. Sea waves
+B. Tide
+C. Ocean currents
+D. Turbidity current ",A, #D  ,0
+" 
+ The common grains in carbonate rock structure are:
+Choose from:
+
+A. Internal grains
+B. Biodetritus
+C. Oolitic
+D. Granules ",A, #D  ,0
+" 
+ A typical modern barrier-free coastal sedimentary environment can be divided into:
+Choose from:
+
+A. Lagoon
+B. Coastal dunes
+C. Back shore
+D. Foreshore ",B, #B  ,0
+" 
+ Mesozoic includes:
+Choose from:
+
+A. Permian
+B. Triassic
+C. Jurassic
+D. Cretaceous ",B," #C
+  ",0
+" 
+ Most coal was found in the following strata:
+Choose from:
+
+A. Carboniferous
+B. Jurassic
+C. Permian
+D. Triassic ",A," 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ",0
+" 
+ The occurrence factors of rock strata include:
+Choose from:
+
+A. Strike
+B. Thickness
+C. Tendency
+D. Inclination ",A," 
+The correct answer is: 
+ 
+B. Thickness 
+ 
+The occurrence factors of rock strata include:
+Choose from:
+
+A. Strike
+B. Thickness
+C. Tendency
+D. Inclination  ",0
+" 
+ Geometric elements of faults include:
+Choose from:
+
+A. Fault plane
+B. Break the disk
+C. Displacement
+D. Inclination ",A, #A. Fault plane  ,1
+" 
+ The first-order structural units in petroliferous basins are:
+Choose from:
+
+A. Anticline zone
+B. Rise
+C. Depression
+D. The ramp ",B," #D
+The correct answer is:
+
+D. The ramp
+
+Explanation:
+The ramp is the first-order structural unit in petroliferous basins. It is a type of anticline that forms when the strata are folded and the hanging wall is pushed upwards. The ramp is characterized by a gentle slope and a long, narrow shape. It is often associated with the presence of oil and gas reservoirs.
+
+The other options are incorrect because:
+
+A. Anticline zone: This is a type of structural unit",0
+" 
+ The formation conditions of gravity flow include:
+Choose from:
+
+A. A certain depth
+B. Provenance conditions
+C. Trigger mechanism
+D. Stagnant water environment ",B, #1.  ,0
+" 
+ In which period did human, true images and real horses appear:
+Choose from:
+
+A. J
+B. K
+C. T
+D. Q ",A, #C  ,0
+" 
+ Indosinian movement occurred in the period of:
+Choose from:
+
+A. Carboniferous
+B. Permian
+C. Triassic
+D. Cretaceous ",D," #D 
+The correct answer is:
+
+D. Cretaceous 
+The statement Indosinian movement occurred in the period of is true. 
+ 
+The definition of the word 'Indosinian movement' is:
+
+A movement that occurred in the period of Cretaceous, in which the Indian subcontinent collided with the Eurasian plate. 
+
+The definition of the word 'Cretaceous' is:
+
+The period of time in which the Cretaceous period occurred. 
+
+The definition of the word 'Cretace",0
+" 
+ The skarn type deposit was formed by which of the following metamorphism:
+Choose from:
+
+A. Contact metasomatic metamorphism
+B. Regional metamorphism
+C. Burial metamorphism
+D. Dynamic metamorphism ",C," #C 
+The answer is C. Burial metamorphism.
+  ",0
+" 
+ Caledonian movement occurs in:
+Choose from:
+
+A. Mesozoic
+B. Late Paleozoic
+C. Early Paleozoic
+D. Cenozoic ",C, #B. Late Paleozoic  ,0
+" 
+ Which of the following fold structures must have undergone stratigraphic inversion:
+Choose from:
+
+A. Tilting fold
+B. Vertical fold
+C. Inclined fold
+D. Rolling fold ",A," #B: Vertical fold. 
+  ",0
+" 
+ In a nappe structure, if the younger rock block is exposed in the older rock block due to strong erosion,the structure is called:
+Choose from:
+
+A. Klippe
+B. Structural window
+C. Overthrust fault
+D. Thrust fault ",A, #A  ,0
+" 
+ Sheet structure is a common structure in regional metamorphic rocks. Which of the following is metamorphic structure:
+Choose from:
+
+A. Plate structure
+B. Thousand-piece structure
+C. Sheet structure
+D. Gneiss structure ",C," #1: Sheet structure is a common structure in regional metamorphic rocks. Which of the following is metamorphic structure:
+Choose from:
+
+A. Plate structure
+B. Thousand-piece structure
+C. Sheet structure
+D. Gneiss structure  ",1
+" 
+ According to isotopic dating, the longest geological period is:
+Choose from:
+
+A. Proterozoic
+B. Paleozoic
+C. Mesozoic
+D. Cenozoic ",C," #1: A. Proterozoic
+The Proterozoic Period lasted from about 2500 million to 541 million years ago. It is the oldest geological period and the longest period in the geological timescale. 
+  ",0
+" 
+ If trilobites are found in the strata, then the stratigraphic age is:
+Choose from:
+
+A. Early Ordovician
+B. Tertiary
+C. Cretaceous
+D. Early Cambrian ",D, #A  ,0
+" 
+ Which part of the earth belongs between Gutenberg surface and Moho surface:
+Choose from:
+
+A. Upper Crust
+B. Lower Crust
+C. Mantle
+D. Core ",B," #C 
+The correct answer is C. Mantle. 
+  ",0
+" 
+ Mesozoic gymnosperms have been unprecedented development, which of the following plant fossils do not belong to gymnosperms:
+Choose from:
+
+A. Big feather fern
+B. Cycad
+C. Pine and cypress
+D. Ginkgo biloba ",C," #B. Cycad 
+  ",0
+" 
+ The boundary, system, series and order are:
+Choose from:
+
+A. Lithostratigraphic unit
+C. Biological taxonomic unit
+B. Time unit
+D. Chronostratigraphic unit ",C," #Geoscience #Lithostratigraphic unit
+The answer is:
+B. Time unit
+The correct answer is:
+B. Time unit  ",0
+" 
+ What class does quartz belong to in Mohs hardness tester:
+Choose from:
+
+A. 5
+B. 6
+C. 7 ",B, 1. 5  ,0
+" 
+ The shape of the earth is:
+Choose from:
+
+A. Spherical
+B. Ideal rotating ellipsoid
+C. Apple shape
+D. An approximately pear-shaped ellipsoid of revolution ",D, #D. An approximately pear-shaped ellipsoid of revolution  ,1
+" 
+ The following units that do not belong to the continental surface form are:
+Choose from:
+
+A. Island arc
+B. The hills
+C. Rift Valley
+D. Basin ",A," #B 
+The correct answer is:
+
+B. The hills  ",0
+" 
+ In the following places, the greatest gravity of the earth is:
+Choose from:
+
+A. Equator
+B. Antarctica
+C. Tropic of Cancer
+D. Beijing ",B, #B  ,0
+" 
+ Among the following areas, the area with the highest heat flow value is:
+Choose from:
+
+A. Continental area
+B. Pacific
+C. Atlantic
+D. The Indian Ocean ",B, #The answer is: C. Atlantic  ,0
+" 
+ What is closely related to human activities and geological processes in the atmosphere is:
+Choose from:
+
+A. Troposphere
+B. Stratosphere
+C. Middle layer
+D. The warm layer ",A," #D
+The correct answer is:
+
+D. The warm layer  ",0
+" 
+ Among the following areas, the area with the smallest earthquake probability is:
+Choose from:
+
+A. Japan
+B. Taiwan
+C. Alaska
+D. Guangzhou ",D," #B 
+  ",1
+" 
+ Among the following silicate minerals, the most easily weathered is:
+Choose from:
+
+A. Quartz
+B. Biotite
+C. Olivine
+D. Hornblende ",C," #The answer is B. Biotite
+  ",0
+" 
+ Earthquakes distributed in the mid-ocean ridge are characterized by:
+Choose from:
+
+A. Shallow source and large magnitude
+B. The source is deep and the magnitude is large
+C. The source is shallow and the magnitude is small
+D. The source is deep and the magnitude is small ",C," 
+The correct answer is:
+
+B. The source is deep and the magnitude is large 
+  ",0
+" 
+ The following phenomena that do not belong to groundwater sedimentation are:
+Choose from:
+
+A. Dropping stones in karst caves
+B. Petrified wood
+C. Sinter
+D. Bottom-showing structure ",D, #B  ,1
+" 
+ The following are not minerals:
+Choose from:
+
+A. Ice
+B. Quartz
+C. Coal
+D. Natural gold ",C, #A  ,0
+" 
+ Among the following minerals, the hardness is greater than that of quartz:
+Choose from:
+
+A. Topaz
+B. Fluorite
+C. Orthoclase
+D. Calcite ",A," #1: Topaz
+#2: Fluorite
+#3: Orthoclase
+#4: Calcite  ",0
+" 
+ Granite belongs to:
+Choose from:
+
+A. Acid plutonic intrusive rocks
+B. Neutral epithermal intrusive rocks
+C. Basic plutonic intrusive rocks
+D. Basic epithermal intrusive rocks ",A, #B. Neutral epithermal intrusive rocks  ,0
+" 
+ A clastic rock containing 8% medium gravel, 10% fine gravel, 17% coarse sand, 16% medium sand, 18% fine sand, 14% coarse silty sand and 17% fine silty sand should be named:
+Choose from:
+
+A. Silty sandstone containing gravel
+B. Gravel sandstone containing silt
+C. Gravel siltstone
+D. Silty conglomerate ",A, #B. Gravel sandstone containing silt  ,0
+" 
+ Among the wave zones in the barrier-free coastal zone, the highest energy is:
+Choose from:
+
+A. Rising wave zone
+B. Wave-breaking zone
+C. Broken wave zone
+D. Surfing belt ",B," # The answer is: C. Broken wave zone.
+The broken wave zone is the area where the waves are broken and lose their energy, typically due to the presence of rocks or other obstructions in the water. This zone is characterized by the formation of whitecaps and the presence of foam and spray. 0 ",0
+" 
+ The sand flat in the tidal flat subfacies of the barrier coast belongs to:
+Choose from:
+
+A. High tide flat
+B. Mesotidal flat
+C. Low tide flat
+D. Chaoshangping ",C," #C. Low tide flat
+The correct answer is #C. Low tide flat. 
+The definition of the term ""low tide flat"" is that The low tide flat is a subfacies of the tidal flat that is exposed only during low tide. The low tide flat is the most stable facies of the tidal flats, which is formed in the lower reaches of the river mouth or the mouth of the estuary. The low tide flat is composed of silt, sand, and gravel, and the sediment is relatively stable and does not change much.",1
+" 
+ Yanshan tectonic stage belongs to:
+Choose from:
+
+A. Cenozoic
+B. Mesozoic
+C. Paleozoic
+D. Proterozoic ",B, #D  ,0
+" 
+ The most important standard fossil of Cambrian is:
+Choose from:
+
+A. Graptolite
+B. Coral
+C. Semi-freshwater fish
+D. Trilobites ",D," #A
+The answer is #A.  Graptolite. 
+The definition of Graptolite is that --, while the concept Trilobites means that --. 
+The Graptolite and the Trilobites are relatively closely related in terms of their meanings. 
+The Graptolite is Graptolite, while the Trilobites is Trilobites. 
+The Graptolite and the Trilobites are collectively part of the Cambrian. 
+The Cambrian means that --. 
+The Graptolite is",0
+" 
+ According to the distribution of temperature below the continental surface and the source of geothermal energy, the interior of the earth can be divided into the following temperature layers:
+Choose from:
+
+A. High thermal layer
+B. Outer thermosphere
+C. Normal temperature layer
+D. Inner thermal layer ",B," #C 
+The correct answer is:
+
+C. Normal temperature layer 
+The normal temperature layer is the part of the Earth's interior where the temperature is relatively constant and is close to the Earth's surface temperature. It extends from the Earth's surface down to a depth of about 30 km. 
+ ",0
+" 
+ The continental crust is composed of:
+Choose from:
+
+A. Silicon-aluminum layer;
+B. silicon magnesium layer
+C. Magnesium iron layer
+D. Ferrosilicon layer ",A," #1
+#2
+#3
+#4  ",0
+" 
+ Among the following actions, mechanical weathering of rocks is:
+Choose from:
+
+A. Temperature change
+B. Ice splitting
+C. Release weight of rock
+D. Root cleavage ",A, #C  ,0
+" 
+ When the river flows, the energy is related to:
+Choose from:
+
+A. The riverbed width
+B. River flow
+C. Velocity of river water
+D. Height difference of riverbed topography ",B, #C  ,0
+" 
+ The movement mode of seawater is mainly as follows:
+Choose from:
+
+A. Sea waves
+B. Tide
+C. Ocean currents
+D. Turbidity current ",A," #C 
+The correct answer is:
+
+C. Ocean currents 
+  ",0
+" 
+ The common grains in carbonate rock structure are:
+Choose from:
+
+A. Internal grains
+B. Biodetritus
+C. Oolitic
+D. Granules ",A," 
+B. Biodetritus  ",0
+" 
+ A typical modern barrier-free coastal sedimentary environment can be divided into:
+Choose from:
+
+A. Lagoon
+B. Coastal dunes
+C. Back shore
+D. Foreshore ",B, #A  ,0
+" 
+ Mesozoic includes:
+Choose from:
+
+A. Permian
+B. Triassic
+C. Jurassic
+D. Cretaceous ",B, #B  ,0
+" 
+ Most coal was found in the following strata:
+Choose from:
+
+A. Carboniferous
+B. Jurassic
+C. Permian
+D. Triassic ",A, #B. Jurassic  ,0
+" 
+ The occurrence factors of rock strata include:
+Choose from:
+
+A. Strike
+B. Thickness
+C. Tendency
+D. Inclination ",A, #B  ,0
+" 
+ Geometric elements of faults include:
+Choose from:
+
+A. Fault plane
+B. Break the disk
+C. Displacement
+D. Inclination ",A, #A  ,0
+" 
+ The first-order structural units in petroliferous basins are:
+Choose from:
+
+A. Anticline zone
+B. Rise
+C. Depression
+D. The ramp ",B, #A. Anticline zone  ,0
+" 
+ The formation conditions of gravity flow include:
+Choose from:
+
+A. A certain depth
+B. Provenance conditions
+C. Trigger mechanism
+D. Stagnant water environment ",B, #D. Stagnant water environment  ,0
+" 
+ The shape of the earth is:
+Choose from:
+
+A. Spherical
+B. Ideal rotating ellipsoid
+C. Apple shape
+D. An approximately pear-shaped ellipsoid of revolution ",D," #D 
+The correct answer is:
+
+D. An approximately pear-shaped ellipsoid of revolution 
+  ",0
+" 
+ The following units that do not belong to the terrestrial surface form are:
+Choose from:
+
+A. Island arc
+B. The hills
+C. Split
+D. Basin ",A, #B  ,0
+" 
+ Closely related to activities and geological activities in the circle is:
+Choose from:
+
+A. Troposphere
+B. Stratosphere
+C. Middle layer
+D. The warm layer ",A, #D. The warm layer  ,0
+" 
+ According to the change of temperature and density, the circle can be divided into:
+Choose from:
+
+A. Troposphere
+B. Stratosphere
+C. Middle layer
+D. Warm layer ",A," #1, A. Troposphere  ",1
+" 
+ The terrestrial crust is composed of:
+Choose from:
+
+A. Silicon-aluminum layer
+B. Silicon magnesium layer
+C. Mg-Fe layer
+D. Ferrosilicon layer ",A," #D
+The answer is D. Ferrosilicon layer. 
+The terrestrial crust is composed of a variety of minerals, including silicates, carbonates, and oxides. The silicon-aluminum layer is the outermost layer of the crust, and is composed of silicates such as quartz and feldspar. The silicon magnesium layer is the next layer down, and is composed of minerals such as olivine and pyroxene. The Mg-Fe layer is the third layer down, and is composed of miner",0
+" 
+ Among the following silicate minerals, the most easily weathered is:
+Choose from:
+
+A. British
+B. Cucumite
+C. Olives
+D. Flash ",C," #D 
+  ",0
+" 
+ The main energy sources for external geological work are:
+Choose from:
+
+A. Radioactive energy
+B. Solar energy
+C. Earth leads energy
+D. Kodeolly ",B, #B. Solar energy  ,1
+" 
+ Among the following rocks, the most easily weathered is:
+Choose from:
+
+A. peridotite; B granite
+B. British sandstone
+C. Coriolis force ",A, #B  ,0
+" 
+ Among the energy sources of geological work, the energy inside the earth includes:
+Choose from:
+
+A. Solar radiation energy
+B. Rotational energy
+C. Heavy energy
+D. Crystallization energy and chemical energy
+E. Gravitational energy of the sun and the moon
+E. Radioactive energy ",B," #D. Crystallization energy and chemical energy
+  ",0
+" 
+ Among the following actions, those belonging to rock mechanical weathering are:
+Choose from:
+
+A. Temperature change
+B. Ice splitting
+C. Release weight of rock
+D. Root cleavage ",A," #A, #C, #D, #C
+The answer is:
+
+A. Temperature change
+C. Release weight of rock
+D. Root cleavage  ",0
+" 
+ The main factors affecting weathering are:
+Choose from:
+
+A. Geological camp
+B. Rock structure and structure
+C. Mineral composition of the rock;
+D. Natural geographical conditions  ",B,"  C. Mineral composition of the rock; 
+The answer is: C. Mineral composition of the rock; 
+The main factors affecting weathering are:
+Choose from:
+
+A. Geological camp
+B. Rock structure and structure
+C. Mineral composition of the rock;
+D. Natural geographical conditions 
+  ",0
+" 
+ The type of ice transport by glaciers is:
+Choose from:
+
+A. Suspension
+B. Jumping
+C. Pushing
+D. Carrying ",C, #D. Carrying  ,0
+" 
+ Diagenesis mainly includes:
+Choose from:
+
+A. Compaction
+B. Cementation
+C. Recrystallization
+D. Colloidal deposition ",A, #B  ,0
+" 
+ The following are not minerals:
+Choose from:
+
+A. Ice
+B. Quartz
+C. Coal
+D. Native gold ",C, #B  ,0
+" 
+ The water that does not participate in crystal composition and has nothing to do with mineral crystals is:
+Choose from:
+
+A. Zeolite water
+B. Combined water
+C. Interlayer water
+D. Adsorbed water ",D, #B  ,0
+" 
+ Among the following minerals, the hardness is greater than that of Quartz:
+Choose from:
+
+A. Topaz
+B. Fluorite
+C. Orthoclase
+D. Calcite ",A," #B. Fluorite
+The correct answer is:
+
+B. Fluorite  ",0
+" 
+ Vammica and Miscellaneous mica belong to:
+Choose from:
+
+A. Complete cleavage
+B. Incomplete cleavage
+C. Extremely complete cleavage
+D. Moderate cleavage ",C, #A  ,0
+" 
+ Olivine belongs to:
+Choose from:
+
+A. Cyclic silicate
+B. Silicate with island structure
+C. Silicate with frame structure
+D. Chain structure silicate ",B," 
+The correct answer is:
+
+A. Cyclic silicate  ",0
+" 
+ Granite belongs to:
+Choose from:
+
+A. Acidic deep intrusive lumbite
+B. Neutral shallow intrusive intrusive rocks
+C. Basic plutonic intrusive rocks
+D. Basic shallow intrusive intrusive rock ",A," #C
+  ",0
+" 
+ If Fe3＋: Fe2＋ is more than 3, the bottom color of sedimentary rock is:
+Choose from:
+
+A. Brown
+B. Hyper colour
+C. Light green gray
+D. Red or brownish red ",D," 
+The correct answer is:
+
+A. Brown 
+The reason is that Fe3+ can be reduced to Fe2+, which is a brownish color. 
+  ",0
+" 
+ A clastic rock containing 8% medium gravel, 10% fine gravel, 17% coarse sand, 16% medium sand, 18% fine sand, 14% coarse silty sand and 17% fine silty sand should be named:
+Choose from:
+
+A. silty sandstone containing gravel
+B. Gravel sandstone containing silt
+C. Gravel siltstone
+D. Silty conglomerate ",A, #C  ,0
+" 
+ Leafy limestone is:
+Choose from:
+
+A. Object shelf structure
+B. Granular structure
+C. Grain structure
+D. Muddy structure ",B, #B  ,0
+" 
+ The common grains in carbonate rock structure are:
+Choose from:
+
+A. Internal grains
+B. Detritus
+C. Oolitic
+D. Granules ",A, #D  ,0
+" 
+ What kind of rocks can diamonds be produced in:
+Choose from:
+
+A. Peridotite
+B. Kimberlite
+C. Gabbro
+D. Andesite ",B," #D. Andesite
+  ",0
+" 
+ Caledonian movement occurs in:
+Choose from:
+
+A. Early Paleozoic
+B. Late Paleozoic
+C. Cenozoic
+D. Mesozoic ",A," #D
+  ",0
+" 
+ In the following mineral assemblages, the four minerals are all silicates:
+Choose from:
+
+A. quartz, olivine, gypsum, potash feldspar
+B. fluorite, talc, muscovite, plagioclase
+C. potash feldspar, talc, andalusite, garnet
+D. pyroxene, calcite, hornblende, pyrite ",C, #A  ,0
+" 
+ Which of the following fold structures must have undergone stratigraphic inversion:
+Choose from:
+
+A. Inclined fold
+B. Vertical fold
+C. Inclined fold
+D. Recumbent fold ",D, #D. Recumbent fold  ,1
+" 
+ In a nappe structure, if the older rock block is exposed above the younger rock block due to strong erosion, the structure is called:
+Choose from:
+
+A. Klippe
+B. Structural window
+C. Overthrust fault
+D. Thrust fault ",A," #D. Thrust fault
+  ",0
+" 
+ Sheet structure is a common structure in regional metamorphic rocks. Which of the following is the most metamorphic structure:
+Choose from:
+
+A. Plate structure
+B. thousand-piece structure
+C. sheet structure
+D. gneiss weak ",A," #C
+Sheet structure is a common structure in regional metamorphic rocks. 
+  ",0
+" 
+ Streamline structure generally occurs in which of the following rock types:
+Choose from:
+
+A. Basalt
+B. Andesite
+C. Rhyolite
+D. Trachyte ",C," #D 
+The correct answer is D. Trachyte. Streamline structure is a type of sedimentary structure that forms in trachyte, a type of volcanic rock that is rich in silica. Streamline structure is characterized by parallel or sub-parallel grooves or channels that run in a specific direction, often in response to the movement of water or wind. This structure is commonly found in sedimentary rocks, such as sandstones and conglomerates, but it is not typically found in basalt, andesite, or rhyolite. 0 0",0
+" 
+ If trilobites are found in the strata, then the stratigraphic age is:
+Choose from:
+
+A. Early Ordovician
+B. Tertiary
+C. Cretaceous
+D. Early Cambrian ",D, #B  ,0
+" 
+ Which of the following minerals is clay mineral:
+Choose from:
+
+A. Kaolinite
+B. Calcite
+C. Garnet
+D. Pyrite ",A, #B  ,0
+" 
+ At which time did the total extinction of dinosaurs occur:
+Choose from:
+
+A. Ordovician
+B. Tertiary
+C. Cretaceous
+D. Cambrian ",C," #C
+  ",1
+" 
+ The part above Moho is called:
+Choose from:
+
+A. Upper crust
+B. Lower crust
+C. Core
+D. Mantle ",B," 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ",0
+" 
+ The era when human beings appeared was:
+Choose from:
+
+A. Tertiary
+B. Quaternary
+C. Sinian
+D. Permian ",B, # B. Quaternary  ,1
+" 
+ The unique mineral group formed by metamorphism is:
+Choose from:
+
+A. sericite, andalusite, wollastonite, garnet
+B. andalusite, hornblende, kaolinite, magnetite
+C. olivine, pyroxene, hornblende, biotite
+D. pyroxene, kyanite, graphite, garnet ",A," #A 
+The answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A. 
+The correct answer is #A.",1
+" 
+ What grade does diamond belong to in Mohs hardness tester:
+Choose from:
+
+A. 5
+B. 7
+C. 8 ",D,  C. 8  ,0
+" 
+ Which of the following rocks does not belong to dynamic metamorphic rocks:
+Choose from:
+
+A. Schist rock
+B. Fault breccia
+C. Mylonite
+D. Cataclastic ",A," #B. Fault breccia
+  ",0
+" 
+ Peridotite belongs to:
+Choose from:
+
+A. Ultrabasic rock
+B. Basic rock
+C. Neutral rock
+D. Acid rock ",A, #A  ,1
+" 
+ The boundary, system, series and order are:
+Choose from:
+
+A. Lithostratigraphic unit
+C. Biological taxonomic unit
+B. Time unit
+D. Chronostratigraphic unit Lamprophyre veins belong to Lithostratigraphic unit ",B," # A. Lithostratigraphic unit 
+The answer is A. Lithostratigraphic unit. 
+The correct answer is:
+Choose from:
+
+A. Lithostratigraphic unit
+B. Time unit
+C. Biological taxonomic unit
+D. Chronostratigraphic unit 
+The question is: The boundary, system, series and order are:
+Choose from:
+
+A. Lithostratigraphic unit
+C. Biological taxonomic unit
+B. Time unit
+D. Chronostratigraphic",0
+" 
+ According to isotopic dating, the longest geological period is:
+Choose from:
+
+A. Proterozoic
+C. Mesozoic
+B. Paleozoic
+D. Cenozoic ",A, #A  ,1
+" 
+ Streamline structure generally occurs in which of the following rock types:
+Choose from:
+
+A. basalt
+B. andesite
+C. rhyolite
+D. trachyte ",C, # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #,0
+" 
+ At which time did the total extinction of dinosaurs occur:
+Choose from:
+
+A. Ordovician
+B. Tertiary
+C. Cretaceous
+D. Cambrian ",C," #C 
+The answer is: C. Cretaceous  ",1
+" 
+ What kind of rocks can diamonds be produced in:
+Choose from:
+
+A. Peridotite
+B. Kimberlite
+C. Gabbro
+D. Andesite ",B," 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ",0
+" 
+ Caledonian movement occurs in:
+Choose from:
+
+A. Early Paleozoic
+B. Late Paleozoic
+C. Mesozoic
+D. Cenozoic ",A, #B. Late Paleozoic  ,0
+" 
+ In the following mineral assemblages, the four minerals are all silicates:
+Choose from:
+
+A. quartz, olivine, gypsum, potash feldspar
+B. fluorite, talc, muscovite, plagioclase
+C. potash feldspar, talc, andalusite, garnet
+D. pyroxene, calcite, hornblende, pyrite ",C, #A  ,0
+" 
+ Which of the following fold structures must have undergone stratigraphic inversion:
+Choose from:
+
+A. Inclined fold
+B. Vertical fold
+C. Inclined fold
+D. Recumbent fold ",D," #B 
+  ",0
+" 
+ In a nappe structure, if the older rock block is exposed above the younger rock block due to strong erosion, the structure is called:
+Choose from:
+
+A. Klippe
+B. Structural window
+C. Overthrust fault
+D. Thrust fault ",A," #C
+The correct answer is:
+C. Overthrust fault 
+The best answer is:
+C. Overthrust fault 
+The correct answer is:
+C. Overthrust fault 
+The best answer is:
+C. Overthrust fault 
+The correct answer is:
+C. Overthrust fault 
+The best answer is:
+C. Overthrust fault 
+The correct answer is:
+C. Overthrust fault 
+The best answer is:
+C. Overthrust fault 
+The correct answer is:
+C. Overthrust fault",0
+" 
+ Sheet structure is a common structure in regional metamorphic rocks. Which of the following is metamorphic structure:
+Choose from:
+
+A. Plate structure
+B. Thousand-piece structure
+C. Sheet structure
+D. Gneiss structure is the weakest ",A," #B
+  ",0
+" 
+ Skarn type deposit is which of the following type of deposit:
+Choose from:
+
+A. Endogenetic deposit
+B. Metamorphic deposit
+C. Contact metasomatic deposit
+D. Eluvial deposit 5 beds ",C, #D. Eluvial deposit  ,0
+" 
+ If trilobites are found in the strata, then the stratigraphic age is:
+Choose from:
+
+A. Early Ordovician
+B. Tertiary
+C. Cretaceous
+D. Early Cambrian ",D," 
+B. Tertiary 
+The answer is B. Tertiary. 
+The question is: If trilobites are found in the strata, then the stratigraphic age is:
+Choose from:
+
+A. Early Ordovician
+B. Tertiary
+C. Cretaceous
+D. Early Cambrian  ",0
+" 
+ Which of the following minerals is clay mineral:
+Choose from:
+
+A. Kaolinite
+B. Calcite
+C. Garnet
+D. Pyrite ",A, #1: A  ,1
+" 
+ Which sedimentary formation reflects the transformation from marine facies to continental facies:
+Choose from:
+
+A. Flysch deposition
+B. Turbidity current deposition
+C. Molasite deposition
+D. Pyroclastic deposition ",C, #D. Pyroclastic deposition  ,0
+" 
+ The part above Moho is called:
+Choose from:
+
+A. Upper crust
+B. Lower crust
+C. Mantle
+D. Core ",B, #A  ,0
+" 
+ The era when human beings appeared was:
+Choose from:
+
+A. Tertiary
+B. Quaternary
+C. Sinian
+D. Permian ",B, # B. Quaternary  ,1
+" 
+ The unique mineral group formed by metamorphism is:
+Choose from:
+
+A. Sericite, andalusite, wollastonite, garnet
+B. andalusite, hornblende, kaolinite, magnetite
+C. olivine, pyroxene, hornblende, biotite
+D. pyroxene, kyanite, graphite, garnet ",A," #A 
+The answer is #A. 
+ 
+The correct answer is:
+
+A. Sericite, andalusite, wollastonite, garnet 
+
+The explanation is:
+
+The unique mineral group formed by metamorphism is:
+Choose from:
+
+A. Sericite, andalusite, wollastonite, garnet
+B. andalusite, hornblende, kaolinite, magnetite
+C. olivine, pyroxene, hornblende, biotite
+D. pyroxene,",1
+" 
+ What grade does diamond belong to in Mohs hardness tester:
+Choose from:
+
+A. 5
+B. 7
+C. 8 ",D, #C  ,0
+" 
+ Which of the following rocks does not belong to dynamic metamorphic rocks:
+Choose from:
+
+A. schist rock
+B. fault breccia
+C. mylonite
+D. cataclastic ",A," #B 
+  ",0
+" 
+ Peridotite belongs to:
+Choose from:
+
+A. Ultrabasic rock
+B. Basic rock
+C. Neutral rock
+D. Acid rock ",A, #A  ,1
+" 
+ The boundary, system, series and order are:
+Choose from:
+
+A. Lithostratigraphic unit
+C. Biological taxonomic unit
+B. Time unit
+D. Chronostratigraphic unit Lamprophyre veins belong to Lithostratigraphic unit ",B," #1 A. Lithostratigraphic unit
+#2 A. Lithostratigraphic unit
+#3 A. Lithostratigraphic unit
+#4 A. Lithostratigraphic unit 
+#5 B. Time unit 
+#6 B. Time unit 
+#7 A. Lithostratigraphic unit
+#8 A. Lithostratigraphic unit 
+#9 B. Time unit 
+#10 B. Time unit 
+#11 A. Lithostratigraphic unit 
+#12 A. Lith",0
+" 
+ According to isotopic dating, the longest geological period is:
+Choose from:
+
+A. Proterozoic
+C. Mesozoic
+B. Paleozoic
+D. Cenozoic ",A, #1. A. Proterozoic  ,1
+" 
+ Streamline structure generally occurs in which of the following rock types:
+Choose from:
+
+A. Basalt
+B. Andesite
+C. Rhyolite
+D. Trachyte ",C," #A
+  ",0
+" 
+ At which time did the total extinction of dinosaurs occur:
+Choose from:
+
+A. Ordovician
+B. Tertiary
+C. Cretaceous
+D. Cambrian ",C, #C. Cretaceous  ,1
