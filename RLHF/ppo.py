@@ -1,14 +1,12 @@
 from datasets import Dataset
 import torch
 import bitsandbytes as bnb
-import matplotlib.pyplot as plt
 from reward_model import inference as reward_inference
 from tqdm import tqdm
 from transformers import AutoTokenizer, BitsAndBytesConfig
 from trl import AutoModelForCausalLMWithValueHead, PPOConfig, PPOTrainer, set_seed, create_reference_model
 import pandas as pd
 from peft import AutoPeftModelForSequenceClassification, AutoPeftModelForCausalLM
-import ast
 
 tqdm.pandas()
 MODEL_PATH = "../SFT/merged_model/SFT_for_expert_alignment/"
@@ -147,67 +145,7 @@ def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, rewa
     print("Done saving model!")
 
 
-def plot_loss(content, save_path, plot_type):
-    colors = ["lightsteelblue", "cornflowerblue"]
-    plt.figure()
-
-    if plot_type == "penalty":
-        loss_content = content.split("\"ppo/loss/value\": ")
-        loss = []
-        for idx, elem in enumerate(loss_content):
-            if idx % 2 == 1:
-                elem = elem.split(", \"ppo/loss/total\":")[0]
-                loss.append(float(elem))
-        print(loss)
-        x = list(range(1, len(loss) + 1))
-        plt.plot(x, loss, label='Loss', color=colors[0])
-
-    if plot_type == "loss":
-        kl_content = content.split("\"ppo/mean_non_score_reward\": ")
-        kl = []
-        for idx, elem in enumerate(kl_content):
-            if idx % 2 == 1:
-                elem = elem.split(", \"ppo/mean_scores\":")[0]
-                kl.append(float(elem))
-        print(kl)
-
-        x = list(range(1, len(kl)+1))
-        plt.plot(x, kl, label='KL penalty', color=colors[1])
-
-    if plot_type == "kl":
-        kl_content = content.split("\"objective/kl\": ")
-        kl = []
-        for idx, elem in enumerate(kl_content):
-            if idx % 2 == 1:
-                elem = elem.split(", \"objective/kl_dist\":")[0]
-                kl.append(float(elem))
-        print(kl)
-
-        x = list(range(1, len(kl)+1))
-        plt.plot(x, kl, label='mean KL divergence', color=colors[1])
-
-    if plot_type == "entropy":
-        kl_content = content.split("\"objective/entropy\": ")
-        kl = []
-        for idx, elem in enumerate(kl_content):
-            if idx % 2 == 1:
-                elem = elem.split(", \"ppo/mean_non_score_reward\":")[0]
-                kl.append(float(elem))
-        print(kl)
-
-        x = list(range(1, len(kl)+1))
-        plt.plot(x, kl, label='Entropy', color=colors[0])
-
-    plt.xlabel('Training steps')
-    plt.legend()
-    # plt.show()
-    plt.savefig(save_path)
-
 if __name__ == "__main__":
-    with open("Output_files/slurm_files/ppo/trainer_log_history_1epoch_2_00E-6Lr_4batch_36ksamples.txt", 'r') as file:
-        content = file.read()
-
-    plot_loss(content, "Output_files/loss_plots/policy_kl_mean.png", "kl")
     ################
     # Model & Tokenizer
     ################
