@@ -55,7 +55,7 @@ if __name__ == "__main__":
     client = OpenAI(api_key="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")
     MODEL = "gpt-4o"
 
-    indices = np.random.choice(range(154), size=50, replace=False)
+    indices = np.random.choice(range(445), size=50, replace=False)
 
     base = pd.read_csv(base_input)
     base = base.iloc[indices]
