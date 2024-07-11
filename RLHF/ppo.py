@@ -151,7 +151,7 @@ if __name__ == "__main__":
     ################
     # set_seed(42)
     # ref_model, policy_model, policy_tokenizer = load_model_and_tokenizer(MODEL_PATH)
-    # reward_model, reward_tokenizer = load_reward_model_and_tokenizer()
+    reward_model, reward_tokenizer = load_reward_model_and_tokenizer()
     # print(torch.cuda.memory_summary())
     ################
     # Dataset
@@ -193,7 +193,7 @@ if __name__ == "__main__":
 
     # build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
 
-    _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("Policy_Model/")
+    # _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("PolicyModel/")
     # kwargs = {
     #     "min_length": -1,
     #     "max_new_tokens": 256,
@@ -204,5 +204,5 @@ if __name__ == "__main__":
     # }
     # x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
     # print(pred)
-    loaded_model.push_to_hub("Geoscience_Llama2_13BChat_RLHF")
-    loaded_tokenizer.push_to_hub("Geoscience_Llama2_13BChat_RLHF")
+    reward_model.push_to_hub("Geoscience_Open_Llama_3B_RM")
+    reward_tokenizer.push_to_hub("Geoscience_Open_Llama_3B_RM")

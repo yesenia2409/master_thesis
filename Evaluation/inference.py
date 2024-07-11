@@ -91,7 +91,7 @@ def create_model_and_tokenizer(model_dir):
 
 if __name__ == "__main__":
     # Variables
-    model_dir_local = "/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/PolicyModel/" # meta-llama/Llama-2-13b-chat-hf" #"../SFT/merged_model/SFT_for_expert_alignment/"
+    model_dir_local = "../SFT/merged_model/SFT_for_human_alignment/" # "/home/tu/tu_tu/tu_zxojp43/master_thesis/RLHF/PolicyModel/" # meta-llama/Llama-2-13b-chat-hf"
     max_new_tokens = 521
     output_dir = "Output_files/answers/"
     benchmark = "npee_discussion"
@@ -100,26 +100,29 @@ if __name__ == "__main__":
     output_path = os.path.join(output_dir, output_filename)
 
     # Functions
-    data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
+    # data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
     # data = data[:2]
-    data = data.loc[data['id'].isin(["discussion"])]
-    counter = 0
+    # data = data.loc[data['id'].isin(["discussion"])]
+    # counter = 0
 
-    for idx, row in data.iterrows(): # row 1074-1379 --> first 305 entries
-        if counter <= 304:
-            prompt_list = row["prompt"].split("<</SYS>> \n")
-            prompt_list.insert(1, "<</SYS>>")
-            prompt_list.insert(2, "Please answer the following question:")
+    # for idx, row in data.iterrows(): # row 1074-1379 --> first 305 entries
+    #     if counter <= 304:
+    #         prompt_list = row["prompt"].split("<</SYS>> \n")
+    #         prompt_list.insert(1, "<</SYS>>")
+    #         prompt_list.insert(2, "Please answer the following question:")
 
-            row["prompt"] = ' '.join(prompt_list)
-            counter += 1
-            print(row["prompt"])
+    #         row["prompt"] = ' '.join(prompt_list)
+    #         counter += 1
+    #         print(row["prompt"])
 
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
 
-    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"], data["label"], max_new_tokens)
-    print("inference() done!")
+    # pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"], data["label"], max_new_tokens)
+    # print("inference() done!")
 
-    save_to_csv(pred_list, label_list, input_list, output_path)
-    print("save_to_csv() done!")
+    # save_to_csv(pred_list, label_list, input_list, output_path)
+    # print("save_to_csv() done!")
+    model.push_to_hub("Geoscience_Llama2_13BChat_SFT_v0")
+    tokenizer.push_to_hub("Geoscience_Llama2_13BChat_SFT_v0")
+
