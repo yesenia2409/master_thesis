@@ -149,58 +149,60 @@ if __name__ == "__main__":
     ################
     # Model & Tokenizer
     ################
-    set_seed(42)
-    ref_model, policy_model, policy_tokenizer = load_model_and_tokenizer(MODEL_PATH)
-    reward_model, reward_tokenizer = load_reward_model_and_tokenizer()
+    # set_seed(42)
+    # ref_model, policy_model, policy_tokenizer = load_model_and_tokenizer(MODEL_PATH)
+    # reward_model, reward_tokenizer = load_reward_model_and_tokenizer()
     # print(torch.cuda.memory_summary())
     ################
     # Dataset
     ################
-    path = "../SFT/Input_files/train_set_expert.pkl"
-    dataset = build_dataset(path)
+    # path = "../SFT/Input_files/train_set_expert.pkl"
+    # dataset = build_dataset(path)
 
     ################
     # Training
     ################
-    policy_model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
-    optimizer = bnb.optim.Adam8bit(policy_model.parameters(), lr=0.000002)
+    # policy_model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+    # optimizer = bnb.optim.Adam8bit(policy_model.parameters(), lr=0.000002)
 
-    ppo_config = PPOConfig(
-        batch_size=4,
-        mini_batch_size=4,
-        gradient_accumulation_steps=1,
-        ppo_epochs=1,
-        model_name=MODEL_PATH,
-        learning_rate=0.000002,
-        remove_unused_columns=False,
-        seed=42,
-        use_score_scaling=True, # Paper: Secrets of RLHF in Large Language Models Part I: PPO
-        use_score_norm=True,
-        score_clip=0.5,
-        optimize_device_cache=True, 
-        optimize_cuda_cache=True,
-    )
+    # ppo_config = PPOConfig(
+    #     batch_size=4,
+    #     mini_batch_size=4,
+    #     gradient_accumulation_steps=1,
+    #     ppo_epochs=1,
+    #     model_name=MODEL_PATH,
+    #     learning_rate=0.000002,
+    #     remove_unused_columns=False,
+    #     seed=42,
+    #     use_score_scaling=True, # Paper: Secrets of RLHF in Large Language Models Part I: PPO
+    #     use_score_norm=True,
+    #     score_clip=0.5,
+    #     optimize_device_cache=True,
+    #     optimize_cuda_cache=True,
+    # )
 
-    ppo_trainer = PPOTrainer(
-        ppo_config,
-        policy_model,
-        ref_model,
-        policy_tokenizer,
-        dataset=dataset,
-        data_collator=collator,
-        optimizer=optimizer
-    )
+    # ppo_trainer = PPOTrainer(
+    #     ppo_config,
+    #     policy_model,
+    #     ref_model,
+    #     policy_tokenizer,
+    #     dataset=dataset,
+    #     data_collator=collator,
+    #     optimizer=optimizer
+    # )
 
     # build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
 
     _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("Policy_Model/")
-    kwargs = {
-        "min_length": -1,
-        "max_new_tokens": 256,
-        "eos_token_id": 50256,
-        "pad_token_id": 50256,
-        "do_sample": True,
-        "temperature": 0.5,
-    }
-    x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
-    print(pred)
+    # kwargs = {
+    #     "min_length": -1,
+    #     "max_new_tokens": 256,
+    #     "eos_token_id": 50256,
+    #     "pad_token_id": 50256,
+    #     "do_sample": True,
+    #     "temperature": 0.5,
+    # }
+    # x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
+    # print(pred)
+    loaded_model.push_to_hub("Geoscience_Llama2_13BChat_RLHF")
+    loaded_tokenizer.push_to_hub("Geoscience_Llama2_13BChat_RLHF")
