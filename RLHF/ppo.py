@@ -1,3 +1,14 @@
+"""
+RLHF: policy training
+
+* Load the dataset from a local pkl file
+* Preprocess the dataset
+* Load the model, reference model, and the tokenizer
+* Load the reward model and the reward tokenizer
+* Define hyperparameter and train the model
+* Save the model locally and on Huggingface
+"""
+
 from datasets import Dataset
 import torch
 import bitsandbytes as bnb
@@ -15,6 +26,11 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def build_dataset(dataset_path):
+    """
+    Loads the dataset from a local .pkl file and preprocesses the dataset, e.g. exclude all instruction longer than 256 tokens
+    :param dataset_path: path of the file to load
+    :return: ppo_data: dataframe of training data
+    """
     train_set = pd.read_pickle(dataset_path)
     ppo_data = Dataset.from_pandas(train_set)
     ppo_data = ppo_data.rename_columns({"instruction": "query"})
@@ -28,6 +44,11 @@ def build_dataset(dataset_path):
 
 
 def load_model_and_tokenizer(MODEL_PATH):
+    """
+    Loads the base model, the refernce model, and the tokenizer from huggingface
+    :param MODEL_PATH: path (huggingface or locally) were the model is stored
+    :return: ref_model, model, tokenizer: instances of the models and tokenizer
+    """
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -59,6 +80,10 @@ def load_model_and_tokenizer(MODEL_PATH):
 
 
 def load_reward_model_and_tokenizer():
+    """
+    Loads the base model and the tokenizer locally
+    :return: model, tokenizer: instances of the reward model and the reward tokenizer
+    """
     reward_model = AutoPeftModelForSequenceClassification.from_pretrained(
         REWARD_MODEL,
         low_cpu_mem_usage=True,
@@ -77,10 +102,23 @@ def load_reward_model_and_tokenizer():
 
 
 def collator(data):
+    """
+    Implementation of the data collator; i.e. returns batches for training
+    :param data: dataframe of the training data
+    :return:
+    """
     return dict((key, [d[key] for d in data]) for key in data[0])
 
 
 def inference(model, tokenizer, prompts, kwargs):
+    """
+    Runs inference on the policy model and return the generated answers and ids for training
+    :param model: instances of the policy model
+    :param tokenizer: instances of the policy tokenizer
+    :param prompts: list of prompts to use for inference
+    :param kwargs: generation arguments for inference
+    :return: query_tokens, response_tokens, preds: list of ids of the queries and responses as well as textual responses
+    """
     query_tokens = []
     response_tokens = []
     preds = []
@@ -99,6 +137,16 @@ def inference(model, tokenizer, prompts, kwargs):
 
 
 def build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer):
+    """
+    Training pipeline for RLHF. Saves the log history and the model locally after training.
+    :param ppo_config: config for the ppo training
+    :param ppo_trainer: instance of the ppo trainer
+    :param policy_model: instance of the policy model
+    :param policy_tokenizer: instance of the policy tokenizer
+    :param reward_model: instance of the reward model
+    :param reward_tokenizer: instance of the reward tokenizer
+    :return: -
+    """
     log_history = []
     kwargs = {
         "top_p": 1.0,
@@ -149,60 +197,64 @@ if __name__ == "__main__":
     ################
     # Model & Tokenizer
     ################
-    # set_seed(42)
-    # ref_model, policy_model, policy_tokenizer = load_model_and_tokenizer(MODEL_PATH)
+    set_seed(42)
+    ref_model, policy_model, policy_tokenizer = load_model_and_tokenizer(MODEL_PATH)
     reward_model, reward_tokenizer = load_reward_model_and_tokenizer()
     # print(torch.cuda.memory_summary())
+
     ################
     # Dataset
     ################
-    # path = "../SFT/Input_files/train_set_expert.pkl"
-    # dataset = build_dataset(path)
+    path = "../SFT/Input_files/train_set_expert.pkl"
+    dataset = build_dataset(path)
 
     ################
     # Training
     ################
-    # policy_model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
-    # optimizer = bnb.optim.Adam8bit(policy_model.parameters(), lr=0.000002)
+    policy_model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+    optimizer = bnb.optim.Adam8bit(policy_model.parameters(), lr=0.000002)
 
-    # ppo_config = PPOConfig(
-    #     batch_size=4,
-    #     mini_batch_size=4,
-    #     gradient_accumulation_steps=1,
-    #     ppo_epochs=1,
-    #     model_name=MODEL_PATH,
-    #     learning_rate=0.000002,
-    #     remove_unused_columns=False,
-    #     seed=42,
-    #     use_score_scaling=True, # Paper: Secrets of RLHF in Large Language Models Part I: PPO
-    #     use_score_norm=True,
-    #     score_clip=0.5,
-    #     optimize_device_cache=True,
-    #     optimize_cuda_cache=True,
-    # )
+    ppo_config = PPOConfig(
+        batch_size=4,
+        mini_batch_size=4,
+        gradient_accumulation_steps=1,
+        ppo_epochs=1,
+        model_name=MODEL_PATH,
+        learning_rate=0.000002,
+        remove_unused_columns=False,
+        seed=42,
+        use_score_scaling=True, # Paper: Secrets of RLHF in Large Language Models Part I: PPO
+        use_score_norm=True,
+        score_clip=0.5,
+        optimize_device_cache=True,
+        optimize_cuda_cache=True,
+    )
 
-    # ppo_trainer = PPOTrainer(
-    #     ppo_config,
-    #     policy_model,
-    #     ref_model,
-    #     policy_tokenizer,
-    #     dataset=dataset,
-    #     data_collator=collator,
-    #     optimizer=optimizer
-    # )
+    ppo_trainer = PPOTrainer(
+        ppo_config,
+        policy_model,
+        ref_model,
+        policy_tokenizer,
+        dataset=dataset,
+        data_collator=collator,
+        optimizer=optimizer
+    )
 
-    # build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
+    build_pipeline(ppo_config, ppo_trainer, policy_model, policy_tokenizer, reward_model, reward_tokenizer)
 
-    # _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("PolicyModel/")
-    # kwargs = {
-    #     "min_length": -1,
-    #     "max_new_tokens": 256,
-    #     "eos_token_id": 50256,
-    #     "pad_token_id": 50256,
-    #     "do_sample": True,
-    #     "temperature": 0.5,
-    # }
-    # x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
-    # print(pred)
+    ################
+    # Saving + Inference Test
+    ################
+    _, loaded_model, loaded_tokenizer = load_model_and_tokenizer("PolicyModel/")
+    kwargs = {
+        "min_length": -1,
+        "max_new_tokens": 256,
+        "eos_token_id": 50256,
+        "pad_token_id": 50256,
+        "do_sample": True,
+        "temperature": 0.5,
+    }
+    x, y, pred = inference(loaded_model, loaded_tokenizer, ["How old is the earth?"], kwargs)
+    print(pred)
     reward_model.push_to_hub("Geoscience_Open_Llama_3B_RM")
     reward_tokenizer.push_to_hub("Geoscience_Open_Llama_3B_RM")

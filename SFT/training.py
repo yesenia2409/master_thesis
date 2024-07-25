@@ -1,3 +1,13 @@
+"""
+SFT: training
+
+* Load the dataset from a local pkl file
+* Preprocess and save the dataset splits
+* Load the model and the tokenizer
+* Define hyperparameter and train the model
+* Save the model locally and on Huggingface
+"""
+
 from peft import PeftModel
 import pickle
 from sklearn.model_selection import train_test_split
@@ -24,6 +34,11 @@ ACCESS_TOKEN = "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"
 
 # Dataset preparation
 def load_data(dataset_path):
+    """
+    Loads the dataset from a local .pkl file, creates an additional column and splits the dataset
+    :param dataset_path: path to the file to load
+    :return: -
+    """
     df = pd.read_pickle(f"{dataset_path}.pkl")
     create_text_column(df)
 
@@ -35,10 +50,21 @@ def load_data(dataset_path):
 
 
 def create_text_column(df):
+    """
+    Adding a column with instruction and output concatenated to the df
+    :param df: dataframe of the dataset
+    :return: -
+    """
     df['text'] = df.apply(lambda row: row['instruction'] + " " + row['output'] + " </s>", axis=1)
 
 
 def create_data_split(dataset, human=True):
+    """
+    Splits the dataset in alignment with humans vs. expert and creates a train, test and val part for each
+    :param dataset: dataframe of the dataset
+    :param human: boolean: is it the alignment with human split?
+    :return: -
+    """
     # Stratified sampling to keep type balance
     train_set, test_set = train_test_split(dataset, test_size=0.1, stratify=dataset["type"], random_state=42)
     train_set, validation_set = train_test_split(train_set, test_size=0.1, stratify=train_set["type"], random_state=42)
@@ -56,12 +82,22 @@ def create_data_split(dataset, human=True):
 
 
 def save_data_split(data_set, name):
+    """
+    Saves a dataframe as a .phl file
+    :param data_set: dataframe to save
+    :param name: name of the saved file
+    :return: -
+    """
     with open(f'Input_files/{name}.pkl', 'wb') as f:
         pickle.dump(data_set, f)
 
 
 # Loading the model and tokenizer
 def create_model_and_tokenizer():
+    """
+    Loads the base model and the tokenizer from huggingface
+    :return: model, tokenizer: instances of the model and the tokenizer
+    """
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -84,8 +120,7 @@ def create_model_and_tokenizer():
           quantization_config=bnb_config,
           device_map="auto",
     )
-    
-        
+
     model.config.use_cache = False
     # model.config.quantization_config.to_dict()
 
@@ -97,11 +132,22 @@ def create_model_and_tokenizer():
 
 
 def print_layers(model):
+    """
+    Prints all layers of a model to check for frozen layers
+    :param model: an instance of the base model
+    :return: -
+    """
     for name, param in model.named_parameters():
         print(f"{name}   Modelsize: {param.numel() / 1000 ** 2:.1f}M parameters")
 
 
 def plot_loss(log_history, save_path):
+    """
+    Plots the loss (train and eval) of the training and saves it in a png. file
+    :param log_history: a dict of logged stats during training
+    :param save_path: the path and filename where the picture should be saved
+    :return: --
+    """
     colors = ["lightsteelblue", "cornflowerblue"]
     plt.figure()
 
@@ -129,6 +175,9 @@ def plot_loss(log_history, save_path):
 
 
 if __name__ == "__main__":
+    ################
+    # Dataset
+    ################
     # full_dataset_path = "../Prompting/Adjusting_Dataset/Output_files/geosignal"
     # load_data(full_dataset_path)
 
@@ -140,10 +189,16 @@ if __name__ == "__main__":
     # test_e = pd.read_pickle("Input_files/test_set_expert.pkl")
     # test_h = pd.read_pickle("Input_files/test_set_human.pkl")
 
+    ################
+    # Model & Tokenizer
+    ################
     model, tokenizer = create_model_and_tokenizer()
     
     # print_layers(model)
 
+    ################
+    # Hyperparameter
+    ################
     # Args from sh script
     parser = argparse.ArgumentParser()
     parser.add_argument("--lr", type=float, required=True)
@@ -188,6 +243,9 @@ if __name__ == "__main__":
     train = Dataset.from_pandas(train_e)
     val = Dataset.from_pandas(val_e)
 
+    ################
+    # Training
+    ################
     trainer = SFTTrainer(
         model=model,
         dataset_text_field="text",
@@ -209,7 +267,9 @@ if __name__ == "__main__":
     plot_loss(trainer.state.log_history,
               'Output_files/loss_SFT_for_expert_alignment_1epoch_2_00E-5Lr_2batch_allLinearLayers_revised.png')
 
+    ################
     # Saving
+    ################
     trainer.save_model()
     trained_model = AutoPeftModelForCausalLM.from_pretrained(
         f"{OUTPUT_DIR}SFT_for_expert_alignment",

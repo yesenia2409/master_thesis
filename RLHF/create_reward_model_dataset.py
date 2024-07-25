@@ -1,21 +1,43 @@
+"""
+RLHF: reward model dataset
+
+* Creating the dataset used from Reward Model Training
+* Create prompts to handle OOD data
+* Create prompts to avoid padding with zeros
+* Create prompts to avoid extensive repetition
+* Create prompts to train completion tasks
+"""
+
 import pandas as pd
 import os
 from collections import Counter
 
 
 def preprocess_ood_data(input_path, save_path):
+    """
+    Creates instruction as well as chosen und rejected answer pairs for ood data
+    :param input_path: path to the pkl file of the ood dataset
+    :param save_path: path where to store the reward model training data
+    :return: -
+    """
     df = pd.read_pickle(input_path)
     df.drop(['type', 'category'], axis=1, inplace=True)
     df.rename(columns={'output': 'rejected', 'text': 'chosen'}, inplace=True)
 
     for idx, row in df.iterrows():
         df["chosen"][idx] = "This question falls outside the field of geoscience. Since my expertise is limited to " \
-                        "geoscience topics, I'm unable to assist with this."
+                            "geoscience topics, I'm unable to assist with this."
     # print(df['chosen'])
     df.to_csv(save_path, index=False)
 
 
 def filter_zeros_as_pad_value(eval_res_dir, save_path):
+    """
+    Creates instruction as well as chosen und rejected answer pairs for zero padding
+    :param eval_res_dir: path to the dir of the result files of the evaluation
+    :param save_path: path where the reward model training data is stored
+    :return: -
+    """
     dataset = pd.read_csv(save_path)
     for filename in os.listdir(eval_res_dir):
         if 'SFT_only' in filename:
@@ -30,6 +52,13 @@ def filter_zeros_as_pad_value(eval_res_dir, save_path):
 
 
 def filter_extensive_repetitions(eval_res_dir, save_path, n):
+    """
+    Creates instruction as well as chosen und rejected answer pairs for extensive repetitions
+    :param eval_res_dir: path to the dir of the result files of the evaluation
+    :param save_path: path where the reward model training data is stored
+    :param n: n-gram length
+    :return: -
+    """
     dict_of_rejected = {}
     dict_of_chosen = {}
     dict_of_instruction = {}
@@ -61,13 +90,20 @@ def filter_extensive_repetitions(eval_res_dir, save_path, n):
 
     # print(len(dict_of_rejected))
     for idx in dict_of_rejected.keys():
-        new_row = {'instruction': dict_of_instruction[idx], 'rejected': dict_of_rejected[idx], 'chosen': dict_of_chosen[idx]}
+        new_row = {'instruction': dict_of_instruction[idx], 'rejected': dict_of_rejected[idx],
+                   'chosen': dict_of_chosen[idx]}
         dataset = pd.concat([dataset, pd.DataFrame([new_row])], ignore_index=True)
 
     dataset.to_csv(save_path, index=False)
 
 
 def filter_completion_task(eval_res_dir, save_path):
+    """
+    Creates instruction as well as chosen und rejected answer pairs for completion tasks
+    :param eval_res_dir: path to the dir of the result files of the evaluation
+    :param save_path: path where the reward model training data is stored
+    :return: -
+    """
     dataset = pd.read_csv(save_path)
     for filename in os.listdir(eval_res_dir):
         if 'SFT_only' and "completion" in filename:
@@ -75,18 +111,13 @@ def filter_completion_task(eval_res_dir, save_path):
             df = pd.read_csv(file_path)
             for idx, row in df.iterrows():
                 pred = row["pred"].strip().split("[/INST]")[0].split("0 0 0")[0]
-                instruct = row["input"].strip().split("Please complete the following sentence:  ")[1].split("[/INST]")[0]
+                instruct = row["input"].strip().split("Please complete the following sentence:  ")[1].split("[/INST]")[
+                    0]
                 # if pred in f"#  {instruct}":
-
                 print("INSTRUCTION: ", f"#  {instruct}")
                 print("PREDICTION: ", pred)
-
-
-
-
-
-                   #  new_row = {'instruction': row['input'], 'rejected': row['pred'], 'chosen': chosen_answer}
-                   #  dataset = pd.concat([dataset, pd.DataFrame([new_row])], ignore_index=True)
+                #  new_row = {'instruction': row['input'], 'rejected': row['pred'], 'chosen': chosen_answer}
+                #  dataset = pd.concat([dataset, pd.DataFrame([new_row])], ignore_index=True)
     # dataset.to_csv(save_path, index=False)
 
 

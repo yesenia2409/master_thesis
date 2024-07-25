@@ -1,9 +1,24 @@
+"""
+Evaluation: preparation of the evaluation datasets
+
+* Loads the datasets from GitHub as json files
+* Preprocess the apstudy data by embedding the prompt in the inference template
+* Preprocess the npee data by embedding the prompt in the inference template
+* Saves the datasets locally as csv and pkl files
+"""
+
 import pandas as pd
 import json
 
 
 # Preprocessing the apstudy data
 def preprocess_apstudy_data(input_path, save_path):
+    """
+    Preprocess the apstudy data by embedding the prompt in the inference template
+    :param input_path: path to the json file of the apstudy data
+    :param save_path: path to where the file is stored
+    :return: -
+    """
     df = pd.read_json(input_path)
     df.drop(columns=['id'], inplace=True)
     df.rename(columns={'answerKey': 'label', 'question': 'prompt'}, inplace=True)
@@ -22,6 +37,16 @@ def preprocess_apstudy_data(input_path, save_path):
 
 
 def embedd_in_apstudy_template(question, A, B, C, D, E):
+    """
+    Embedds Mc answers in the inference template
+    :param question: String: Multiple choice question
+    :param A: String: Answer A
+    :param B: String: Answer B
+    :param C: String: Answer C
+    :param D: String: Answer D
+    :param E: String: Answer E
+    :return: String: Question and answer possibilities in the inference template
+    """
     return f"<s> [INST] <<SYS>> \n You are a helpful, respectful and honest assistant. Always answer as helpfully as " \
            f"possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, " \
            f"dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in " \
@@ -33,6 +58,12 @@ def embedd_in_apstudy_template(question, A, B, C, D, E):
 
 # Preprocessing the npee data
 def preprocess_npee_data(input_path, save_path):
+    """
+    Preprocess the npee data by embedding the prompt in the inference template
+    :param input_path: path to the json file of the npee data
+    :param save_path: path to where the file is stored
+    :return: -
+    """
     df = pd.DataFrame(columns=["id", "prompt", "label"])
 
     with open(input_path, encoding="utf-8") as json_file:
@@ -50,6 +81,11 @@ def preprocess_npee_data(input_path, save_path):
 
 
 def embedd_in_npee_template(question):
+    """
+    Embedds Mc and tf answers in the inference template
+    :param question: String: Multiple choice or True false question
+    :return: String: Question and answer possibilities in the inference template
+    """
     return f"<s> [INST] <<SYS>> \n You are a helpful, respectful and honest assistant. Always answer as helpfully as " \
            f"possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, " \
            f"dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in " \

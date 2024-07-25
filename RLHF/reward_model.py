@@ -1,3 +1,14 @@
+"""
+RLHF: reward model training
+
+* Run inference using the reward model
+* Load the dataset from a local pkl file
+* Preprocess the dataset
+* Load the model and the tokenizer
+* Define hyperparameter and train the model
+* Save the model locally and on Huggingface
+"""
+
 import pandas as pd
 import torch
 from datasets import Dataset
@@ -13,6 +24,14 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def inference(reward_tokenizer, reward_model, sample, max_length):
+    """
+    Used the model to run inference on a single input prompt
+    :param reward_tokenizer: instance of the tokenizer
+    :param reward_model: instance of the model
+    :param sample: prompt (string) used for inference
+    :param max_length: maximum number of new tokens per answer
+    :return: value: reward as float
+    """
     reward_tokenizer.truncation_side = 'left'
     with torch.no_grad():
         input_ids = reward_tokenizer(
@@ -30,6 +49,13 @@ def inference(reward_tokenizer, reward_model, sample, max_length):
 
 
 def inference_evaluation(model, tokenizer, before):
+    """
+    Creates an overview about rewards assigned to chosen and rejected answers for evaluation purposes
+    :param model: instance of the model
+    :param tokenizer: instance of the tokenizer
+    :param before: string inserted in saving path (indication for chosen vs. rejected)
+    :return: -
+    """
     chosen_rewards = []
     rejected_rewards = []
 
@@ -46,6 +72,12 @@ def inference_evaluation(model, tokenizer, before):
 
 
 def preprocess_dataset(examples, tokenizer):
+    """
+    Preprocesses the dataset by creating a dict of the tokenized chosen and rejected answers
+    :param examples: dataframe with textual chosen and rejected answers
+    :param tokenizer: instance of the tokenizer
+    :return: new_examples: dict with tokenized chosen and rejected answers
+    """
     with torch.no_grad():
         new_examples = {
             "input_ids_chosen": [],
@@ -66,6 +98,10 @@ def preprocess_dataset(examples, tokenizer):
  
 
 def load_model():
+    """
+    Loads the base model and the tokenizer from huggingface
+    :return: model, tokenizer: instances of the model and the tokenizer
+    """
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
@@ -94,12 +130,25 @@ def load_model():
 
 
 def sample_by_type(df, sample_size=5):
+    """
+    Randomly samples a certain number of prompts for each type within the training data
+    :param df: dataframe containing training data
+    :param sample_size: number of prompts per type
+    :return: list of sampled dataframe rows
+    """
     grouped = df.groupby('type')
     sampled = grouped.apply(lambda x: x.sample(min(len(x), sample_size), random_state=5))
     return sampled.reset_index(drop=True)
 
 
 def plot_loss(train, eval, save_path):
+    """
+    Plots the loss (train and eval) of the training and saves it in a png. file
+    :param train: list of tupels (loss, epoch) of the training loss
+    :param eval: list of tupels (loss, epoch) of the evaluation loss
+    :param save_path: the path and filename where the picture should be saved
+    :return: -
+    """
     colors = ["lightsteelblue", "cornflowerblue"]
     plt.figure()
 
@@ -126,16 +175,6 @@ def plot_loss(train, eval, save_path):
 
 
 if __name__ == "__main__":
-
-    # eval_data = [(2.196, 0.03), (1.969, 0.06), (1.757, 0.09), (1.564, 0.12), (1.392, 0.15), (1.232, 0.18),
-    #              (1.096, 0.21), (0.971, 0.24), (0.864, 0.27), (0.765, 0.29), (0.675, 0.31), (0.598, 0.35),
-    #              (0.529, 0.38), (0.472, 0.41), (0.426, 0.44), (0.389, 0.47), (0.356, 0.5), (0.328, 0.53), (0.303, 0.56),
-    #              (0.283, 0.59), (0.269, 0.62), (0.255, 0.65), (0.2447, 0.68), (0.238, 0.71), (0.233, 0.74), (0.228, 0.77),
-    #              (0.226, 0.8), (0.226, 0.83), (0.225, 0.86), (0.225, 0.88), (0.225, 0.91), (0.225, 0.94), (0.225, 0.97),
-    #              ]
-    # train_loss = [(1.9085, 0.15), (1.0192, 0.29), (0.7196, 0.44), (0.4012, 0.59), (0.2711, 0.74), (0.2481, 0.88), (0.716, 0.97)]
-    # plot_loss(train_loss, eval_data, "Output_files/loss_plots/rm_loss_second.png")
-
     ################
     # Model & Tokenizer
     ################
@@ -150,87 +189,87 @@ if __name__ == "__main__":
     # Dataset
     ################
     raw_datasets = pd.read_csv("Input_files/dataset_SFT_reward_model.csv")
-    # train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
+    train_set, test_set = train_test_split(raw_datasets, test_size=0.1, stratify=raw_datasets["type"], random_state=42)
 
-    # preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
-    # preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
+    preprocessed_train_data = preprocess_dataset(train_set, tokenizer)
+    preprocessed_test_data = preprocess_dataset(test_set, tokenizer)
 
-    # train_set = Dataset.from_dict(preprocessed_train_data)
-    # test_set = Dataset.from_dict(preprocessed_test_data)
+    train_set = Dataset.from_dict(preprocessed_train_data)
+    test_set = Dataset.from_dict(preprocessed_test_data)
     
     print("Done preprocessing dataset!")
 
     ################
     # Inference
     ################
+    print(raw_datasets["chosen"][2410])
+    inference(tokenizer, model, raw_datasets["chosen"][2410])
+    print(raw_datasets["rejected"][2410])
+    inference(tokenizer, model, raw_datasets["rejected"][2410])
+    print("Done with first inference!")
 
-    # print(raw_datasets["chosen"][2410])
-    # inference(tokenizer, model, raw_datasets["chosen"][2410])
-    # print(raw_datasets["rejected"][2410])
-    # inference(tokenizer, model, raw_datasets["rejected"][2410])
-    # print("Done with first inference!")
-
-    # inference_evaluation(model, tokenizer, "before")
+    inference_evaluation(model, tokenizer, "before")
     inference_evaluation(trained_model, tokenizer, "after")
-
 
     ################
     # Training
     ################
-    # peft_config = LoraConfig(
-    #     r=8,
-    #     lora_alpha=16,
-    #     lora_dropout=0.05,
-    #     task_type=TaskType.SEQ_CLS,
-    # )
+    peft_config = LoraConfig(
+        r=8,
+        lora_alpha=16,
+        lora_dropout=0.05,
+        task_type=TaskType.SEQ_CLS,
+    )
 
-    # training_arguments = TrainingArguments(
-    #     output_dir=f"{DIR}Training_Outputs",
-    #     num_train_epochs=1,
-    #     per_device_train_batch_size=2,
-    #     per_device_eval_batch_size=2,
-    #     gradient_accumulation_steps=32,
-    #     optim="paged_adamw_32bit",
-    #     learning_rate=0.0005,
-    #     weight_decay=0.01,
-    #     lr_scheduler_type="linear",
-    #     save_strategy="epoch",
-    #    logging_strategy="steps",
-    #    logging_steps=5,
-    #     evaluation_strategy="steps",
-    #     eval_steps=1,
-    #     eval_accumulation_steps=5,
-    #     seed=42,
-    #     bf16=True,
-    #     gradient_checkpointing=True,
-    #     remove_unused_columns=False
-    # )
+    training_arguments = TrainingArguments(
+        output_dir=f"{DIR}Training_Outputs",
+        num_train_epochs=1,
+        per_device_train_batch_size=2,
+        per_device_eval_batch_size=2,
+        gradient_accumulation_steps=32,
+        optim="paged_adamw_32bit",
+        learning_rate=0.0005,
+        weight_decay=0.01,
+        lr_scheduler_type="linear",
+        save_strategy="epoch",
+        logging_strategy="steps",
+        logging_steps=5,
+        evaluation_strategy="steps",
+        eval_steps=1,
+        eval_accumulation_steps=5,
+        seed=42,
+        bf16=True,
+        gradient_checkpointing=True,
+        remove_unused_columns=False
+    )
 
-    # trainer = RewardTrainer(
-    #     model=model,
-    #     tokenizer=tokenizer,
-    #     args=training_arguments,
-    #     max_length=256,
-    #     train_dataset=train_set,
-    #     eval_dataset=test_set,
-    #     peft_config=peft_config,
-    # )
+    trainer = RewardTrainer(
+        model=model,
+        tokenizer=tokenizer,
+        args=training_arguments,
+        max_length=256,
+        train_dataset=train_set,
+        eval_dataset=test_set,
+        peft_config=peft_config,
+    )
 
-    # trainer.train()
-    # print("Done training!")
+    trainer.train()
+    print("Done training!")
 
-    # metrics = trainer.evaluate()
-    # trainer.log_metrics("eval", metrics)
-    # print("Evaluation mectrics: ", metrics)
+    ################
+    # Evaluation + Saving
+    ################
+    metrics = trainer.evaluate()
+    trainer.log_metrics("eval", metrics)
+    print("Evaluation mectrics: ", metrics)
 
-    # print(raw_datasets["chosen"][2410])
-    # inference(tokenizer, model, raw_datasets["chosen"][2410])
-    # print(raw_datasets["rejected"][2410])
-    # inference(tokenizer, model, raw_datasets["rejected"][2410])
-    # print("Done with second inference!")
+    print(raw_datasets["chosen"][2410])
+    inference(tokenizer, model, raw_datasets["chosen"][2410])
+    print(raw_datasets["rejected"][2410])
+    inference(tokenizer, model, raw_datasets["rejected"][2410])
+    print("Done with second inference!")
 
-    # trainer.save_model(DIR)
-    # print("Done saving!")
-
+    trainer.save_model(DIR)
+    print("Done saving!")
     # print("Log History: ", trainer.state.log_history)
 

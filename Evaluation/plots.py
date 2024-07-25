@@ -1,8 +1,23 @@
+"""
+Evaluation: plots
+
+* Plots the loss during policy training
+* Plots results for closed question evaluation
+* Plots results for open question evaluation
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
 def plot_loss(content, save_path, plot_type):
+    """
+    Plots the loss during policy training and save plot as png file
+    :param content: dict with log history information
+    :param save_path: path where the png file will be stored
+    :param plot_type: string, either "penalty", "kl", "entropy", "loss" depending on the desired type
+    :return: -
+    """
     colors = ["lightsteelblue", "cornflowerblue"]
     plt.figure()
 
@@ -61,8 +76,10 @@ def plot_loss(content, save_path, plot_type):
 
 def plot_npee_vs_ape(base, sft, rlhf):
     """
-    Plots the human evaluation scores of with vs. without template as a bar chart
-    :param file_path: path to where the annotated result file is stored
+    Plots results for closed question evaluation (npee data vs. ape data)
+    :param base: list of results for the base model
+    :param sft: list of results for the sft model
+    :param rlhf: list of results for the rlhf model
     :return: -
     """
 
@@ -89,8 +106,10 @@ def plot_npee_vs_ape(base, sft, rlhf):
 
 def plot_mc_vs_tf(base, sft, rlhf):
     """
-    Plots the human evaluation scores of with vs. without template as a bar chart
-    :param file_path: path to where the annotated result file is stored
+    Plots results for closed question evaluation (mc data vs. tf data)
+    :param base: list of results for the base model
+    :param sft: list of results for the sft model
+    :param rlhf: list of results for the rlhf model
     :return: -
     """
 
@@ -118,8 +137,10 @@ def plot_mc_vs_tf(base, sft, rlhf):
 
 def plot_open_tasks_individually(base, sft, rlhf):
     """
-    Plots the human evaluation scores of with vs. without template as a bar chart
-    :param file_path: path to where the annotated result file is stored
+    Plots quantitative results for open question evaluation (for each task-type individually)
+    :param base: list of results for the base model
+    :param sft: list of results for the sft model
+    :param rlhf: list of results for the rlhf model
     :return: -
     """
 
@@ -146,8 +167,10 @@ def plot_open_tasks_individually(base, sft, rlhf):
 
 def plot_open_tasks_together(base, sft, rlhf):
     """
-    Plots the human evaluation scores of with vs. without template as a bar chart
-    :param file_path: path to where the annotated result file is stored
+    Plots quantitative results for open question evaluation (for all tasks together)
+    :param base: list of results for the base model
+    :param sft: list of results for the sft model
+    :param rlhf: list of results for the rlhf model
     :return: -
     """
 
@@ -174,8 +197,10 @@ def plot_open_tasks_together(base, sft, rlhf):
 
 def plot_human_eval_closed_tasks(base, sft, rlhf):
     """
-    Plots the human evaluation scores of with vs. without template as a bar chart
-    :param file_path: path to where the annotated result file is stored
+    Plots qualitative results for closed question evaluation
+    :param base: list of results for the base model
+    :param sft: list of results for the sft model
+    :param rlhf: list of results for the rlhf model
     :return: -
     """
 
@@ -203,8 +228,10 @@ def plot_human_eval_closed_tasks(base, sft, rlhf):
 
 def plot_human_eval_open_tasks(base, sft, rlhf):
     """
-    Plots the human evaluation scores of with vs. without template as a bar chart
-    :param file_path: path to where the annotated result file is stored
+    Plots qualitative results for open question evaluation
+    :param base: list of results for the base model
+    :param sft: list of results for the sft model
+    :param rlhf: list of results for the rlhf model
     :return: -
     """
 
@@ -227,6 +254,7 @@ def plot_human_eval_open_tasks(base, sft, rlhf):
     plt.tight_layout()
     # plt.show()
     plt.savefig("Output_files/plot_human_eval_discussion_tasks.png")
+
 
 if __name__ == "__main__":
     # with open("Output_files/slurm_files/ppo/trainer_log_history_1epoch_2_00E-6Lr_4batch_36ksamples.txt", 'r') as file:

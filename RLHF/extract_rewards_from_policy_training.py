@@ -1,8 +1,22 @@
+"""
+RLHF: extract rewards during training
+
+* Loads the log history of reward model training
+* Filters all the rewards
+* Calculates the average reward per batch
+* Prints the reward development
+"""
+
 import re
 import matplotlib.pyplot as plt
 
 
 def parse_and_calculate_averages(file_path):
+    """
+    Loads the log history of reward model training, filters all the rewards and calculates the average reward per batch
+    :param file_path: path to slurm tile (.out) where the rewards were stored
+    :return: averages: list of average reward per batch
+    """
     with open(file_path, 'r', encoding="utf-8") as file:
         lines = file.readlines()
 
@@ -35,9 +49,10 @@ def parse_and_calculate_averages(file_path):
 
 def plot_rewards(avgs):
     """
-    Takes the tested learning rates as x values and the final train loss as y values.
-    Plots the points and tries to fit the polynom that best describes the points.
-    :return:
+    Takes the number of batches as x values and the average reward per batch as y values.
+    Fits a curve through the data points and saves the plot as .png file
+    :param avgs: list of avg rewards
+    :return: -
     """
 
     index = range(len(avgs))

@@ -1,10 +1,10 @@
 """
-SFT: inference
+Evaluation: inference
 
-* Load the geosignal json file from GitHub
-* Concatenate instruction and input columns
-* Apply the prompt template to each prompt
-* Save the dataset as pickle and csv files
+* Load the evaluation data form local pkl files
+* Load the model and tokenizer locally
+* Run inference
+* Save the results in csv files
 """
 
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
@@ -66,6 +66,11 @@ def save_to_csv(pred_list, gold_list, input_list, output_path):
 
 
 def create_model_and_tokenizer(model_dir):
+    """
+    Loads the base model and the tokenizer from huggingface
+    :param model_dir: path to where the model is stored
+    :return: model, tokenizer: instances of the model and the tokenizer
+    """
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -99,8 +104,10 @@ if __name__ == "__main__":
     output_filename = f"output_for_evaluation_{benchmark}_{model_name}.csv"
     output_path = os.path.join(output_dir, output_filename)
 
-    # Functions
-    # data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
+    ################
+    # Dataset
+    ################
+    data = pd.read_pickle("Input_files/pkl/geobench_npee.pkl")
     # data = data[:2]
     # data = data.loc[data['id'].isin(["discussion"])]
     # counter = 0
@@ -115,14 +122,23 @@ if __name__ == "__main__":
     #         counter += 1
     #         print(row["prompt"])
 
+    ################
+    # Model & Tokenizer
+    ################
     model, tokenizer = create_model_and_tokenizer(model_dir_local)
     print("load_model() done!")
 
-    # pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"], data["label"], max_new_tokens)
-    # print("inference() done!")
+    ################
+    # Inference
+    ################
+    pred_list, input_list, label_list = inference(model, tokenizer, data["prompt"], data["label"], max_new_tokens)
+    print("inference() done!")
 
-    # save_to_csv(pred_list, label_list, input_list, output_path)
-    # print("save_to_csv() done!")
+    ################
+    # Saving
+    ################
+    save_to_csv(pred_list, label_list, input_list, output_path)
+    print("save_to_csv() done!")
     model.push_to_hub("Geoscience_Llama2_13BChat_SFT_v0")
     tokenizer.push_to_hub("Geoscience_Llama2_13BChat_SFT_v0")
 
